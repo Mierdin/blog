@@ -1,0 +1,23 @@
+---
+layout: post
+title: 'New Series: CS 101'
+author: Matt Oswalt
+comments: true
+categories: ['Computer', 'Science']
+date: "2016-08-09"
+slug: new-series-cs101
+tags: ['computer', 'science']
+---
+
+
+Historically, my background is far closer to the systems side of things, but as I've picked up software development experience over the past few years, I've come to appreciate the fundamentals of computer science that others in my shoes may not have been exposed to. That said, I have been working on a pseudo-formal blog series on computer science fundamentals.
+
+These fundamentals have a wide variety of applications. Those with more of an IT-focused background will learn that even if you don't use graph theory, or optimize algorithms in your day job, many of these concepts are at the crux of many of the technologies that we use every day. If, like me, you've become bored with the endless cycle of IT certifications, learning these concepts could be a great addition to your skill set, as you can leverage these concepts to extrapolate details from some of the "closed" products we use from IT vendors.
+
+Finally, it's important to remember that the most important part of any of this is how this knowledge is applied. As you read the posts that I'll release in the next few weeks, remember that understanding how to optimize a piece of code is useful, but even more useful is the wisdom to know when to apply that knowledge. Have the wisdom to know when it's okay to make slightly less-performant code to improve readability. Sometimes such tradeoffs are worth it - but that analysis and decision is on you. Don't lose sight of the big picture.
+
+This series will not be exhaustive, or as deep as a real CS course or degree program. My perspective here is to provide some of the most fundamental, useful topics (in my opinion) to the kind of audience that reads my blog posts. They've helped me tremendously, and my goal is to share some of that positive influence they've had on my career path.
+
+I start this series primarily because I've been doing this software development thing for long enough to have realized the benefits of returning to these fundamentals, so I would like to share some of the most important concepts with you in the hope that the additional perspective is useful to you. Take what I share and run with it on your own. The intention is to whet your appetite so that you go hunting for more.
+
+Enjoy, and check out the [first post in our series, which focuses on Algorithms](https://keepingitclassless.net/2016/08/cs101-algorithms/).

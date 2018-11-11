@@ -1,0 +1,69 @@
+---
+layout: post
+title: 2014 Recap and 2015 Goals
+author: Matt Oswalt
+comments: true
+categories: ['Blog']
+date: "2014-12-31"
+wordpress_id: 6020
+slug: 2014-recap-2015-goals
+tags: ['blogging']
+---
+
+
+When I started this post, the following mental image popped into my head, and I found it an apt description of 2014:
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Doing the year-end recap post. 2014 was all: <a href="http://t.co/aXtC2sjN8l">pic.twitter.com/aXtC2sjN8l</a></p>&mdash; Matt Oswalt (@Mierdin) <a href="https://twitter.com/Mierdin/status/550031799095934977">December 30, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Oh well.....let's give this a try anyways.
+
+## 2014 Recap
+
+I'll list off the goals I set in [my post one year ago](https://keepingitclassless.net/2013/12/2013-recap-and-2014-goals/), and reflect upon how they were pursued in 2014:
+
+**Write Code** – I knew when I made this goal that it was going to be hard to quantify; I just knew that writing code was something I had been passionate about. Though I have always maintained this skillset in some form or another, I knew I wanted more, and a year ago, I made the goal of increasing my involvement with software development.
+
+In 2014 I made two more contributions to OpenDaylight, specifically pertaining to the [Unit Testing and Integration Testing](https://github.com/opendaylight/ovsdb/commit/880cca63d777b58fc6292217d8696e047f5fb830) efforts of the OVSDB project (much thanks to Madhu Venugopal and Dave Tucker for their unrelenting patience while I stumbled through Junit fundamentals). I also did a lot of work on various projects, like Ansible and Schprokits extensions, as well as standalone projects, all of which are on my [Github](https://github.com/Mierdin) profile.
+
+Granted, the argument could be made that this is not a very measurable goal; nevertheless I think I did very well in this respect. This wasn't really a goal that warranted a specific goal, but rather is measured by a feeling of accomplishment, and to that end, I feel like I did great. I expect to do even more in 2015. More on that in a bit.
+
+**Writing** – Objectively, I did not meet the goal that I set for 2014, which was to write 2 blog posts a week. This blog post is actually number 50 for the year, which is closer to one per week. In fact, if you look at the spread, you can plainly see how I was going after this goal aggressively at the beginning of the year, but definitely slacked off in the latter half of the year.
+
+[![blog](assets/2014/12/blog.png)](assets/2014/12/blog.png)
+
+Combined with my previous goal of paying more attention to software development, I learned a lot about this aspect of my life. First, I continue to be amazed by the blog's growth. Traffic to the site more than doubled from 2013, and traffic in 2014 made up 58% of the total views since Keeping It Classless' inception in early 2011. As of today there are just under 500,000 lifetime views to the site. Given my aforementioned writing inconsistencies, this level of readership is amazing and I continue to be ever humbled by it.
+
+That said......I have had a lot of time to consider what has become a long-term venture for me, and that is....this. Blogging. Writing about what I care about. I've never considered myself any kind of journalist - I write about nerdy stuff aimed at helping others get excited about tech, and that's it. I don't do ads, and I've never considered that writing would become a full-time job for me. There's also my renewed focus on software development, which is a huge outlet for me. The positive energy I get from writing code is very similar to that which I derive from seeing my articles mentioned on Twitter, or seeing a spike in views.
+
+At the end of the day, I didn't meet my goal, but after contemplation, I truly feel that the goal was a bit unrealistic. Of course I wish I had written more, and more consistently, but twice a week was pushing it, given the place I want this "hobby" to have in my life. I do think I've made great strides in readability. I've taken on new techniques for keeping posts short, and easy to read (or helpfully chunked up with images, etc.). I also think the subject matter really reflects the new direction I'm taking in my career, so to me it felt a lot more fun to write about.
+
+**Certifications** - I didn't get any certifications in 2013, and in my last recap post, I lamented about this a bit. I expected at that time, since I had joined a new VAR that year, that I would be required to get a few new certifications in 2014, so I set a few goals, namely the CCNP DC, and the CCDA (with a stretch goal of the CCDP).
+
+I didn't do any of this. And I don't feel bad about it at all.
+
+I am going to say this once - I am speaking for myself only, and I have no intention of starting a flame war. There are many paths to success, and I have selected one that I believe works for me. That said, given my renewed focus on software development and on network programmability, these certifications hold little to no relevance for me. I was fortunate enough to work for a VAR that understood this passion of mine, and didn't push me to get any specific certifications. You won't see a "certifications" section in 2015's goals, but it's worth mentioning that I **might** renew my CCNP, which is due in August. The CCNP contains enough practical route/switch knowledge that's just good to know, so I purchased the CCNP ROUTE book for the new exam so I could look into this. If I get it, great. If not, I'm sure it's for a good reason.
+
+In my 2013 recap, I did mention that the best measure of success is to never stop moving forward. I alluded to the fact that my interests were going into an area where traditional IT certifications don't really exist. The fact that I certainly moved forward in quite a few other areas helps me realize that this goal is just not for me, at least for now.
+
+# 2015 Goals
+
+Alright, so let's go through some goals for 2015, in yet another feeble attempt to predict the next year of my life.
+
+**Public Presence** - I decided to use this term over "writing" because it's clear that - though writing is a huge part of it - it's not the only part of my public presence. I was fortunate enough to speak at [Cisco Live in 2014](https://www.ciscolive.com/online/connect/sessionDetail.ww?SESSION_ID=78638&tclass=popup), and I've been invited to do a [3 hour workshop on network automation](http://www.interop.com/lasvegas/scheduler/session/practical-network-automation-with-ansible-and-schprokits) at Interop Vegas in April, 2015. I also have done a lot more screencasts on my [YouTube channel](https://www.youtube.com/user/keepingitclassless), and occasionally I get on a microphone with my good friend Matt Stone over at [The Class C Block](http://classcblock.com/blog/).
+
+I've done a little bit of all of these things in 2014 and prior, so rather than set a goal that life will stomp on, I will just say that I want to do more. It will be totally impossible to contain the energy and passion from what I have planned for 2015, so I want to do more in each area. For writing, I'll say I want to beat that 50 post mark, and not with simple little posts. I don't want to write a post a day or anything like that. I actually LOVE the way my writing style has settled into in 2014, so I want more of **that**. Same applies for videos and podcasts....there's just too much going on in this industry to not talk about it.
+
+**Software Development** -  I'm going to be a little more specific in this post because I managed to do well in 2014 in this area, and want to capitalize on it. In 2015 I want to really go deep with my existing Python knowledge. I thought I was good, then I met a few dedicated devs and realized that I was NOT. In my opinion I am caught between two areas - one being someone that knows enough to be dangerous, and someone that is a full-time dev. I know now where my shortcomings are, and I want to dive into the deep end in 2015. I want to learn about software **design**, and how to build simple software that works. I'll set a stretch goal of getting involved in another language, like C or Go.
+
+I also want to get better with tools like Git, and continuous integration tools like Jenkins. I feel like these are already part of my workflow, but I need more. I know enough about Git to be a contributor, but I am not practiced enough to take on ownership of my own project just yet (taking others' contributions and managing conflicts, etc). I have also just scratched the surface with automated deployment tools, Jenkins being just one of these tools. I want to do more.
+
+**Linux** - My new interest in whitebox networking has shown me that maintaining a Linux skillset is **crucial**. I'll increasingly be working with network-focused Linux suites like Quagga and iptables, as well as all of the physical interface configuration tools like ifupdown and iproute2.
+
+I would also like to dust off simple skillsets that I just haven't used in a while. I will do a lot more with shell scripting, and will try to make better use of simple command line tools that most take for granted. The worlds of a Linux sysadmin and a network engineer are converging, and this is an area that is of intense interest to me.
+
+# Conclusion
+
+2014 was a challenge, I won't lie. There were a lot of areas where I wish I did better, but in retrospect, it was also very cool, and a huge year for my own personal and technical growth.
+
+I already know a few details of how early 2015 is going to go for me, and I am super pumped about some big changes that are coming soon. I can't wait to share them with you all. Until then, have a tremendous New Year celebration, and have an amazing start to 2015!

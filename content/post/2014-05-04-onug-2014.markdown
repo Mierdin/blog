@@ -1,0 +1,38 @@
+---
+layout: post
+title: Open Networking User Group Conference 2014
+author: Matt Oswalt
+comments: true
+categories: ['Blog']
+date: "2014-05-04"
+wordpress_id: 5831
+slug: onug-2014
+tags: ['onug']
+---
+
+
+Today I'm off to NYC for Open Networking User Group 2014. Tech Field Day was at the last ONUG back in October, 2013 and they were kind enough to invite me out to this one. Here's a quick intro video of ONUG for those that aren't aware of it - Tom Hollingsworth interviews ONUG creator Nick Lippis:
+
+<div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/-4LSxDsS9fY" frameborder="0" allowfullscreen></iframe></div>
+
+We have a good group of vendors lined up for similar round-table discussions. I happen to LOVE this format of conversation, especially with the smart folks we've seen from vendors like Nuage and Cumulus. I am really looking forward to sitting down and talking tech.
+
+My original outsider's perspective was that ONUG in general (not counting nerdy Tech Field Day round table discussions) wasn't really aimed towards the technical folks, but rather at executives, and at other IT decision makers looking for additional choices in networking infrastructure. While there's certainly a lot of that, I'd like to call out a few sessions/events that really interest the nerd in me (as if I'm not 100% nerd).
+
+Back in February, I had the pleasure of sitting in Kyle Mestery's presentation on integration with OpenDaylight and OpenStack at the [OpenDaylight Summit](http://events.linuxfoundation.org/events/opendaylight-summit):
+
+<div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/3MkCiHeH_Fo" frameborder="0" allowfullscreen></iframe></div>
+
+Aside from a few issues that were entirely my fault, I was able to get a fully working setup with two hypervisors, and ODL+OpenStack integration in well under an hour from the time I downloaded the virtual machine. Kyle and the other folks on IRC (especially #opendaylight-ovsdb) have really done a stellar job of creating and supporting a pre-packaged virtual machine that allows folks that are completely new to either OpenStack, OpenDaylight, or both, to get learning and get writing code.
+
+Kyle is [doing a presentation at ONUG](http://opennetworkingusergroup.com/openstack-networking-with-neutron/), and if it's anything like what he brought to the OpenDaylight summit, this is not a session to miss.
+
+Stephen Foskett is also going to be moderating a [panel addressing an SDN use case](http://opennetworkingusergroup.com/agenda/ip-storage-sdns-killer-app/) pertaining to IP Storage. If you know Stephen, you know he's the right man for the job, and this will definitely be a great session.
+
+Nick Feamster is doing a [presentation about SDN in the Enterprise and the WAN](http://opennetworkingusergroup.com/implementing-network-policies-in-sdn-from-the-enterprise-to-the-wide-area/). Though data center has certainly been my focus lately, I grew up (kind of literally) building campus networks, and large routing designs over WAN has always been of interest to me. I am very interested in seeing SDN-esque technologies impacting these network areas and what vendors are doing to provide value here.
+
+It should also be noted that there are [many other sessions](http://opennetworkingusergroup.com/agenda/) that might be of interest to you - I personally am keeping my eye on the handful of hackathon events going on.
+
+Of course, the Tech Field Day round table discussions will also be taking place with a few vendors, and I always look forward to chatting with fellow delegates about tech. Stay tuned - I imagine I'll have at least a few blog posts to summarize the event and the inevitable awesome discussions with networking rock stars.
+
+> I am attending ONUG as a delegate as part of [Tech Field Day](http://techfieldday.com/about/). Events like these are sponsored by networking vendors who may cover a portion of our travel costs. In addition to a presentation (or more), vendors may give us a tasty unicorn burger, [warm sweater made from presenter’s beard](http://www.youtube.com/watch?v=oQrJk9JzW8o) or a similar tchotchke. The vendors sponsoring Tech Field Day events don’t ask for, nor are they promised any kind of consideration in the writing of my blog posts … and as always, all opinions expressed here are entirely my own. ([Full disclaimer here](https://keepingitclassless.net/disclaimers/))

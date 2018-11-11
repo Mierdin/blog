@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/mierdin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://keepingitclassless.net
+  * I am mierdin (https://keybase.io/mierdin) on keybase.
+  * I have a public key with fingerprint 00C7 E9A2 0246 7786 8A3F  7E3D 384D 2A75 E85B B5E6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "00c7e9a2024677868a3f7e3d384d2a75e85bb5e6",
+            "host": "keybase.io",
+            "key_id": "384D2A75E85BB5E6",
+            "uid": "548b2faf38ed3dc6069043afe6181719",
+            "username": "mierdin"
+        },
+        "merkle_root": {
+            "ctime": 1431970387,
+            "hash": "d47ba3f5a203a1e8e6d961a6806771c4e426d1babd6ad52bf3204a87cadbde4f1dc86a78002337a7171ce7808c6adb39e3c131f33cfee612df265eb1e8d140f9",
+            "seqno": 223237
+        },
+        "service": {
+            "hostname": "keepingitclassless.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1431970402,
+    "expire_in": 157680000,
+    "prev": "3eb8b570ef89a296d86e730adec00bcd3210684f1e3f254cdaab1d934b2ee4b5",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFVkntQFWUYxs/hqIANyAlCRgOcbWImxDN73z3ADHcjQgyDmEETd/f79rBcdg+7
+55DEQGVmeJmBEoRGaOQi4YzMWIpBDBlmdoEZkHCKnLRJJBmwIksUdehbhi7uX/vt
+/r73fZ7nfesCbBYfK78l2ntze8+UdWhatOTmY2IlJmqgAoutxKQSBaoe800VSiEW
+ixXDClEwoEPRNqgagI4iY8MyE4OVQ91QNBVRuINzcFhVjImbl2VFdUHdrStmLQzH
+JQ46BRInaZbjeJYXKJmDFKB4GpACx0CeEUUGsqhkoWZ4HumKLdUsUAD6ivhUMolj
+0ngmOZlJM3nv0g+G5kVSFmSKh4ACEouzTpymBBmyBE9whNMEDagvWypVoA4U1ZRb
+CvXiEliga9qSZ8mjmARBU4STwymeQ4IEoxDdATQnItUMMkEJBOQhC5wsIbA8jhwR
+Eg1pkgWEKIiAFQBDijJF4rTAc5IARABpmQASzwocj+MkRXECh1RJEB15CfEi5YSU
+RFCETFGSDJFqEsgky0ARdQIEjcumAwOWqRoWS5IUSXFV5lkvVyRo6jZT+3de0I3C
+VzxSiWAYJdAwHCo0h+XWNY8maSWIKfR43Eas6d/TW+E2b70CxYLlegWioqJ0XP+f
+L4HQR7OhcTIGg7vdig4LFJNgOJQFesxGsNwcFhR5keFwKPNo9E4W8CzkKFwAUMJx
+UQIUSeAsj5KBlEwytAQEQSSAk6JFEkJaZP5zTBBIqOBCNQ3FpQoerw6xqv0+T66w
+WH0sq1b6mBtsWe0f9M9aO2aCLP1z+fFNNdMpUpzWVfnu268PjbUtqoMvf37gxksT
+Udak3r+C35+rPrPp2IuFo591Du0oeubi6XBLvH38qZo1wTubnw59LiogWr5n6ar/
+JHD/1wMpaUN+CVXDod0L9jW6o8bRMpx5/Y6tdntK89bpgG2rvi8LuTP3lhy+1Tf0
+m8PnOxd6IoeyYyNPrvzNVp2sx+kPVOpqXsOvcbWl9tvvPHY8oqF2Y+j5e+3t5LSd
+zjjVbTTxv+8N35Kd5+tMt4TssuTmjGX0N87arzy49KOrvFi76j7bMe/LWcYCZi8e
+besZb/x0bibEWyb8vK76h8D67y5/OHirZ/KCNeBQ/Jz1yEku5+DAYl111kjcNrU5
+sa0zOfXPnGsgZsQvu701a/2bLxzZM561eVPmt+99RKyLd2b0VYaeiwj+8tirZ+tK
+GTiadmrKOOCb4KXLkiYG8u677+5Yb2Mf5nsL912xDTvz3thbVJuWmB/WdTOwxXYi
+/dZ86xORa/1uH4i+3LhwLSo9td3x8TnnjMyWrH0+5Pjo5oaoX/6IyfypKaTfusCH
+TWYcyu6LmHCcfrzD7r84nk57JqXS1pr7HfXi/Gu5D9kTfRsjbvi2Tu30WyhPaBk8
+3MIRNl+0dJWJlsHW2a9694008Cl7ikGg/Tp+5oOQ7oQVzbvCYq1ZQZeODpM+F/xH
+Vo8VOwrvfoH3u3Y/+zc=
+=NvE1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mierdin
+
+==================================================================

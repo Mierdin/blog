@@ -1,0 +1,45 @@
+---
+layout: post
+title: Interop Vegas 2016
+author: Matt Oswalt
+comments: true
+categories: ['Network', 'Automation']
+date: "2016-04-05"
+slug: interop-vegas-2016
+tags: ['automation']
+---
+
+
+I'm happy to be given the opportunity to speak once more at Interop Vegas in 2016. No workshop for me this year, but I will be putting on three individual talks, all focusing on topics that have been very near and dear to me over the past year.
+
+[Last year](https://keepingitclassless.net/2015/01/network-automation-interop-vegas-2015/) I was very focused on putting the theory behind network automation into practical terms, and making it "real". Over the past year I've seen rapid growth in adoption of these ideas, and I was happy to be just one very small part of helping to make that happen.
+
+Since the last Interop, my career has steered me towards a more direct approach to network automation, specifically through software development. So I'd like to spend some time providing an overview of my sessions at the upcoming Interop Vegas 2016, which are all inspired by the last year of my career.
+
+## Test-Driven Network Automation
+
+I am obviously very passionate about network automation, and have been very vocal about my belief that network automation only has a chance if it is done properly, which includes proper testing. I strongly believe that network automation can and should take place within the context of a proper CI pipeline, and testing is a big part of this. Network automation isn't just about saving time - it's about building a more resilient system.
+
+I recently open-sourced a personal project of mine called [ToDD](https://github.com/toddproject/todd), which is a highly extensible framework for distributed capacity and connectivity testing. I have had a decent amount of feedback on this project thus far, and I'm looking forward to learning from this project in the future.
+    
+At Interop, [I'm giving a talk on test-driven network automation](http://info.interop.com/lasvegas/scheduler/session/test-driven-network-automation), which will include a brief discussion about TDNA in general as well as a reasonably lengthy demonstration of ToDD, which is just one piece of this larger picture.. If you have questions about ToDD, or about testing in a network automation context, this presentation is for you.
+
+## The Network Revolution Is A Lie
+
+I am quite excited for this one. [I wrote a post quite a few months ago](https://keepingitclassless.net/2015/07/big-flowering-thing/) during a period in my career where I was quite disillusioned with our industry.
+
+In short, what started as a "revolution" with ideas like SDN and network automation, which are sorely needed in some areas, has turned into something entirely different and meaningless. It's quite sad, but in short, really good ideas like open networking and proper network automation are being discarded as marketing fluff, because that's what's taken the industry over.
+
+At Interop, I'm going to talk about some of these topics, and more in ["The Network Revolution Is a Lie"](http://info.interop.com/lasvegas/scheduler/session/the-network-revolution-is-a-lie).
+
+## DevOps-Centric Networking at eBay
+
+I am giving the last two talks as an independent contributor - just someone in the community that is hopefully providing something useful from personal experience. However, I've also managed to get approval to give one talk as an employee of eBay, and [this one is part of Jason Edelman's DevOps track](http://info.interop.com/lasvegas/scheduler/session/devops-for-networking-summit) at Interop.
+
+My team at eBay is a group of software developers dedicated to writing applications for network infrastructure. In this talk, I'll be giving a high-level overview of some of the things we're working on, including the problem statements we've been given, some high-level details of the solutions we've provided for these problems, and some of the lessons learned along the way with respect to collaboration between network operations and a group of developers.
+
+# Attend Interop!
+
+I'm not being paid to say this - if you have the opportunity, attend Interop. There are not that many conferences left of this scale that are focused on the community, as opposed to one specific vendor. Interop currently has a fantastic mix of community focus (which means you get to network with some really smart folks), and technical deep-dives that rival the most nerdy of presentations at vendor-focused conferences.
+
+I hope to see you at Interop, and I hope you find at least one of these sessions interesting!

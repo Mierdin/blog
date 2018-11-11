@@ -1,0 +1,60 @@
+---
+layout: post
+title: 2013 Recap and 2014 Goals
+author: Matt Oswalt
+comments: true
+categories: ['Blog']
+date: "2013-12-30"
+wordpress_id: 5207
+slug: 2013-recap-and-2014-goals
+tags: ['blogging']
+---
+
+
+Wow - this one snuck up on me. Seriously, when I think of how 2013 went, I'm amazed at how much happened this year but also how fast it flew by.
+
+As per the tradition I started last year, I thought it prudent to write a post summarizing how terribly I was able to forecast 2013 in terms of personal goals, and make another feeble attempt at planning out 2014. Let's start with last year:
+
+## 2013 Recap
+
+### Blogging/Social Media
+
+This is on top for a reason. 2013 was full of growth for me in terms of community involvement. Here's just a few highlights:
+	
+  * **Attended TWO Tech Field Day events** (Thanks so much guys!) - [Networking Field Day 6](http://techfieldday.com/event/nfd6/) in September, and the [Cisco ACI Launch](http://techfieldday.com/event/cacil13/) in November. These were both amazing, and I had a ton of fun hanging out with fellow networking geeks. Got to meet a lot of the folks that are directly responsible for this blog existing in the first place. Super humbling.
+
+	
+  * **Joined as co-host and produced several episodes over at [The Class-C Block](http://classcblock.com/blog/) podcast.** Have already had some really great conversations and it's become a really cool way to hear from and ask questions of others way smarter than I am. I want to thank all of our listeners - this year has been great for us, and we look forward to being in your ears in 2014!
+	
+  * **Joined the Cisco Champions program.** This was a no-brainer for me. While I make it a point (and always will) to remain independent and analyze technology objectively, I work with Cisco DC technology all the time, so it made a lot of sense. As a result I get to hang out with a bunch of other passionate folks often, which is great!
+
+	
+  * **Got back to writing code, publicly.** I've been tinkering on a few things over on my [Github account](https://github.com/Mierdin), but I also started to get involved with the OpenDaylight project, specifically the portion that makes OVSDB work. Unfortunately, pretty soon after my initial involvement, my entire life - not just my free time - was consumed by a work project that is really only now wrapping up. So, because I still have much more here I want to do, this will also be a 2014 goal.
+
+This year, the traffic to Keeping It Classless more than tripled. I was amazed at the stats last year and would never have foreseen this level of growth. 2013 was responsible for just about 75% of total pageviews ever to the site.
+
+[![statswp](assets/2013/12/statswp-1024x136.png)](assets/2013/12/statswp.png)
+
+Thanks to all for reading, commenting, sharing, and yes, sometimes tolerating. I find that my main goal in writing is still a little bit selfish - to learn more from others that have been doing this far longer than I have. In that spirit, I've succeeded dramatically, because this tool has put me into those circles where I couldn't really do much of anything except learn, learn, learn. For that I am immensely grateful.
+
+I also accomplished my goal of migrating to a new theme for the site. I'm using the Genesis framework for Wordpress now, and I've had a few positive comments on it from others.
+
+**Career** - [I joined a new company in May](https://keepingitclassless.net/2013/05/moving-forward-changing-focus/) and with that came a lot of fresh ideas and experience from my new coworkers. I've been able to focus on the blog and other extracurricular activities as well, and I have everyone I work with to thank for supporting this important area of my career. I am fortunate to work with a lot of really smart people, and we make no effort to hide our knowledge from each other. While this move may have been a little different than what I could forecast a year ago, it was a good decision, and it allowed me to focus on data center networking.
+
+**Certifications** - This is probably the goal that I'm most disappointed in, but also know that there's not really any other way it could have gone. 2013 didn't see any new certifications for me. It was likely a combination of my increased involvement in extracurricular activities, as well as the job change, but it just didn't happen. I will say that I studied for the CCIE Written probably around 3 times through (with the exception of MPLS and Multicast) so I know those topics pretty well, but have no exam to back it up. Life simply got in the way this year. While I'm certainly pleased with what I ended up spending my time with instead, there is a part of me that misses walking into the test center. Read on for the "2014 goals". I did state last year that I wanted to focus on non-certification topics, and I certainly succeeded there.
+
+**IPv6** - This one's a little difficult; in hindsight, I should have been a little better about defining my goals and not have been so ambiguous with this one.  If I may be so bold, I think I've definitely found a niche in this "agent of change" idea. I will admit that I've grown fond of challenging the status quo and trying out brand new ideas. Whether that's with IPv6, SDN, or making a batch of beer, 2013 was a year of taking a step back and rethinking the way we do things. I continue to evangelize IPv6 to anyone that will hear, and 2014 will be no different. Besides - I got to meet [Ed Horley](https://twitter.com/ehorley) this year, as well as [hate on NAT with Tom Hollingsworth](http://classcblock.com/2013/01/14/show-8-poking-ipv6-with-a-stick/) and damn it, that has to count for something.
+
+**Personal** - Yeah, so that flight physical.....this one's all on me. It just didn't happen. My three biggest passions are technology, beer, and flying. I'd say I've done a pretty good job fulfilling two of those, so I have no doubt that the third one will get done.....maybe when I'm not so busy I forget to eat breakfast half the time. Not the best mindset to be in when in control of a tin can ~5000' in the air.
+
+## Goals for 2014
+
+**Write Code** - Though I know this is a broadly-defined goal, I am committing to increasing my involvement with software development. While I was able to make a code contribution to the Open Daylight project, the reality is that there's a lot more that I want to do. This goal will require me to prioritize my other tasks a little lower so that time can be made for this, just as I have done for my other community efforts like blogging. The result is the same too - an increased understanding of the technologies emerging today, and even better, a voice in their formation.
+
+**Writing** - I wrote last year that my main goal was to write with higher quality and with better consistency. While the statistics say I must be doing something right, I know there's more I can do in this area. I still catch myself doing ugly stuff like writing wordy posts, or putting out content in spurts. My goal for 2014 is two blog posts a week. I'm aiming for T and TH as release dates, but 2013 taught me that life likes to stomp on our plans sometimes, so those two specific days are just a guideline - the important part is 2 a week. These posts will be more succinct and to the point, and hopefully with increasingly interesting content.
+
+**Certifications** - One more reason I didn't do much with this in 2013 was because I wasn't ready to start down the CCIE path, and I repeatedly tried to force it. Right now my path seems to be pointing in another direction. For the time being, that means becoming certified in the technologies I've been implementing for the past 3 years, which will manifest in a CCNP DC. That's a no-brainer for me, and definitely lower-hanging fruit than a CCIE run. I have already begun the process for one of the exams and I'm setting the goal now to have this cert by July 2014. It's also becoming clear that my job responsibilities center around more of a design role, which is likely also a reason the CCIE isn't working out for now. As a result, I also commit to getting the CCDA by year's end, with a stretch goal of the CCDP.
+
+These goals are all written while keeping in mind that 2013 showed me that the best measure of success is that I never stop moving forward - once that happens, I start moving backwards. Some of my technology interests are  going in a direction where certifications don't really exist - things like continuing to grow out my software development skillsets. At the end of 2014, I expect to have some certifications, yes, but also a list of cool projects I started, finished, or contributed to.
+
+That's it for 2013 - thanks again for a great year! It was a whirlwind for sure, but overall a fantastic year of growth, and I look forward to what 2014 has in store.

@@ -1,0 +1,68 @@
+---
+layout: post
+title: 2015 Recap and 2016 Goals
+author: Matt Oswalt
+comments: true
+categories: ['Blog']
+date: "2015-12-31"
+slug: 2015-recap-2016-goals
+tags: ['blogging']
+---
+
+
+Wow, it's that time of year again! 2015 went by really quickly, and a lot has changed for me. It's also worth mentioning that this is the first year-end recap to be published on my new github pages site!
+
+If you haven't seen this kind of thing before, I make this post yearly to publicly track my own professional development goals. I find this helps me stay accountable to these goals, and it also allows others to give me a kick in the butt if I'm falling behind.
+
+# 2015 Goal Recap
+
+First, let me recap some of the goals [I set for myself at the beginning of the year](https://keepingitclassless.net/2014/12/2014-recap-2015-goals/), and see how well I did.
+
+## Public Presence (aka Community Contributions)
+
+Last year I added this goal because I was doing a lot more than just blogging, and wanted to capture it all. This was a good move, since - as expected - I did quite a bit of community-oriented work, and a large portion of it didn't take place on the blog.
+So, while I didn't hit that (admittedly fairly arbitrary) 50 post number, I can say I truly feel good about what little writing I did manage to get done in 2015. [One particular post](https://keepingitclassless.net/2015/07/big-flowering-thing/) (or should I say rant?) received a significant amount of attention, and is the main source of inspiration for a talk I'll be giving at Interop Vegas 2016. More on that in a later post.
+
+I generally feel really good about the topics I tackled in 2015; it was definitely a quality over quantity year. Looking back on the 27 posts I did manage to get published in 2015, I feel good about their content. I do still have a significant number of posts in draft, so who knows - maybe I'll beat this number in 2016. All I can say is that my priority is now on quality, and addressing the issues that really matter in this industry. I also managed to upload a few more screencasts on my [YouTube channel](https://www.youtube.com/user/keepingitclassless).
+
+Besides writing, I also did a few talks (one workshop) at [Interop Vegas 2015](https://keepingitclassless.net/2015/01/network-automation-interop-vegas-2015/). This was a lot of fun. I had several other speaking engagements in 2015, but this was easily the largest, and demanded the most preparation. Interop is one of the last remaining independent conferences in the networking industry, and I am planning on continuing to contribute as long as they're willing to have me.
+
+Finally, I was very pleased to be able to annouce that I am [co-authoring a new book on network automation](https://keepingitclassless.net/2015/12/training-next-generation-network-engineer/) along with [Scott Lowe](https://twitter.com/scott_lowe) and [Jason Edelman](https://twitter.com/jedelman8). I plan on doing a lot more in 2016 to contribute simple tools and methodologies to the various communities in which I am involved, and this is just the start.
+
+
+## Software Development
+
+On paper, I handled this goal fairly well. Reading back at the specifics of the goal I set a year ago, I accomplished things neatly. However I should warn that I'm really feeling the whole "the more you know, the more you don't know" kind of thing, so be aware that may influence what I say about how well I learned in this area.
+
+[I made a career change in Feburary](https://twitter.com/Mierdin/status/552177084920250368) to a position that - while still firmly rooted in the realm of network infrastructure - involved nothing but pure software development. I am now totally focused on writing software for network architects and engineers to use in the design and day-to-day operations of a massive enterprise network. Because of this, my goal of going much deeper with my existing Python knowledge has definitely been met. This doesn't mean I am a Python expert, but in just under a year I've managed to take on a brand new project, design a solution, and write that solution from scratch. This experience has taught me a lot, and though I have much to learn, I feel much better about my skills here now that I've actually solved a real business challenge with Python. It's also worth mentioning that I was involved with many other, smaller software projects during the course of the year, and worked with several other brilliant folks with intense attention to detail. This really allowed me to grow in this area.
+
+In 2015, I became a lot more familiar with Git. I did attend some formal training here to fill in the gaps, and I'm also using Git every single day, so I feel much more comfortable with it. I honestly can't remember the last time I had to google something related to working with Git - and my workflow tends to include a lot of interactive rebases as well as some resets from time to time.
+
+I am also pleased to say that I accomplished one of my stretch goals, and began learning Go. Unfortunately I can't yet prove just how much I've learned, since I haven't yet open sourced the project I'm writing in Go, but I feel good about this considering this was all done on my own personal time. I certainly hope to be able to share more about this in 2016.
+
+In summary, I can say with certainty that my decision to immerse myself in software development has done wonders for me in my own professional development. This isn't just about learning more about specific languages, but I feel it has even impacted my writing, and my speaking, and my general attention to detail. I've learned that we as humans love to make absolute statements, and accept something as truth with very little (if any) data to back up these claims. The takeaway for me personally is to invest more time in being much more scientific in my own work, and bringing hard data to any debate.
+
+## Linux
+
+I am probably most disappointed with this 2015 goal. This is not to say that I didn't learn a lot about Linux - I think I learned quite a bit. However, I did not give back as much to the community as I would have liked here. I allowed my fear of putting out duplicate information to prevent me from really writing about what I learned, and it is this fear that I advise new bloggers about all the time. I will do my best to remedy this in 2016 - even if it is simply publishing some of the old posts I still have in drafts.
+
+2015 only made me more sure of the importance of Linux as it pertains to the network engineer. An understanding of Linux fundamentals is an absolutely powerful tool in this context, and as whitebox networking becomes more prevalent, this is only going to increase. I would also like to add Docker to this short list; from where I'm standing, this is going to be one of the key deployment mechanisms for network applications in the next few years.
+
+In summary, I feel I could have done more explicit learning in this area, but because of my recent career changes, I've been able to accomplish this goal indirectly, which honestly is my preference. The value I derive from formal training has declined since I graduated from college, so this kind of practical on-the-job training has worked well for me. I will continue on this path in 2016, since I know there's more to do here, especially since I'm becoming more involved with containers.
+
+
+# Goals for 2016
+
+**Network Automation Book** - As mentioned previously, [I recently announced](https://keepingitclassless.net/2015/12/training-next-generation-network-engineer/) that we have published the first few chapters of a new network automation book. Now, this particular goal has some hard deadlines that are pretty much guaranteed to be met, but nevertheless, finishing this book will occupy a large portion of my time in 2016, so I want to list it here. By the time next year's recap rolls around, I should have quite a story to tell about how the book has managed post-release.
+
+**Open Source** - This goal is a bit loosely defined, but in short I want to be more involved with open source. It's hard to do this now that my official role is a software developer, and employment agreements get in the way of being able to work very freely on open source projects. However, it's not impossible, and I want to pursue this more vigorously in 2016. I am already expecting to open source my main personal project in the first half of the year, so I feel good that this will be something I can reach.
+
+**Deeper into Go and Python** - Since starting learning Go, I decided that I wanted to maintain a two-language skillset for the time being. This is not to say that I'll ignore all other languages - only that I wish to make Go and Python the language that I wish to really make my core languages, and learn them really well. I am well down that path with Python and I feel I understand Go enough at this point to really make a deep dive into it in 2016. At the end of 2016 I want to be able to demonstrate this level of understanding using the last goal - my open source contributions. I would also like to get more involved with distributed applications, since this is a new topic to me. This is a big reason I am getting more involved with Go.
+
+**More Community Output** - Even though I said I accomplished several things in 2015 with respect to community involvement, I know I can do more. My job change really required that I go silent for a bit and dive deep into internal projects. As a result, the itch that I usually get when I haven't blogged in a while seemed to be getting scratched by being able to write code every day. So, I would like to do more than I did in 2015. I think I'm well settled into the job and I should be able to do this in 2016. I definitely would like to at least maintain the current writing pace, but I also just want to do more generally - perhaps start up a newsletter, or just do more on the [Class-C block](http://classcblock.com/).
+
+# Conclusion
+
+2015 was a strange year. The job change demanded much of me and though I don't regret the focus I gave to it, I realize this impacted my ability to do things like work on open source, attend conferences, and write blog posts. However, now that I've got a year under my belt, I think I've set myself up well to do a lot more in 2016.
+
+I hope everyone has a great New Year celebration, and I look forward to what 2016 brings to our industry!

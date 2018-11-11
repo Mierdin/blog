@@ -1,0 +1,82 @@
+class-map type qos match-all class-platinum
+  match cos 5
+class-map type qos match-all class-gold
+  match cos 4
+class-map type qos class-fcoe
+  match cos 3
+class-map type qos match-all class-silver
+  match cos 2
+class-map type qos match-all class-bronze
+  match cos 1
+
+policy-map type qos system-level-qos
+  class class-platinum
+    set qos-group 5
+  class class-gold
+    set qos-group 4
+  class class-silver
+    set qos-group 3
+  class class-bronze
+    set qos-group 2
+  class class-fcoe
+    set qos-group 1
+
+class-map type queuing class-platinum
+  match qos-group 5
+class-map type queuing class-gold
+  match qos-group 4
+class-map type queuing class-silver
+  match qos-group 3
+class-map type queuing class-bronze
+  match qos-group 2
+class-map type queuing class-fcoe
+  match qos-group 1
+
+policy-map type queuing Uplink-out_policy
+  class type queuing class-platinum
+    bandwidth percent 10
+    priority
+  class type queuing class-gold
+    bandwidth percent 20
+  class type queuing class-silver
+    bandwidth percent 20
+  class type queuing class-bronze
+    bandwidth percent 10
+  class type queuing class-fcoe
+    bandwidth percent 30
+  class type queuing class-default
+    bandwidth percent 10
+
+class-map type network-qos class-platinum
+  match qos-group 5
+class-map type network-qos class-gold
+  match qos-group 4
+class-map type network-qos class-silver
+  match qos-group 3
+class-map type network-qos class-bronze
+  match qos-group 2
+class-map type network-qos class-fcoe
+  match qos-group 1
+
+policy-map type network-qos system-level-net-qos
+  class type network-qos class-platinum
+    set cos 5
+  class type network-qos class-gold
+    set cos 4
+  class type network-qos class-fcoe
+    pause no-drop
+    mtu 2158
+    set cos 3
+  class type network-qos class-silver
+    set cos 2
+    mtu 9126
+  class type network-qos class-bronze
+    set cos 1
+  class type network-qos class-default
+    multicast-optimize
+
+system qos
+ service-policy type queuing input fcoe-default-in-policy
+ service-policy type queuing output Uplink-out_policy
+ service-policy type qos input system-level-qos
+ service-policy type network-qos system-level-net-qos

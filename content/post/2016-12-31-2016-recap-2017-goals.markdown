@@ -1,0 +1,43 @@
+---
+layout: post
+title: 2016 Recap and 2017 Goals
+author: Matt Oswalt
+comments: true
+categories: ['Blog']
+date: "2016-12-31"
+slug: 2016-recap-2017-goals
+tags: ['blogging']
+---
+
+
+Yet another recap post to follow up on [last year's](https://keepingitclassless.net/2015/12/2015-recap-2016-goals/). 2015 was a big transition year for me, and last year I wanted to make sure I kept the momentum going.
+
+> I make this post yearly to publicly track my own professional development goals. I find this helps me stay accountable to these goals, and it also allows others to give me a kick in the butt if I'm falling behind.
+
+# 2015 Goal Recap
+
+First, let me recap some of the goals [I set for myself at the beginning of the year](https://keepingitclassless.net/2014/12/2014-recap-2015-goals/), and see how well I did.
+
+**Network Automation Book** - [At this time last year](https://keepingitclassless.net/2015/12/training-next-generation-network-engineer/), I announced that I was working on a network automation book with Scott Lowe and Jason Edelman. This has certainly taken a bit more time than any of us would have liked, but we're very near the end. The three of us have had a very busy year, and there are very few things to do for this release. However, we have pushed several additional chapters to O'Reilly, so you can still read these via Safari.
+
+**Open Source** - Given that [I now work for a company centered around an open source project](https://keepingitclassless.net/2016/10/new-automation-chapter-begins/), I'd say I definitely made a good move towards this goal. I also open sourced [ToDD](https://keepingitclassless.net/2016/03/test-driven-network-automation/) earlier this year, which has been steadily growing and becoming more stable over the last few months.
+
+**Deeper into Go and Python** - I did well in this goal as well, for some of the same reasons as the open source goal - namely, that I work for a company centered around a Python-based open source project, and that I maintain ToDD, which is written in Go. I decided early this year, that in order to continue the momentum from my transition to full-time developer in 2015, I want to focus on Go and Python, so that I can be more flexible than knowing a single language, but also focused enough that I can get depth. is a new topic to me. This is a big reason I am getting more involved with Go.
+
+**More Community Output** - It's no secret that blogging output has slowed for me lately. My motivations for blogging and for being involved with the community in general are just very different from what they used to be. My early career was defined by trying to become as broad as possible - working with all different kinds of technologies. Now, I tend to spend more time focusing on one thing at a time, getting to a very deep level of understanding. Though I wish this wasn't the case, this tends to exhaust the energy I'd normally use to write about what I learned. However, while this part has slowed down, I am still fairly pleased with the other things I've done. I do feel like my involvement with open source (which has become quite substantial) is filling this gap quite a bit. I've also spoke at conferences and am already continuing this in 2017. So to recap, I feel like this goal was accomplished, but perhaps in a different way than it has been in years past.
+
+
+# Goals for 2016
+
+While my focus since joining StackStorm has certainly included network automation use cases, it's also exposed me to other industries and customer use cases. In many ways, these scenarios are much more interesting to me personally than what I've been working on in networking for the past few years. So I am hoping to branch into other technical areas beyond networking in 2017.
+
+I am leaving this intentionally vague, because I don't know the future obviously, but I feel like the time is right for a change. I'll always have ties to networking, of course, and I intend on continuing to advocate for network automation, but I want to do more. Lately I've been getting more interested in the security industry - and I feel like there might be a gap for me to fill with my networking and software skillset. I'll be exploring this in greater detail in 2017.
+
+> I don't usually talk about personal goals for 2017, but I'd also like to pick up a piano and get back into playing jazz (hoping to find a group in Portland once I brush the rust off)
+
+
+# Conclusion
+
+I think the most memorable change for me in 2016 was the affirmation that software development was an area where I wanted to work. I'll always have close ties to the networking industry, but I've realized that there's a lot about the current state of the industry that just doesn't satisfy my current career objectives in the same way that software, and automation have (and hopefully will). 2016 saw a big direction change towards open source, and I have really enjoyed it.
+
+Have a great New Year's celebration, say safe, and see you in 2017!

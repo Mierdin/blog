@@ -73,6 +73,14 @@ disqusShortname = "yourdiscussshortname"
     name = "About"
     weight = 2
     url = "/about/"
+[[menu.main]]
+    name = "Projects"
+    weight = 3
+    url = "/projects/"
+[[menu.main]]
+    name = "Contact me"
+    weight = 5
+    url = "/contact/"
 
 [languages]
     [languages.en]
@@ -97,3 +105,25 @@ disqusShortname = "yourdiscussshortname"
         name = "Blog"
         weight = 2.0
         url = "/post/"
+
+        [[languages.en.menu.main]]
+        name = "Projects"
+        weight = 3
+        url = "/projects/"
+
+        [[languages.en.menu.main]]
+        name = "Contact me"
+        weight = 5
+        url = "/contact/"
+
+[outputs]
+home = ["HTML", "AMP", "RSS"]
+page = ["HTML"]
+
+[outputFormats]
+[outputFormats.HTML]
+mediaType = "text/html"
+
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"

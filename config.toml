@@ -1,4 +1,4 @@
-baseurl = "https://goofy-beaver-ea572f.netlify.com"
+baseurl = "https://keepingitclassless.net"
 title = "Keeping It Classless"
 
 theme = "hugo-coder"
@@ -13,7 +13,7 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "keepingitclassless"
 
 [permalinks]	
   post = "/:year/:month/:title/"

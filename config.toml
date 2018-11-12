@@ -22,7 +22,8 @@ disqusShortname = "keepingitclassless"
     author = "Matt Oswalt"
     description = "Systems, Software Tinkering, Networking, and More"
     keywords = "blog,developer,personal"
-    info = "Developer, recovering network engineer, perpetual tinkerer."
+    info = "Systems, networking, software, and chaos."
+    
     avatarurl = "avatar.jpg"
     footercontent = ""
 
@@ -84,7 +85,7 @@ disqusShortname = "keepingitclassless"
         author = "Matt Oswalt"
         description = "Systems, Software Tinkering, Networking, and More"
         keywords = "blog,developer,personal"
-        info = "Developer, recovering network engineer, perpetual tinkerer."
+        info = "Systems, networking, software, and chaos."
 
         [languages.en.menu] # It is possible to change the menu too.
 

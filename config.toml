@@ -20,7 +20,7 @@ disqusShortname = "keepingitclassless"
 
 [params]
     author = "Matt Oswalt"
-    description = "Systems, Software Tinkering, Networking, and More"
+    description = "Systems, networking, software, and chaos."
     keywords = "blog,developer,personal"
     info = "Systems, networking, software, and chaos."
     
@@ -83,7 +83,7 @@ disqusShortname = "keepingitclassless"
         # You can configure the theme parameter for each language.
         [languages.en.params]
         author = "Matt Oswalt"
-        description = "Systems, Software Tinkering, Networking, and More"
+        description = "Systems, networking, software, and chaos."
         keywords = "blog,developer,personal"
         info = "Systems, networking, software, and chaos."
 

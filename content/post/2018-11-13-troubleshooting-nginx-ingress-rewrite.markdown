@@ -6,7 +6,7 @@ comments: true
 categories: ['Blog']
 featured_image: https://upload.wikimedia.org/wikipedia/en/0/00/Kubernetes_%28container_engine%29.png
 date: "2018-11-13"
-slug: up-running-kubernetes-tungsten-fabric
+slug: troubleshooting-nginx-ingress-rewrites
 tags: ['kubernetes']
 ---
 

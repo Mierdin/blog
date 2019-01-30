@@ -14,6 +14,15 @@
           {{ end }}
         </div>
         <div class="post-meta">
+          {{ if .Params.authors }}
+            {{$n := len .Params.authors | default 0}}
+            {{ if (ge $n 2) }}
+              by
+              {{range  $i, $e := .Params.authors}}
+                <a href="{{.link}}" target="_blank">{{.name}}</a>{{ if (and (ge $n 3) (le $i (add $n -2) ))}}, {{end}}{{if eq (add $i 2) $n}} and {{end}}
+              {{end}}
+            {{end}}
+          {{end}}
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>

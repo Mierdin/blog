@@ -1,0 +1,205 @@
+---
+layout: post
+title: Chaos Engineering for Networking
+author: Matt Oswalt
+comments: true
+categories: ['Blog']
+featured_image: https://keepingitclassless.net/assets/2019/01/professor.jpg
+date: "2019-01-07"
+slug: chaos
+authors:
+- name: Matt Oswalt
+  link: https://twitter.com/mierdin
+- name: Derick Winkworth
+  link: https://twitter.com/cloudtoad
+---
+
+
+Late last year, [The New Stack](https://thenewstack.io/cyber-monday-do-you-know-the-cost-of-your-systems-downtime/) had an interesting piece on the cost of downtime. They highlight all the top retailers with staggering figures, but the reality is that in 2019, downtime is becoming more costly for all of us in very material ways.
+
+You can't say your network is reliable until you have a better handle on possible failure scenarios, and you can't do that by making passive assumptions. As [Greg](https://twitter.com/etherealmind) put recently:
+
+<div style="text-align:center;"><a href="/assets/2019/01/gregtweet.png"><img src="/assets/2019/01/gregtweet.png" width="700" ></a></div>
+
+The common saying in reliability engineering circles is very similar: "hope is not a strategy". We have to **actively** engineer our networks to be more reliable, and that starts by taking on the burden of proving the level of reliability that actually exists.
+
+To be clear, networking vendors absolutely play a significant role in creating quality products.
+This isn't to say that the need for high-quality infrastructure is going away - it's not. This post is about adding high-quality operational practices and vital behaviors on top of that. Both are needed in this new world of Reliability Engineering.
+
+So how do we get there? First, let's explore the "Stages of Network Reliability":
+
+## Stage #1 - Wild West
+
+This is going to sound very familiar to most of us. In this stage, everything is reactive, probably poorly documented (if at all), and morale is fairly low. The reason for this low morale is because you feel like you have no control over the reliability of your network. You do what you can to put out the fires, but largely you're just waiting for the next page or ticket.
+
+The lessons learned here are the hard ones. You learn through trial by fire the cost of choosing the nerd knob when a simpler solution would do. You learn how to build networks in a modular fashion so that you can limit the impact of an outage. You put basic automation into place that allows you to offload some of the more common tasks to lower-tier administrators.
+
+I know by experience most folks operate here. It's tough to get your head above water long enough to even consider moving forward. I put this section in here to make it clear, there are good lessons to be learned here.
+
+The name of the game here is moving from reactive to proactive. Don't forget the lessons you've learned here. Learn to recognize them out, and call them out specifically.
+
+## Stage #2 - CI/CD
+
+For some that have been able to move past the firefighting, or perhaps have joined a startup that gets the rare opportunity to build their network operations from scratch, the next step is to begin to codify those lessons learned.
+
+We know what it looks like when a network configuration doesn't meet a certain industry standard, like STIG, or PCI-DSS. We know there are tools out there that can perform these kinds of checks for us.
+
+We know the dark corners of the network and the pieces of it that like to rear their ugly heads. We know we can write tests to assert that the configuration that brought that issue up last time doesn't happen again.
+
+This stage is about building a pipeline through which changes the network get filtered, and only after passing these basic tests, are they let through. This takes direct inspiration from the world of Continuous Integration - a methodology that software developers have used for some time to move quickly with new features, while maintaining a certain amount of confidence that they aren't moving backwards.
+
+They do this by committing their learned knowledge about their software's expected behavior into an executable format. Whenever they propose a change to their code, it must pass all of these tests. In this way, we must learn to commit our tribal knowledge that's already in our heads, in an executable format so that we as humans are relied upon less to perform those checks in the heat of a 2AM maintenance window.
+
+We moved from reactive to proactive in the last stage, and we moved from proactive to codified in this stage.
+
+But then - a twist! How do you know you have all the tests you need?
+
+## Stage #3 - Chaos Engineering
+
+And herein lies the rub. A test suite is only as good as the human beings writing it. This means that the only tests we *can* write are the tests we *know* to write. This, in itself, is a form of reactivity. While we're being proactive in writing the tests and putting them *before* the change process, the act of introducing new tests is itself based on learned experiences from the past.
+
+To better illustrate this, an analogy is needed. We like to call this "The Error Surface".
+
+<div style="text-align:center;"><a href="/assets/2019/01/error_surface.png"><img src="/assets/2019/01/error_surface.png" width="700" ></a></div>
+
+A good rule of thumb is that you *can and should* write tests for a small percentage of the world of possible failure scenarios. This is true in software, in the cloud, in networking, everywhere. There is a significant chunk of things our imagination is able to come up with untuitively, and we can include these things in our test suite.
+
+However, as mentioned, the vast majority of our tests are written as the result of experiencing the aftermath of failure. A post-mortem is conducted. The root cause is found. A test is constructed to ensure that the parameters that led to the failure are not repeated. This process is continually repeated. This discovery process is entirely reactive, and represents the vast majority of failure scenarios that exist - ways things could go south you didn't even consider until they happened.
+
+Chaos Engineering takes the proactivity we established in the CI/CD stage, but instead of simply being proactive about **writing** the tests, we're now being proactive about learning about possible failure scenarios.
+
+And this is where things get a bit scary. We accomplish this by **introducing failure on purpose**.
+
+# The Case for Chaos Engineering in Networking
+
+<div style="text-align:center;"><a href="/assets/2019/01/professor.png"><img src="/assets/2019/01/professor.png" width="700" ></a></div>
+
+We are under no illusions here: this is going to be a tough sell. Especially in networking, considering that the network sits as critical infrastructure underneath nearly every other part of IT, so the idea of intentionally breaking things here is controversial to say the very least. However, we'd like to start the conversation with two simple questions:
+
+> Do you agree failure is inevitable?
+
+This shouldn't be a very controversial question. Other than folks like Matt that like to pour a nice helping of sarcasm onto his morning Wheaties, the answer should be a resounding "Yes". It's the world we live in. Given this is true, a follow-up question, also fairly uncontroversial, is begging to be asked:
+
+> Would you prefer that this failure happens on your terms, or on the universe's terms?
+
+Again, I think most would choose the obvious answer; if failure is inevitable, we'd like to at least have *some* modicum of control over how and when that failure takes place.
+
+This is the basic principle behind Chaos Engineering. As many of you correctly suspect, the devil is in the details. However, this is the driving force behind Chaos Engineering, and how it fits into a Reliability Engineering culture.
+
+What kind of failure on the table in networking?
+
+This is why we need to be careful over-rotating on the "test in prod" meme. There's a whole lot of problems out there that we can only find if we do this! To be clear, testing is good. Don't skip that. Do it. Just be aware that it's not enough on its own. You have to set up a process and culture of chaos engineering in order to capture more of the unknowns and turn them into knowns.
+
+
+- Injecting artificial throughput or latency limitations, typically at the host (gremlin)
+- However, apps also rely on the physical/virtua network infrastructure, so it's not enough to chaos test the networking stack on the end-host. Breaking physical or virtual network elements that **should** be redundant.
+
+gues what, there's a whole bunch of unknown problems out there. To defend this, we would like to make two points:
+
+- Failure is inevitable.
+- Given the first point, it is preferred that this failure happens on our own terms, rather than out of our control.
+
+Do we agree on this? It seems an uncontroversial stance to take, but it's important that we establish this as an immutable truth
+
+
+(and here's how to bring it home). Hope is not a strategy. We make assumptions all the time about resiliency yet we're afraid to challenge these assumptions just in case we're wrong. How sure are we about our resiliency in the first place if we won't even challenge them?
+
+What's needed is viable way to make this possible without sacrificing our availability objectives in the short term. This is where Chaos Engineering comes in. Big E. This isn't just unbridled chaos for the sake of being chaotic, Chaos Engineering, or Chaos Experiments, are all about slowly expanding the scope of a chaos test until you contradict an assumption about your own reliability. It's like minesweeper. You want something out in front of you, tripping the mines up before your foot does.
+
+Now this doesn't mean we can make ALL failure happen on our terms. Surely there will always be some failure mode we couldn't predict or uncover in an experiment - but 
+
+Do some exception handling here.
+"I run a bank so I shouldn't have chaos engineering", etc.
+
+Sort of a "next step" beyond CI/CD. CI/CD and automated testing is great, but it only addresses known issues, many of which we don't learn about until they happen in production. So we need a way to drive more awareness of the unknowns.
+
+<div style="text-align:center;"><iframe src="https://player.vimeo.com/video/309465747" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/309465747">Short Take - Chaos Engineering</a> from <a href="https://vimeo.com/networkcollective">Network Collective</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+
+
+# What's needed for Chaos in Networking?
+
+Hopefully I've made the case that there's a place for Chaos Engineering in networking. Now, let's talk
+about 
+
+## Automated chaos injection and rollback
+
+## Network Observability
+
+how to know when an experiment has uncovered a flaw, from the perspective of the applications.
+What is your SLO? This is why SLO is such an important aspect to NRE
+
+## Proper Network Design
+
+## Infrastructure as Code and CI/CD
+
+So you can take the lessons learned in chaos experiments and ensure they're not repeated. Converting unknowns into knowns
+
+## Scoping Tools
+
+
+
+
+# Conclusion
+
+I want to be clear, this is very early days. We're only **just now** starting to see companies like [Gremlin](https://www.gremlin.com/) start to bring Chaos Engineering to the market in an easily consumable way. As is traditional, approaches like Chaos Engineering will take some time to get into the larger enterprise market, especially networking. This is how things have always been. So there's no denying this post is a bit forward-looking.
+
+However, I think this is important to move forward. There's so much we can accomplish beyond simple configuration management when it comes to adopting automation skills, and I think we should set our sights as high as possible. Even if you don't adopt Chaos Engineering in the next 5 years, the time is now to start putting the pieces into place so that when you need to make the leap, you'll be ready.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Random
+
+We haven't seen a ton of adoption of automation in Enterprise, so it may seem premature to be talking about chaos engineering. I do expect that chaos engineering will take a significant amount of time to get traction in networking, especially considering it's only now starting to leave the big tech giants in the application space.
+
+What this outage - and many other like it - tells us, is that the network isn't just crucial for connecting users to the applications. If it was, these outages would last no longer than it takes for the network to reconverge. The ripple effect is felt far and wide within the application stack. It tells us that applications are being dis-aggregated and now place more emphasis than ever before on the network (rephrase).
+
+It's no longer sufficient to keep a network-only view of reliability.
+
+Chaos Engineering isn't just for the hyperscalers anymore, and it's not just for applications or compute. Every single part of the IT stack suffers from this error surface problem, and can benefit from running Chaos Experiments.
+
+
+
+
+
+
+
+# Derick Convo on Dec 3
+
+BGP FlowSpec
+
+Configuration changes as a transaction - both for troubleshooting and chaos. Be able to roll back the transaction.
+
+ToDD for SLO validation.
+
+Both chaos and troubleshooting need network observability
+
+
+<div style="text-align:center;"><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The value of chaos engineering in a nutshell. You make hundreds of assumptions about your infrastructure every day. What&#39;s the likelihood you&#39;re wrong about at least one of them? <a href="https://t.co/LKld1pleOb">https://t.co/LKld1pleOb</a></p>&mdash; Matt Oswalt (@Mierdin) <a href="https://twitter.com/Mierdin/status/1070782098754068480?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+

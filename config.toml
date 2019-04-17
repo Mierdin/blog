@@ -40,6 +40,10 @@ disqusShortname = "keepingitclassless"
     # Custom CSS
     custom_css = []
 
+    images = ["avatar.jpg"]
+    title = "Keeping It Classless"
+
+
 [[params.social]]
     name = "Github"
     icon = "fab fa-github"
@@ -110,3 +114,6 @@ mediaType = "text/html"
 [outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "feed"
+
+[taxonomies]
+  series = "series"

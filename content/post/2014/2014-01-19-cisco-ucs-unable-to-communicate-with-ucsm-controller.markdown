@@ -23,7 +23,7 @@ The error message - "unable to communicate with UCSM controller" worried me, and
 
 First of all, I'd like to point out that this info is also available in the UCSM GUI. I took a look there and noticed that it was reporting HA was fully converged and ready:
 
-[![FI_HA](assets/2014/01/FI_HA.png)](assets/2014/01/FI_HA.png)
+[![FI_HA](/assets/2014/01/FI_HA.png)](/assets/2014/01/FI_HA.png)
 
 As we'll see shortly, this can actually be a preferred way of verifying the HA cluster state. For now, suffice it to say that this was a valid indicator of the state of HA, and the "unable to communicate with UCSM controller" error I was seeing was purely cosmetic.
 

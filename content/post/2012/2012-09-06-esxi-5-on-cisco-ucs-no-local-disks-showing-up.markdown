@@ -15,7 +15,7 @@ I am installing ESXi 5 on a Cisco UCS B440 M1 blade, and ran into some local dis
 
 The issue was that when I got to the disk selection screen on the ESXi installation, I did not see any disks:
 
-[![](assets/2012/09/1.png)](assets/2012/09/1.png)
+[![](/assets/2012/09/1.png)](/assets/2012/09/1.png)
 
 I had a gut feeling that the RAID controller was configured incorrectly, which turned out to be true. There are two ways to fix this.
 
@@ -27,7 +27,7 @@ Check out the documentation regarding local disk policies on Cisco's site:
 
 I have rarely set these to anything but "Any Configuration", since the vast majority of my ESXi installs are done via Autodeploy, or Boot from SAN. Regardless, the easy way to fix this issue is to simply create and apply a local disk policy that matches what you want.
 
-[![](assets/2012/09/6.png)](assets/2012/09/6.png)
+[![](/assets/2012/09/6.png)](/assets/2012/09/6.png)
 
 Long story short, "Any Configuration" will simply pass through the current configuration on the disks, which for me was nothing. Therefore, no storage was presented to the installer.
 
@@ -35,7 +35,7 @@ Long story short, "Any Configuration" will simply pass through the current confi
 
 When prompted during startup, enter the RAID Web BIOS by pressing 'C', or on some hardware types, Ctrl + H. When the configuration screen loads, go to "Configuration Wizard".
 
-[![](assets/2012/09/2.png)](assets/2012/09/2.png)
+[![](/assets/2012/09/2.png)](/assets/2012/09/2.png)
 
 Selecting New Configuration will erase all data on the drives and re-initialize them for the new RAID configuration we will apply in the next steps.
 
@@ -43,7 +43,7 @@ Selecting New Configuration will erase all data on the drives and re-initialize 
 
 The next screen asks what kind of configuration you need. I don't mind letting the wizard set up proper redundancy, so I selected "Automatic Configuration" and specified to be as redundant as possible. That resulted in this configuration:
 
-[![](assets/2012/09/3.png)](assets/2012/09/3.png)
+[![](/assets/2012/09/3.png)](/assets/2012/09/3.png)
 
 Where before there were no virtual drives, there is now one. Basic mirrored drive configuration.
 
@@ -51,11 +51,11 @@ Had I specified that these drives should just be initialized, and not placed int
 
 Exiting out of the WebBIOS now will prompt a reboot, after which you will see this upon initialization of the RAID controller:
 
-![](assets/2012/09/4.png)
+![](/assets/2012/09/4.png)
 
 We now see a virtual drive upon startup, and when ESXi loads up the next time....
 
-[![](assets/2012/09/5.png)](assets/2012/09/5.png)
+[![](/assets/2012/09/5.png)](/assets/2012/09/5.png)
 
 Strange that this was the default configuration for these blades, but regardless, a simple reconfiguration for proper redundancy and disk initialization did the trick.
 

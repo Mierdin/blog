@@ -31,7 +31,7 @@ Thinking about all of this, I had an epiphany:
 
 As an Ethernet switch, you learn a MAC address on a port by looking at the source address on received frames. You know that traffic destined for that address needs to go out that port, but that's it. You don't have a holistic view of the network. An Ethernet switch's perspective is completely locally significant.
 
-[![diagram1](assets/2013/06/diagram11.png)](assets/2013/06/diagram11.png)
+[![diagram1](/assets/2013/06/diagram11.png)](/assets/2013/06/diagram11.png)
 
 This egress link may be the best way out, it may not be. I'll tell you one thing - if STP decides that link needs to be blocked, it won't matter anyways.
 
@@ -41,7 +41,7 @@ So...we need to find a way to move frames through an Ethernet by using similar f
 
 TRILL takes the best parts of link-state routing protocols (neighbor relationships, full knowledge of topology for better forwarding decisions) and applies it to Layer 2. Now, we have bridges that have holistic views of the network, and are able to intelligently deliver frames along every path. We no longer need to kill a link to deliver a loop-free topology.
 
-[![diagram2](assets/2013/06/diagram21.png)](assets/2013/06/diagram21.png)
+[![diagram2](/assets/2013/06/diagram21.png)](/assets/2013/06/diagram21.png)
 
 Fun Fact: IS-IS was chosen over OSPF for a few reasons, but a notable one is the fact that OSPF is pretty much purpose built for IP/IPv6. IS-IS works directly on top of Layer 2 so there's no need to mess with IP addresses in the configuration of TRILL.
 

@@ -29,7 +29,7 @@ On the second try, I did a bunch of things differently, some of them might not b
 
 I also opted to install the components separately, rather than use the menu item labeled "Simple Install". I had issues with this last time, and if you select this option, it will tell you that you can install the components separately for additional granularity, as long as you go in the order it shows below:
 
-[![screen1](assets/2013/01/screen1.png)](assets/2013/01/screen1.png)
+[![screen1](/assets/2013/01/screen1.png)](/assets/2013/01/screen1.png)
 
 Be sure to pay attention when the vCenter installation asks who the vCenter Administrator is. You won't be able to log in to the local machine account by default, meaning that AD authentication is mandatory, because of SSO. So....be sure to pick the right user, or if you desire, an AD group.
 
@@ -43,13 +43,13 @@ I followed the article at the top of this post for the most part, but had a few 
 
 First, I wanted to make sure that the server was configured to boot from the network - I set up this order in the CIMC:
 
-[![screen7](assets/2013/01/screen7.png)](assets/2013/01/screen7.png)
+[![screen7](/assets/2013/01/screen7.png)](/assets/2013/01/screen7.png)
 
 You can use Solarwinds TFTP if you want, but you'd be better off getting introduced to [tftp32 ](http://tftpd32.jounin.net/)(or tftp64) - it's IPv6 capable (always a must with me) and it's just so very lightweight - something that is NEVER heard in the same sentence as Solarwinds.
 
 I chose to simply set up DHCP on the Windows domain controller I had set up for ease of use - adding DHCP options in Windows DHCP is very straightforward. All I had to do was add these two options - change the server IP address to match your Auto Deploy server and ensure that the string for option 67 matches the string found in the Auto Deploy plugin in the vSphere Client.
 
-[![screen2](assets/2013/01/screen2.png)](assets/2013/01/screen2.png)
+[![screen2](/assets/2013/01/screen2.png)](/assets/2013/01/screen2.png)
 
 The rest is PowerCLI magic, so ensure you have that installed for the rest of the steps.
 
@@ -63,19 +63,19 @@ Since I wasn't using his software depot, I needed to find the available ESXi ima
 
 and you'll notice that there's an ESXi image called "ESXi-5.1.0-799733-no-tools" that I wanted to use for this.
 
-[![screen3](assets/2013/01/screen3.png)](assets/2013/01/screen3.png)
+[![screen3](/assets/2013/01/screen3.png)](/assets/2013/01/screen3.png)
 
 Next, you need to create a deploy rule that basically dictates the type of machine that's able to boot this image:
 
-[![screen4](assets/2013/01/screen4.png)](assets/2013/01/screen4.png)
+[![screen4](/assets/2013/01/screen4.png)](/assets/2013/01/screen4.png)
 
 Be careful not to just copy what either Duncan or I have written for the "Pattern" attribute - this is specific for your server. I made this mistake for the first go-around, but fortunately, Auto Deploy should display some kind of message showing you what you need to do.
 
-[![screen5](assets/2013/01/screen5.png)](assets/2013/01/screen5.png)
+[![screen5](/assets/2013/01/screen5.png)](/assets/2013/01/screen5.png)
 
 I matched the string as shown in the example above, and everything worked out great! I was greeted upon reboot of the UCS server with the ESXi DCUI:
 
-[![screen6](assets/2013/01/screen6.png)](assets/2013/01/screen6.png)
+[![screen6](/assets/2013/01/screen6.png)](/assets/2013/01/screen6.png)
 
 (By the way, IPv6 is enabled by default, and can be administered via the link local address shown above. I will be testing ESXi's ability to use IPv6 autoconfiguration sometime later today. Cool!)
 

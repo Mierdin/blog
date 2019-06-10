@@ -16,7 +16,7 @@ For the last 6 months I've hosted ToDD on [my personal Github profile](https://g
 
 However, as of tonight, ToDD's new permanent location is [https://github.com/toddproject/todd](https://github.com/toddproject/todd). Read on for some reasons for this.
 
-<div style="text-align:center;"><a href="assets/2016/09/github.png"><img src="assets/2016/09/github.png" width="400" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/09/github.png"><img src="/assets/2016/09/github.png" width="400" ></a></div>
 
 # Native Testlets
 
@@ -35,7 +35,7 @@ Currently only the "ping" testlet has been implemented in Go - but I hope to rep
 
 In addition to moving to a new location, the documentation for ToDD has been massively improved and simplified:
 
-<div style="text-align:center;"><a href="assets/2016/09/newandold.png"><img src="assets/2016/09/newandold.png" width="900" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/09/newandold.png"><img src="/assets/2016/09/newandold.png" width="900" ></a></div>
 
 As you can see, the order now actually makes sense. Please check out [todd.readthedocs.io](https://todd.readthedocs.io/en/latest/) and let me know what you think!
 

@@ -29,7 +29,7 @@ I believe the MOST valuable result of automation is the ability to accurately p
 
 It's usually the simple stuff, things that don't seem to provide much value on the surface - that end up mattering most. Take for example the EVER common situation where switchport layouts are absolutely random. I've gone into many situations where - when I inquire as to where I should plug something in, the customer responds with "anywhere that's free", or something like that.
 
-[![cables](assets/2014/12/2012-03-16_11-20-08_226.jpg)](assets/2014/12/2012-03-16_11-20-08_226.jpg)
+[![cables](/assets/2014/12/2012-03-16_11-20-08_226.jpg)](/assets/2014/12/2012-03-16_11-20-08_226.jpg)
 
 Eventually we get things working, so what's the harm? Well aside from causing the chaotic mess picture above, not having some kind of standard operating procedure for these kind of things can lead to impaired troubleshooting ability. For instance, if you standardize on using the first 4 ports of every access switch for the uplinks to the next layer up, then you always know where to look when that switch is having issues. You also know how to template-build these switch configurations.
 

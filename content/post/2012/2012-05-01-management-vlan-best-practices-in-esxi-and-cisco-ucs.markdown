@@ -13,7 +13,7 @@ tags: ['cisco']
 
 If you've set up an ESXi host, you've likely seen this screen:
 
-[![](assets/2012/05/screen1.png)](assets/2012/05/screen1.png)
+[![](/assets/2012/05/screen1.png)](/assets/2012/05/screen1.png)
 
 This allows you to configure which VLAN is used for management. But what does this really **do?** Time after time I run into very smart engineers that primarily work on virtualization and not as much on the physical networking side - and they miss a few of the networking fundamentals that those of us that were brought up in ROUTE/SWITCH know and love.
 
@@ -31,7 +31,7 @@ This interface is absolutely a trunk. If you run "show int trunk" it will show u
 
 This is an important concept to understand, even when configuring something as simple as ESXi management. Again, lets look at the VLAN configuration page for ESXi:
 
-[![](assets/2012/05/screen1.png)](assets/2012/05/screen1.png)
+[![](/assets/2012/05/screen1.png)](/assets/2012/05/screen1.png)
 
 Many times, a virtualization engineer will hear from their ROUTE/SWITCH counterpart that "the ESXi management VLAN is 2148" - and this language immediately becomes scripture. Without even thinking of what this configuration actually produces on the "wire", they set the management VLAN here because that's what the management VLAN is.
 
@@ -39,7 +39,7 @@ Setting this option in ESXi (and it is optional - for a reason) will do one very
 
 Is this best practice? I'm doing this in a UCS blade but the same applies for physical servers that are plugged in to a physical switchport. In my case, the UCS vNICs are the "switchports" for our host, and the VLAN configuration is changed here.
 
-[![center](assets/2012/05/screen5n.png)](assets/2012/05/screen5n.png)
+[![center](/assets/2012/05/screen5n.png)](/assets/2012/05/screen5n.png)
 
 When setting the VLAN tag as shown previously, the above config will not work. Doing this essentially places the vNIC into "access mode". Remember that we are sending tagged frames from the ESXi host now, and access ports by nature drop all tagged frames. Thus, we will not be able to connect to our host. In order to make this work, you can do one of three things.
 
@@ -47,15 +47,15 @@ When setting the VLAN tag as shown previously, the above config will not work. D
 
 The first option is to select another VLAN. It can be a dummy VLAN, or another management VLAN you wish to expose to that interface on the ESXi host. It's not uncommon to use the main vSwitch for other network connectivity purposes besides management, so this is a viable option.
 
-[![](assets/2012/05/screen3.png)](assets/2012/05/screen3.png)
+[![](/assets/2012/05/screen3.png)](/assets/2012/05/screen3.png)
 
 The second option is to unset the VLAN ID in ESXi.
 
-[![](assets/2012/05/screen2.png)](assets/2012/05/screen2.png)Doing this will require you to configure the UCS vNICs as an access port. The configuration shown previously where only one VLAN is selected will accomplish this. This is my personal preference, since it doesn't require any VLAN tagging, and it's pretty simple to implement. I typically have vNICs allocated to management and only management, so I don't mind restricting this to a single VLAN. Understandably, this becomes more difficult with physical NICs that are limited in quantity, so the first option may be preferred there.
+[![](/assets/2012/05/screen2.png)](/assets/2012/05/screen2.png)Doing this will require you to configure the UCS vNICs as an access port. The configuration shown previously where only one VLAN is selected will accomplish this. This is my personal preference, since it doesn't require any VLAN tagging, and it's pretty simple to implement. I typically have vNICs allocated to management and only management, so I don't mind restricting this to a single VLAN. Understandably, this becomes more difficult with physical NICs that are limited in quantity, so the first option may be preferred there.
 
 The third option is something I stumbled across when exploring the other options. You can keep the VLAN "not set" in ESXi but configure the UCS vNIC as a trunk that only allows that VLAN, similar to the Cisco switchport config shown earlier.
 
-[![](assets/2012/05/screen4.png)](assets/2012/05/screen4.png)
+[![](/assets/2012/05/screen4.png)](/assets/2012/05/screen4.png)
 
 Remember that the native VLAN is where untagged frames that enter a trunk are placed. This will take the frames that enter from the ESXi host - untagged - and place them into VLAN 2148 as intended.
 

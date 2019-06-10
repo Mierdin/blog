@@ -21,7 +21,7 @@ All security policies can be defined at either the vSwitch itself, or the subord
 
 This mode is essentially the same as setting up a port mirroring session on a physical switch. All traffic that occurs on the switch is copied to the port groups that are configured in "promiscuous mode", regardless of where the traffic was sourced or destined.
 
-[![screen1](assets/2013/02/screen1.png)](assets/2013/02/screen1.png)
+[![screen1](/assets/2013/02/screen1.png)](/assets/2013/02/screen1.png)
 
 This is a great way to set up a virtual IDS, as long as the systems being monitored are on the same vSwitch as the IDS, since this policy does not span multiple vSwitches.
 
@@ -35,9 +35,9 @@ It is also a configuration you'll need to make if you're running [nested ESXi](h
 
 This is a pretty easy one - when a typical machine (physical or virtual) boots up, it looks for the burned-in address of it's NIC(s), and assumes them. While it's true that nearly every operating system is capable of sending traffic using any addressing information it wants, it's a decent practice to respect the burned-in MAC address of the hardware being presented. In a vSphere environment, the hardware may be virtualized, but it's still presented to the OS the same way, with a "burned-in" MAC address.
 
-[![screen2](assets/2013/02/screen2.png)](assets/2013/02/screen2.png)
+[![screen2](/assets/2013/02/screen2.png)](/assets/2013/02/screen2.png)
 
-[![screen3](assets/2013/02/screen3.png)](assets/2013/02/screen3.png)
+[![screen3](/assets/2013/02/screen3.png)](/assets/2013/02/screen3.png)
 
 This policy - when set to "Reject", means that the underlying OS will be restricted from sending traffic using a source address other than the one that vSphere suggested to it. Setting this to "Accept" disables this restriction.
 

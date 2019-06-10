@@ -21,6 +21,6 @@ I'm pleased to revive the KIC LABS series with a video on Cisco MQC-style QoS on
 
 <div style="text-align: center"><iframe width="560" height="315" src="http://www.youtube.com/embed/eSdybCEIs94" frameborder="0" allowfullscreen></iframe></div>
 
-Download the configuration used in this video [here](assets/2013/03/Sample_QoS_Configuration.txt).
+Download the configuration used in this video [here](/assets/2013/03/Sample_QoS_Configuration.txt).
 
 This is a rather informal video but I hope you enjoy it! I had to re-record the audio after the video was captured because the environment I was in for the video was very noisy. I encourage you to leave your comments below and let me know how I can improve future videos!

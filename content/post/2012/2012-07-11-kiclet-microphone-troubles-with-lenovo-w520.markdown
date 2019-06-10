@@ -15,7 +15,7 @@ I came across this the other day and wanted to share. For some reason, Windows b
 
 This caused my microphone to essentially be unusable - I was in several webex meetings and each time everyone said I was completely garbled and not even close to being able to understand me. After a little poking around, I found this:
 
-[![](assets/2012/07/screen.png)](assets/2012/07/screen.png)
+[![](/assets/2012/07/screen.png)](/assets/2012/07/screen.png)
 
 As shown above, go to  audio settings and then to the properties of your microphone, then disable the box that says "Enable audio enhancements".
 

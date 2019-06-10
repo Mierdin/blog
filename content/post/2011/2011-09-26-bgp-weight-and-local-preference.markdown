@@ -17,7 +17,7 @@ I was recently contemplating several of these and it occurred to me that two of 
 
 I'll be referring to this diagram throughout the article, use it for reference. We'll be trying to use weight and local preference to modify the default routing behavior from R1 to a remote network not pictured that's available through both R2 or R3.
 
-[![](assets/2011/09/diagram6.png)](assets/2011/09/diagram6.png)
+[![](/assets/2011/09/diagram6.png)](/assets/2011/09/diagram6.png)
 
 ## Weight
 

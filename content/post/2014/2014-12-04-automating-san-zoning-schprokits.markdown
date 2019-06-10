@@ -19,7 +19,7 @@ I recorded an in-depth explanation of the process (~42 mins), and [it can be fou
 
 I have UCS set up in a fairly straightforward way, there are 9 servers, each with two virtual HBAs (one per fabric).
 
-[![screen1a](assets/2014/12/screen1a.png)](assets/2014/12/screen1a.png)
+[![screen1a](/assets/2014/12/screen1a.png)](/assets/2014/12/screen1a.png)
 
 So when we retrieve the WWPNs from UCS, we expect to see a total of 18 (2 vHBAs * 9 service profiles).
 
@@ -94,7 +94,7 @@ If we run this workbook now:
 
 we see some pretty cool information - a dump of the dictionary provided to us by the custom action I created to pull WWPNs from UCS:
 
-[![screen2](assets/2014/12/screen2.png)](assets/2014/12/screen2.png)
+[![screen2](/assets/2014/12/screen2.png)](/assets/2014/12/screen2.png)
 
 ## Template Build
 
@@ -247,7 +247,7 @@ Finally, we need to add a second activity to our workbook to generate a configur
 
 If we run this workbook now, we get a few new directories, named after each of our fibre channel switches. Our rendered configurations can be found there.
 
-[![screen3](assets/2014/12/screen3.png)](assets/2014/12/screen3.png)
+[![screen3](/assets/2014/12/screen3.png)](/assets/2014/12/screen3.png)
 
 An administrator can easily see which which each configuration needs to go to, and apply as needed. Of course, for those that properly test their workflows, this could be safely automated as well (more on that later).
 
@@ -293,7 +293,7 @@ With this, I can run the exact same workbook, but with a "group" argument, to cr
 
 And as you can see, this very quickly creates new switch configurations, with minimal effort.
 
-[![screen4](assets/2014/12/screen4.png)](assets/2014/12/screen4.png)
+[![screen4](/assets/2014/12/screen4.png)](/assets/2014/12/screen4.png)
 
 We didn't change our workbook, or our template. We simply modified our inventory to direct Schprokits to pull the right information from the right source for the various SAN devices out there. What normally takes several hours or even days, took seconds. And it's guaranteed accurate.
 

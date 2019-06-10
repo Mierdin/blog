@@ -62,7 +62,7 @@ So I'd like to talk about some designs I've been hashing about in my mind for th
 
 Let's say you have a pair of switches at your core, and the latest purchase allowed you to bring TRILL out to your ToR switches, to which your hypervisors connect.
 
-[![diagram4](assets/2013/09/diagram4.png)](assets/2013/09/diagram4.png)
+[![diagram4](/assets/2013/09/diagram4.png)](/assets/2013/09/diagram4.png)
 
 TRILL is a technology that allows us to eliminate spanning tree by applying shortest-path logic to forwarding decisions at Layer 2. This means that can can still enjoy the benefits of a topology that is forwarding on all links but still provide layer 2 connectivity between hypervisors.
 
@@ -74,7 +74,7 @@ So maybe you don't want to buy into the whole TRILL thing. There are many data c
 
 In this case, a proper design might include the following:
 
-[![diagram5](assets/2013/09/diagram5.png)](assets/2013/09/diagram5.png)
+[![diagram5](/assets/2013/09/diagram5.png)](/assets/2013/09/diagram5.png)
 
 Here, we've established a multi-chassis link aggregation between each access layer switch (A layer 2 VLAN-aware switch that can do LACP will do just fine). The core switches are connected through some large bandwidth, redundant links, and together establish a sort of "virtual chassis" which makes all this magic work.
 
@@ -90,7 +90,7 @@ And finally we arrive at the third (and in my opinion best) design when it comes
 
 Rather than continue to cope with the complexities of the previous designs, we now have the option of getting rid of VLANs entirely. This results in a data center where all links are not participating in any VLAN, or any spanning-tree domain, but rather are pure routed links.
 
-[![diagram6](assets/2013/09/diagram6.png)](assets/2013/09/diagram6.png)
+[![diagram6](/assets/2013/09/diagram6.png)](/assets/2013/09/diagram6.png)
 
 The benefits here should be clear - we now have a network that's full-mesh redundant, using protocols that have been used and well-understood for years, such as OSPF for sharing network topology information, and good ol' IP for transport.
 
@@ -100,7 +100,7 @@ Now - this isn't something that anyone is going to simply jump into, but some as
 
 Now, you may be asking about the bottom part of all of these diagrams - the single cable to each server. If you're a big hyper-scale out web shop where you've got a million servers that are all fully utilized (probably baremetal workloads too) then you probably won't care about these next sections, because if you lose a link, or even a single switch, you probably don't care. However, in the traditional medium to large enterprise, you're going to need to dual-home a server, probably to two switches.
 
-[![diagram7](assets/2013/09/diagram7.png)](assets/2013/09/diagram7.png)
+[![diagram7](/assets/2013/09/diagram7.png)](/assets/2013/09/diagram7.png)
 
 Right now this the best option. Your best bet is an MLAG technology, or if you don't care about switch redundancy, then a port-channel to the same switch. In either case, LACP should be used to detect a quick failure.
 
@@ -112,7 +112,7 @@ Let's explore one other design that's not possible today but would be **REALLY 
 
 What if - instead of assigning an IP address to a virtual interface within the hypervisor, we could assign an IP address to each physical interface on the host?
 
-[![diagram8](assets/2013/09/diagram8.png)](assets/2013/09/diagram8.png)
+[![diagram8](/assets/2013/09/diagram8.png)](/assets/2013/09/diagram8.png)
 
 This is the true elimination of all Layer 2 constructs within the data center network. No MLAG, no VLANs, nothing. Just routed ports. So why can't we do this (yet)?
 
@@ -135,4 +135,4 @@ At the end of the day, overlay networking solves a large chunk of our problems, 
 
 Martin Casado himself [says it very well](http://www.networkcomputing.com/data-networking-management/vmwares-martin-casado-energy-and-chaos/240160544) - we're finally moving out of the slide decks and into implementation. Powerpoint debates can finally end - now let's go make the networks of tomorrow.
 
-[![ImplementAllTheOverlays](assets/2012/12/552x414px-LL-2378784a_x-all-the-things.jpeg)](assets/2012/12/552x414px-LL-2378784a_x-all-the-things.jpeg)
+[![ImplementAllTheOverlays](/assets/2012/12/552x414px-LL-2378784a_x-all-the-things.jpeg)](/assets/2012/12/552x414px-LL-2378784a_x-all-the-things.jpeg)

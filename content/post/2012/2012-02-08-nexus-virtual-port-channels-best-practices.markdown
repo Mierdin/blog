@@ -21,7 +21,7 @@ What if, instead of one Catalyst 6500, you had two? [My previous post on VSS cov
 
 NX-OS brings a new feature to the MEC family, called Virtual Port Channels. However, there are a few key differences. VPC doesn't form a "virtual switch" like the 6500 does, in that it keeps the control plane independent on each switch. Port channels can still be established between an  end device and both Nexus switches, because vPC works together with LACP to ensure that the end device has a consistent path through the network. The VPC utilizes a highly available link between them, known as a peer-link. Typically this should also be a port channel for increased redundancy.
 
-[![](assets/2012/01/5k-vpc2.jpg)](assets/2012/01/5k-vpc2.jpg)
+[![](/assets/2012/01/5k-vpc2.jpg)](/assets/2012/01/5k-vpc2.jpg)
 
 The peer link is typically multiple port-channeled links between the switches that is used to synchronize state between the two switches. It is also used for forwarding multicast and broadcast traffic. It will also forward unicast traffic in the event of a failure. Because of this, it should be configured as a trunk, passing all VLANs you wish to pass in that scenario. It' typically high-bandwidth and highly available, so that it can be used to forward traffic reliably in a failover condition - thus, it's commonly seen as a port channel between the switches. It's a good idea to compose this port channel of at least 2x 10G interfaces on separate linecards. It's also important to understand how your spanning tree design will impact this link in a failure. The peer link will not do you any good if spanning tree places it into a blocking state
 

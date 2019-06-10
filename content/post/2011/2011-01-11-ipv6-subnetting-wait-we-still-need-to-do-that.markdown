@@ -35,7 +35,7 @@ This is not an address, but rather a large block of addresses (notice that there
 
 Remember that the actual address had a /64 notation at the end. So what happened to those 16 bits? That, my friends, is our subnet portion. In this example, its actually the fourth quartet in the address, which is visible in the address as "1", or in uncompressed notation, "0001".
 
-[![](assets/2011/01/Untitled.jpg)](assets/2011/01/Untitled.jpg)
+[![](/assets/2011/01/Untitled.jpg)](/assets/2011/01/Untitled.jpg)
 
 This quartet is ours for the taking. This portion of the address is analyzed in the same way the entire subnet mask in IPv4 was analyzed by PCs to determine if a destination is on the same subnet. If the IP address was on the same subnet, it was sent to the MAC address in the ARP table associated with that IP. If not, it was sent to the default gateway for routing. This concept is exactly the same in IPv6 - if the first four quartets are the same in a /64, its on the same subnet, and its sent straight to the host. If not, its sent to a router that knows how to get to that IPv6 subnet.
 

@@ -13,7 +13,7 @@ tags: ['cisco']
 
 One of the (sadly numerous) issues I've run into while upgrading to Cisco UCSM version 2.2(1b) is this little error message indicating that a service failed to start:
 
-[![httpd_cimc](assets/2014/01/httpd_cimc.png)](assets/2014/01/httpd_cimc.png)
+[![httpd_cimc](/assets/2014/01/httpd_cimc.png)](/assets/2014/01/httpd_cimc.png)
 
 This gives us an error code of F0867 and it's letting us know that the UCSM process httpd_cimc.sh failed on one of our Fabric Interconnects.
 
@@ -48,7 +48,7 @@ As you can see, this process is indeed failed. Now - the [UCS fault reference](h
 
 However - since this happened to me within a TAC call, I learned that this particular process is actually new in UCSM 2.2 - you now have the ability to use a web browser (HTTP) to go directly to a blade's IP address in order to launch the KVM window.
 
-[![kvmdirect](assets/2014/01/kvmdirect.png)](assets/2014/01/kvmdirect.png)
+[![kvmdirect](/assets/2014/01/kvmdirect.png)](/assets/2014/01/kvmdirect.png)
 
 The process "httpd_CIMC.sh" is the process that allows UCSM to manage these connections. The reason this process wasn't starting was because I hadn't upgraded my Fabric Interconnects firmware yet - only the UCSM application itself. UCSM wasn't able to find the proper binaries to run this process because they didn't exist. So, finishing the upgrade and rebooting the FIs took care of this for me.
 

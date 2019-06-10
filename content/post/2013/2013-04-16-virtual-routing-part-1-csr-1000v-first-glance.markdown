@@ -19,7 +19,7 @@ I'll say it now - Vyatta has been doing this for some time. Not trying to start 
 
 If you're used to the architecture behind the Nexus 1000v, leave your preconceived ideas at the door - this is not nearly as elaborate. Long story short, the CSR 1000v is just a VM. It's not a structured web of relationships between VSM and VEM like the Nexus 1000v is, but rather a single VM that's loaded up as a single appliance, with multiple virtual NICs, representing routed interfaces.
 
-[![Virtual Router Directly In Traffic Flow](assets/2013/04/CSRscreen3.png)](assets/2013/04/CSRscreen3.png)
+[![Virtual Router Directly In Traffic Flow](/assets/2013/04/CSRscreen3.png)](/assets/2013/04/CSRscreen3.png)
 
 By extending the L3 boundary into the virtual environment, you're providing a security boundary at less cost to latency. Don't have to go through 3 or more switching hops to get to a router, when you're likely to just get sent back into the POD anyways. The key is maintaining secure multi-tenancy throughout the transport between the customer site and their slice of the datacenter. This way, we can extend VPNs (MPLS or otherwise) directly into the virtual environment, all the way from the customer's location. The CSR supports EasyVPN, FlexVPN, and DMVPN to name a few, and is also able to use GRE tunnels or MPLS L3 VPN services to provide transport for clients. The CSR 1000v uses IOS-XE, the same OS as the ASR 1000.
 
@@ -43,11 +43,11 @@ These were my paraphrased versions of the points I heard from this video - let
 
 It's important to take a step back and think about what this video was really all about - features. Yes, there are a lot of things this device can do, especially considering that it is essentially full-blown Cisco software as a virtual machine, which is unprecedented in this form. However, given that the architecture required for this solution is pretty much the same as pre-existing solutions like Vyatta, it really will come down to who does it better, with more relevant features, at a better price point for the performance you're getting. Given that the goal is to extend those fancy L3 features as close to the VM as possible, you might want to provide direct access to a CSR on a per-host basis, so the CSR can be used for the traffic flow before any traffic leaves the host.
 
-[![CSRscreen1](assets/2013/04/CSRscreen11.png)](assets/2013/04/CSRscreen11.png)
+[![CSRscreen1](/assets/2013/04/CSRscreen11.png)](/assets/2013/04/CSRscreen11.png)
 
 Obviously this scenario is not ideal - while it does provide us with a routing function for each host, it doesn't really gain us that much, especially since VM migration in this scenario isn't really feasible. (Okay it's possible but it defeats the purpose of keeping traffic local to the host prior to getting CSR treatment, so the point is moot.) If you do decide for some reason to keep VMs local to the host their router is on, you lose the benefits of virtualization in the first place - resources that a certain tenant isn't using will continue to go unused. A more proper design might look like this:
 
-[![CSRscreen2](assets/2013/04/CSRscreen2.png)](assets/2013/04/CSRscreen2.png)
+[![CSRscreen2](/assets/2013/04/CSRscreen2.png)](/assets/2013/04/CSRscreen2.png)
 
 This looks a lot better. This follows Cisco's recommendations of using one CSR per tenant, rather than one per host. Since L2 connectivity is still provided with as few hops as possible (you can use a few tricks to keep traffic as close to the hosts as possible - [using only a single uplink in UCS](http://communities.vmware.com/message/2184732) is one example) we get the luxury of not really caring where in the infrastructure our VM is, as long as it has L2 access to the virtual switch that our CSR's VM-facing interface "plugs into". Yes, this does mean that for the majority of traffic flows, an extra stop to some other host is necessary in order to get CSR treatment, but engineered correctly, this might not matter.
 

@@ -15,11 +15,11 @@ Many of those that have supported a vSphere-based virtualization infrastructure 
 
 For those that are not familiar with the idea of distributed switches in general, I'll overview the concept briefly. Let's assume you've got a virtual deployment that has quite a few hosts. Each host has one or more virtual switches, and each host maintains the control and forwarding functions locally inside the software switch of the hypervisor.
 
-[![diagram1](assets/2013/06/diagram1.png)](assets/2013/06/diagram1.png)
+[![diagram1](/assets/2013/06/diagram1.png)](/assets/2013/06/diagram1.png)
 
 Eventually you tire of administering the individual hosts' vSwitch configuration to make changes, so you decide to figure out out to do it centrally. Those that lean more towards a virtualization skillset tend to opt for the VMware Distributed Switch. Strictly speaking, and especially for the purposes of this post, the VDS is merely one type of distributed switch. The general idea is that the control and configuration functions of a vSwitch are abstracted, leaving only the software needed to actually move packets around (data plane). This allows for a centralized point of management and control.
 
-[![diagram2](assets/2013/06/diagram2.png)](assets/2013/06/diagram2.png)
+[![diagram2](/assets/2013/06/diagram2.png)](/assets/2013/06/diagram2.png)
 
 > This is a logical diagram of course - the vast majority of deployments (for either VDS or Nexus 1000v) results in the control plane actually residing on a virtual machine in the environment being controlled. Does this sound dangerous? It is -unless you know what you're doing and remember not to trip over your own virtual cables.
 
@@ -45,7 +45,7 @@ As you can see, the purpose of VM-FEX is twofold: first off, we want the control
 
 The Nexus 7000, 6000, and 5000 series switches, and the UCS Fabric Interconnects (remember that "VM" tab that no one ever touches?) are all able to serve as the control interface. This means that we can manage the remote "linecards" that represent each host through a central point, same as the Nexus 1000v.
 
-[![diagram3](assets/2013/06/diagram3.png)](assets/2013/06/diagram3.png)
+[![diagram3](/assets/2013/06/diagram3.png)](/assets/2013/06/diagram3.png)
 
 That's not the only difference between VM-FEX and the Nexus 1000v - in my opinion, if it just came down to centralized management, the Nexus 1000v is a much better way to go, but we'll get to that. VM-FEX goes a step further, allowing virtual machines to plug directly into the fabric being presented (Either a Nexus switch or Fabric Interconnect). Just like all FEX technology from Cisco, this is loosely based on [802.1br](http://www.ieee802.org/1/pages/802.1br.html) (Cisco's flavor is VN-TAG). As you saw in the video, a big reasons to run VM-FEX is indeed the centralized management component - it, like the 1000v, creates a VDS in vSphere, and allows you to administer the available network port groups from a centralized point. However, with VM-FEX being a hardware-based solution, you get to plug each virtual machine directly into the fabric (The limit with the M81KR is 116 virtual adapters per host).
 

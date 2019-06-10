@@ -33,7 +33,7 @@ The virtualization admin is now a position that doesn't really exist - what we o
 
 The implementation details of network automation are admittedly different from automating server configuration (i.e. the Blast Radius factor, etc.) but the underlying value is precisely the same. Network automation isn't about learning Python, it's not even about moving your network configuration into templates - though that's certainly a valued component. The truth is that network automation, like any other form, is about visibility, and trust. It's about network engineers stepping up and providing a way for other disciplines to consume networking more effectively. It's about reducing the gap between the infrastructure and the business by "opening the kimono" on the black box that is the network.
 
-[![black-box-310220_640](assets/2014/10/black-box-310220_640.png)](assets/2014/10/black-box-310220_640.png)
+[![black-box-310220_640](/assets/2014/10/black-box-310220_640.png)](/assets/2014/10/black-box-310220_640.png)
 
 Sometimes this means saying "no". This isn't about creating a new world of wild-west "anything goes" networking. You are the network engineer, no one knows your network like you do, and sometimes server folks ask for crazy things. This is why visibility is such a key part of the DevOps movement, and is being carried into the same for networking. Visibility means introducing a very valuable feedback loop so that when you have to say no, you're able to give a reason why, and those asking for network resources will learn and grow themselves. Saying "no" teaches no one anything.
 

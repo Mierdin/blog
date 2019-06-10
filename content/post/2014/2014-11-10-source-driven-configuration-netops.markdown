@@ -63,15 +63,15 @@ Next, Bob needs to commit his changes to Git, and push them to Gerrit for review
 
 This kicks off an email to you, the senior network engineer. It's time to review the changes that Bob made. This is the same process that developers go through in order to spot-check code for simple errors before it's pushed further into automated deployment systems.
 
-[![gerrit1](assets/2014/11/gerrit1-1024x802.png)](assets/2014/11/gerrit1.png)
+[![gerrit1](/assets/2014/11/gerrit1-1024x802.png)](/assets/2014/11/gerrit1.png)
 
 It's good that this change is light, and easy to review. Let's take a look:
 
-[![gerrit2](assets/2014/11/gerrit2-1024x828.png)](assets/2014/11/gerrit2.png)
+[![gerrit2](/assets/2014/11/gerrit2-1024x828.png)](/assets/2014/11/gerrit2.png)
 
 It is indeed a small change, but it looks like Bob still forgot to move the Storage ports up as well; if this was deployed now, the change would be ineffective, because the Storage port group still includes ports 33 and 34, which Bob was supposed to re-allocate to "Application Servers". So as the senior engineer, your job is not only to reject this change, but provide feedback on what's wrong, and what's required to make it right.
 
-[![gerrit3](assets/2014/11/gerrit3-1024x1021.png)](assets/2014/11/gerrit3.png)
+[![gerrit3](/assets/2014/11/gerrit3-1024x1021.png)](/assets/2014/11/gerrit3.png)
 
 To draw another parallel with software development, this is basically a patch. Our engineers mean well, and they're just doing their jobs. So as senior engineer, and "code reviewer", your job is to close that feedback loop - provide a way for them to learn and grow from the process itself.
 
@@ -88,11 +88,11 @@ This creates a second "patch set" within Gerrit, which contains the updated fix 
 
 > Of course, version control systems all handle this kind of thing differently from each other - the "amend" concept is specific to Git itself, while "patch set" is Gerrit verbiage.
 
-[![gerrit5](assets/2014/11/gerrit5-981x1024.png)](assets/2014/11/gerrit5.png)
+[![gerrit5](/assets/2014/11/gerrit5-981x1024.png)](/assets/2014/11/gerrit5.png)
 
 Upon reviewing the YAML file once again, we can provide feedback, and approve the change. This particular action (+2) actually merges the change into the Git repo (up until now it's been in "limbo").
 
-[![gerrit6](assets/2014/11/gerrit6-959x1024.png)](assets/2014/11/gerrit6.png)
+[![gerrit6](/assets/2014/11/gerrit6-959x1024.png)](/assets/2014/11/gerrit6.png)
 
 ## Conclusion
 

@@ -32,7 +32,7 @@ I want to be able to spin up cool stuff like OpenDaylight and OpenFlow and run n
 
 I find it to be EXTREMELY interesting that the OpenDaylight project, which is composed in part by leading closed-source switching vendors (Cisco, Juniper, Brocade to name a few), is cited to be one of the big participants in the project to develop this open source switch. I know all of these vendors have tried their level best in the past 6 months that SDN has lit up the Twittersphere to redefine themselves and really push the software solutions (that don't exist yet) but they are ALL way too invested in what is essentially an appliance-based model of doing networking right now.
 
-[![The "Network Appliance" In Your Datacenter](assets/2011/10/switch1.png)](assets/2011/10/switch1.png)
+[![The "Network Appliance" In Your Datacenter](/assets/2011/10/switch1.png)](/assets/2011/10/switch1.png)
 
 It will be interesting to see how their indirect involvement in this project will impact their current strategies, and participation in things like OpenDaylight.
 

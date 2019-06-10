@@ -23,7 +23,7 @@ Before we talk about network abstraction we must understand the 3 planes of netw
 
 Now - for any hypervisor, we're going to have at least two things in common. We have virtual machines, and the need to connect them to the network. At the very least, we need to bridge the virtual ethernet environment into the physical environment - the most basic way to do this is what essentially becomes a linux bridge - simply bridging a virtual interface with a physical one. So what do we get when we do this?
 
-[![diagram1](assets/2013/08/diagram11.png)](assets/2013/08/diagram11.png)
+[![diagram1](/assets/2013/08/diagram11.png)](/assets/2013/08/diagram11.png)
 
 Well, for one thing, we get basic connectivity out of, within, and between our hosts. Assume for the time being that this is a standard setup (think small/medium business) where the majority of virtual machines are on the same broadcast domain, and just need to be able to talk to each other. The VMs can talk because they're using the vSwitch - they can talk to VMs in another host because ultimately they're all in the same L2 domain. However, all three planes are isolated on each host. Each vSwitch requires direct configuration from the administrator (management plane) and maintains completely separate control information about the network (control plane).
 
@@ -33,7 +33,7 @@ For many virtualization admins, this problem is nothing new. Most VMware folks w
 
 Doing something like this gets you the following:
 
-[![diagram2](assets/2013/08/diagram21.png)](assets/2013/08/diagram21.png)
+[![diagram2](/assets/2013/08/diagram21.png)](/assets/2013/08/diagram21.png)
 
 What we've done here is **abstracted** the management plane so that we can administer our virtual network from a single pane. We've merely instructed each vSwitch to open itself up to vCenter, where we'll be configuring all hosts from the same software.
 
@@ -49,7 +49,7 @@ This was where the idea of a controller-based network came to be. If we could fi
 
 The idea of a flow table, or routing table, or MAC address table is simply to identify traffic, and based off of some kind of criteria, make a forwarding decision. The act of populating such a table is the role of the control plane. The data plane looks at a packet, compares it against this table, and forwards it according to the table's instructions. Want a really common example? Show the routing table on your local PC:
 
-[![commandwindow](assets/2013/08/commandwindow.png)](assets/2013/08/commandwindow.png)
+[![commandwindow](/assets/2013/08/commandwindow.png)](/assets/2013/08/commandwindow.png)
 
 The management plane (me) instructed windows to place a static route into the routing table (control plane). Now, whenever I try to send a packet to a destination not identified by a route further down in the list, my PC will forward that packet to my gateway, 10.12.0.1, and it will use the local interface with an address of 10.12.0.106 as the method of getting there. (data plane).
 
@@ -57,7 +57,7 @@ The management plane (me) instructed windows to place a static route into the ro
 
 This "flow table" is merely the result of network forwarding decisions that have already been made by the control plane - essentially how to identify traffic, and where to send it if a certain parameter is met. Since L2-L4 fields are game in this mode, we can get pretty granular with our forwarding decisions, and we don't have to distribute our control plane to do it. We merely populate the flow table from a centralized controller, and the forwarding devices do just that - forward.
 
-[![diagram3](assets/2013/08/diagram3.png)](assets/2013/08/diagram3.png)
+[![diagram3](/assets/2013/08/diagram3.png)](/assets/2013/08/diagram3.png)
 
 Now - it's always interesting to note that the virtual switch, (or networking agent, whatever you want to call it) is typically going to be where this kind of abstraction is the lowest hanging fruit - the reason is that it's always going to be running on a standard x86 architecture that is ASIC-less if you're talking about standard hypervisors. So, the innovation and the interoperability is greatest in that space.
 

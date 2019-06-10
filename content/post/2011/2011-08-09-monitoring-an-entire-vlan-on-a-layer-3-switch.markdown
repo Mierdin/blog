@@ -44,7 +44,7 @@ This solution allowed me to take all traffic from VLAN 100, and route it through
 
 I then set up a few routers on the 172.16.0.0/16 network as clients and started some ping traffic on each to a host on the 192.168.0.0/24 network:
 
-[![](assets/2011/08/packetscreenshot.png)](assets/2011/08/packetscreenshot.png)
+[![](/assets/2011/08/packetscreenshot.png)](/assets/2011/08/packetscreenshot.png)
 
 So why is this configuration necessary? Let me rephrase that. Why do we have to sacrifice a physical switchport in order to do monitoring (two if you count the monitor port too)?
     

@@ -16,11 +16,11 @@ tags: ['cisco']
 
 When you're talking about something like MTU or QoS, it's important to think about technology implementations in an end-to-end fashion by analyzing every possible path network traffic can take - always planning for the big picture and never simply a single  connection between devices. For instance, poor planning can result in confusing QoS configurations that don't match from device to device. Depending on the platform, this can result in mismatched MTU configurations, which at worst breaks your network and at best causes elusive performance problems that can be incredibly difficult to troubleshoot. A layer 2 domain that has an incorrect MTU configuration will simply discard frames as they encounter a boundary with a lower MTU than their size.
 
-[![](assets/2012/11/layer2.png)](assets/2012/11/layer2.png)
+[![](/assets/2012/11/layer2.png)](/assets/2012/11/layer2.png)
 
 Layer 3 topologies with MTU bottlenecks are able to overcome this, but only by breaking each packet down into fragments that can be sent through the link with the lower MTU. Though this allows packets to be transmitted and not simply dropped, it does place additional load on the router, which is responsible for carving up each large packet into acceptable sizes.
 
-[![](assets/2012/11/layer3.png)](assets/2012/11/layer3.png)
+[![](/assets/2012/11/layer3.png)](/assets/2012/11/layer3.png)
 
 Both scenarios can produce extremely strange symptoms. For instance, some file transfer protocols such as NFS will work to a degree, even in the event of a Layer 2 MTU mismatch, because certain packets required for controlling the connection for an NFS session are not that large, and won't be dropped. However, once files start moving, the packet size increases and will then grow larger than the MTU of a given link. This scenario, if you're not looking for MTU, can be extremely difficult to troubleshoot.
 
@@ -192,15 +192,15 @@ The command "esxcfg-vmknic -l" allows you to view the configuration of the vmker
 
 You can use a VDS like the 1000v to do cool stuff like CoS marking from your VM port groups, but I'm going to write out this section assuming you don't have that, and therefore have to use UCS to mark traffic. There will be another article concerning QoS when a VDS is being used. Traffic classification in UCS is done on a per-vNIC basis. If you want a certain type of traffic to be treated a certain way, it needs it's own vNIC(s). This is because each vNIC (or vNIC template) can be configured with it's own QoS policy, which binds it to a particular traffic classification. Under the vNIC or vNIC template, you can configure both the MTU of the vNIC, as well as the QoS policy you wish to enforce on it:
 
-[![](assets/2012/11/vnic_mtu.png)](assets/2012/11/vnic_mtu.png)
+[![](/assets/2012/11/vnic_mtu.png)](/assets/2012/11/vnic_mtu.png)
 
 This means that all traffic leaving this vNIC will get the QoS Policy for ESX_Mgmt applied to it. So, we look at that QoS policy:
 
-[![](assets/2012/11/qos_policy.png)](assets/2012/11/qos_policy.png)
+[![](/assets/2012/11/qos_policy.png)](/assets/2012/11/qos_policy.png)
 
 We see that all vNICs that are given this QoS policy are given a "Bronze" class of service. You can also configure bandwidth rates here. Finally, "host control" is a feature that allows the device connected to the vNIC to sent out CoS-tagged frames. This is useful if you're using the Nexus 1000v, because that can do native CoS tagging per-portgroup. QoS in a virtual environment like this will be covered in another article. We aren't using that for this purpose, so we want to turn this feature to "none". Since this traffic is given a priority of "Bronze", we need to go to the "QoS System Class" configuration page to see what that class of traffic is configured to do:
 
-[![](assets/2012/11/qos_system_class.png)](assets/2012/11/qos_system_class.png)
+[![](/assets/2012/11/qos_system_class.png)](/assets/2012/11/qos_system_class.png)
 
 Since this vNIC is configured to send all traffic out with a "Bronze" class, and this class is configured to tag frames with a CoS value of 1, this means that the upstream switch will be able to classify traffic according to it's policies. If you look back at our Nexus configuration, we have accordingly configured traffic with CoS 1 to be sent to it's internal Bronze queue as well. In this way, the UCS and Nexus devices have been configured to work together with respect to QoS. MTU is important here as well. Let's say that I want NFS traffic to get jumbo frames. I simply go to the vNIC template for that connectivity, give it a QoS policy that classifies that traffic into the "Silver" queue, and all NFS traffic will exit UCS with CoS value 2 and MTU of 9216. Different types of traffic simply require a different class of service. This "QoS System Classes" page is where you want to make sure that your configuration matches that of the upstream switch.
 

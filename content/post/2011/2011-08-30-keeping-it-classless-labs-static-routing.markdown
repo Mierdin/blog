@@ -15,9 +15,9 @@ This is the first in what I hope to be a useful series on configuration/walk thr
 
 Today we'll be looking at static routing and how to configure it in a small Cisco network. Below are the lab files (GNS3) and the videos themselves.
 
-[Download the Lab Outline](assets/2011/08/Lab1Outline.pdf)
+[Download the Lab Outline](/assets/2011/08/Lab1Outline.pdf)
 
-[Download the GNS3 Lab used in this video](assets/2011/08/KIC_LABS_1.zip)
+[Download the GNS3 Lab used in this video](/assets/2011/08/KIC_LABS_1.zip)
 
 Since it's a new Youtube channel, I'm limited to 15 minutes per clip, and therefore had to break it into two parts. First, part one:
 

@@ -92,7 +92,7 @@ We can use this bash one-liner to run our program with incrementally increasing 
 
 I'll save you the trouble of running this yourself, here's a graph showing calculation times:
 
-[![](assets/2016/07/calctime.png)](assets/2016/07/calctime.png)
+[![](/assets/2016/07/calctime.png)](/assets/2016/07/calctime.png)
 
 As you can see, the required time to calculate the Nth Fibonacci value increases exponentially as N increases. If we are interested in calculating any large Fibonacci numbers, we're going to be waiting a very long time, which is impractical.
 

@@ -17,7 +17,7 @@ I encourage you to read the article I linked to as well as [this one](http://pai
 
 This post would not be complete without some incredibly profound advice that everyone has heard but I know gets taken for granted often:
 
-[![try-not](assets/2013/06/try-not.jpg)](assets/2013/06/try-not.jpg)
+[![try-not](/assets/2013/06/try-not.jpg)](/assets/2013/06/try-not.jpg)
 
 As much as this is a golden oldie in the nerd movie quote database, it is also profoundly valuable advice. I thought for a long time about how the concept of eliminating powerless words from one's vocabulary could relate to the technology field, and the possibilities I found were pretty numerous
 

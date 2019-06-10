@@ -23,13 +23,13 @@ As a developer, version control is an absolute must-have. Being able to track ch
 
 A developer would use a tool like Git to record changes to source code, configuration files, directory structures, etc. For instance, here's a record of change that a developer made to some Python to implement a new amazing function:
 
-[![version1](assets/2014/10/version1.png)](assets/2014/10/version1.png)
+[![version1](/assets/2014/10/version1.png)](/assets/2014/10/version1.png)
 
 Some network engineers have already used tools like [RANCID](http://www.shrubbery.net/rancid/) to show what's changed in different versions of switch configurations (RANCID actually uses CVS or Subversion in the back-end for producing the actual text differences). This tool has been around for a while, and the use cases are somewhat limited, but from a version control perspective, the idea is the same.
 
 Here's an example of how Git can produce similar output to show the addition of VLAN 11 to a Cisco Nexus switch:
 
-[![version2](assets/2014/10/version2.png)](assets/2014/10/version2.png)
+[![version2](/assets/2014/10/version2.png)](/assets/2014/10/version2.png)
 
 There are plenty of resources for learning Git, whether you have a little development experience, or none at all. I'd recommend [this intro](http://git-scm.com/book/en/Getting-Started-Git-Basics), or if you prefer a more interactive tutorial, [this one](https://try.github.io/levels/1/challenges/1) is pretty good. Git is built to be distributed, meaning that there is no implied dependency on a "version control server" like Subversion. You could have a git repository completely self-contained on your laptop, without the need to run any kind of server software if you wanted to.
 
@@ -84,7 +84,7 @@ Generally speaking, as a network engineer looking to get syntax highlighting, or
 
 I know a lot of network engineers out there are trying to learn Python, and Sublime Text is a popular choice. Here's an example with the Anaconda plugin, which is letting me know that my Python - while functional, doesn't conform to PEP8 standards. This is a useful tool to have, since it allows me to correct errors as I go, rather than accumulating [technical debt](http://en.wikipedia.org/wiki/Technical_debt).
 
-[![Screenshot 2014-10-24 23.57.45](assets/2014/10/Screenshot-2014-10-24-23.57.45.png)](assets/2014/10/Screenshot-2014-10-24-23.57.45.png)
+[![Screenshot 2014-10-24 23.57.45](/assets/2014/10/Screenshot-2014-10-24-23.57.45.png)](/assets/2014/10/Screenshot-2014-10-24-23.57.45.png)
 
 However, many network engineers have no interest in writing Python, so maybe you're writing a configuration template in Jinja2. There's a [plugin](https://sublime.wbond.net/packages/Jinja2) for that. My suggestion is to find an editor that works for you first, and fill in the blanks with plugins if you need to. At the end of day, these are not specific to software developers - they are text editors with a bunch of tools for getting stuff done. As a network engineer, you can still make these tools work for you.
 
@@ -118,13 +118,13 @@ Modern software development has it's own cadence as well. Practices like [Contin
 
 I mentioned Gerrit earlier as a server that you can use internally for collaborating over version control using Git, but it's more than that. Tools like Gerrit also offer code review features. Similar to how developers check in source code that then goes through a series of automated tests and human code reviews, junior network engineers could conceivably check in small changes to network configurations, or perhaps artifacts from configuration management tools, and the senior network engineers would have the opportunity to review these changes before they're put into production.
 
-[![gerrit](assets/2014/10/gerrit.png)](assets/2014/10/gerrit.png)
+[![gerrit](/assets/2014/10/gerrit.png)](/assets/2014/10/gerrit.png)
 
 This offers that feedback loop I mentioned before - just like a software project, the goal is never to just blindly reject - it's to get each useful "patch" eventually accepted into production, so if the change is not of sufficient quality, such a process allows for the right feedback to get it up to par.
 
 Another useful tool is [Jenkins ](http://jenkins-ci.org/)- which is typically used in software development as a crucial part of a Continuous Integration pipeline. Here, developers can build and test source code, deploy a build to production, notify operations of any issues, and much more. In reviewing the large number of plugins available for Jenkins, it's feasible that it could be used as a general workflow engine, similar to how VMware administrators have been using vCenter Orchestrator.
 
-[![jenkins](assets/2014/10/jenkins.png)](assets/2014/10/jenkins.png)
+[![jenkins](/assets/2014/10/jenkins.png)](/assets/2014/10/jenkins.png)
 
 Hell, I got the damn thing to tweet for me.
 

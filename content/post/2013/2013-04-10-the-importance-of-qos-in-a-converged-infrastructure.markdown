@@ -15,7 +15,7 @@ I've done quite a few posts on Quality of Service, particularly on it's basic co
 
 But what do we gain by implementing QoS, especially in a context like Data Center, where a modern core layer is typically at least 10GbE and network congestion is rarely seen? Will it really help us that much do configure QoS in any specific way, other that some default policies? In an environment where the Nexus 5000 is used to do some basic ethernet and FC/FCoE switching, it surely seems easy enough to deploy switches with the plethora of default FCoE QoS policies that come with the switch's FCoE feature set, especially if an application like voice is not present, at least not yet. So why do more?
 
-[![QoS](assets/2013/04/QoS.png)](assets/2013/04/QoS.png)
+[![QoS](/assets/2013/04/QoS.png)](/assets/2013/04/QoS.png)
 
 Let's first clarify the definition of QoS and get down to what it's really aimed at doing. QoS is indeed good for providing priority to certain types of traffic in times of network congestion, but really when you think about all QoS can do, that's just a side benefit, albeit a really popular one. QoS is really aimed at providing the ability to classify traffic and treat it differently, regardless of what you're "doing" with the traffic. It allows you to define tags (CoS for L2 and DSCP for L3) that give class to a certain type of data, which keeps that class consistent when being transmitted between network nodes.
 

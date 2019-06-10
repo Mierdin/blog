@@ -25,43 +25,43 @@ Lately I've been obsessed with a game called ["Factorio"](https://www.factorio.c
 
 Even the very first stages of this game end up being more complicated than they initially appear. Among your initial inventory is a drill that you can use to mine coal, a useful ingredient for anything that needs to burn fuel - but the drill itself actually requires that same fuel. So, the first thing you need to do is mine some coal by hand, to get the drill started.
 
-<div style="text-align:center;"><a href="assets/2016/10/manual_mining.jpg"><img src="assets/2016/10/manual_mining.jpg" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/manual_mining.jpg"><img src="/assets/2016/10/manual_mining.jpg" width="600" ></a></div>
 
 We can also use some of the raw materials to manually kick-start some automation. With a second drill, we can start mining for raw iron ore. In order to do that we need to build a "burner inserter", which moves the coal that the first drill gathered into the second drill:
 
-<div style="text-align:center;"><a href="assets/2016/10/manual_refuel.gif"><img src="assets/2016/10/manual_refuel.gif" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/manual_refuel.gif"><img src="/assets/2016/10/manual_refuel.gif" width="600" ></a></div>
 
 Even this very early automation requires manual intervention, as it all requires coal to burn, and not everything has coal automatically delivered to it (yet).
 
 Now, there are things you can do to improve **your own** efficiency, such as building/using better tools:
 
-<div style="text-align:center;"><a href="assets/2016/10/faster_manual.jpg"><img src="assets/2016/10/faster_manual.jpg" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/faster_manual.jpg"><img src="/assets/2016/10/faster_manual.jpg" width="600" ></a></div>
 
 However, this is just one optimization out of a multitude. Our objectives will never be met if we only think about optimizing the manual process; we need to adopt a "big picture" systems mindset.
 
 Eventually we have a reasonably good system in place for mining raw materials; we now need to move to the next level in the technology tree, and start smelting our raw iron ore into iron plates. As with other parts of our system, at first we start by manually placing raw iron ore and coal into a furnace. However, we soon realize that we can be much more efficient if we allow some burner inserters to take care of this for us:
 
-<div style="text-align:center;"><a href="assets/2016/10/midway_to_automation.gif"><img src="assets/2016/10/midway_to_automation.gif" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/midway_to_automation.gif"><img src="/assets/2016/10/midway_to_automation.gif" width="600" ></a></div>
 
 With a little extra work we can automate coal delivery to this furnace as well:
 
-<div style="text-align:center;"><a href="assets/2016/10/full_auto.gif"><img src="assets/2016/10/full_auto.gif" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/full_auto.gif"><img src="/assets/2016/10/full_auto.gif" width="600" ></a></div>
 
 There's too much to Factorio to provide screenshots of every step - the number of technology layers you must go through in order to unlock fairly basic technology like solar power is astounding; not to mention being able to launch a fully functional rocket.
 
-<div style="text-align:center;"><a href="assets/2016/10/full_scale.gif"><img src="assets/2016/10/full_scale.gif" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/full_scale.gif"><img src="/assets/2016/10/full_scale.gif" width="600" ></a></div>
 
 As you continue to automate processes, you continue to unlock higher and higher capabilities and technology; they all build on each other. Along the way you run into all kinds of issues. These issues could arise in trying to create new technology, or you could uncover a bottleneck that didn't reveal itself until the system scaled to a certain point.
 
 For instance, in the last few screenshots we started smelting some iron plates to use for things like pipes or circuit boards. Eventually, the demand for this very basic resource will outgrow the supply - so as you build production facilities, you have to consider how well they'll scale as the demand increases. Here's an example of an iron smelting "facility" that's built to scale horizontally:
 
-<div style="text-align:center;"><a href="assets/2016/10/big_auto_2.jpg"><img src="assets/2016/10/big_auto_2.jpg" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/big_auto_2.jpg"><img src="/assets/2016/10/big_auto_2.jpg" width="600" ></a></div>
 
 Scaling out one part of this system isn't all you need to be aware of, however. The full end-to-end supply chain matters too.
 
 As an example, a "green" science pack is one resource that's used to perform research that unlocks technologies in Factorio. If you are running short on these, you may immediately think "Well, hey, I need to add more factories that produce green science packs!". However, the bottleneck might not be the number of factories producing green science, but further back in the system.
 
-<div style="text-align:center;"><a href="assets/2016/10/bottleneck.png"><img src="assets/2016/10/bottleneck.png" width="250" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/bottleneck.png"><img src="/assets/2016/10/bottleneck.png" width="250" ></a></div>
 
 Green science packs are made by combining a single inserter with a single transport belt panel - and in the screenshot above, while we have plenty of transport belt panels, we aren't getting any inserters! This means we now have to analyze the part of our system that produces that part - which also might be suffering a shortage in **it's** supply chain. Sometimes such shortages can be traced all the way down to the lowest level - running out of raw ore.
 
@@ -80,7 +80,7 @@ Repeat after me: "Everything is a system".
 
 Come to grips with this, because this is where automation ceases to be some magical concept only for the huge hyperscale companies like Facebook and Google. Everything you do, say, or smell is part of a system, whether you think it is or not; from the complicated systems that power your favorite social media site, all the way down to the water cycle:
 
-<div style="text-align:center;"><a href="assets/2016/10/Diagram_of_the_Water_Cycle.jpg"><img src="assets/2016/10/Diagram_of_the_Water_Cycle.jpg" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/Diagram_of_the_Water_Cycle.jpg"><img src="/assets/2016/10/Diagram_of_the_Water_Cycle.jpg" width="500" ></a></div>
 
 > By the way, just as humans are a part of the water cycle, humans are and always will be part of an automated system you construct.
 
@@ -94,7 +94,7 @@ Harder still is the ability to look at a system with a "big picture" perspective
 
 A great way to understand this skill is to imagine you're in an interview, and the interviewer asks you to enumerate all of the steps needed to load a web page. Simple, right? It sure seems like it at first, but what's really happening is that the interviewer is trying to understand how well you know (or want to know) all of the complex activities that take place in order to load a web page. Sure, the user types a URL into the address bar and hits enter - then the HTTP request magically takes place. Right? Well, how did the machine know what IP address was being represented by that domain name? That leads you to the DNS configuration. How did the machine know how to reach the DNS server address? That leads you to the routing table, which likely indicates the default gateway is used to reach the DNS server. How does the machine get the DNS traffic to the default gateway? In that case, ARP is used to identify the right MAC address to use as the destination for that first hop.
 
-<div style="text-align:center;"><a href="assets/2016/10/http.png"><img src="assets/2016/10/http.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/http.png"><img src="/assets/2016/10/http.png" width="500" ></a></div>
 
 Those are just some of the high-level steps that take place *before the request can even be sent*. Algorithmic thinking recognizes that each part of a system, no matter how simple, has numerous subsystems that all perform their own tasks. It is the ability to understand that nothing is magic - only layers of abstraction. These days, this is understandably a tall order. As technology gets more and more advanced, so do the abstractions. It may seem impossible to be able to operate at both sides of the spectrum.
 
@@ -117,11 +117,11 @@ Once you've learned to think Algorithmically, you start to look at your infrastr
 
 The cause of a bottleneck could be bad design:
 
-<div style="text-align:center;"><a href="assets/2016/10/baddesign.png"><img src="assets/2016/10/baddesign.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/baddesign.png"><img src="/assets/2016/10/baddesign.png" width="600" ></a></div>
 
 Or it could be improper/insufficient input (which could in turn be caused by a bad design elsewhere):
 
-<div style="text-align:center;"><a href="assets/2016/10/bottleneck.png"><img src="assets/2016/10/bottleneck.png" width="250" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/bottleneck.png"><img src="/assets/2016/10/bottleneck.png" width="250" ></a></div>
 
 One part of good design is understanding the kind of scale you might have to deal with and reflecting it in your design. This doesn't mean you have to build something that scales to trillions of nodes today, only that the system you put in place doesn't prevent you from scaling organically in the near future.
 
@@ -129,7 +129,7 @@ As an example, when I built a new plant in Factorio to produce copper wiring, I 
 
 This blog post is already way too long to talk about proper design, especially considering that this post is fairly technology-agnostic. For now, suffice it to say  that having a proper design is important, especially if you're going in to a new automation project. It's okay to write some quick prototypes to figure some stuff out, but before you commit yourself to a design, do it on paper (or whiteboard) first. Understanding the steps there will save you a lot of headaches in the long run. Think about the system-to-be using an Algorithmic mindset, and walk through each of the steps in the system to ensure you understand each level.
 
-<div style="text-align:center;"><a href="http://imgs.xkcd.com/comics/fixing_problems.png"><img src="assets/2016/10/fixing_problems.png" width="300" ></a></div>
+<div style="text-align:center;"><a href="http://imgs.xkcd.com/comics/fixing_problems.png"><img src="/assets/2016/10/fixing_problems.png" width="300" ></a></div>
 
 As the system matures, it's going to have bottlenecks. That bottleneck might be a human being that still holds power over a manual process you didn't know existed. It might be an aging service that was written in the 80s. Just like in Factorio, something somewhere will be a bottleneck - the question is, do you know where it is, and is it worth addressing? It may not be. Everything is a tradeoff, and some bottlenecks are tolerable at certain points in the maturity of the system.
 
@@ -146,7 +146,7 @@ In the "real" world, the idea that automation means human beings are removed fro
 
 Not only is automation highly incremental, it's also imperfect at every layer. Everything in systems design is about tradeoffs. At the beginning of Factorio, we had to manually insert coal into many of the components; this was a worthy tradeoff due to the simple nature of the system. It wasn't **that** big of a deal to do this part manually at that stage, because the system was an infant.
 
-<div style="text-align:center;"><a href="assets/2016/10/manual_refuel.gif"><img src="assets/2016/10/manual_refuel.gif" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/manual_refuel.gif"><img src="/assets/2016/10/manual_refuel.gif" width="600" ></a></div>
 
 However, at some point, the our factory needed to grow. We needed to allow the two parts to exchange resources directly instead of manually ferrying them between components.
 
@@ -156,7 +156,7 @@ As an example, I once had a script that would automatically put together a Cisco
 
 The goal is to remove humans as functional components of a subsystem so they can make improvements to the system as a whole. Writing code is not magic - it is the machine manifestation of human logic. For many tasks, there is no need to have a human manually enumerate the steps required to perform a task; that human logic can be described in code and used to work on the human's behalf. So when we talk about replacing humans in a particular part of a system, what we're really talking about is reproducing the logic that they'd employ in order to perform a task as code that doesn't get tired, burnt out, or narrowly focused. It works asynchronously to the human, and therefore will allow the human to then go make the same reproduction elsewhere, or make other improvements to the system as a whole. If you insist on staying "the cog" in a machine, you'll quickly lose sight of the big picture.
 
-<div style="text-align:center;"><a href="assets/2016/10/full_scale.gif"><img src="assets/2016/10/full_scale.gif" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/full_scale.gif"><img src="/assets/2016/10/full_scale.gif" width="600" ></a></div>
 
 This idea that "automation will take my job" is based on the incorrect assumption is that once automation is in place, the work is over. Automation is not a monolithic "automate everything" movement. Like our efforts in Factorio, automation is designed to take a particular workflow in one very small part of the overall system and take it off of our plates, once we understand it well enough. Once that's done, our attention is freed up to explore new capabilities we were literally unable to address while we were mired in the lower details of the system. We constantly remove ourselves as humans from higher and higher parts of the system.
 

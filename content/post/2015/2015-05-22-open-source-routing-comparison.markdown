@@ -20,7 +20,7 @@ This won't be a comprehensive list, just the top three that I've been looking in
 
 Quagga is at the top of this list primarily because from my perspective, it is the most well-known. It is best to think of Quagga as a collection of smaller daemons, each with a specific task. This task may be to run a routing protocol like OSPF or BGP, or it may be something else.
 
-[![](assets/2015/06/quagga.png)](assets/2015/06/quagga.png)
+[![](/assets/2015/06/quagga.png)](/assets/2015/06/quagga.png)
 
 In this design, the Zebra daemon is responsible for interacting with the kernel, and provides a simple API (called [Zserv](http://www.nongnu.org/quagga/docs/docs-info.html#Zebra-Protocol)) for the other daemons to consume, so they don't need to make kernel calls directly.
 

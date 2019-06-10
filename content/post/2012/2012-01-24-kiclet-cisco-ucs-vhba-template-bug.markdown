@@ -17,11 +17,11 @@ It's not too bad, but still a little annoying, and can cause you to have some pr
 
 If you notice, the default VSAN is selected for my vHBA template. I have named my VSANs "fabric-a" and "fabric-b". If I drop down the VSAN selector, I have the ability to select the VSAN I have associated with fabric A:
 
-[![](assets/2012/01/ucsglitch1.png)](assets/2012/01/ucsglitch1.png)
+[![](/assets/2012/01/ucsglitch1.png)](/assets/2012/01/ucsglitch1.png)
 
 However, once I've done so, and I change to fabric B, I drop down the selector again, and I now am able to select both VSANs:
 
-[![](assets/2012/01/ucsglitch2.png)](assets/2012/01/ucsglitch2.png)
+[![](/assets/2012/01/ucsglitch2.png)](/assets/2012/01/ucsglitch2.png)
 
 Looks like this is a good reason to name the VSANs according to the correct fabric, otherwise you might associate the wrong fabric ID with the wrong VSAN, since I seem to be able to select Fabric ID A and VSAN B.
 

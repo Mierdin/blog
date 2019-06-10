@@ -24,7 +24,7 @@ So, truth be told, I constantly remind myself of the same advice that I give to 
 
 Be keenly aware of the motivation(s) that drive your blogging. Write them down. Look at them every day. Keeping these in mind should be your primary source of energy when writing about a technical topic. Unless blogging is your actual job (in which case this article is not addressed to you) then you have some kind of day job that you draw experience from. You don't want the blog to become just a second day job on top of that - so always be reminding yourself of this motivation.
 
-[![2287255370_db723a23e1_o](assets/2015/03/2287255370_db723a23e1_o.jpg)](assets/2015/03/2287255370_db723a23e1_o.jpg)
+[![2287255370_db723a23e1_o](/assets/2015/03/2287255370_db723a23e1_o.jpg)](/assets/2015/03/2287255370_db723a23e1_o.jpg)
 
 At the top of my own personal list is the ability to be corrected by the technical leaders in a field. I wrote an article a while back on [Open vSwitch](https://keepingitclassless.net/2013/10/introduction-to-open-vswitch/). I had just started getting into the project and setting it up in my home lab, so I wrote a post about it, as is fairly common. I made an erroneous statement without realizing it. Ben Pfaff - the creator of Open vSwitch and just an overall brilliant guy (IMO one of the key minds responsible for the current revolution taking place in networking) left a comment constructively explaining my error and detailing how I may amend the problem.
 
@@ -34,7 +34,7 @@ I challenge you to find me a better way to learn a topic.
 
 Aside from aforementioned motivation, this is absolutely key. At first I thought it was just me and my obsessive nature, carefully nitpicking my own work, cautioning me from hitting that publish button, for fear that something catastrophic will go wrong if I do. However, the more folks I talk to about this, the more I realize it's a widespread problem. Maybe it's because (and this is a gross generalization) those of us that take on a technical role tend to be fairly introverted. Regardless, excuse-making is everywhere, and we will do everything we can to tell ourselves that a blog post is not good enough to publish.
 
-![60780506](assets/2015/03/60780506.jpg)
+![60780506](/assets/2015/03/60780506.jpg)
 
 The folks involved with technology that also maintain any kind of public presence is still a fairly tightly-knit group, but we move just as quickly as the industry in which we participate. It is quite intimidating, even for folks that have been involved for some time. Imagine what it is like for someone that just graduated from school and started listening to Packet Pushers.
 

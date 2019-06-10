@@ -19,7 +19,7 @@ Due to a specific failure I will be going over in a future post, I was forced to
 
 I put this GNS3 topology together so we could explore the way that changes to an example OSPF topology will influence the routing table, and more specifically, point out how the default multipathing features in a Cisco router will impact our traffic flow during reconvergence:
 
-[![screen1](assets/2013/04/screen12.png)](assets/2013/04/screen12.png)
+[![screen1](/assets/2013/04/screen12.png)](/assets/2013/04/screen12.png)
 
 The goal is to cause certain failures within the environment and observe the impact to traffic destined from R1 to the loopback address of 172.16.1.1, advertised from R4 over two equal-cost paths. I put two switches in between the R2/R3 pair and R4 so that I could break connectivity between these routers without causing link-down events (I'll just delete the link between the switches). The reason for avoiding link-down events for this post is that OSPF routers that detect a link failure on an interface will typically originate a new Router LSA for itself that leaves out the corresponding transit network:
 

@@ -17,7 +17,7 @@ A comment pointed out that all vNICs are automatically configured as trunks. I h
 
 Here's a VLAN configuration screen in the UCSM GUI for a sample vNIC:
 
-[![ucs_vlan](assets/2013/07/ucs_vlan.png)](assets/2013/07/ucs_vlan.png)
+[![ucs_vlan](/assets/2013/07/ucs_vlan.png)](/assets/2013/07/ucs_vlan.png)
 
 Check out the running configuration for this vNIC on the underlying NX-OS CLI.
 

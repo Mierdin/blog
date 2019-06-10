@@ -28,7 +28,7 @@ In order to fully appreciate the move to adopting network namespaces within a co
 
 Ah, the good old days. The days where you could touch and feel your access layer. You could point to it and show off "the place where those servers plug in".
 
-[![](assets/2015/10/accesslayer1.png)](assets/2015/10/accesslayer1.png)
+[![](/assets/2015/10/accesslayer1.png)](/assets/2015/10/accesslayer1.png)
 
 This was the "norm" for quite some time, because we were operating in a purely physical model. There was no server/network demarcation that manifested itself virtually.
 
@@ -36,7 +36,7 @@ This was the "norm" for quite some time, because we were operating in a purely p
 
 Of course, server virtualization changed the entire model. Virtual machines now plug into virtual ports provisioned onto a vSwitch, which is an entity that provides network functions similar to a physical switch, but purely in software.
 
-[![](assets/2015/10/accesslayer2.png)](assets/2015/10/accesslayer2.png)
+[![](/assets/2015/10/accesslayer2.png)](/assets/2015/10/accesslayer2.png)
 
 We've learned a lot in the last decade about operating virtual network topologies at scale, and there are a lot of useful software projects - most notably [Open vSwitch](http://openvswitch.org/) - that provide some very interesting functionality here, rather than waiting for physical switch vendors to make features.
 
@@ -46,7 +46,7 @@ However, containers are not virtual machines. They're not even "mini" virtual ma
 
 Now - a network namespace is not a new type of vSwitch. Leveraging network namespaces is not as drastic of a transition as was the move from physical to virtual switching. VMs and containers alike still plug into a vSwitch, but network namespaces provide us with a mechanism to isolate virtual network interfaces and provide some network context for workloads that are similar (i.e. belong to the same tenant).
 
-[![](assets/2015/10/accesslayer3.png)](assets/2015/10/accesslayer3.png)
+[![](/assets/2015/10/accesslayer3.png)](/assets/2015/10/accesslayer3.png)
 
 In this way, we can run containers and offer network resources to them in a way that treats it like it's the only process running on a box. Each container can run on an interface called "eth0", they could each have their own routing table and source IP address, etc. This is what operating system virtualization brings us.
 

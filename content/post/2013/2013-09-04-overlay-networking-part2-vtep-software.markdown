@@ -21,7 +21,7 @@ There's been a lot of talk about VTEP, and how virtually every networking vendor
 
 Two points here - first, the low-hanging fruit is the non-virtualized workloads. How do these integrate into this brave new world? Well, whether you're talking VXLAN or whatever, you need some kind of device that speaks overlay. If you can't speak overlay, and somehow terminate that network so that you can insert other traffic types inside, then you're not doing much good. VTEP stands for VXLAN Tunnel End Point (thus VXLAN is a requirement here, but more on that later). One thing we can do with these is provide a sort of translation boundary between the overlay network and the physical devices. So you'd set up one port to participate in a VLAN of your choosing, plug your physical server in there, and configure the VTEP to inject that VLAN's traffic into a VXLAN of your choosing.
 
-[![diagram3](assets/2013/09/diagram3.png)](assets/2013/09/diagram3.png)
+[![diagram3](/assets/2013/09/diagram3.png)](/assets/2013/09/diagram3.png)
 
 Ultimately this should be the job of the SDN controller, since the VTEP is little more than a distributed linecard at this point.
 
@@ -42,7 +42,7 @@ These are a few of the tweets I picked up in the last week or so - they can help
 
 This is pretty simple. The software on top is what makes this all work. While technology like OpenFlow, OVSDB, vXLAN, etc. are cool to talk about, they're just building blocks. Those same building blocks that are being used to do great things in one product can be used to do not-so-great things in another. SDN is about centralizing control so that we don't have to spend time doing simple m/a/c requests when we could be doing it from a central intelligent point. I used this graphic in a previous post and it applies pretty well here. SDN started in the virtual realm because it was easy, but should absolutely encompass the physical world, as we saw in the previous section about VTEPs.
 
-[![diagram3](assets/2013/08/diagram3.png)](assets/2013/08/diagram3.png)
+[![diagram3](/assets/2013/08/diagram3.png)](/assets/2013/08/diagram3.png)
 
 The controller needs to be aware of all of the overlay networks so that it can coordinate between hypervisors, and keep things straight.
 

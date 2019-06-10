@@ -30,7 +30,7 @@ Granted, the argument could be made that this is not a very measurable goal; nev
 
 **Writing** – Objectively, I did not meet the goal that I set for 2014, which was to write 2 blog posts a week. This blog post is actually number 50 for the year, which is closer to one per week. In fact, if you look at the spread, you can plainly see how I was going after this goal aggressively at the beginning of the year, but definitely slacked off in the latter half of the year.
 
-[![blog](assets/2014/12/blog.png)](assets/2014/12/blog.png)
+[![blog](/assets/2014/12/blog.png)](/assets/2014/12/blog.png)
 
 Combined with my previous goal of paying more attention to software development, I learned a lot about this aspect of my life. First, I continue to be amazed by the blog's growth. Traffic to the site more than doubled from 2013, and traffic in 2014 made up 58% of the total views since Keeping It Classless' inception in early 2011. As of today there are just under 500,000 lifetime views to the site. Given my aforementioned writing inconsistencies, this level of readership is amazing and I continue to be ever humbled by it.
 

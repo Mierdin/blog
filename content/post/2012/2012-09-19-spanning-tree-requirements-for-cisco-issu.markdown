@@ -13,7 +13,7 @@ tags: ['catalyst']
 
 I had a great conversation with a coworker regarding the requirements for the In-Service Software Upgrade (ISSU) feature on Cisco switches. For this post, I'm using Nexus 5548UP switches as a distribution layer to my Cisco UCS environment, and at the core is sitting a pair of Catalyst 6500s, set up in a [VSS pair](https://keepingitclassless.net/2011/10/virtual-switching-system-on-cisco-catalyst-6500/).
 
-[![](assets/2012/09/diagram2.png)](assets/2012/09/diagram2.png)
+[![](/assets/2012/09/diagram2.png)](/assets/2012/09/diagram2.png)
 
 For those unfamiliar with ISSU, it is a way for Cisco devices to upgrade their running firmware without the need for a disruptive reboot of the device, which is what has traditionally been used for upgrades to IOS, NX-OS, etc. This is obviously a good thing, since it eliminates the need to bring a switch down, which could be disruptive to network availability, either through the reduced bandwidth of what's usually an active/active setup, or (and more painfully) by revealing bad design or configuration that results in something being hard down during the upgrade (i.e. something that was not dual-homed appropriately)
 

@@ -15,7 +15,7 @@ I received a [comment](https://keepingitclassless.net/2011/07/the-anatomy-of-sho
 
 So, let's work backwards from the point where our packet leaves *some* interface on a router, which would be considered purely an act of the forwarding plane. In order to get to that point, we need to populate the RIB with some entries.
 
-[![bgp](assets/2013/05/bgp.png)](assets/2013/05/bgp.png)
+[![bgp](/assets/2013/05/bgp.png)](/assets/2013/05/bgp.png)
 
 I established an eBGP neighbor relationship and advertised the 123.123.123.0/24 network to R2:
     

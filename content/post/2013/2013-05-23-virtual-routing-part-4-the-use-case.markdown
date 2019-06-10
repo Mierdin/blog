@@ -27,7 +27,7 @@ Seeing as these were all pretty technical configuration-oriented posts, I wanted
 
 First - as I've said before - the concept of performing virtual routing is done on a per-tenant basis. Each tenant gets their own routing instance (or pair of instances if you're doing VRRP, etc). That instance can announce a prefix using an IGP or BGP, and voila - you have the ability to make the vast majority of the connectivity northbound of the hosts L3.
 
-[![CSRscreen2](assets/2013/04/CSRscreen2.png)](assets/2013/04/CSRscreen2.png)
+[![CSRscreen2](/assets/2013/04/CSRscreen2.png)](/assets/2013/04/CSRscreen2.png)
 
 The big idea here is that north-south traffic that for so long has been hairpinned at the physical core switch no longer has to do so. The only traffic that needs to flow north-south is nonrouted traffic between hosts, or traffic leaving the hosts and going somewhere completely different, such as out of the data center. Traffic between tenants or between VLANs on the same tenant can be localized as much as possible.
 

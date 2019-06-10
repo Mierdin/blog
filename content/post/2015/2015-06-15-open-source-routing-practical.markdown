@@ -20,7 +20,7 @@ Please checkout my [GitHub repository](https://github.com/Mierdin/ossrouting) fo
 
 First, here's the topology we'll be working with.
 
-[![](assets/2015/06/oss_routing_lab.png)](assets/2015/06/oss_routing_lab.png)
+[![](/assets/2015/06/oss_routing_lab.png)](/assets/2015/06/oss_routing_lab.png)
 
 All "circuits" are implemented using VirtualBox host networks, described in the Vagrantfile:
 

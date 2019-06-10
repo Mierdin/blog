@@ -17,7 +17,7 @@ I was given the privilege to tinker with some gear from my friends over at Nex
 
 First, like any other storage solution, Nexgen provides long-term data retention via some kind of spinning disk, or if price is no object, all SSD's (not cost effective for nearly everyone, IMHO). These are offered inside the controller/chassis itself if you don't need a ton of capacity, or in additional disk shelves. There are three models, (n5-50/n5-100/n5-150) and the difference between them is found in the maximum storage capacity as well as IOps they can each provide through the difference in caching architectures. Nexgen's focus is on performance, no doubt about it. Every presentation is riddled with slides showing some derivation of the architecture shown below:
 
-[![hl_arch_nexgen](assets/2013/01/hl_arch_nexgen.png)](assets/2013/01/hl_arch_nexgen.png)
+[![hl_arch_nexgen](/assets/2013/01/hl_arch_nexgen.png)](/assets/2013/01/hl_arch_nexgen.png)
 
 Nexgen has partnered with FusionIO to provide SSD caching capabilities, and they've built the controllers to provide this caching as close to the network ports as possible, by placing this SSD directly on the PCIe bus itself. This means that data does not need to traverse the entire controller from front to back, the caching is done in the shortest distance possible.
 
@@ -25,7 +25,7 @@ Now - every storage vendor is doing caching of some kind, so what's different ab
 
 The FusionIO technology caches data in the PCIe SSD drive in tiers, meaning that more blocks can be reserved for higher-tier applications.
 
-[![data placement](assets/2013/01/data-placement.png)](assets/2013/01/data-placement.png)
+[![data placement](/assets/2013/01/data-placement.png)](/assets/2013/01/data-placement.png)
 
 Another cool feature that is really a by-product of this architecture comes into play. In-line deduplication is now no big deal, since dedupe can take place on the SSD itself, not just on the spinning disks. Scheduled dedupe will still take place, but only using surplus I/O resources, meaning the I/O you have guaranteed to your volumes will not be impacted by dedupe. By the way, this particular brand of dedupe is a byte-by-byte comparison, not the extremely common "block hash" method.
 

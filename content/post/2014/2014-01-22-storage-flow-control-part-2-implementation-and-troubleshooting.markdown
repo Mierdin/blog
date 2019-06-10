@@ -38,7 +38,7 @@ In UCS, we have a GUI representation of the exact same Modular QoS CLI (MQC) str
 
 Here, the work for FCoE is mostly already done for us:
 
-[![UCS_QOS](assets/2014/01/UCS_QOS.png)](assets/2014/01/UCS_QOS.png)
+[![UCS_QOS](/assets/2014/01/UCS_QOS.png)](/assets/2014/01/UCS_QOS.png)
 
 As you can see, our options for FCoE are somewhat limited, and for good reason. The "enabled" checkbox is checked permanently. If you're using UCS virtual HBAs, then you're using FCoE whether you like it or not, regardless of what's sitting above your fabric interconnects - so this isn't optional. Neither is the MTU setting, showing "fc" here but is actually 2158 bytes.
 
@@ -50,7 +50,7 @@ Okay, that's all well and good but what happens when things don't work? What opt
 
 > Relevant anecdote: I was recently installing exactly this setup - a pair of Nexus 5Ks with a pair of UCS fabric interconnects. In a multi-hop FCoE design, you generally create an FCoE uplink port channel from UCS to it's own 5K (no vPC, just a port channel to a single switch). Something like this:
 
-[![UCS_FCOE](assets/2014/01/UCS_FCOE-1024x712.png)](assets/2014/01/UCS_FCOE.png)
+[![UCS_FCOE](/assets/2014/01/UCS_FCOE-1024x712.png)](/assets/2014/01/UCS_FCOE.png)
 
 The customer I was working with was complaining that they were experiencing I/O errors for virtual machines stored on FCoE LUNs. I didn't see any issue with WWPN FLOGIs - everything was connected as expected and wasn't flapping. All paths were showing as up and operational within vSphere. So it was difficult for me to do anything but assume the storage array was having issues.
 
@@ -118,7 +118,7 @@ However, in normal circumstances it's best to allow automatic negotiation to tak
 
 The reason for this was that I had unchecked the "drop" checkbox in my Platinum class - this is the default in UCS, so if you don't disable the class or enable drops, then there will be two queues with no-drop enabled.
 
-[![UCS_QOS_BAD](assets/2014/01/UCS_QOS_BAD.png)](assets/2014/01/UCS_QOS_BAD.png)
+[![UCS_QOS_BAD](/assets/2014/01/UCS_QOS_BAD.png)](/assets/2014/01/UCS_QOS_BAD.png)
 
 Now - UCS supports up to two classes with no-drop treatment, so this is totally a valid configuration, but ONLY if the upstream switch (5K) configuration matches. Mine didn't - I was not intending to use the platinum class for no-drop treatment, and the Nexus configuration reflects that:
 

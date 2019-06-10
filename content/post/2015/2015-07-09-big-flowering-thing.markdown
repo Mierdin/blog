@@ -80,7 +80,7 @@ My point is that the "big flowering thing" doesn't really address the needs of a
 
 We are in a situation where small-to-midsize organizations (most of us) don't have the use case, budget, or talent to use a big flowering thing, and the largest organizations - that may have the use case and probably do have the talent - are building their own tools and not interested in the big flowering thing. So who is even interested in using the big flowering thing? The way I see it, a REALLY small sliver:
 
-[![](assets/2015/07/bftcurve.png)](assets/2015/07/bftcurve.png)
+[![](/assets/2015/07/bftcurve.png)](/assets/2015/07/bftcurve.png)
 
 I do believe that end-users are becoming increasingly able and willing to take greater control of their infrastructure - meaning the slider pictured above is starting to trend left. This is not to say that we don't need vendors anymore. However, going forward, I believe the role of the vendor will and should permanently change. We still need vendors to provide us with good equipment and good software. However, our reliance on vendors for giving us every answer to every problem should and I believe will decrease dramatically. I hope for a future where when a vendor builds a big flowering thing, they do so in a way that doesn't prohibit those of us that want to build it ourselves.
 

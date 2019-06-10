@@ -12,7 +12,7 @@ tags: ['career']
 
 I recently gave a [presentation at Network Field Day 17](https://vimeo.com/252900298) wherein I announced that not only was I about to give probably the most compressed talk of my life (time constraints are unforgiving) but that I also was now working for Juniper. Until today, this was pretty much the most explanation I had time to give:
 
-<div style="text-align:center;"><a href="assets/2018/01/short_form.png"><img src="assets/2018/01/short_form.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2018/01/short_form.png"><img src="/assets/2018/01/short_form.png" width="500" ></a></div>
 
 I decided to accept a position with Juniper over the 2017 holiday, and I started last week. There were a few reasons for moving on from the StackStorm team, some of which are personal and have nothing to do with either day job. Despite the move, all of these things are still true:
 
@@ -38,6 +38,6 @@ My time in engineering has taught me a few things, one of which is that everythi
 
 So while the application of my goals is changing, my goal is still to learn about new technical topics and share it with the community. Even if they're mixed with silly puns:
 
-<div style="text-align:center;"><a href="assets/2018/01/nfd_talk.png"><img src="assets/2018/01/nfd_talk.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2018/01/nfd_talk.png"><img src="/assets/2018/01/nfd_talk.png" width="500" ></a></div>
 
 I'm excited for what's in store in the next few years, and hopefully this will help me to be more involved again with the community that has been so helpful in my career journey. There will always be room for more content about tools and tech, but increasingly, the changing role of the network engineer is one of the most important topics to dive into. So while my personal career goals might be changing, my goal of helping engineers evolve their skillsets has not.

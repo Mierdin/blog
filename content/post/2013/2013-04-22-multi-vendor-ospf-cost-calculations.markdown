@@ -15,7 +15,7 @@ While on my current kick with virtual routing, I stumbled across an interesting 
 
 The following topology is what I've been staring at for the last few days
 
-[![screen1](assets/2013/04/screen11.png)](assets/2013/04/screen11.png)
+[![screen1](/assets/2013/04/screen11.png)](/assets/2013/04/screen11.png)
 
 Pretty simple, right? There's a single network (192.168.123.0/24) down inside each virtual host where the VMs are to sit. Each host has a router on it (one Cisco CSR 1000v and the other Vyatta Core 6.5), and both routers are OSPF neighbors with each other as well as with an upstream L3 switch.
 
@@ -91,7 +91,7 @@ A quick look at the OSPF-specific interface properties of the Vyatta router conf
 
 We only care about the link listed last, since it is the link facing downstream, away from us (as we saw before this direction is used to calculate cost). So the cost calculation for both paths looks something like this:
 
-[![screen2](assets/2013/04/screen2.png)](assets/2013/04/screen2.png)
+[![screen2](/assets/2013/04/screen2.png)](/assets/2013/04/screen2.png)
 
 For those used to Cisco defaults (and Juniper and a slew of others) when it comes to OSPF, this cost would seem to indicate a 10Mbps link, since on those platforms, the formula of Reference Bandwidth / Link Speed is used, and Reference Bandwidth is usually 100Mbps. Of course, this was not the case.
 

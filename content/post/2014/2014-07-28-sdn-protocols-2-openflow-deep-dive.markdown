@@ -31,7 +31,7 @@ The OpenFlow pipeline is meant to emulate this process in a vendor-agnostic way.
 
 You could use one table for performing a port lookup, and another for making changes to the L3 header based off of it's current information (NAT is a good example of this). Remember, OpenFlow is not a specific ASIC-level instruction-set, it is an abstraction that the switch creator must implement in a process that converts OpenFlow tables to hardware-specific instructions. It is up to the switch vendor to map the OpenFlow pipeline to specific hardware rules.
 
-[![openflow4a](assets/2014/07/openflow4a.png)](assets/2014/07/openflow4a.png)
+[![openflow4a](/assets/2014/07/openflow4a.png)](/assets/2014/07/openflow4a.png)
 
 Current hardware pipelines are usually configured to support the "traditional" method of destination-based forwarding. We only care about destination MAC, or destination IP address in most cases. One of my first exposures to this paradigm is when I had to play around with [Cisco Catalyst SDM Templates](http://www.cisco.com/c/en/us/support/docs/switches/catalyst-3750-series-switches/44921-swdatabase-3750ss-44921.html), which essentially re-organize TCAM resources to address the specific use case (Policy-Based Routing, or "Source Routing" in my case)
 
@@ -39,7 +39,7 @@ Tables are numbered, starting at 0. All packets go to 0 first, but can be direct
 
 A great and easy way to see this in action is to spin up the demo Fedora 20 image that Kyle Mestery created for the community to learn OpenStack and OpenDaylight integration (Download [here](https://wiki.opendaylight.org/images/HostedFiles/Fedora20_ODL_OpenStack.zip), walthrough [here](https://www.youtube.com/watch?v=3MkCiHeH_Fo)). In summary, the table layout for this implementation looks roughly like this:
 
-[![openflow6a](assets/2014/07/openflow6a-1024x442.png)](assets/2014/07/openflow6a.png)
+[![openflow6a](/assets/2014/07/openflow6a-1024x442.png)](/assets/2014/07/openflow6a.png)
 
 In essence, packets will enter the vSwitch (and in turn the OpenFlow pipeline) from either outside the hypervisor (usually a tunnel, if using overlays), or from a virtual machine. Either way, as the specification requires, all packets first go to table 0. In this specific demo, this table is used primarily for deciding if the traffic is destined for another hypervisor, or to a virtual machine local to this vSwitch. If the former, this table forwards to table 10, and if the latter, forwards to table 20. Both table 10 and 20 will apply any actions required (for instance, if the traffic needs to be NAT'd), but ultimately will forward the traffic out to the appropriate interface.
 

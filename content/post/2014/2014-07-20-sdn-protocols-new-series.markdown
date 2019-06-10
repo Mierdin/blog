@@ -17,7 +17,7 @@ The networking industry in the last few years has seen an explosion in buzzword
 
 There's a lot of new terms floating around, and what makes things even harder to keep up with, the marketing engines are alive and well - muddying the waters, and making it nearly impossible to get technical facts straight. I'm fortunate enough to know a few people that remind me that what matters most is when the rubber meets the road (which usually manifests itself in "shut up and code").
 
-![SDN cat](assets/2014/07/52770151.jpg)
+![SDN cat](/assets/2014/07/52770151.jpg)
 
 To that end, I am kicking off a series that will be completely dedicated to explaining the various protocols and technologies you might encounter in researching SDN.
 

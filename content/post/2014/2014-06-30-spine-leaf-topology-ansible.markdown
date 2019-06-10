@@ -21,11 +21,11 @@ I have access to a few Cisco Nexus 9000 switches in the lab, and I wanted to be
 
 So, I went about it this way - I wanted to look at each spine as it's own independent domain. Each leaf will be connected to each spine switch. Therefore, I wanted to use the spines as my starting point. I will address each spine one at a time, and build a topology from there. Each spine and it's leaves will form what I'll call a "spine domain". In reality, our network may look like this:
 
-[![diagram2a](assets/2014/06/diagram2a.png)](assets/2014/06/diagram2a.png)
+[![diagram2a](/assets/2014/06/diagram2a.png)](/assets/2014/06/diagram2a.png)
 
 but programmatically, I want to store topology information so that each spine domain can be addressed independently from the others.
 
-[![diagram3](assets/2014/06/diagram3-653x1024.png)](assets/2014/06/diagram3.png)
+[![diagram3](/assets/2014/06/diagram3-653x1024.png)](/assets/2014/06/diagram3.png)
 
 I am currently using the host ID (derived from "show license host-id") to uniquely identify each spine and leaf in my topology table.
 
@@ -39,7 +39,7 @@ Ready? Let's get into it.
 
 My actual topology is slightly less impressive - since it's a lab environment, we only have a single leaf switch (Nexus 9396) connected to two spine switches (Nexus 9508). I'll do my best to point out how our datasets can be expanded in the event we had more than one leaf or more than two spines. However, we do have two "spine domains", which allows us to get an acceptable amount of topology information.
 
-[![diagram1a](assets/2014/06/diagram1a-1024x584.png)](assets/2014/06/diagram1a.png)
+[![diagram1a](/assets/2014/06/diagram1a-1024x584.png)](/assets/2014/06/diagram1a.png)
 
 Im using a very simple topology, and my inventory file located at /etc/ansible/hosts will reflect that:
     

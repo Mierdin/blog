@@ -25,7 +25,7 @@ Me and my sleep-deprived brain are both looking at this and thinking: "How does 
 
 I set up a simple topology, with two routers serving as the L3 boundary for two Ethernet segments, and a single router connected to each. The idea is to set up a static route on R1 to a loopback address on R4 so that communication to the remote subnet can be established.
 
-[![](assets/2012/03/topology.png)](assets/2012/03/topology.png)
+[![](/assets/2012/03/topology.png)](/assets/2012/03/topology.png)
 
 Let's say we did things the traditional way, and entered a static route to the address assigned to R2's Fa0/0 interface: 1.1.1.2:
 
@@ -33,7 +33,7 @@ Let's say we did things the traditional way, and entered a static route to the a
 
 You can worry about your own redundancy mechanisms, such as a floating static route to R3 in case the link to R2 fails - whatever you see fit. Regardless, if R2 is up, the initial connectivity, as with all network communication, requires a link-local address, which is retrieved via an ARP request for that next-hop address:
 
-[![](assets/2012/03/old_arp.png)](assets/2012/03/old_arp.png)
+[![](/assets/2012/03/old_arp.png)](/assets/2012/03/old_arp.png)
 
 We've all (hopefully) seen this before: since the address we're trying to get to (123.123.123.1) is on a subnet that is not directly connected, the routing table is used to identify the next-hop address. Since one is found, the ARP request is for that next-hop address, and the traffic to follow will be sent to the MAC address retrieved as a result. Shown above, R2 responds with it's MAC address, an entry is created in R1's ARP table and we all go on our merry way.
 
@@ -46,7 +46,7 @@ We remove the static route shown above, and enter the new one, listing the Fa0/0
 
 When we ping the remote subnet, we get quite different results on the wire:
 
-[![](assets/2012/03/new_arp.png)](assets/2012/03/new_arp.png)
+[![](/assets/2012/03/new_arp.png)](/assets/2012/03/new_arp.png)
 
 There are several things I'd like to call to your attention. First, we are pinging an address that is on a non-directly-connected subnet, yet we see an ARP request for this address. This lets us in on a little-known fact about this particular type of static routing:
 

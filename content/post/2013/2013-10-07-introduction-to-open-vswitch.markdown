@@ -23,7 +23,7 @@ The configuration of OVS is controlled by a database schema organized into sever
 
 There are two tools used to configure an OVS instance: OpenFlow and OVSDB. These two protocols are what allow us to do really cool stuff with OVS beyond simple bridging, in a multi-hypervisor fashion.
 
-[![diagram2](assets/2013/10/diagram2.png)](assets/2013/10/diagram2.png)
+[![diagram2](/assets/2013/10/diagram2.png)](/assets/2013/10/diagram2.png)
 
 These protocols, however, are used for different things, so let's explain.
 
@@ -33,7 +33,7 @@ Open vSwitch is one of the most popular implementations of [OpenFlow](https://k
 
 OpenFlow is a leading example in SDN of a controller-based network architecture. The idea in this case would be to use the OVS as an access layer to the virtual environment, taking instructions from some kind of centralized controller that pushes flows down to the vSwitch.
 
-[![openflow](assets/2011/06/openflow.jpg)](assets/2011/06/openflow.jpg)
+[![openflow](/assets/2011/06/openflow.jpg)](/assets/2011/06/openflow.jpg)
 
 OpenFlow is where we get the most bang for our buck when it comes to Open vSwitch. While OVS can do things like tunneling, QoS, and SPAN natively, the real value comes from being able to directly influence flow tables, creating powerful L2-L4 service insertion, right in the hypervisor. Because of this L2-L4 visibility, we can do basic routing and security right there in RAM.
 
@@ -109,7 +109,7 @@ A quick note on this config:
 
 Displaying things a little more visually, we basically end up with this:
 
-[![diagram1](assets/2013/10/diagram1.png)](assets/2013/10/diagram1.png)
+[![diagram1](/assets/2013/10/diagram1.png)](/assets/2013/10/diagram1.png)
 
 Not too complicated at first glance, but keep in mind that we can do some really powerful stuff with OVSDB and OpenFlow to build advanced services on top of this.
 

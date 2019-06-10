@@ -45,7 +45,7 @@ Check out [Cumulus' documentation](http://docs.cumulusnetworks.com/display/VX/Us
 
 First, head over to the [download page](https://cumulusnetworks.com/cumulus-vx/download/), and grab the .box file (listed as "Vagrant Box"). Follow the instructions to install this box, as well as install the vagrant plugin for Cumulus. Here's a screenshot of me doing this on my laptop:
 
-[![](assets/2015/08/box_setup.png)](assets/2015/08/box_setup.png)
+[![](/assets/2015/08/box_setup.png)](/assets/2015/08/box_setup.png)
 
 Once this is done, clone the CumulusVX [Github repo](https://github.com/CumulusNetworks/cumulus-vx-vagrant), and navigate to the "demos" directory as shown below (I am using the HTTPS URL for simplicity):
 
@@ -54,13 +54,13 @@ Once this is done, clone the CumulusVX [Github repo](https://github.com/CumulusN
 
 Here, you'll notice a few subdirectories representing various topologies you can spin up:
 
-[![](assets/2015/08/demos.png)](assets/2015/08/demos.png)
+[![](/assets/2015/08/demos.png)](/assets/2015/08/demos.png)
 
 Each contains a Vagrantfile (describes virtual machine properties, and network connectivity, among other things) and an Ansible playbook (.yml file)! The Vagrantfile references Ansible as a provisioner, and calls this .yml file to instruct Ansible the steps to take within the virtual machine once it's stood up.
 
 For this post, let's look at clos-bgp. If you want, you can look at the contents of this Vagrantfile, but the folks from Cumulus wrote this in a way that leverages an outside file for determining certain operational parameters of the build - such as how many spine switches to have, or leaf switches, or what ASN they should have. That file is properties.yml:
 
-[![](assets/2015/08/properties.png)](assets/2015/08/properties.png)
+[![](/assets/2015/08/properties.png)](/assets/2015/08/properties.png)
 
 You can modify these properties, and the Vagrantfile will take care of building out the lab according to those properties. So if you feel like you want to add another switch, do it in this properties file.
 
@@ -68,7 +68,7 @@ You can modify these properties, and the Vagrantfile will take care of building 
 
 You only need to run "vagrant up" to make this lab come to life!
 
-[![](assets/2015/08/vagrantup.png)](assets/2015/08/vagrantup.png)
+[![](/assets/2015/08/vagrantup.png)](/assets/2015/08/vagrantup.png)
 
 This will take a bit of time, but if you pay attention, you'll see Vagrant initializing four virtual machines (two spines, and two leaves) as well as calling Ansible for each to perform provisioning tasks on each, such as setting up Quagga and enabling BGP on certain interfaces.
 

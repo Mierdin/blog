@@ -31,7 +31,7 @@ Ever heard that distance vector routing protocols like RIP perform "routing by r
 
 Now - it's true that EIGRP establishes neighbor relationships and maintains a topology table like OSPF does, and that's probably a big cause of some of the confusion. However - take a look at a sample EIGRP route advertisement:
 
-[![](assets/2011/10/EIGRP-UPDATE.png)](assets/2011/10/EIGRP-UPDATE.png)
+[![](/assets/2011/10/EIGRP-UPDATE.png)](/assets/2011/10/EIGRP-UPDATE.png)
 
 Now - those familiar with EIGRP are pretty comfortable with everything shown here. We know that all of the values used for calculating metric (as well as MTU even though it's not used in EIGRP metric calculations) are sent along with each route - it is, after all, just one big route advertisement. So maybe it's not as bad as RIP, because it's only one route, and there's certainly a lot more information given here so that each EIGRP router can make more intelligent routing decisions, but the decisions themselves are still based off of another router's routing table. This advertisement is here because the sender uses it themselves and is advertising itself as a potential next-hop to get to this route.
 
@@ -41,7 +41,7 @@ This is what we adequately describe as "routing by rumor". EIGRP doesn't  make 
 
 Link-state protocols do not advertise routes. They advertise links. The SPF algorithm generates routes based on that information - and it is as complex as it is because it has to do so mathematically. SPF is essentially distrusting of other routers. SPF wants to figure out for itself, with no help, exactly where each packet should go. This decision is based purely on the state of each link in the network - thus link-state. No distance vector protocol like RIP, EIGRP, or even BGP does this.
 
-[![](assets/2011/10/OSPF-UPDATE.png)](assets/2011/10/OSPF-UPDATE.png)
+[![](/assets/2011/10/OSPF-UPDATE.png)](/assets/2011/10/OSPF-UPDATE.png)
 
 The above packet capture is from an OSPF Link State Update, which contained a single Link State Advertisement. This is the way OSPF works - rather than distribute routes, it advertises links. These can take a variety of forms, and there are entire books dedicated to the different type of LSAs, but the important thing to remember for this post is that this packet is not a route advertisement. This message contains a Type 1 LSA, other wise known as a router LSA, and it describes everything this particular router is connected to.
 

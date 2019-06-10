@@ -17,7 +17,7 @@ The metric for EIGRP by default is most largely influenced by tweaking interface
 
 The below topology is pretty similar to what I was working with at the time:
 
-[![screen1](assets/2013/07/screen1.png)](assets/2013/07/screen1.png)
+[![screen1](/assets/2013/07/screen1.png)](/assets/2013/07/screen1.png)
 
 Let's say that R1 is our network core, and we have redundant routers to reach R4. I wanted all traffic destined for the 172.16.1.0/24 network (loopback on R4 for our purposes) to go through R2.
 

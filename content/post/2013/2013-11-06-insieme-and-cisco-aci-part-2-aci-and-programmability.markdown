@@ -77,7 +77,7 @@ Application policies will be configured in terms that make sense to application 
 
 The main task is to define your application profiles to essentially describe their respective application's impact on the network. Once done, policies can be configured by the same application folks to define relationships between these profiles.
 
-[![diagram0](assets/2013/11/diagram0.png)](assets/2013/11/diagram0.png)
+[![diagram0](/assets/2013/11/diagram0.png)](/assets/2013/11/diagram0.png)
 
 Note that zero networking knowledge is needed for this. As an application developer or owner, you're configuring relationships using verbs like "consume" or "register" or "store". Those are the words you're used to using. That's the idea here - abstract the networking nerd knobs away and let the network engineers maintain them.
 
@@ -95,7 +95,7 @@ The typical ACI fabric will be designed in a traditional leaf-spine architecture
 
 The workloads and policy services connect directly into the leaf switches of the fabric. This can be baremetal workloads, or hypervisors.
 
-[![diagram1](assets/2013/11/diagram1.png)](assets/2013/11/diagram1.png)
+[![diagram1](/assets/2013/11/diagram1.png)](/assets/2013/11/diagram1.png)
 
 An ACI fabric operates as a L3 routed leaf-spine fabric with VXLAN overlay. There is no TRILL or FabricPath anywhere - so redundancy is accomplished via L3 ECMP.
 
@@ -112,7 +112,7 @@ Each ingress port on the fabric is it's own classification domain - so using the
 
 Every port on the 9000 fabric is a native hardware VXLAN, NVGRE, and IP gateway. As you can imagine, this means that our flexibility in tagging mechanisms outside the fabric is a lot better. We can really just use whatever we want, and coordinate the tags that are being used using policy. The fabric will rewrite as necessary - allowing a Hyper-V host and an ESXi host to talk using both of their native tagging mechanisms at line rate.
 
-[![diagram2](assets/2013/11/diagram2.png)](assets/2013/11/diagram2.png)
+[![diagram2](/assets/2013/11/diagram2.png)](/assets/2013/11/diagram2.png)
 
 Because classification occurs at the edge, each leaf essentially serves as a gateway for any tagging mechanism. This function is able to translate between VXLAN, VLAN, NVGRE, etc. - all at line rate in hardware. This also means that integration of these application policies between virtual and physical workloads is seamless.
 
@@ -134,7 +134,7 @@ This is to limit the likelihood of packets being delivered in the wrong order. W
 
 The ALE ASIC is able to do something extremely nifty to help get around this. It uses timers and short "hello" messages to determine the exact latency of each link in the fabric.
 
-[![diagram3](assets/2013/11/diagram3.png)](assets/2013/11/diagram3.png)
+[![diagram3](/assets/2013/11/diagram3.png)](/assets/2013/11/diagram3.png)
 
 This is HUGE because it means that you know the exact latency for each link all the time. This allows you to do true link balancing, because you don't have to do tricks to get packets to arrive in the right order - you simply time it so that they do. As a result, our entire fabric can use each link to it's full potential.
 

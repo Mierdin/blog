@@ -30,11 +30,11 @@ All kidding aside, it's clear through the marketing messages that the primary ob
 
 HP is positioning Moonshot as a way to get a larger number of compute nodes in a smaller space, with much less power consumption. A single HP Moonshot 1500 chassis has room for 45 hot-pluggable cartridge-based servers in a 4.3 rack unit form factor.
 
-[![serverpicture](assets/2013/07/serverpicture.png)](assets/2013/07/serverpicture.png)
+[![serverpicture](/assets/2013/07/serverpicture.png)](/assets/2013/07/serverpicture.png)
 
 Moonshot introduces the concept of cartridge-based computing. Again, smaller nodes, but more of them. They use less than 6W per cartridge, through the use of the Intel Atom chipset. The first iteration makes use of the S1200 Centerton processors, which provides the desired compute power in a lower form-factor and with less power consumption.
 
-[![cartridgepicture](assets/2013/07/cartridgepicture.png)](assets/2013/07/cartridgepicture.png)
+[![cartridgepicture](/assets/2013/07/cartridgepicture.png)](/assets/2013/07/cartridgepicture.png)
 
 As a result, Moonshot is not really positioned the same as the traditional servers in a typical enterprise datacenter for virtual or physical workloads. You wouldn't go out and buy this for your new vSphere deployment. This is more of a scale-out approach, providing smaller, more efficient compute nodes, and more of them per RU. A good example would be a massive web server deployment, or big data.
 
@@ -50,7 +50,7 @@ If you look at the video above, you'll notice that the lady from HP's lab had th
   * Storage
   * Multi-Node
 
-[![cartridges](assets/2013/07/cartridges.png)](assets/2013/07/cartridges.png)
+[![cartridges](/assets/2013/07/cartridges.png)](/assets/2013/07/cartridges.png)
 
 Right now, the only available cartridge is the standard Direct Hosting model with 8GB RAM, the Atom Processor, and a single hard drive (can be SATA or SSD). New cartridges should be on the market soon, such as those built on the ARM processor, as well as additional network switch modules.
 
@@ -60,7 +60,7 @@ At the end of the day, I want to know what makes this product manageable. Comput
 
 So what separates Moonshot from a rack made of Legos full of Raspberry Pi units?
 
-[![raspberry-pi-supercomputer-1-620x465](assets/2013/07/raspberry-pi-supercomputer-1-620x465.jpg)](assets/2013/07/raspberry-pi-supercomputer-1-620x465.jpg)
+[![raspberry-pi-supercomputer-1-620x465](/assets/2013/07/raspberry-pi-supercomputer-1-620x465.jpg)](/assets/2013/07/raspberry-pi-supercomputer-1-620x465.jpg)
 
 Well there may not be that many features, but it does use the iLO management module that most HP server admins have become very familiar with. Using this you can get to any server cartridge and install an operating system, as well as perform some basic configuration changes on the system. Not a lot of bells and whistles here.
 

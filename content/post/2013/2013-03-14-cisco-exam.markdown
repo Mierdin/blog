@@ -59,6 +59,6 @@ I've been asked to publish my study methods. I don't follow this verbatim for al
 
 Any other questions, feel free to let me know. I also recommend keeping a "general" tab in OneNote that allows you to write down todos and questions to be answered later, so your thought processes can get recorded, but your line of study isn't interrupted. I'm very ADD, so I have to do this to make sure everything gets captured and nothing gets missed.
 
-[![notes](assets/2013/03/notes.png)](assets/2013/03/notes.png)
+[![notes](/assets/2013/03/notes.png)](/assets/2013/03/notes.png)
 
 Again, I'm very interested in hearing other study methods. Please share your own in the comments.

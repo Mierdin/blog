@@ -38,7 +38,7 @@ Okay, so Google's IPv6-only site seems to work, let's try another one of my favo
 
 Seems to fail, though I get a "destination host unreachable" on those attempts. I went ahead and tested web connectivity to both, as well as quite a few other sites. There were two sites that worked out of around 7 that I tested. Very strange. In addition, the "destination host unreachable" message intrigued me. So I decided to open a packet capture as I often do, to give me a little better view of the problem:
 
-[![ipv6ra3](assets/2013/03/ipv6ra3.png)](assets/2013/03/ipv6ra3.png)
+[![ipv6ra3](/assets/2013/03/ipv6ra3.png)](/assets/2013/03/ipv6ra3.png)
 
 My host (Windows 7) was sending a large number of neighbor solicitations, all of which were asking for the link-layer (MAC) address of the IPv6 address I was trying to reach. [As I covered in a previous post](https://keepingitclassless.net/2011/10/neighbor-solicitation-ipv6s-replacement-for-arp/), IPv6 Neighbor Solicitation serves the role that ARP does in IPv4, which allows devices on the same L2 segment to resolve L3 addresses to L2 addresses. However, the address I was trying to reach was not only not on the same L2 segment, but likely somewhere else in the world entirely. So why wasn't my PC trying to send a Neighbor Solicitation to my router so the packet can get sent through the internet, instead of trying in vain to go directly?
 
@@ -62,7 +62,7 @@ Someone (me) made a fat finger mistake, and though I typed out the full prefix i
 
 So I got out my handy wireshark again, since I didn't catch this the first time, but this time I was out to see the router advertisements that were being sent out by the ASA:
 
-[![ipv6ra1](assets/2013/03/ipv6ra1.png)](assets/2013/03/ipv6ra1.png)
+[![ipv6ra1](/assets/2013/03/ipv6ra1.png)](/assets/2013/03/ipv6ra1.png)
 
 Interestingly enough, there were TWO prefixes being advertised via the ASA. The first one was the fat-fingered prefix I manually typed in, but the full /64 prefix I intended to type out. With a little research I discovered that the ASA will by default advertise the prefix(es) assigned to the interface in addition to the prefix (if any) explicitly stated in the "ipv6 nd prefix" command, as long as there are other RA commands stated, such as "ipv6 nd ra-interval" or "ipv6 nd ra-lifetime".
 

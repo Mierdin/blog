@@ -21,7 +21,7 @@ This isn't a black and white transition either. After a while, it becomes diffic
 
 As the learning continues into more advanced topics, and the learner gains more experience, eventually the ratio between "fundamentals" and implementation-specific knowledge flips on it's head. The amount of focus applied towards learning implementation details - perhaps a different vendor's CLI syntax for already learned concepts - increases exponentially, while the amount of focus on fundamentals - out of necessity - tapers off, forming more of a logarithmic curve.
 
-![learninggraph](assets/2014/04/learninggraph.png)
+![learninggraph](/assets/2014/04/learninggraph.png)
 
 This is certainly true when you begin to learn a different implementation - many of the fundamental concepts in networking are transferable between vendor platforms, but of course the CLI commands used are different.
 

@@ -19,7 +19,7 @@ The end result would be to have an identical volume created on the secondary fil
 
 When considering a snapmirror, the first thing to do is identify the network connectivity for the transfer. The filers in question were in racks opposite each other, so a 25' Cat6 cable was more than sufficient for this purpose. The e0a ports on the back of each filer were unused and provide 1Gbit network connectivity, so this is what I chose to use for the transfer.
 
-[![](assets/2012/04/filer_diagram.png)](assets/2012/04/filer_diagram.png)
+[![](/assets/2012/04/filer_diagram.png)](/assets/2012/04/filer_diagram.png)
 
 It looks like those ports are capable of autosensing that the cable being used was a straight-through cable (not a crossover) and was able to re-pin to make the connection work. The links lit up immediately.
 
@@ -152,7 +152,7 @@ You can set up a snapmirror to use something like the management network, or eve
 
 Finally, in order to use the volume, you have to break the snapmirror relationship, then set the volume to "enable" status. If you try to do anything with it like create a LUN, you'll get a message indicating the volume is read-only:
 
-[![](assets/2012/04/lun_screen.png)](assets/2012/04/lun_screen.png)
+[![](/assets/2012/04/lun_screen.png)](/assets/2012/04/lun_screen.png)
 
 First, we break the snapmirror relationship. This is done by volume name. Keep in mind that you'll need to add the relationship again for a resync, such as in a DR scenario. It informs you that the volume size will remain the same in case this is desired later:
     

@@ -15,7 +15,7 @@ Hello.
 
 Let me begin by saying you have arrived.
 
-[![](assets/2011/10/cisco_man.png)](assets/2011/10/cisco_man.png)
+[![](/assets/2011/10/cisco_man.png)](/assets/2011/10/cisco_man.png)
 
 Pardon me, where are my manners? I am CiscoMan - the comforting presence at the top of a large number of Cisco documents such as configuration and installation notes for Catalyst switches.
 

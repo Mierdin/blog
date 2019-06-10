@@ -97,7 +97,7 @@ Then just import these XML files:
 
 If you use virt-manager to connect to this host, you can see these storage pools show up in the GUI and we could continue there to install our virtual machine.
 
-[![diagram1](assets/2014/01/diagram1.png)](assets/2014/01/diagram1.png)
+[![diagram1](/assets/2014/01/diagram1.png)](/assets/2014/01/diagram1.png)
 
 But who wants to do that? Back to the terminal!!
 
@@ -143,13 +143,13 @@ As you can see, my server is barking at me because it's a server distro (no GUI)
 
 > If you wish to use remote VNC to access this console, you must first enable listening on a non-loopback address as shown in the answer [here](http://stackoverflow.com/questions/13173184/how-to-get-vnc-port-number-using-libvirt).
 
-[![diagram2](assets/2014/01/diagram2.png)](assets/2014/01/diagram2.png)
+[![diagram2](/assets/2014/01/diagram2.png)](/assets/2014/01/diagram2.png)
 
 ## Finalizing Network Configuration with Open vSwitch
 
 So after booting my virtual machine, I noticed that with the configuration I gave, it pulls a random address from the 192.168.122.0/24 subnet:
 
-[![diagram3](assets/2014/01/diagram3.png)](assets/2014/01/diagram3.png)
+[![diagram3](/assets/2014/01/diagram3.png)](/assets/2014/01/diagram3.png)
 
 Since this isn't a subnet in use on my network, I assumed libvirt is using some kind of NAT configuration by default ([it is](http://wiki.libvirt.org/page/Networking)). That's not quite what I want, so I need to get this virtual machine integrated with Open vSwitch.
 

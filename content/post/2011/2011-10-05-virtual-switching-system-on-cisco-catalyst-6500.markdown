@@ -11,7 +11,7 @@ tags: ['catalyst']
 ---
 
 
-[![](assets/2011/10/switch1.png)](assets/2011/10/switch1.png)
+[![](/assets/2011/10/switch1.png)](/assets/2011/10/switch1.png)
 
 I'm currently working on a project that, among other things, involves the installation of two Catalyst 6509 switches. I was recently shown a redundancy feature that I had never heard of before called Virtual Switching System (VSS). The more I looked at it, the cooler it was.
 
@@ -21,7 +21,7 @@ VSS actually removes the need for a next-hop redundancy protocol like HSRP or VR
 
 Observe the following diagram:
 
-[![](assets/2011/10/prod_qas0900aecd806ed74b-1.jpg)](http://www.cisco.com/en/US/prod/collateral/switches/ps5718/ps9336/prod_qas0900aecd806ed74b.html)
+[![](/assets/2011/10/prod_qas0900aecd806ed74b-1.jpg)](http://www.cisco.com/en/US/prod/collateral/switches/ps5718/ps9336/prod_qas0900aecd806ed74b.html)
 
 
 In either case, these two switches are configured with a port channel between them. Using HSRP, you can establish redundancy just fine, but keep in mind that since both switches are distinct entities, you must rely on spanning tree to eliminate bridging loops, which means each access layer switch will put one of their uplink connections to the core in a blocking state.

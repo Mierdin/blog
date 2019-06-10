@@ -33,7 +33,7 @@ OpenFlow defines a standard upon which these two concepts can be abstracted. Thi
 
 Since the control plane has been separated from the data path, it becomes possible for network researchers to develop their own algorithms to control data flows and packets. When switches or routers that use an OpenFlow server receive a packet that it doesn't know how to handle, it contacts the OpenFlow server. This server responds using the OpenFlow protocol, which directs the device according to how the network engineer has programmed it. The diagram shown below, taken from [the OpenFlow whitepaper](http://www.openflow.org/documents/openflow-wp-latest.pdf), does a really good job of visualizing this:
 
-[![](assets/2011/06/openflow.jpg)](assets/2011/06/openflow.jpg) 
+[![](/assets/2011/06/openflow.jpg)](/assets/2011/06/openflow.jpg) 
 Copyright © Open Networking Foundation 2011.
 
 When it's all said and done, OpenFlow presents us with a new and easy way of making "programmable networks" a present-day reality.

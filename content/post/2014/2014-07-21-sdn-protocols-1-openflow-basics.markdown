@@ -25,7 +25,7 @@ Today's typical enterprise network devices have a controlling element and forwa
 
 The data plane doesn't make decisions about how to forward traffic, it receives those decisions from the control plane. The control plane is typically a collection of software local to a router or switch that programs flows (rule sets that identify some kind of traffic, and decide what to do with it) into the data plane, so the data plane knows how to do it's job.
 
-![openflow1](assets/2014/07/openflow1.png)
+![openflow1](/assets/2014/07/openflow1.png)
 
 Note in the diagram above, the control plane interacts directly with the data plane to implement these flows in the ASIC's hardware. The "language" used to program these flows varies based on the vendor - certainly proprietary ASICs have their own flow-programming language that is private to that vendor. However, even "merchant silicon" ASICs like Broadcom's Trident II do not have a generally published SDK. So, the operation of programming flows directly into switch hardware is handled only by the switch manufacturer.
 
@@ -45,7 +45,7 @@ The mechanisms used to program flows into switch hardware vary greatly depending
 
 This agent, armed with the flow information programmed into it by a controller, acts like the control plane in the first diagram. Unlike the control plane in the first diagram, it doesn't run routing protocols, or make decisions locally - the controller has already done all that. So, the local agent must store these OpenFlow entries, and push them into the vendor-specific pipeline on that device.
 
-[![openflow2](assets/2014/07/openflow2.png)](assets/2014/07/openflow2.png)
+[![openflow2](/assets/2014/07/openflow2.png)](/assets/2014/07/openflow2.png)
 
 An example flow/action pair - described in english - might be something like:
 
@@ -61,7 +61,7 @@ This is why it is up to the vendor of the networking device to implement OpenFlo
 
 This isn't specific to physical networking gear either. One of the most popular and active implementations of OpenFlow is [Open vSwitch](https://keepingitclassless.net/2013/10/introduction-to-open-vswitch/), which works in much the same way - a local process handles OpenFlow messages, runs all necessary tables locally, and interprets them into forwarding actions that the OVS kernel module can understand.
 
-[![openflow3](assets/2014/07/openflow3.png)](assets/2014/07/openflow3.png)
+[![openflow3](/assets/2014/07/openflow3.png)](/assets/2014/07/openflow3.png)
 
 ## Conclusion
 

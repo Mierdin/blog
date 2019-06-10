@@ -25,7 +25,7 @@ Before getting into the semantics of the NETCONF protocol itself, it's worth bri
 
 Of course, NETCONF needs to be able to refer to such datastores in an agnostic way. To that end, there are [three possible datastores](http://www.netconfcentral.org/netconf_docs#databases) that can be addressed by NETCONF: "running", "candidate", and "startup".
 
-[![netconf03](assets/2015/03/netconf03.png)](assets/2015/03/netconf03.png)
+[![netconf03](/assets/2015/03/netconf03.png)](/assets/2015/03/netconf03.png)
 
 You can think of the "candidate" datastore as a sort of "proposed" datastore, or a configuration that is staged, but not yet pushed to the forefront. Obviously, some network devices do not have a candidate datastore, because they don't support this kind of configuration. If it does, then the server offers a device capability (more on these later) called ":candidate" that lets the client know that it can write to this datastore. This will require the client to also send a "commit" operation (made possible by the ":candidate" capability) in order to instruct the server to push the candidate datastore onto the running datastore - or in other words, cause the configuration to take effect on the network device.
 

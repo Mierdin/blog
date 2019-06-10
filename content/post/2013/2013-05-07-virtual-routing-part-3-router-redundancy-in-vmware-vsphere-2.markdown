@@ -27,17 +27,17 @@ In the [first post in this series](https://keepingitclassless.net/2013/04/virtu
 
 I threw together this topology to illustrate the parameters of the test:
 
-[![topology](assets/2013/05/topology.png)](assets/2013/05/topology.png)
+[![topology](/assets/2013/05/topology.png)](/assets/2013/05/topology.png)
 
 I did not configure the Vyatta or CSR for Fault Tolerance because with this method, I'm relying on VRRP to provide L3 failover capabilities. I did, however, configure it on the test virtual machine, as this would have to be done regardless, if maximum uptime was to be achieved. Otherwise we'd have to wait on HA to restart the VM on the working host, and it would miss the point of the test.
 
 > Be sure to configure anti-affinity rules in DRS (or similar feature) so that these two routers are never on the same host, which would defeat the purpose of redundancy, should that single host fail.
 
-[![csr2screen2](assets/2013/04/csr2screen2.png)](assets/2013/04/csr2screen2.png)
+[![csr2screen2](/assets/2013/04/csr2screen2.png)](/assets/2013/04/csr2screen2.png)
 
 This configuration allows me to only configure the customer's virtual machines for Fault Tolerance, rather than both the VM and the routers themselves. I will completely powercycle one of the hosts, and rely on proven protocols like VRRP to provide our default gateway failover. A constant ping to our test virtual machine reveals that:
 
-[![longfailure](assets/2013/05/longfailure.png)](assets/2013/05/longfailure.png)
+[![longfailure](/assets/2013/05/longfailure.png)](/assets/2013/05/longfailure.png)
 
 ...we have incurred quite an unacceptable amount of downtime.  This is about 40 seconds of downtime - hardly the speedy failure recovery we're looking to accomplish.
 
@@ -63,7 +63,7 @@ This method won't require a ton of explanation, just a quick identification of a
 
 First off, a big caveat - FT requires ([among many other things](http://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.avail.doc_50%2FGUID-83FE5A45-8260-436B-A603-B8CBD2A1A611.html)) that virtual machines only have a single vCPU - any more than one means the VM is incompatible with Fault Tolerance.
 
-[![FTerror](assets/2013/05/FTerror.png)](assets/2013/05/FTerror.png)
+[![FTerror](/assets/2013/05/FTerror.png)](/assets/2013/05/FTerror.png)
 
 Cisco [states in the CSR 1000v documentation](http://www.cisco.com/en/US/docs/routers/csr1000/software/configuration/swinstallcsr.html#wp1184807) that the required configuration is 4 cores on one CPU socket. These requirements immediately disqualify the CSR from being used with Fault Tolerance. Cisco being Cisco (no offense guys) I decided I wasn't simply going to stop there, and I changed the default of 4 cores to one.
 
@@ -73,11 +73,11 @@ So, the conclusion is already known - if you want to adhere to Cisco's recommend
 
 I placed both VMs on our test host, after configuring both for FT.
 
-[![vms](assets/2013/05/vms.png)](assets/2013/05/vms.png)
+[![vms](/assets/2013/05/vms.png)](/assets/2013/05/vms.png)
 
 I powercycled this host, and got GREAT results from a failover perspective.
 
-[![ftfailure](assets/2013/05/ftfailure.png)](assets/2013/05/ftfailure.png)
+[![ftfailure](/assets/2013/05/ftfailure.png)](/assets/2013/05/ftfailure.png)
 
 Remember that VRRP is not present in this method, and OSPF has no idea that the neighbor changed locations - it's the same virtual machine, just on another switchport, so there is no need for OSPF failover to occur for any reason. The biggest hindrance to fast failover right now isn't really much of one at all - it's just the ability for the devices to send the requisite gratuitous ARPs so that the switching infrastructure learns that the MAC addresses corresponding to the known IPv4 forwarding addresses have moved. In some cases, we may not even drop a single ping (depending on timing). Regardless, this is impressive considering that we're still routing inside the virtual environment, and we tested a potential worst-cast scenario, the death of an entire VM host. Not too bad.
 
@@ -87,11 +87,11 @@ However, as was mentioned before, using the CSR1000v for this purpose may not be
 
 First off, the method utilizing VRRP can be made to work pretty well if you understand the timers OSPF puts into place by default. As mentioned before, the network type used here for OSPF will be BROADCAST, meaning a hello interval of 10 and a dead timer of 40. In this scenario, I was able to change this to a hello interval of 1 second and a dead interval of 3. This matches exactly the timers for VRRP, so both should reconverge at roughly the same time. The results I got were much better than without this change, but still not quite as good as Method 2:
 
-[![shortfailure](assets/2013/05/shortfailure.png)](assets/2013/05/shortfailure.png)
+[![shortfailure](/assets/2013/05/shortfailure.png)](/assets/2013/05/shortfailure.png)
 
 That said, I've drawn up a quick "pros and cons" of sorts:
 
-[![table](assets/2013/05/table.png)](assets/2013/05/table.png)
+[![table](/assets/2013/05/table.png)](/assets/2013/05/table.png)
 
 Use Method 1 if you have the CSR 1000v, at least for now. You may also use this if you're a route/switch person and you're used to working with routing protocols and VRRP/HSRP, etc. Method 2 might be better if you're using Vyatta (or another platform with similar requirements) and/or if you're more familiar with using FT for redundancy.
 

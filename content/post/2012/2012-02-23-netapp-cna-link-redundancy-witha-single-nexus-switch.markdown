@@ -15,7 +15,7 @@ I ran into a configuration recently where I had a Netapp storage array with the 
 
 My topology looks like this:
 
-[![](assets/2012/02/topology3.png)](assets/2012/02/topology3.png)
+[![](/assets/2012/02/topology3.png)](/assets/2012/02/topology3.png)
 
 As you can see, there's only one Nexus 5K, shown at the bottom. The two Netapp FAS3240 filers are connected via each Converged Network Adapter to a different Ethernet port on the Nexus.
 

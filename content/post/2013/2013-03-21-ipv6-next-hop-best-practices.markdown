@@ -18,7 +18,7 @@ In IPv6, fe80::/10 is reserved for this purpose, though link-local addresses are
 There's an IETF draft that will expire in a month titled "[Design Guidelines for IPv6 Networks](http://tools.ietf.org/html/draft-matthews-v6ops-design-guidelines-01)" that explores the concept of using link-local addresses in IPv6 for next-hop information, at both the access and core, vs. using globally routable addresses. I recommend a read, because it mirrors the views that I've heard throughout the industry from those implementing IPv6 networks.
 
 Most routing protocols use the link-local address for a next-hop, as do hosts configured via SLAAC. Take, for instance, the sample topology below:
-[![ipv6nexthop](assets/2013/03/ipv6nexthop.png)](assets/2013/03/ipv6nexthop.png)
+[![ipv6nexthop](/assets/2013/03/ipv6nexthop.png)](/assets/2013/03/ipv6nexthop.png)
 
 OSPFv3 has been configured on all links, and everything's in area 0 for simplicity. From R1's perspective, both of the remote networks are available through R2 as expected, but via R2's link-local address.
     

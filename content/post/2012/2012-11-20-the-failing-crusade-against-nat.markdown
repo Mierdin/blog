@@ -24,7 +24,7 @@ Lets just play devil's advocate then - what if NAT was not needed for this purpo
 
 > "Hey, what if we hack out the IP address manually out of the IP header and not worry about what it does to the other portions of the datagram? Damn the applications, man, this is war!"
 
-[![Clearly, this is the inventor of NAT](assets/2012/11/mad_scientist.jpg)](assets/2012/11/mad_scientist.jpg)
+[![Clearly, this is the inventor of NAT](/assets/2012/11/mad_scientist.jpg)](/assets/2012/11/mad_scientist.jpg)
 
 They would be laughed out of camp.
 

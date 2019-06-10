@@ -21,7 +21,7 @@ I will say, that in these types of situations it is CRUCIAL that the owner of th
 
 My solution to this problem is the [TRENDnet TEW-654TR Wireless Travel Router Kit](http://www.newegg.com/Product/Product.aspx?Item=N82E16833156262).
 
-[![](assets/2012/04/2012-04-11_15-12-50_151.jpg)](assets/2012/04/2012-04-11_15-12-50_151.jpg)
+[![](/assets/2012/04/2012-04-11_15-12-50_151.jpg)](/assets/2012/04/2012-04-11_15-12-50_151.jpg)
 
 This particular model isn't a powerhouse of wireless excellence, but it is absolutely compact and feature-rich despite its size. It supports up to 802.11n, can autosense channels (great for avoiding interference with enterprise WLANs), and supports just about anything else that a normal SOHO wireless router would support, like NAT/firewall, DHCP, etc.
 

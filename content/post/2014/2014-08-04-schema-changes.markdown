@@ -71,7 +71,7 @@ The knowledge of where to expect certain types of data is known as this documen
 
 This came up in a conversation I had last week - what if someone changes this schema without our knowledge?
 
-[![alteredschema](assets/2014/08/53236038.jpg)](assets/2014/08/53236038.jpg)
+[![alteredschema](/assets/2014/08/53236038.jpg)](/assets/2014/08/53236038.jpg)
 
 In an ideal world, this would never happen. We would be able to write scripts and software once, and it would work for the rest of time. Unfortunately, this is just not realistic. The creators of the API may realize down the road that they need to create a new tag, or rename an old one in order to make way for a new feature. Even the CLI is impacted - those that have written CLI-scraping utilities have seen their awesome regular expressions brought down by a simple character change by a vendor.
 

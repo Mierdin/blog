@@ -47,7 +47,7 @@ Finally, we arrive at networking - this definition should be no surprise, it is 
 
 Based on these definitions, SDN is a means by which the act of networking multiple machines/computers together is defined by a set of instructions running in software, somewhere, somehow. The confusing part of all of this is, since software runs on everything to some extent, who's to say that we haven't been running SDN since the inception of computer networking itself! After all - the devices that made ARPANET work had programs running on them that defined how to send frames from one node to another, why can't that be SDN?
 
-[![sdn](assets/2013/02/sdn.png)](assets/2013/02/sdn.png)
+[![sdn](/assets/2013/02/sdn.png)](/assets/2013/02/sdn.png)
 
 ## Definition of Whole
 

@@ -33,7 +33,7 @@ Just google "breaking firewalls with puTTY" and you'll get results. Proxies are 
 
 They can, however, see how much bandwidth your encrypted session is using, so don't do anything bandwidth-intensive. Staying low-key is the name of the game. But if you're careful, you'll be emulating the internet connection that serves your SSH server.
 
-[![Putty](assets/2010/02/Putty_dock_Icon___Vista_style_by_gege32.jpg)](assets/2010/02/Putty_dock_Icon___Vista_style_by_gege32.jpg)
+[![Putty](/assets/2010/02/Putty_dock_Icon___Vista_style_by_gege32.jpg)](/assets/2010/02/Putty_dock_Icon___Vista_style_by_gege32.jpg)
 
 First, using something like puTTY as a local proxy that passes all requests FULLY ENCRYPTED straight from your laptop to your SSH server is much easier to set up. Most linux distros have an SSH server installed already, you just need to turn it on. Try out [ClearOS](http://www.clearfoundation.com/Software/overview.html), its a great RHEL-based server OS. Once you have that server exposed to the internet, its a couple of steps to allow puTTY to tunnel requests that use a port of your choosing.
 

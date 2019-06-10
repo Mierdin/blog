@@ -28,7 +28,7 @@ To power a continuous integration pipeline, a developer will likely write a set 
 
 The network automation story just doesn't really have a proper analog of this concept today. Most network automation conversations talk at length about making changes to the network, but very rarely do I hear anyone talking about validating those changes in the same way a developer talks about validating changes to their source code with integration tests. Despite this, it's clear to me that there's a big interest in being able to do this kind of thing:
 
-<div style="text-align:center;"><a href="assets/2016/03/testingtweets.png"><img src="assets/2016/03/testingtweets.png" width="900" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/testingtweets.png"><img src="/assets/2016/03/testingtweets.png" width="900" ></a></div>
 
 For now, let's say the configuration problem has been solved. Again, how do we define __success__? We need a way to create a set of "tests" to run against our network infrastructure itself - not mere device configurations - that mimic our users' and applications' behavior. These tests could be run periodically, in order to get trending information about how well the network is performing, the status of connectivity between two points, etc. Or these tests could be run ad hoc to assist with troubleshooting.
 
@@ -63,7 +63,7 @@ There are also a few use cases where ToDD is especially useful:
 
 The high-level design of ToDD is shown below:
 
-<div style="text-align:center;"><a href="assets/2016/03/todd-hld.png"><img src="assets/2016/03/todd-hld.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/todd-hld.png"><img src="/assets/2016/03/todd-hld.png" width="600" ></a></div>
 
 This is a fairly simple design. The server is responsible for orchestrating, **but does not take part in** tests amongst groups of agents. It also integrates with databases, manages agent registration activities, and provides API services northbound for the ToDD CLI client, or any other 3rd party services.
 
@@ -79,7 +79,7 @@ For a complete high-level overview of ToDD, check out this video on these and ot
 
 Testlets are the mechanism by which ToDD standardizes testing, regardles of the underlying logic. Testlets standardize the input and output for running a test on an agent, so that ToDD can predictably pass data to a testing application, as well as predictably receive metrics from it once finished.
 
-<div style="text-align:center;"><a href="assets/2016/03/testlet.png"><img src="assets/2016/03/testlet.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/testlet.png"><img src="/assets/2016/03/testlet.png" width="600" ></a></div>
 
 In this initial release of ToDD, I've written testlets for both "ping" and "iperf", so in this sense, those testlets are just "wrapping" the underlying app, and parsing the output. However, this is absolutely not the limit of testlets. Any executable file is permitted here, so these could be written in bash, Python, or even compiled to a binary from languages like C or Go. Those testlets could wrap an existing, external application, or they could BE the testing application The possibilities are limitless - here are a few other ideas for testlets that I want to write:
 
@@ -158,21 +158,21 @@ Now that we have registered and grouped agents, we are ready to move on to testi
 
 A typical test-run example in ToDD is from a group of agents to a list of targets, such as IP addresses or FQDNs:
 
-<div style="text-align:center;"><a href="assets/2016/03/agents1.png"><img src="assets/2016/03/agents1.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/agents1.png"><img src="/assets/2016/03/agents1.png" width="600" ></a></div>
 
 To keep the value of the test as high as possible, each agent will spawn one thread per target, and run tests against each of them simultaneously.
 
-<div style="text-align:center;"><a href="assets/2016/03/agents2.png"><img src="assets/2016/03/agents2.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/agents2.png"><img src="/assets/2016/03/agents2.png" width="600" ></a></div>
 
 However, each agent in the source group will also be doing the same thing, at the same time:
 
-<div style="text-align:center;"><a href="assets/2016/03/agents3.png"><img src="assets/2016/03/agents3.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/agents3.png"><img src="/assets/2016/03/agents3.png" width="600" ></a></div>
 
 This means effectively that all targets are being tested by all source agents at the same time. This makes the test much more powerful. Each agent will report aggregated metrics about each test/target back to the server, and the server will aggregate all of these reports into one big blob of metric data and write it to the database.
 
 This is all great, and there are plenty of useful applications that can be run aginst a set of uncontrolled IP addresses as shown in the purple box below. What if we could control those nodes too, by deploying ToDD agents to them?
 
-<div style="text-align:center;"><a href="assets/2016/03/agents4.png"><img src="assets/2016/03/agents4.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/agents4.png"><img src="/assets/2016/03/agents4.png" width="600" ></a></div>
 
 In this diagram, we are actually targeting another group of ToDD agents. In this case, the ToDD server will spin up some kind of process on the targets first, and then once those are all running, the sources can run their test.
 
@@ -182,7 +182,7 @@ Another great example is HTTP testing with a client tool like curl. You may not 
 
 Finally, one of the best features of ToDD is that you can increase the power of a test by increasing the number of agents. Since we've already added our group definitions, we need only spin up additional agents that would have similar properties:
 
-<div style="text-align:center;"><a href="assets/2016/03/agent-scale-out.png"><img src="assets/2016/03/agent-scale-out.png" width="600" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/agent-scale-out.png"><img src="/assets/2016/03/agent-scale-out.png" width="600" ></a></div>
 
 Since we are grouping according to our datacenter subnet, any new nodes should get an IP address in this subnet, and will automatically be grouped accordingly by ToDD.
 
@@ -377,7 +377,7 @@ All of this data is great, but it's a little boring to just stare at JSON all da
 
 Once that's done, we can use a visualization tool like Grafana to really make this data work for us:
 
-<div style="text-align:center;"><a href="assets/2016/03/grafana.png"><img src="assets/2016/03/grafana.png" width="900" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/grafana.png"><img src="/assets/2016/03/grafana.png" width="900" ></a></div>
 
 
 # Conclusion

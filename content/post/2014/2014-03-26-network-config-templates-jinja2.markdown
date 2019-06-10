@@ -13,7 +13,7 @@ tags: ['automation']
 
 We've all been there at some point in our careers - especially those that work for VARs. You're presented with a bunch of new gear that needs to be configured and deployed, and you're tasked with making the magic happen.
 
-[![IMG_20111222_125040](assets/2014/03/IMG_20111222_125040.jpg)](assets/2014/03/IMG_20111222_125040.jpg)
+[![IMG_20111222_125040](/assets/2014/03/IMG_20111222_125040.jpg)](/assets/2014/03/IMG_20111222_125040.jpg)
 
 It was great to wake up yesterday to read Jason Edelman's [post on Ansible for networking](http://www.jedelman.com/1/post/2014/03/ansible-for-networking.html) - taking an approach to network automation that's built upon existing, proven tools just makes sense, especially for the use case of initial configuration, but hopefully beyond.
 

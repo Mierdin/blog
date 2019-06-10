@@ -53,7 +53,7 @@ I realize that there are some methods for mitigating this....many of my colleagu
 
 This essentially means that it's not only the **output** I wish to automate (again, easy with a simple script) but also the **input**. Complete end-to-end transfer of configuration data, with human interaction kept to a minimum. I'm using JSON as the means of passing data from the "input engine" to the "output engine", roles which are fulfilled by my "getucswwpns" and "installconfig" modules, respectively.
 
-[![Automated Zoning through Ansible](assets/2014/04/ansibleflow-1024x677.png)](assets/2014/04/ansibleflow.png)
+[![Automated Zoning through Ansible](/assets/2014/04/ansibleflow-1024x677.png)](/assets/2014/04/ansibleflow.png)
 
 This will allow me to develop these modules independently from each other to work better and more fluidly so that they can easily be consumed by Ansible users. For instance, I have no intention of sticking with SSH as a transport to the Nexus switches, I will be moving to some kind of NETCONF implementation shortly. Stay tuned for more information on this, as [I've already begun work towards this effort](https://github.com/Mierdin/ansible-nxos-stdlib).
 

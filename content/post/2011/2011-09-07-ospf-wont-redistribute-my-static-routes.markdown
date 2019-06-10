@@ -15,7 +15,7 @@ I was working on some CCNP ROUTE labs, and I was attempting to rebuild a basic O
 
 I didn't catch this the first time I worked on it because I wasn't working from memory, but this time I let my habits get the best of me. I was working with a topology larger than the one shown below, but the following diagram will suffice for our purposes:
 
-![](assets/2011/09/topology.png)
+![](/assets/2011/09/topology.png)
 
 The topology shown above is a collection of three Cisco 2691's, all of which were in Area 0. R2 and R3 were serving as ABRs (Area Boundary Router) for connections to Area 20 and 30 respectively, and R1 simulated an ASBR (Autonomous System Boundary Router). This would represent a router at the edge of a corporate network, or at least the edge of the portion powered by OSPF. Typically this router will have static routes created, such as an "all-zero's" static route that takes all traffic that doesn't match a more specific route and routes it to the adjacent Autonomous System, such as the internet, for example. These static routes will need to get redistributed into the OSPF domain so that other routers, both in the same area and in others, are aware of the routes.
 
@@ -55,7 +55,7 @@ I looked at the routing table on R1 once more and noticed something peculiar.
 
 I had actually created loopback interfaces for each of these networks, in addition to creating the static routes for them. The diagram above doesn't show it, but in the original lab, there were several other routers in different areas, and each of them had loopback interfaces for the purpose of practicing summarization. I got into the habit of creating these loopback interfaces and in my haste, did the same thing on R1 when in fact the only requirement was the creation of the static routes.
 
-[![](assets/2011/09/frustrated-1.jpg)](assets/2011/09/frustrated-1.jpg)
+[![](/assets/2011/09/frustrated-1.jpg)](/assets/2011/09/frustrated-1.jpg)
 
 I should have caught it before, but sometimes it's easy to overlook these kind of anomalies. If you look at the routing table above, you'll notice that the four routes are listed as "static", indicated by the capital "S" shown to the left, but the route entries state that they're directly connected. Typically, a next-hop address will be shown. However, since the networks are both statically configured and directly connected, OSPF viewed them to be invalid static routes for redistribution.
 

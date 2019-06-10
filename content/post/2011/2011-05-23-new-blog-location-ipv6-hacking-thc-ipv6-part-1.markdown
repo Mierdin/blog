@@ -30,7 +30,7 @@ I'll be the first to say that they're almost too easy to use - these kind of too
 
 The "flood_router6" script is made to take advantage of the inherent weakness in operating systems that blindly accept IPv6 Router Advertisements. It floods the network with hundreds of fake router advertisements per second. While most Linux Distributions perform well with this attack, accepting none of the spoofed router advertisements, Windows blindly accepts each advertisement, adding the IPv6 address, Temporary IPv6 address and Default Gateway settings as a result of the Router Advertisement being sent. This is a "feature" that is present even in the most recent Windows operating systems, including Windows 7.
 
-[![](assets/2011/05/ra_flood_lotsa_ipaddrs.jpg)](assets/2011/05/ra_flood_lotsa_ipaddrs.jpg)
+[![](/assets/2011/05/ra_flood_lotsa_ipaddrs.jpg)](/assets/2011/05/ra_flood_lotsa_ipaddrs.jpg)
 
 Shown above is the output of the "ipconfig" command on a Windows 7 laptop that had been recently attacked with this script. As a result, thousands of IPv6 addresses were added, which caused so much stress on the CPU and memory, the device became completely unresponsive and eventually required a reboot to remove the thousands of fake addresses in memory.
 
@@ -44,11 +44,11 @@ Once the attacker is within that directory, the command used to run the attack i
 
 (where "eth0" is the network interface on the attacking machine from which to flood the network with router advertisements)
 
-[![](assets/2011/05/ra_flood_bt4.png)](assets/2011/05/ra_flood_bt4.png)
+[![](/assets/2011/05/ra_flood_bt4.png)](/assets/2011/05/ra_flood_bt4.png)
 
 Within seconds, the windows client becomes completely unresponsive, and the CPU utilization maxes out. The computer memory utilization also starts to increase.
 
-[![](assets/2011/05/ra_flood_cpu_memory.jpg)](assets/2011/05/ra_flood_cpu_memory.jpg)
+[![](/assets/2011/05/ra_flood_cpu_memory.jpg)](/assets/2011/05/ra_flood_cpu_memory.jpg)
 
 That's all it takes to execute a devastating attack on the clients on the network. Since router advertisements are sent to the multicast group ff02::1 which is equivalent to a Layer 2 broadcast. This means all devices in the broadcast domain would be flooded with these fake router advertisements. Depending on the network design this could affect hundreds of devices, causing catastrophic failure within seconds. A smart attacker will be looking for areas like computer labs or cube farms - areas that are likely to be part of the same broadcast domain - to maximize the impact of this attack.
 

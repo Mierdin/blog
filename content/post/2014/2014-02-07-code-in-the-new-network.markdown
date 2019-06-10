@@ -44,7 +44,7 @@ I also included the term "workflow" in titling this section because - while it i
 
 VMware has a leg up in this respect - while every vendor has something similar, vCenter Orchestrator has existed for quite some time, and I've found it to be very feature-rich and stable. Most assume that vCO is something you have to use with vCenter, but it's not (bad product naming from VMware - shocker). vCO is actually a really powerful standalone workflow engine. You don't even have to use it to automate virtualization tasks - you could use vCO for the change management concept I gave earlier - because it's just a workflow engine. You should be able to use tools like this to automate various network tasks, even if it's as simple as SSH scraping:
 
-[![vco2](assets/2014/02/vco2.png)](assets/2014/02/vco2.png)
+[![vco2](/assets/2014/02/vco2.png)](/assets/2014/02/vco2.png)
 
 > That's a real screenshot of a default workflow in vCO - I didn't even have to modify the workflow but could if I wanted to. Was surprised to see this - this kind of workflow could easily be used to make quick network changes.
 

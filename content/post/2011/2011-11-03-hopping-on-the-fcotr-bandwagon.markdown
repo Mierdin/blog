@@ -12,6 +12,6 @@ categories: ['Humor']
 
 Finally got the shirt in the mail. Ready to start implementing this at customer sites.
 
-[![](assets/2011/11/FCoTR.jpg)](assets/2011/11/FCoTR.jpg)
+[![](/assets/2011/11/FCoTR.jpg)](/assets/2011/11/FCoTR.jpg)
 
 

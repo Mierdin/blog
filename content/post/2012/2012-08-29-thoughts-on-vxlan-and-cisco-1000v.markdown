@@ -39,7 +39,7 @@ Another thing the speaker went over is OTV. This is used to extend the Layer 2 f
 
 Then, he whipped this out:
 
-[![](assets/2012/08/VXLANoOTV.png)](assets/2012/08/VXLANoOTV.png) From [Cisco](http://www.cisco.com/web/CA/plus/assets/pdf/Cisco-Plus-Toronto-Enterprise-Private-Cloud-Computing-SCOMRIE.pdf)
+[![](/assets/2012/08/VXLANoOTV.png)](/assets/2012/08/VXLANoOTV.png) From [Cisco](http://www.cisco.com/web/CA/plus/assets/pdf/Cisco-Plus-Toronto-Enterprise-Private-Cloud-Computing-SCOMRIE.pdf)
 
 He did not go into a ton of detail on this, but from what I gathered, the point in running vXLAN over OTV would be to enable that end-to-end, or datacenter-to-datacenter connectivity. I was skeptical at first, but I took a step back and realized this was just simply another way of getting the two ends to talk. If you want to set up OTV between your datacenters, vXLAN can ride on top of it.
 

@@ -40,11 +40,11 @@ So to the more practical - how do we do this? Well of course, each open source p
 
 In Github, the best place to go to provide feedback is to create an Issue. Projects that allow this (most do) will have an "issues" tab right on the Github repo. For instance, [the ToDD project](https://github.com/toddproject/todd):
 
-<div style="text-align:center;"><a href="assets/2017/12/new_issue.png"><img src="assets/2017/12/new_issue.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2017/12/new_issue.png"><img src="/assets/2017/12/new_issue.png" width="500" ></a></div>
 
 You can peruse the list of existing issues, or use the green "New issue" button to the right. Doing so will open a new form for filling out the title and body of the issue you want to raise with the maintainers:
 
-<div style="text-align:center;"><a href="assets/2017/12/creating_issue.png"><img src="assets/2017/12/creating_issue.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2017/12/creating_issue.png"><img src="/assets/2017/12/creating_issue.png" width="500" ></a></div>
 
 > Note that markdown is supported in the text body. Use this extensively, especially using backticks and triple backticks (`) for readable log messages or code snippets and the like. Those reading your issue will thank you for it.
 
@@ -90,7 +90,7 @@ The general workflow for contributing to a repo is via a "Pull Request". In effe
 
 Each Github repository has a "fork" button near the top. This is just a handy way of making a copy of a given repo that you can make changes to directly. Once you've done this, you can then open a PR to "sync" the two copies back up.
 
-<div style="text-align:center;"><a href="assets/2017/12/fork.png"><img src="assets/2017/12/fork.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2017/12/fork.png"><img src="/assets/2017/12/fork.png" width="500" ></a></div>
 
 A **highly** abbreviated list of steps for this workflow is below:
 

@@ -21,7 +21,7 @@ I think the most unspoken part of this paradigm is that this is actually a tool 
 
 Take, for instance, the idea of setting up these network service profiles, which are constructs within ACI used to describe an application. This goes beyond simply creating network connectivity templates ahead of time - templates are traditionally very static, and you spawn instances of them. With this, you may define certain things statically (i.e. Web Tier is always consumed on TCP port 80 for instance) but that doesn't mean that you can't populate another field with an API call, in real time, every time a virtual machine moves, for instance.
 
-[![diagram4](assets/2013/11/diagram4.png)](assets/2013/11/diagram4.png)
+[![diagram4](/assets/2013/11/diagram4.png)](/assets/2013/11/diagram4.png)
 
 There's nothing that I've seen in ACI that will eliminate the need for collaboration betwen the apps team and the network team. However, that meeting can change it's format. Rather than defining literally everything every time a new app needs to get turned up, the two teams describe the framework for provisioning new applications, and build it out ahead of time. Both teams then are aware of the programmatic methods for bringing new applications into this framework.
 

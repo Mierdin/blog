@@ -31,7 +31,7 @@ Then you need to sign up for a consumer key here: [http://getpocket.com/develop
 
 Finally, you can use this key as a command-line argument to my script. For example:
 
-[![pocketdedupe](assets/2015/01/pocketdedupe.png)](assets/2015/01/pocketdedupe.png)
+[![pocketdedupe](/assets/2015/01/pocketdedupe.png)](/assets/2015/01/pocketdedupe.png)
 
 As shown, the script will open a browser tab for you to authenticate with Pocket and approve connection to your new "app". When you are successfully redirected to Google, you can close the tab, and return to the script. Hit ENTER, and you will see the output listed above.
 

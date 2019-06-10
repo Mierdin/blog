@@ -27,7 +27,7 @@ This has produced what I'm calling a "box mentality".
 
 ## The Box Mentality
 
-[![netprog3](assets/2014/05/netprog3.png)](assets/2014/05/netprog3.png)
+[![netprog3](/assets/2014/05/netprog3.png)](/assets/2014/05/netprog3.png)
 
 Let's imagine for a second that you have been charged with making a change on your company's network. You're bringing up a new application, which requires an end-to-end configuration of a new QoS class across the board. You go through all the configuration requirements on the various devices that will be impacted by this change. You allocate a new tag for this traffic to be marked with. You create policies to recognize this tag and do various things with it, such as dedicating bandwidth in the event of congestion.
 
@@ -45,7 +45,7 @@ We need a new model. We need to put into place a methodology that allows us to i
 
 Now - I give you the pyramid that will serve as our visual through the evolutionary path that is network programmability.
 
-[![netprog1](assets/2014/05/netprog1.png)](assets/2014/05/netprog1.png)
+[![netprog1](/assets/2014/05/netprog1.png)](/assets/2014/05/netprog1.png)
 
 Our evolution will start at the bottom, with the "Configured Network", and move up from there. First, a few things about this pyramid:
 
@@ -61,7 +61,7 @@ Keep these points in mind as you read through the three phases of network progra
 
 This phase should not be foreign to anyone. The activities that take place in this phase are synonymous with what takes places in the Box Mentality.
 
-[![netprog2](assets/2014/05/netprog2.png)](assets/2014/05/netprog2.png)
+[![netprog2](/assets/2014/05/netprog2.png)](/assets/2014/05/netprog2.png)
 
 This is an interesting phase, because in the context of network programmablity, on the surface it doesn't seem to do much for us. We've been doing this forever, right? It's boring - configuring a router doesn't get all the news articles and tweets, right?
 
@@ -83,7 +83,7 @@ It wasn't an easy journey - there was a LOT of FUD around server virtualization 
 
 This ingrained culture and insistence on manual process is what Phase 2 intends to change within the networking industry.
 
-[![netprog4](assets/2014/05/netprog4.png)](assets/2014/05/netprog4.png)
+[![netprog4](/assets/2014/05/netprog4.png)](/assets/2014/05/netprog4.png)
 
 At scale, repetitive tasks are the not-so-silent killer. Adding a VLAN on a few dozen switches, updating an SNMP community string, or more complicated stuff like bringing up a remote site, all are tasks that we do somewhat often in many organizations. These repetitive tasks tend to occupy a lot of time, mostly for those whose time is really valuable.
 
@@ -117,7 +117,7 @@ Lots of folks like to talk about SDN and Network Automation like they're the sam
 
 In order to clarify this, I like to bring up a specific example - the concept of a vSwitch. My first experience with a vSwitch, like many of yours, was VMware's Standard vSwitch, baked into every ESXi hypervisor out there. Simply put, it connects our virtual machines into the physical network. Now - many vSwitches work in the same way, but this vSwitch does not act like a physical switch. A physical switch takes Ethernet frames into a port, learns the MAC address of that frame based on it's source address field, and then creates a table entry that matches that address to that interface. All frames destined for that address from then on out, will be forwarded to that port.
 
-[![netprog5](assets/2014/05/netprog5.png)](assets/2014/05/netprog5.png)
+[![netprog5](/assets/2014/05/netprog5.png)](/assets/2014/05/netprog5.png)
 
 The vSwitch works a little differently. Whenever a virtual machine is created, the MAC address for the vNIC on that VM is already known to the hypervisor. It was actually provisioned by the hypervisor. The vSwitch is just an extension of the hypervisor - the vNIC, the vSwitch, and the "vCable" are all maintained within server RAM. So - no learning needs to take place - the MAC addresses are simply known to the vSwitch upon instantiation.
 
@@ -131,7 +131,7 @@ OpenFlow was immediately disruptive to the networking industry because it was so
 
 So...looking past the history lesson and to the future of what network programmability will look like, I think that some kind of centralization will win out. In reality, control plane/data plane separation will likely play a role in the SDN world, but it will be one of many implementation details to choose from - not the whole picture.
 
-![netprog6](assets/2014/05/netprog6.png)
+![netprog6](/assets/2014/05/netprog6.png)
 
 So, putting the control plane discussion to the side for a moment, **some** kind of centralization will play a critical role, just as it did with server virtualization.
 

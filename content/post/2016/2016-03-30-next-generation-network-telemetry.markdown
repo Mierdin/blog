@@ -51,7 +51,7 @@ At this point in the video, Matt brought up a interesting comparison between the
 
 By the way, [I'm taking the same approach with ToDD](https://keepingitclassless.net/2016/03/test-driven-network-automation/)! In the current version, the ToDD server will publish test metrics to a TSDB like InfluxDB, and I can then choose what query to write in Grafana to take advantage of that raw data in any way that I want. I can generate a handful of totally different graphs from the same dataset. I may even use something other than Grafana!
 
-<div style="text-align:center;"><a href="assets/2016/03/grafana.png"><img src="assets/2016/03/grafana.png" width="900" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/03/grafana.png"><img src="/assets/2016/03/grafana.png" width="900" ></a></div>
 
 Matt's presentation sums it up nicely, as he describes the approach that Atlas takes: "You can throw any data at us you want as long as it's in the right format".
 

@@ -26,7 +26,7 @@ It's not much of a secret that I am doing a lot more software development these 
 
 The simple answer is to just set up a virtual machine that has the operating system you want, as well as any dependent software on top. If you've ever done any professional software development, you know this is no simple task. More times than not, the list of software dependencies required is usually quite long, and it can change depending on what you're trying to do, and with what software version. Not only this, but if you wanted to collaborate over code, you'd have to somehow get your virtual machine copied over to someone else's environment (VMs can get pretty large) and then somehow deal with situations when the software needs to change. A better mechanism is needed.
 
-[![Vagrant](assets/2015/03/Vagrant-246x300.png)](assets/2015/03/Vagrant-246x300.png)
+[![Vagrant](/assets/2015/03/Vagrant-246x300.png)](/assets/2015/03/Vagrant-246x300.png)
 
 Enter Vagrant. Vagrant is essentially a tool that allows you to define your development environments in extremely portable text files. You'd write a Vagrantfile that describes the virtual machines you want, what network interfaces they should have, what image they should run, etc. On top of that, Vagrant allows you to use Ansible, Chef, Puppet, Bash scripts, etc. to provision things within the virtual machine itself - also driven by simple, portable text files. You may have a full multi-machine development environment with tons of complex dependencies, yet the whole thing can be sent in an email.
 

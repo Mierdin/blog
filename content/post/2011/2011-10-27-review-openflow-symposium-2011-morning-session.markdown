@@ -11,7 +11,7 @@ tags: ['nfd']
 ---
 
 
-[![](assets/2011/10/41-300x168.png)](assets/2011/10/41.png)
+[![](/assets/2011/10/41-300x168.png)](/assets/2011/10/41.png)
 
 I was able to watch a good chunk of the morning session of the OpenFlow Symposium in San Jose. The stream was having issues at the beginning of the afternoon session, plus I was pulled away for other issues, so I was only able to watch the morning session. I'd like to provide a bit of a write-up from what I was able to catch, and point out some of the highlights that I took interest in from the day's speakers.
 

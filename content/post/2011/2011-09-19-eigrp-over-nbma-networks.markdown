@@ -17,7 +17,7 @@ Something I used to wonder about all the time is how routing protocols work over
 
 Consider the following example diagram:
 
-[![](assets/2011/09/diagram5.png)](assets/2011/09/diagram5.png)
+[![](/assets/2011/09/diagram5.png)](/assets/2011/09/diagram5.png)
 
 In this model, I've configured frame-relay in a "multipoint" fashion, which means every frame-relay connected router is on the same subnet:
 
@@ -31,13 +31,13 @@ Note the broadcast keyword at the end. This allows us to specify that whenever b
 
 You're probably asking what I meant by "pseudo-broadcast". To make sense of it, you should look at a sample Hello packet being sent out of a FastEthernet interface on R1:
 
-![](assets/2011/09/packet_eth.png)
+![](/assets/2011/09/packet_eth.png)
 
 As you can see, the IP Multicast address for EIGRP, 224.0.0.10 has been associated with the corresponding ethernet multicast address, which results in actual multicast traffic.
 
 However, as I mentioned before, there is no such thing as multicast/broadcast in frame relay, so while the IP multicast address remains the same, the DLCI remains the same as if the traffic was good ol' unicast:
 
-![](assets/2011/09/packet_fr.png)
+![](/assets/2011/09/packet_fr.png)
 
 This DLCI represents the PVC between R1 and R2, and while the IP layer believes the packet to be multicast in nature, it is not. The "broadcast" keyword shown in the configuration example above simply takes the layer 3 multicast and encapsulates it in a single unicast frame destined for each remote router specified by a "frame relay map-ip" command. The IP header is able to keep the multicast address in its destination field, and has no idea that the entire frame is just unicast traffic.
 

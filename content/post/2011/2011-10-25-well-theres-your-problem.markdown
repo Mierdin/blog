@@ -12,4 +12,4 @@ categories: ['Humor']
 
 I think they refer to this as a Layer 1 issue:
 
-[![](assets/2011/10/burnt1.png)](assets/2011/10/burnt1.png)
+[![](/assets/2011/10/burnt1.png)](/assets/2011/10/burnt1.png)

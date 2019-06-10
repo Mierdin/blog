@@ -13,14 +13,14 @@ tags: ['akamai']
 
 I recently saw posts from a few sources on a new initiative backed by a consortium that includes Google and OpenDNS to attempt to improve the overall speed of the internet by optimizing the way DNS works on the internet.
 
-![](assets/2011/09/ODandGoogInBed.png)
+![](/assets/2011/09/ODandGoogInBed.png)
 
 If you think about it, a great deal of internet traffic is high-volume requests for things like photos, music, video, and the like. You may know, then, that content providers like Akamai have positioned themselves globally around the world to provide this content at a relatively close physical location to those requesting it. This greatly decreases the length of time required for content to get from point A to point B, and the result is more reliability.
 DNS has become the catalyst for this concept. Authoritative nameservers receive requests from intermediate recursive resolvers, which is typically a DNS server provided to an end-user by their respective ISP. The authoritative nameserver will recognize the source address of this request, which would be the address of the recursive resolver. Since this server is usually geographically close to the end-user requesting content, the authoritative nameservers are able to correctly identify the content provider that's best positioned globally to provide content reliably.
 
 The problem occurs when the end-user doesn't use a DNS server near them. An increasing number of users are using third party DNS services like Google and OpenDNS, because those organizations offer enhanced services, such as policies that dictate what can or cannot be accessed. The downside to this is that the DNS server is usually not geographically representative of the end-user's location. When authoritative nameservers receive requests from these servers, they'll resolve to an IP address of a content provider that's geographically close to that 3rd party service. This means that the end-user will probably be forced to retrieve content over a much longer distance.
 
-[![](assets/2011/09/diagram2.png)](assets/2011/09/diagram2.png)
+[![](/assets/2011/09/diagram2.png)](/assets/2011/09/diagram2.png)
 
 [Section 7.8 of "IPv6 AAAA DNS Whitelisting Implications"](http://tools.ietf.org/html/draft-ietf-v6ops-v6-aaaa-whitelisting-implications-06#section-7.8) has also cited this as the cause of a problem in DNS whitelisting.
 

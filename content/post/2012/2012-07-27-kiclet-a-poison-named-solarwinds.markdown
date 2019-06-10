@@ -17,7 +17,7 @@ Solarwinds Orion NPM is an okay tool, but when it comes to managing anything oth
 
 On top of that, whenever I try to google anything related to solarwinds, I get this crap:
 
-[![](assets/2012/07/google.png)](assets/2012/07/google.png)
+[![](/assets/2012/07/google.png)](/assets/2012/07/google.png)
 
 When a company uses web tactics like this to poison Google search results with pages like this (please try googling this query and see what each result shows you) the result is useless content. Solarwinds' built in search capability is utter garbage, and they're bringing the google results down with it by doing this.
 

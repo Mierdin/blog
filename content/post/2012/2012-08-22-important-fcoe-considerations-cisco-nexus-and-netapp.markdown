@@ -25,23 +25,23 @@ This does not seem to apply to Inter-Switch Links (ISL), only VF_Ports that conn
 
 In the simplest sense, this can be a single ethernet interface, connected directly to the CNA port on the storage array:
 
-[![](assets/2012/08/figure1.png)](assets/2012/08/figure1.png)
+[![](/assets/2012/08/figure1.png)](/assets/2012/08/figure1.png)
 
 You can also configure this in a Virtual Port Channel (VPC) design. In this scenario, each switch has VFC interfaces bound to a port-channel interface - each of which represents one leg of a VPC.
 
-[![](assets/2012/08/figure2b.png)](assets/2012/08/figure2b.png)
+[![](/assets/2012/08/figure2b.png)](/assets/2012/08/figure2b.png)
 
 This is a little confusing - the aforementioned limitation would normally prevent us from doing this, as a port-channel interface could have more than one physical member. However, in a VPC design , the port channel interfaces can (and often do) only have one physical port as a member, so this limitation is often not encountered.
 
 My first customer only had a single Nexus switch, so I wanted to establish a port channel between the single Nexus switch and the Netapp filers. Since this would require me to bind the VFC interface to a port channel with more than a single member, this was not an acceptable configuration, and the VFCs did not come up as a result:
 
-[![](assets/2012/08/figure3.png)](assets/2012/08/figure3.png)
+[![](/assets/2012/08/figure3.png)](/assets/2012/08/figure3.png)
 
 This is NOT a supported configuration. It's important, though, to realize that the problem isn't with the mere fact that the VFC interface is bound directly to a port-channel interface. If that wasn't allowed, we wouldn't be able to run FCoE over a VPC design. The problem is that in this configuration, the port-channel interface to which the VFC is bound contains multiple participating ethernet interfaces.
 
 I then ran into a similar issue this week where I considered running multiple interfaces from each Nexus 5000, but in a VPC. For the same reason, this was also not supported.
 
-[![](assets/2012/08/figure4c.png)](assets/2012/08/figure4c.png)
+[![](/assets/2012/08/figure4c.png)](/assets/2012/08/figure4c.png)
 
 Again, having the VFC's bound to a port channel is perfectly fine. The problem was that the port channels had more than one participating member.
 
@@ -61,19 +61,19 @@ There are a few ways to design the storage/data network to get around this limit
 
 (Note that the VFCs are still bound to the port-channel interface, not directly to the ethernet interface, depicted by the fact that the VFCs are "inside" the switch in the diagram)
 
-[![](assets/2012/08/figure6b.png)](assets/2012/08/figure6b.png)
+[![](/assets/2012/08/figure6b.png)](/assets/2012/08/figure6b.png)
 
 I'll spoil the fun and just tell you: I don't like this configuration - and it shouldn't be much of a surprise. You're essentially taking the value out of having converged network adapters in the first place. If you wanted to do this, why not just run Fibre Channel on dedicated FC ports, and use dedicated ethernet ports for IP-based storage traffic? You can do it if you want, but I won't.
 
 Alternatively, you could make both Fibre Channel and IP-based storage traffic available via each and every interface:
 
-[![](assets/2012/08/figure5b.png)](assets/2012/08/figure5b.png)
+[![](/assets/2012/08/figure5b.png)](/assets/2012/08/figure5b.png)
 
 Here, I'm utilizing all four ports for any kind of storage traffic on the network. I could even include CIFS or iSCSI on this if I really wanted to - I'm taking advantage of the fact that these ports can run it all. In addition, I have full redundancy. This is still a little clunky, but a much better option than before. FC multipathing will take care of utilizing all of the links possible in this scenario, and for IP-based storage, some load balancing functionality on the client could be used to make best use of the available bandwidth.
 
 Want to step into dream land? Unfortunately, the following design is unsupported (and I'll explain why), but here's how I'd like to do it: Bundle all four ports together on the storage array so that you have a single VIF for each protocol, and all four CNA ports are participating in a glorious 40GB VPC.
 
-[![](assets/2012/08/figure7b.png)](assets/2012/08/figure7b.png)
+[![](/assets/2012/08/figure7b.png)](/assets/2012/08/figure7b.png)
 
 Note that I've moved the VFC interfaces outside of the boxes representing the Nexus switches. This is because in this configuration, you would have to bind each VFC directly to each individual ethernet interface. I could then provision VIFs off of this single ifgrp for each storage protocol, which is more simple.
 

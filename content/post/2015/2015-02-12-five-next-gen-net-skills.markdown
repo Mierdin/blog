@@ -19,7 +19,7 @@ This isn't meant to say that all of these skills are required to move your caree
 
 Here, I'm not necessarily talking about full-fledged code knowledge. This section isn't about going and getting a 4 year CS degree. This is mostly about tools, methodologies, and workflows. For some, this will include some kind of interpreted language like Python, but will vary in degree greatly from person to person.
 
-[![I_am_a_Programmer](assets/2015/02/I_am_a_Programmer.png)](assets/2015/02/I_am_a_Programmer.png)
+[![I_am_a_Programmer](/assets/2015/02/I_am_a_Programmer.png)](/assets/2015/02/I_am_a_Programmer.png)
 
 To help get more detailed with this point, I'd like to drill down on four very specific areas within the "software skills" umbrella that you might find useful in your career.
 
@@ -39,7 +39,7 @@ I am convinced that an understanding of how networking works in a Linux system 
 
 For the most part, we still rely heavily on closed, monolithic platforms from the big vendors to make our packets go. This is a paradigm that won't change overnight, so there will continue to be value in learning your vendor's certification stack relevant to your job for quite a while.
 
-[![Gnulinux](assets/2015/02/Gnulinux.png)](assets/2015/02/Gnulinux.png)
+[![Gnulinux](/assets/2015/02/Gnulinux.png)](/assets/2015/02/Gnulinux.png)
 
 However, as data center networks become simpler, and lower-level network functions like L2 and L3 offloaded to the hypervisor, much of the process for configuring and troubleshooting network connectivity is taking place in a Linux distribution of some kind. Software like ifupdown and Quagga are good places to start for this.
 
@@ -49,7 +49,7 @@ Linux has a very different look and feel compared to the traditional monolithic 
 
 If you go through the standard certification track for your favorite vendor, chances are that the curriculum will include a good amount of information about various standard networking protocols like Spanning-Tree, OSPF, BGP, or MPLS. This is especially true in the lower-to-mid level certifications, since at that point, most of the information is still pretty new. However, the higher-level certifications focus a lot more on vendor-specific implementation details. Though there is plenty of this in the lower-level certs as well, this is especially true here, since the fundamentals have been more or less covered at this point. It makes sense; one of the primary purposes of a vendor certification is to train a larger technical sales force for that vendor.
 
-[![Icons11](assets/2015/02/Réprésentation_dinternet.jpg)](assets/2015/02/Réprésentation_dinternet.jpg)
+[![Icons11](/assets/2015/02/Réprésentation_dinternet.jpg)](/assets/2015/02/Réprésentation_dinternet.jpg)
 
 If you work for an organization that uses only a single vendor, you probably don't need to go much further than the configuration notes for that product. However, I've noticed that multi-vendor networks and open source implementations of networking protocols are on the rise. In this case, the vendor's documentation isn't always sufficient, because it only addresses a portion of your infrastructure. The common denominator here is the open protocols and standards that allow these vendors to interoperate. Knowing JunOS or IOS syntax takes a back seat to knowing BGP **really** well, because only then will you be able to run a network that's composed of both.
 
@@ -61,7 +61,7 @@ One of the earliest things I did to begin to break out of the traditional "I kno
 
 In the past 4 years this has become one of the biggest focus areas for network innovation. My good friend Brent Salisbury says it best - [the virtual edge is the new network edge](http://networkstatic.net/network-iceberg/). By the time you get to the physical network, you're already at the second tier of the hierarchy. It is no longer acceptable to view the ToR as the sole demarcation between network and compute.
 
-[![Container_ship_Hanjin_Taipei](assets/2015/02/Container_ship_Hanjin_Taipei-1024x768.jpg)](assets/2015/02/Container_ship_Hanjin_Taipei.jpg)
+[![Container_ship_Hanjin_Taipei](/assets/2015/02/Container_ship_Hanjin_Taipei-1024x768.jpg)](/assets/2015/02/Container_ship_Hanjin_Taipei.jpg)
 
 It worked for me, so maybe it will work for you. I highly recommend that you acknowledge that the access layer is now inside a server for those virtual workloads, and become familiar with the way vSphere virtual switching works, or check out [Open vSwitch](http://openvswitch.org/). Container networking is also going to be bringing a new face to this - Jon Langemak has written some [PHENOMENAL posts](http://www.dasblinkenlichten.com/docker-networking-101/) on Docker, Kubernetes, CoreOS and more - all from a networking perspective. With the tools available in the open source community, there really is no excuse to not be branching out and pushing yourself to learn new things outside of the traditional stack.
 
@@ -71,7 +71,7 @@ Now before you say anything, I'll admit that the phrase "This is the year of IPv
 
 However, that's not really an option. The internet has exhausted supply of IPv4 address space very incrementally, and at each "milestone", this battle cry has been uttered, but we're actually there now. We're actually at the point where significant portions of the world can ONLY get IPv6 connectivity. The time is coming for those of us languishing in IPv4 splendor. It may not happen in 2015, but it will happen, and soon enough, recruiters will be asked to filter out resumes that do not contain "IPv6".
 
-[![ipv6](assets/2015/02/ipv6.png)](assets/2015/02/ipv6.png)
+[![ipv6](/assets/2015/02/ipv6.png)](/assets/2015/02/ipv6.png)
 
 My recommendation is to ask if your service provider offers IPv6 connectivity. If they don't (or if it's a kludge) then check out Hurricane Electric [tunnel broker service](https://tunnelbroker.net/). I have an SSID that runs ONLY IPv6 for testing purposes, as well as another that is dual-stack. I plan on doing some extensive testing very soon to see exactly what devices **really** support v6, and will do my part to keep vendors accountable. This is my way of eating my own dog food in a somewhat forgiving environment (my home) so that I don't piss off the wrong people at work. The key is to think of everything in dual-stack. Assume that for everything you do you'll have to configure it in both IPv4, and IPv6. It's useful as a thinking exercise at a minimum.
 

@@ -40,7 +40,7 @@ Let's say you've built a function (or used someone else's) that allows you to ea
 
 Of course, if you're trying to replace yourself with a script, this is exactly the same information that your script will receive. It's literally even formatted this way on a line-by-line basis, as shown in the packet capture:
 
-[![screen1](assets/2013/09/screen1.png)](assets/2013/09/screen1.png)
+[![screen1](/assets/2013/09/screen1.png)](/assets/2013/09/screen1.png)
 
 Anyone with a decent amount of coding experience will know that this isn't exactly optimal. The reason for this is called object-oriented programming (OOP). In properly designed software, we would want to create an "object" of type "LSA" or something like that, and give that object properties like "type", "link ID", "age", and so on. This allows us to access the list of LSAs through an array, and access each LSA's properties very easily by simply referring to them.
 

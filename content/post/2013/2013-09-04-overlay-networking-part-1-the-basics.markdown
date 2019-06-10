@@ -39,7 +39,7 @@ The key behind the overlay is to identify virtual networks using some kind of ta
 
 This allows us to form a "virtual wire" between two hypervisors, giving us our virtual network, overlaying the physical topology.
 
-[![diagram1](assets/2013/09/diagram1.png)](assets/2013/09/diagram1.png)
+[![diagram1](/assets/2013/09/diagram1.png)](/assets/2013/09/diagram1.png)
 
 Ultimately, the overlay itself is a fairly simple concept. The majority of the marketing material that's come out regarding overlay products like NSX are an artifact of the SDN controller. The overlay itself is merely a form of classifying traffic that is considered to be a "member" of one of these  networks set u.
 
@@ -47,7 +47,7 @@ Ultimately, the overlay itself is a fairly simple concept. The majority of the m
 
 The vSwitch's primary responsibility is to be aware of these virtual networks, and classify them according to the mechanism in place. Could be vXLAN, could be NVGRE. It could also be OpenFlow installing specific flow entries for each application, and categorizing each flow entry into a "virtual network" configured via ovsdb-proto. Either way, this is still the vSwitch we used, but also has the additional responsibility of being aware and taking part in the virtual networks.
 
-[![diagram2](assets/2013/09/diagram2.png)](assets/2013/09/diagram2.png)
+[![diagram2](/assets/2013/09/diagram2.png)](/assets/2013/09/diagram2.png)
 
 The vSwitch can also perform some higher-level forwarding decisions. For instance, when we have to forward traffic between subnets, we have to send the traffic northbound to a router or L3 switch, then it comes right back down into the virtual environment. This is router-on-a-stick, by every definition. You know, the basic inter-VLAN routing example in CCNA class.
 

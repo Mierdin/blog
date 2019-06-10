@@ -57,7 +57,7 @@ The majority of those running VXLAN will likely be doing so over an IPv4 fabric,
 
 Here's a useful diagram that summarizes this. Note that a VTEP could be a physical switch, or a vSwitch.
 
-[![diagram1](assets/2014/03/diagram1.png)](assets/2014/03/diagram1.png)
+[![diagram1](/assets/2014/03/diagram1.png)](/assets/2014/03/diagram1.png)
 
 ## Path MTU Discovery
 

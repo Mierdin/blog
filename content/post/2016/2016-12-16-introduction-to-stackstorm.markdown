@@ -44,7 +44,7 @@ Now, let's explore some Stackstorm concepts.
 
 One of the biggest strengths of StackStorm is its ecosystem. StackStorm's recent 2.1 release included a new [Exchange](https://exchange.stackstorm.org/) which provides a new home for the **over 450 integrations** that already exist as part of the StackStorm ecosystem. These integrations allow StackStorm to interact with 3rd party systems.
 
-<div style="text-align:center;"><a href="assets/2016/10/exchange.png"><img src="assets/2016/10/exchange.png" width="900" ></a></div>
+<div style="text-align:center;"><a href="/assets/2016/10/exchange.png"><img src="/assets/2016/10/exchange.png" width="900" ></a></div>
 
 In StackStorm, we call these integrations with ["Packs"](https://docs.stackstorm.com/packs.html). Packs are the atomic unit of deployment for integrations and extensions to StackStorm. This means that regardless of what you're trying to implement, whether it's a new Action, Sensor, Rule, or Sensor, it's done with Packs.
 

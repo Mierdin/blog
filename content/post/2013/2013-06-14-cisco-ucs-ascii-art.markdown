@@ -15,7 +15,7 @@ A while back [I wrote about the problems](https://keepingitclassless.net/2012/10
 
 As a reminder, here are the valid combinations (these are still accurate to my knowledge, but may change in a few weeks if any new tech is announced at Cisco Live) of FEX and blade VIC:
 
-[![compatibility matrix](assets/2012/10/compatibility-matrix.png)](assets/2012/10/compatibility-matrix.png)
+[![compatibility matrix](/assets/2012/10/compatibility-matrix.png)](/assets/2012/10/compatibility-matrix.png)
 
 I was reminded by a TAC engineer of a command I'd heard of back when I first learned UCS but had totally forgotten.
 

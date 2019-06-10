@@ -19,7 +19,7 @@ EIGRP maintains redundant routes in memory so that if one fails, reverting to an
 
 The topology we'll work with here is included below:
 
-[![](assets/2011/07/eigrp_fs_topology-1024x531.png)](assets/2011/07/eigrp_fs_topology.png)
+[![](/assets/2011/07/eigrp_fs_topology-1024x531.png)](/assets/2011/07/eigrp_fs_topology.png)
 
 We'll be working from the perspective of R0. The idea is to get to the remote subnet attached to R4,  172.16.0.0/24. This is done by selecting one of three possible next-hop routers, R1, R2, or R3. I have adjusted the bandwidth of the links shown by using the "bandwidth" command on all routers. No delay configurations have been made.
 

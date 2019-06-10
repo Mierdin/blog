@@ -32,7 +32,7 @@ Just like what happened with SDN before it, the whole "intent-driven networking"
 
 To me, the interesting intent - the thing that goes above and beyond "competent operations" - is on the applications side. Automation isn't just about configuring network boxes, it's about providing services to what's using the infrastructure - the applications. And no, this isn't just about the datacenter. Applications use your branch office networking and backbone just as much as the datacenter network. So we have to start thinking about the useful intent in these terms: "What is it that the applications are expecting from my network?" - not just as a transport, but also in terms of network services.
 
-<div style="text-align:center;"><a href="assets/2018/02/makeitso.jpg"><img src="assets/2018/02/makeitso.jpg" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2018/02/makeitso.jpg"><img src="/assets/2018/02/makeitso.jpg" width="500" ></a></div>
 
 In 2018, we actually have it pretty good. The cloud-native wave has made application intent **way** more accessible, as applications deployed to platforms like Kubernetes are much more self-describing. Kubernetes offers its users primitives for declaratively describing what their applications need, and the underlying infrastructure "makes it so". Most Kubernetes users think of "infrastructure" as the compute node the kubelet is running on, or the virtual network between these nodes, etc - but it doesn't have to be limited to this. We can use this same source of truth to proactively enforce policies elsewhere. This original intent is an API call away in many cases. So we simply need to go get it.
 
@@ -40,7 +40,7 @@ In 2018, we actually have it pretty good. The cloud-native wave has made applica
 
 Let's talk about what it might take to design and build a bridge. I'm no expert, but I think it's fair to say that for most drivers, you just drive across it. You don't need to know the materials the bridge is made of, or call ahead to let the bridge people know you're thinking about driving across it, you just use the bridge. The engineers and architects that built the bridge recognize that this is the desired experience, and they take on the responsibility of researching and understanding the expected traffic patterns and types of vehicles that will use the bridge. They build a bridge that meets those requirements. They maintain the bridge over the long-term to ensure that this bridge continues to operate as desired.
 
-<div style="text-align:center;"><a href="assets/2018/02/bridge.jpg"><img src="assets/2018/02/bridge.jpg" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2018/02/bridge.jpg"><img src="/assets/2018/02/bridge.jpg" width="500" ></a></div>
 
 At **no point** do these engineers need to have an ongoing conversation with the average driver. They know that they're relied on to provide infrastructure, so they proactively go out and get the information they need to provide this service.
 

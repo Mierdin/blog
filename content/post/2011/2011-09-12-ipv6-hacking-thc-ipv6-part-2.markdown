@@ -25,7 +25,7 @@ For the attack to work, however, the victims should  have no idea that anything
 
 Observe the network shown below:
 
-[![](assets/2011/09/diagram3.png)](assets/2011/09/diagram3.png)
+[![](/assets/2011/09/diagram3.png)](/assets/2011/09/diagram3.png)
 
 I set up a free IPv6 tunnel, [courtesy of Hurricane Electric](http://tunnelbroker.net/), and terminated it to a Cisco 2621 router. The "LAN" side of this router, connected via Fa0/1, contains a Windows Vista client, which represents the victim, and a BackTrack 5 client, which represents the attacker. The victim is using the 2621 router as it's default gateway, as a result of the router advertisements being sent from that router.
 
@@ -55,11 +55,11 @@ This starts sending RA's out interface eth0 with our made-up prefix of 1::/64. Y
 
 The RAs play a vital role in the attack, as they must force the clients to use the attacking device as opposed to the Cisco router. There's a field in IPv6 router advertisements that determines default router preference. First, by default, the Cisco router sends out RAs with the router preference set to "Medium":
 
-[![](assets/2011/09/packet1.png)](assets/2011/09/packet1.png)
+[![](/assets/2011/09/packet1.png)](/assets/2011/09/packet1.png)
 
 Our attacking machine will set this flag to "high", forcing clients to use it as their default gateway:
 
-[![](assets/2011/09/packet2.png)](assets/2011/09/packet2.png)
+[![](/assets/2011/09/packet2.png)](/assets/2011/09/packet2.png)
 
 Let's take a look at the results of the attack. First, a traceroute to Google's IPv6 address before the attack started:
 

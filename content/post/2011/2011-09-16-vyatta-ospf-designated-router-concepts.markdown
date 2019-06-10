@@ -17,7 +17,7 @@ To understand the purpose of a Designated Router in OSPF, you need to know how O
 
 Observe the following diagram:
 
-[![diagram-ospf-dr](assets/2011/09/diagram4.png)](assets/2011/09/diagram4.png)
+[![diagram-ospf-dr](/assets/2011/09/diagram4.png)](/assets/2011/09/diagram4.png)
 
 In this network, all five routers are connected to the same layer 2 segment via a central switch. If one of these routers were to experience an outage of some kind, perhaps a link to a network outside of this diagram were to go down, it would immediately send an update to all other OSPF routers, notifying them of the change. Each router would then, in turn, send the same update right back out to notify all other OSPF routers, and so on and so forth. This is a problem because of the sudden flood in network activity and therefore will cause strain on the routers' CPU, but also because it impacts convergence time.
 

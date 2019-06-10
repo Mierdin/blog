@@ -30,7 +30,7 @@ It seemed like vCenter was able to get to the hosts, but the client kept refresh
 
 The myriad of blog posts concerning vSphere Standard vSwitch redundancy typically will show a topology like this:
 
-[![vSwitch_Overview](assets/2013/05/vSwitch_Overview.png)](assets/2013/05/vSwitch_Overview.png)
+[![vSwitch_Overview](/assets/2013/05/vSwitch_Overview.png)](/assets/2013/05/vSwitch_Overview.png)
 
 As mentioned before, you'll have no trouble finding posts that explain the basics of how each vSwitch NIC Teaming policy works. If you prefer to hear it straight from the horse's mouth, try VMware's [Virtual Networking Concepts](http://www.vmware.com/files/pdf/virtual_networking_concepts.pdf) whitepaper. If you prefer a more personal approach, [this article by Ken Cline](http://kensvirtualreality.wordpress.com/2009/04/05/the-great-vswitch-debate%E2%80%93part-3/) is very popular with respect to this topic.
 
@@ -54,7 +54,7 @@ What that KB article failed to explain, however, is **why** this requirement wa
 
 This deep-dive resulted in an exploration of exactly what's happening within the vSwitch. When the "virtual port ID" policy is selected, each virtual NIC is more or less statically pinned to a given pNIC.
 
-[![Policy 1 - Route Based on Originating Virtual Port ID](assets/2013/05/vSwitch_VirtualPortID.png)](assets/2013/05/vSwitch_VirtualPortID.png)
+[![Policy 1 - Route Based on Originating Virtual Port ID](/assets/2013/05/vSwitch_VirtualPortID.png)](/assets/2013/05/vSwitch_VirtualPortID.png)
 
 This allows us to have deterministic traffic flows, but just as important, it allows our upstream switching infrastructure to learn a given vNIC MAC address on a single physical switchport, rather than multiple.
 
@@ -64,7 +64,7 @@ However, in today's DC, this topology is becoming increasingly uncommon. Aside f
 
 In smaller DCs, this is a fairly common topology:
 
-[![ESXi Host Networking Redundancy with 802.3ad and Cisco StackWise](assets/2013/05/StackWise.png)](assets/2013/05/StackWise.png)
+[![ESXi Host Networking Redundancy with 802.3ad and Cisco StackWise](/assets/2013/05/StackWise.png)](/assets/2013/05/StackWise.png)
 
 Don't use Catalyst 3750s? The same applies with the 6500's VSS feature. Same end-result, just a different method. vPC is a different beast, since vPC requires LACP to function properly and as mentioned, LACP is not supported on the standard vSwitch (it should be, though).
 
@@ -74,7 +74,7 @@ Here's where I stumbled across some additional vSwitch behavior that most resour
 
 Maybe a visualization will help:
 
-[![StackWisewFlows](assets/2013/05/StackWisewFlows.png)](assets/2013/05/StackWisewFlows.png)
+[![StackWisewFlows](/assets/2013/05/StackWisewFlows.png)](/assets/2013/05/StackWisewFlows.png)
 
 Note that on the left host, the traffic for the management vmkernel port is leaving on VMNIC0 (shown in green). This means that all traffic leaving that vmkernel destined somewhere outside the host will always leave on that NIC. However, the vmkernel for the other host is pinned to VMNIC1 (shown in red). Since other traffic destined for these vmkernels is being sent in to the host on a pNIC other than what it is pinned to, then that traffic is dropped. As I mentioned, most articles speak in depth about traffic leaving the host, but not about traffic being received by the host while in this mode.
 

@@ -19,7 +19,7 @@ For many organizations, large or small, the network is approached with a very si
 
 Of course, in small to medium environments, many of these roles are consolidated down to a few folks, but even then, there are silos, and where there are silos, communication tends to be more difficult.
 
-[![QoSSDNVisio](assets/2013/04/QoSSDNVisio.png)](assets/2013/04/QoSSDNVisio.png)
+[![QoSSDNVisio](/assets/2013/04/QoSSDNVisio.png)](/assets/2013/04/QoSSDNVisio.png)
 
 This is all assuming that all technology under the org's roof is managed in-house. Frequently, technology implementations can be farmed out to third party solution providers (see Flexpod, vBlock, etc), and those engineers are only onsite for a few weeks - their main concern is getting the technology in place and working according to a general best practices deployment guide. I don't mean to really say "bare minimum", but most of the time a VAR isn't around long enough to do any of the really nitty gritty final touches like proper QoS design, especially if an application that really needs QoS isn't present.
 
@@ -27,7 +27,7 @@ The result of all of this is a pretty severe fragmentation of QoS policies from 
 
 SDN can and should take hold where the human element is the weakest link. For now, forget the idea that SDN may make our lives easier by making it easier for the DevOps teams to automate network tasks. While that's definitely  a very viable use case, the consistency that comes with SDN is a much more immediate benefit, in my opinion. Give me an open format for doing really basic interaction with each node on the network: routers, switches, servers, load balancers, firewalls, etc.
 
-[![Network Intelligence Centralized - Probability for Human Error Diminished](assets/2013/04/QoSSDNVisio2.png)](assets/2013/04/QoSSDNVisio2.png)
+[![Network Intelligence Centralized - Probability for Human Error Diminished](/assets/2013/04/QoSSDNVisio2.png)](/assets/2013/04/QoSSDNVisio2.png)
 
 For now I don't really care whether it's true control plane / forwarding plane abstraction - this specific use case will work just as well with continued decentralized control planes and a simple API on each device. There will be (and probably already are) pressing use cases that require a little more granularity.
 

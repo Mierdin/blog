@@ -15,7 +15,7 @@ One of my least favorite things to do in my day job is create or maintain a zoni
 
 Each WWPN belongs to a single HBA and is considered to be unique (hopefully) on the SAN. I'm using Cisco UCS, so I've derived each vHBA's WWPN from a pool, and it's guaranteed to be unique. I like to name my FC zones by using some kind of combination of the service profile name and the vHBA name on that service profile.
 
-[![UCS vhba - SAN automation](assets/2014/03/UCS-vhba.png)](assets/2014/03/UCS-vhba.png)
+[![UCS vhba - SAN automation](/assets/2014/03/UCS-vhba.png)](/assets/2014/03/UCS-vhba.png)
 
 In order to maintain the relationship between a Fibre Channel HBA and it's World Wide Port Name (WWPN), we will be providing Python dictionaries as the preferred form of input to the Jinja template.
 

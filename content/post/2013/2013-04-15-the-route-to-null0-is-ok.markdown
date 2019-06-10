@@ -13,11 +13,11 @@ tags: ['cisco']
 
 Back to the basics today. I have seen this pop up a few times and wanted to offer some clarification on what seems to be a cloudy issue for CCNP (and some CCIE) candidates. I've seen quite a few times now where engineers see a route to Null0 in a Cisco router and assume instantly that the router is "black holing" traffic.
 
- [![BH_LMC](assets/2013/04/BH_LMC.png)](assets/2013/04/BH_LMC.png)
+ [![BH_LMC](/assets/2013/04/BH_LMC.png)](/assets/2013/04/BH_LMC.png)
 
 Sometimes, a route to Null0 is inserted into the routing table when performing summarization with nearly every routing protocol in common use today. Take this example topology, for instance:
 
- [![screen1](assets/2013/04/screen1.png)](assets/2013/04/screen1.png)
+ [![screen1](/assets/2013/04/screen1.png)](/assets/2013/04/screen1.png)
 
 After initial configuration, the routing table on R1 looks like this:
 

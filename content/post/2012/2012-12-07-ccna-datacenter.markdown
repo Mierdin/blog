@@ -21,7 +21,7 @@ That said, the ICDCN exam was pretty straightforward and I was able to pass with
 
 The second exam, which I passed this recent Monday, was ICDCT and focused on the other aspects of datacenter that were not network-specific. I felt that the blueprint for this exam was very accurately stated, so my best advice would be to adhere to the exam blueprint (original, I know) for this one. Aside from simply not wanting to break the NDA, I think Cisco did a fairly good job accurately representing the test material for this exam. I usually import the blueprint for an exam into OneNote ahead of time and build myself a little study guide - helps me tremendously for big exams like the CCIE Written:
 
-[![](assets/2012/12/ccnadc.png)](assets/2012/12/ccnadc.png)
+[![](/assets/2012/12/ccnadc.png)](/assets/2012/12/ccnadc.png)
 
 OneNote also includes the ability to link to other pages, so if I want to study a topic, I do a big writeup about it, and link it in my blueprint, which turns into a sort of Table of Contents. Anyways, that's my method, maybe it works for you.
 

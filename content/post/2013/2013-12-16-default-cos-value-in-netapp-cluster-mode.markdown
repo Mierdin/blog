@@ -30,7 +30,7 @@ This was easy enough to do with a Nexus 1000v port profile for all vSphere VMKer
 
 I looked on the 1000v uplink port profile, I looked everywhere in UCS, and the Neuxus 5Ks. I had this CoS tag going to the "Silver" class in UCS and the Nexus 5K pair:
 
-[![ucsmtu](assets/2013/12/ucsmtu.png)](assets/2013/12/ucsmtu.png)
+[![ucsmtu](/assets/2013/12/ucsmtu.png)](/assets/2013/12/ucsmtu.png)
 
 I was at a loss. Then I realized that I hadn't done anything to classify the traffic coming from the storage array, which was also directly connected to the Nexus 5Ks. So just to get things working, I went ahead and just enabled jumbo frames on the default class (unclassified traffic). I'd have to figure out how to classify that traffic later - probably with a per-port policy-map. (ick)
 

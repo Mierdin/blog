@@ -37,4 +37,4 @@ Storage is happening much the same way. And just as with voice, if the teams are
 
 Ultimately, it comes down to the staff available. Are they able to take on this second role, without simply learning the bare minimum? If so, pay them well. If not, then spend the time forming those lines of communication ahead of time between teams or individuals. When something goes wrong, what do we check? What are the list of common causes of problem on converged networks like FCoE? How can we initially troubleshoot a problem before escalating to the other team? Answering these questions ahead of time will allow you to work well with these converged technologies. If you can solve that platform, the tool itself doesn't matter nearly as much.
 
-[![Also, a "Unified Unicorn" happened.](assets/2013/12/unicorn.png)](assets/2013/12/unicorn.png)
+[![Also, a "Unified Unicorn" happened.](/assets/2013/12/unicorn.png)](/assets/2013/12/unicorn.png)

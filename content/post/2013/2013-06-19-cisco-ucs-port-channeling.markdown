@@ -13,7 +13,7 @@ tags: ['cisco']
 
 Cisco UCS offers a few policies that are applied globally to all equipment in a given UCS domain. These policies are found by selecting the "Equipment" node under the "equipment" tab. (You can also change on an individual chassis basis but the default behavior is for all chassis to inherit this global policy)
 
-[![screen1](assets/2013/06/screen1.png)](assets/2013/06/screen1.png)
+[![screen1](/assets/2013/06/screen1.png)](/assets/2013/06/screen1.png)
 
 This is specifically referring to the connectivity between the Fabric Interconnects and the Chassis FEX modules or I/O modules (IOM).
 
@@ -21,7 +21,7 @@ You can read the [Cisco documentation](http://www.cisco.com/en/US/docs/unified_c
 
 In the LAN tab of UCSM, you'll notice an "Internal LAN" section that usually goes unnoticed:
 
-[![screen2](assets/2013/06/screen2.png)](assets/2013/06/screen2.png)
+[![screen2](/assets/2013/06/screen2.png)](/assets/2013/06/screen2.png)
 
 The interfaces shown are our FEX interfaces, or the ports facing the FIs from each chassis IOM.
 
@@ -115,11 +115,11 @@ The 2208XP IOM has up to 4 connections for each blade. This gets pretty powerful
 
 So, when we're considering the connectivity between the blade and the IOM (and in turn the IOM and the FI), we encounter the act of "pinning" a blade's adapter interface to a HIF on the IOM. If you go to the "VIF Paths" tab of any blade, you can see this clearly:
 
-[![screen3](assets/2013/06/screen3.png)](assets/2013/06/screen3.png)
+[![screen3](/assets/2013/06/screen3.png)](/assets/2013/06/screen3.png)
 
 This particular blade is a B250 full-width blade, which means there are two mezzanine slots. Each slot is populated with the M81KR "Palo" adapter, so the blade itself has two connections, one per adapter, to each IOM. As you can see in the diagram above (and below), each adapter interface is pinned to a FEX Host Port, or HIF. All vNICs that are assigned to that particular path send all their traffic through that bound HIF.
 
-[![screen4](assets/2013/06/screen4.png)](assets/2013/06/screen4.png)
+[![screen4](/assets/2013/06/screen4.png)](/assets/2013/06/screen4.png)
 
 In addition, each adapter is bound to a corresponding NIF, or more commonly, the FEX port. These are the ports you physically see on the back of the chassis IOM. So, what we essentially have is source-based forwarding of traffic, meaning that the age-old problem of single-link oversubscription is very possible. Example - you have one server that is VERY active (let's say an FTP server). It's used by all users in an organization so it sees pretty heavy use. With this configuration, you would only be able to utilize this single 10GbE link per FEX module.
 
@@ -131,7 +131,7 @@ So, to rectify this, we have the ability to configure port-channels. All of what
     Vethernet801 is up
         Bound Interface is port-channel1281
 
-[![screen5](assets/2013/06/screen5.png)](assets/2013/06/screen5.png)
+[![screen5](/assets/2013/06/screen5.png)](/assets/2013/06/screen5.png)
 
 Normally it would be bound to something like "Ethernet1/1/2" where the first character is the chassis ID, and the third character is the HIF number (ignore the middle character). However, it's bound to a port-channel, so we should take a look at that port-channel interface:
     
@@ -155,7 +155,7 @@ It's not quite round-robin, but it's a lot better than pinning to a single speci
 
 This also applies to the links between the IOMs and the FIs. We now see port channel interfaces in our "Internal LAN" cloud:
 
-![screen6](assets/2013/06/screen6.png)
+![screen6](/assets/2013/06/screen6.png)
 
     UCS-POD01-A(nxos)# show int po1025
     port-channel1025 is up
@@ -164,7 +164,7 @@ This also applies to the links between the IOMs and the FIs. We now see port cha
 
 Combine all of this with the fact that the normal uplinks from the FI to the upstream switch has functioned as a normal port channel for quite some time, and we get a much better distribution of traffic based upon the widely accepted IP hash method, and traffic is looked at on each hop along the way to determine which link to use for that particular packet.
 
-[![screen7](assets/2013/06/screen7.png)](assets/2013/06/screen7.png)
+[![screen7](/assets/2013/06/screen7.png)](/assets/2013/06/screen7.png)
 
 > Keep in mind that you still need to have the appropriate hardware to light up four connections to the IOM like this. To make this work, I used a B200 M3 blade with a VIC 1240 in the MLOM slot and a port expander in the mezz slot, resulting in a total of 4 DCE interfaces per fabric, so this was possible.
 

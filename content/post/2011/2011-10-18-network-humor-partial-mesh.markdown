@@ -22,6 +22,6 @@ noun
 
 2. What happens to your screen doors when you get cats
 
-[![](assets/2011/10/TornScreen1.jpg)](assets/2011/10/TornScreen1.jpg)
+[![](/assets/2011/10/TornScreen1.jpg)](/assets/2011/10/TornScreen1.jpg)
 
 [Image and definition credit: Wikipedia](https://en.wikipedia.org/wiki/Mesh_networking)

@@ -31,7 +31,7 @@ My code clearly has a newline character of some kind at the end, but perhaps it'
 
 For this, we'll use the (*nix) "od" command, which dumps files out to the terminal in various formats. The "-c" flag specifies that we want to see ASCII format, including all backslashed () characters.
 
-[![od](assets/2014/05/od.png)](assets/2014/05/od.png)
+[![od](/assets/2014/05/od.png)](/assets/2014/05/od.png)
 
 As you can see, we're using /r characters instead of what pylint is expecting, which is /n.
 

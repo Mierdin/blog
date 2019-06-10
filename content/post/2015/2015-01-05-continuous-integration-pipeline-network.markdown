@@ -41,23 +41,23 @@ As you can see, this is a very straightforward and easy way to manage informatio
 
 However, we want our junior engineers to manage this list. So we place the entire Ansible role within a Gerrit project.
 
-[![Screenshot 2014-11-05 14.34.42](assets/2014/11/Screenshot-2014-11-05-14.34.42.png)](assets/2014/11/Screenshot-2014-11-05-14.34.42.png)
+[![Screenshot 2014-11-05 14.34.42](/assets/2014/11/Screenshot-2014-11-05-14.34.42.png)](/assets/2014/11/Screenshot-2014-11-05-14.34.42.png)
 
 When the junior engineers want to make changes to the DHCP configuration, they just clone this Gerrit repo to their local machine and make the changes they need.
 
-[![Screenshot 2014-11-05 14.59.23](assets/2014/12/Screenshot-2014-11-05-14.59.23-1024x310.png)](assets/2014/12/Screenshot-2014-11-05-14.59.23.png)
+[![Screenshot 2014-11-05 14.59.23](/assets/2014/12/Screenshot-2014-11-05-14.59.23-1024x310.png)](/assets/2014/12/Screenshot-2014-11-05-14.59.23.png)
 
 After making these changes, they commit them into Git, and push them back to the Gerrit server.
 
-[![Screenshot 2014-11-05 15.03.25](assets/2014/12/Screenshot-2014-11-05-15.03.25-1024x465.png)](assets/2014/12/Screenshot-2014-11-05-15.03.25.png)
+[![Screenshot 2014-11-05 15.03.25](/assets/2014/12/Screenshot-2014-11-05-15.03.25-1024x465.png)](/assets/2014/12/Screenshot-2014-11-05-15.03.25.png)
 
 Normally when pushing to a Git remote like GitHub, your changes are taken into the remote repository immediately. However, with this Gerrit configuration, this is not the case. For example, if someone else were to clone this repository, they would not receive the changes I just made. This is because Gerrit allows a project coordinator/administrator to review contributions before they make it into the repository. As you can probably imagine, this is very useful for doing reviews on software source code, and we can use this same principle to give a quick spot-check to our YAML file when a junior admin makes changes.
 
-[![gerrit2](assets/2014/12/gerrit2.png)](assets/2014/12/gerrit2.png)
+[![gerrit2](/assets/2014/12/gerrit2.png)](/assets/2014/12/gerrit2.png)
 
 In either case, we get a nice differential view of what's been changed on our YAML file.
 
-[![gerrit1](assets/2014/12/gerrit1.png)](assets/2014/12/gerrit1.png)
+[![gerrit1](/assets/2014/12/gerrit1.png)](/assets/2014/12/gerrit1.png)
 
 As you can see, Gerrit shows a nice output of the difference in the two versions of the files reported by Git. We can plainly see what's been added, and that everything else is unchanged.
 
@@ -71,19 +71,19 @@ Tracking configurations in a version control system is great, but ultimately, we
 
 First, we need to tell Jenkins where to find our Git repository. We can use the SSH URL of our Gerrit project found on the project's main page. This obviously assumes you've set up all of the SSH key authentication between your Jenkins and Gerrit servers correctly
 
-[![jenkins1](assets/2014/12/jenkins1.png)](assets/2014/12/jenkins1.png)
+[![jenkins1](/assets/2014/12/jenkins1.png)](/assets/2014/12/jenkins1.png)
 
 We want Jenkins to run this job every time a change is merged into the repository. This means that the job is not kicked off until someone approves a new patch - useful for situations where you want to set up an approval system before configuration artifacts make it to production:
 
-[![jenkins2](assets/2014/12/jenkins2.png)](assets/2014/12/jenkins2.png)
+[![jenkins2](/assets/2014/12/jenkins2.png)](/assets/2014/12/jenkins2.png)
 
 Next, we apply our build actions. The options here are numerous, but for our purposes, we only want to call our Ansible playbook, with a few options shown below:
 
-[![jenkins3](assets/2014/12/jenkins31.png)](assets/2014/12/jenkins4.png)
+[![jenkins3](/assets/2014/12/jenkins31.png)](/assets/2014/12/jenkins4.png)
 
 With all of this set up, we can submit a change like we did in the previous section, and see the entire run by viewing the console output for this job. Not only does it show us Jenkins retrieving the repo from Gerrit, but also the output from Ansible.
 
-[![jenkins4](assets/2014/12/jenkins4.png)](assets/2014/12/jenkins4.png)From here, you could add additional actions, such as emailing an admin when things go wrong.
+[![jenkins4](/assets/2014/12/jenkins4.png)](/assets/2014/12/jenkins4.png)From here, you could add additional actions, such as emailing an admin when things go wrong.
 
 At the end of the day, we have an updated DHCP configuration engine that is built to scale from one to many potential endpoints, and the only thing the junior engineers need to know is basic version control, which is valuable knowledge to have anyways. If you'd like to see this in action, I recorded a video of the entire process end-to-end:
 

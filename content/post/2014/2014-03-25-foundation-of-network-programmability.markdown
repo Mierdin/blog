@@ -120,13 +120,13 @@ In order to get anything out of this command, you'd have to tell the API to send
 
 This represents either an inability or unwillingness to allow access to both configuration and operational data in the same format as it is stored, and it's far from the only example of this in the industry. In this world, we end up relying upon the CLI for more than just configuring the device - it is the language by which ALL interaction - programmatic or otherwise - must take place.
 
-[![diagram1](assets/2014/03/diagram11-1024x612.png)](assets/2014/03/diagram11.png)
+[![diagram1](/assets/2014/03/diagram11-1024x612.png)](/assets/2014/03/diagram11.png)
 
 Therefore any policy we wish to put into place on our infrastructure must at some point get translated into good-ol' CLI commands - typically by a human being, because a CLI is a human interface.
 
 In my opinion, if the API is a method by which we access the CLI, the model is still wrong. The reverse should be true - the CLI should be a method by which we access the API, among many others.
 
-[![diagram2](assets/2014/03/diagram2.png)](assets/2014/03/diagram2.png)
+[![diagram2](/assets/2014/03/diagram2.png)](/assets/2014/03/diagram2.png)
 
 This also forces the vendor's developers to keep the API well-documented and free of bugs, because they're eating their own dog food. It also opens up the possibility for the vendor to release a CLI-client that can be run from anywhere, and configure multiple devices at once. There is too much complexity involved in a CLI-centric model to be able to do this effectively today.
 

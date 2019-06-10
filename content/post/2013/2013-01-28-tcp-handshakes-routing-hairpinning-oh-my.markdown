@@ -13,7 +13,7 @@ tags: ['asa']
 
 I'm working on setting up a lab that consists of leading storage and compute products for testing, and I ran into some interesting issues with a few different things...some with respect to the way the Cisco ASA does hairpinning, as well as allowed connections in such a configuration. There were also some routing issues experienced as a result, and I want to explore my experience in all of this during this post. I encourage you to lab this up in GNS3 - you will learn a lot about the basics of TCP as well as routing. First off, the overall topology is shown below:
 
-[![topology](assets/2013/01/topology.png)](assets/2013/01/topology.png)
+[![topology](/assets/2013/01/topology.png)](/assets/2013/01/topology.png)
 
 I wanted to be able to segment off a few things from the rest of the network, so I created a new subnet - 172.16.1.0/24 - and decided to use a Catalyst 3560 I had lying around as the L3 boundary for this subnet. However, the existing subnet (10.12.0.0/24) was also needed, since it was the subnet I was sitting on with my workstation, as well as another ESXi host housing vCenter with Autodeploy. My goal was multifaceted, but for the most part, since my immediate need was to set up the Cisco C220 M3 servers as ESXi hosts using Autodeploy (they did not have hard drives so this was essential), I needed TFTP  to work all the way from this lab subnet back to the 10.12.0.5 host, as well as HTTP access from my workstation on the 10.12.0.0/24 subnet to the CIMC interface on the server. All that is a really complicated way of saying that I needed the two subnets to talk, unencumbered by anything beyond a single hop to the adjacent subnet.
 
@@ -27,11 +27,11 @@ Since the actual destination is back out the inside interface (next hop of 10.12
 
 This solution involves directly modifying the routing table of the windows hosts on the 10.12.0.0/24 subnet to point to a next-hop other than their default gateway for the 172.16.1.0/24 subnet - namely the 3560.
 
-[![solution1](assets/2013/01/solution1.png)](assets/2013/01/solution1.png)
+[![solution1](/assets/2013/01/solution1.png)](/assets/2013/01/solution1.png)
 
 This solution solves the problem of sending traffic to the ASA in the first place by intelligently delivering traffic to where it needs to go based on subnet. In this solution, I modify the routing table of all hosts on the 10.12.0.0/24 subnet to use the 3560 as a next-hop to the lab subnet below:
 
-[![route1](assets/2013/01/route1.png)](assets/2013/01/route1.png)
+[![route1](/assets/2013/01/route1.png)](/assets/2013/01/route1.png)
 
 What this means, though, is that I need to touch every relevant host on this subnet. Given the fact that this is not a single host change (multiple hosts will need this fix), this is a relatively high administrative burden for a simple routing change. On top of that, I'm wary of doing anything beyond simple default routing on end-hosts, so I'd prefer to use the network infrastructure itself for this. So though this works technically, and you may prefer to go this "route" (punny) - it wasn't for me. Solution #1 is a no-go.
 
@@ -39,11 +39,11 @@ What this means, though, is that I need to touch every relevant host on this sub
 
 The most change-heavy solution would also present me with the most granular control over what traffic goes in and out of the lab subnet. While this wasn't a huge deal for me, it was attractive. Solution 2 involves adding a second "inside" connection (or DMZ, whatever you want to call it) so that the subnet that vCenter and my workstation were sitting on weren't required to go to a different next-hop. By keeping the default gateway as 10.12.0.1, the ASA would receive the traffic and forward it according to the rules that I would configure out the additional routed link to the 3560:
 
-[![solution2](assets/2013/01/solution2.png)](assets/2013/01/solution2.png)
+[![solution2](/assets/2013/01/solution2.png)](/assets/2013/01/solution2.png)
 
 This would have been my preferred solution for many reasons, but this was a no-go for me for one very significant reason:
 
-[![asa](assets/2013/01/asa.png)](assets/2013/01/asa.png)
+[![asa](/assets/2013/01/asa.png)](/assets/2013/01/asa.png)
 
 DOH! But it's a lab and lab gear comes with issues like this. If you have an ASA (or other) with the licensing that allows you to do the topology shown above, it might be a good option, since it provides really good segmentation and you don't need to do any routing magic to make it work.
 
@@ -51,7 +51,7 @@ DOH! But it's a lab and lab gear comes with issues like this. If you have an ASA
 
 I mentioned hairpinning before - instead of try to mess with host-based routing, and since we can't change the overall physical topology because of licensing factors, we arrive at Solution 3 - using the ASA to basically redirect traffic back out the same interface in which it was received so that - although this introduces an admittedly unnecessary extra hop - the traffic goes to where it needs to go.
 
-[![solution3](assets/2013/01/solution3.png)](assets/2013/01/solution3.png)
+[![solution3](/assets/2013/01/solution3.png)](/assets/2013/01/solution3.png)
 
 If you google "ASA Hairpinning", you'll be smothered with sites that explain what it is, why it's necessary, and how to do it. Many use cases have to do with IPSec VPNs, which would require traffic to leave the same interface it was received on if it's destined in that direction, but the walkthrough I linked to at the beginning of this post happened to be extremely similar to my situation - you have a host on a segment with two potential next-hops and you can only choose one, so the one you choose (ASA) needs to be able to recognize the traffic is destined for something else and redirect appropriately. Any walkthrough will include this command:
 
@@ -83,11 +83,11 @@ After some research into my specific problem, I came across [this document](http
 
 So - knowing what we know about how the ASA treats connections, we also now have learned that packets that aren't recognized as part of a connection are implicitly denied. So this makes sense, but why aren't these packets recognized as part of a connection?
 
-[![Packet Flow - SYN](assets/2013/01/syn.png)](assets/2013/01/syn.png)
+[![Packet Flow - SYN](/assets/2013/01/syn.png)](/assets/2013/01/syn.png)
 
 Yes, it is true that the traffic destined for the remote subnet is going through the ASA and is successfully being received by its destination. Since the ASA has seen the SYN packet, it should have already done an ACL check and verified that the initial connnection request is at least permitted. However, the ASA still has to see the entire 3-way handshake to allow the traffic flow proceed. Remember the routing rule I mentioned - always remember that there's a return flow.
 
-[![Packet Flow - SYN/ACK](assets/2013/01/synack.png)](assets/2013/01/synack.png)
+[![Packet Flow - SYN/ACK](/assets/2013/01/synack.png)](/assets/2013/01/synack.png)
 
 The SYN/ACK that comes back from the server DOES get to the host. However, the ASA did not see the SYN/ACK packet, since it was sent directly to the host that sent the SYN, and was not hair-pinned through the ASA. As a result, the final ACK will not make it from the originating host to the server, and the connection will not be established.
 
@@ -103,7 +103,7 @@ It also allows you to manually specify a next-hop router to use for traffic ide
 
 For us, this is great news! We can continue to ROUTE (L3) the packet to the end-host, but we will instead SWITCH (L2) the packet to the ASA for hairpinning in the return direction:
 
-[![Packet Flow - SYN/ACK (Fixed)](assets/2013/01/synack_fixed.png)](assets/2013/01/synack_fixed.png)
+[![Packet Flow - SYN/ACK (Fixed)](/assets/2013/01/synack_fixed.png)](/assets/2013/01/synack_fixed.png)
 
 PBR is a simple matter of configuring an ACL to match the right traffic, creating a route-map to recognize this ACL and set the desired next-hop, then applying it to an interface:
 

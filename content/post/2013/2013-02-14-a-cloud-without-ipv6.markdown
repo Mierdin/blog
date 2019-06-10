@@ -17,7 +17,7 @@ We're talking about dreams, here people. We're throwing together concepts like S
 
 All silliness aside, we've got it going on right now. It is a true testament to the ingenuity and determination -
 
-[![photo1](assets/2013/02/photo1.png)](assets/2013/02/photo1.png)
+[![photo1](/assets/2013/02/photo1.png)](/assets/2013/02/photo1.png)
 
 Wait - you're telling me we're still using a 32 bit address space? We want all of our phones, cars, pets, trash cans and power tools to be connected to the internet and orchestrated under all this computing power and software written by millions of little geniuses running around the globe coming up with an EXPONENTIALLY INCREASING number of cool ideas to make the world better, and we are using an address space whose capacity is literally equivalent to no more than half the world's population? Well, sorry 3.5 billion people, you don't get any form of internet connectivity, and the other 3.5 billion, you just get one IP, so your phone gets internet. Oh, by the way, the internet in this alternate reality sucks a lot, since there's no IPs left for any kind of server infrastructure, so you are basically now one big usenet newsgroup. Enjoy.
 

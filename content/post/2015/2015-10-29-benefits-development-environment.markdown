@@ -24,7 +24,7 @@ Any mature software development team will leverage version control like [Git](ht
 
 The purpose of a build server is not only to ensure proper code style, or to make sure the application compiles. These are all important functions of the continous integration pipeline, but the greater purpose here is to emulate the production environment as closely as possible. This way, problems are caught here - before production - while still deploying as quickly yet safely as possible to production.
 
-[![Continuous Integration](assets/2015/10/devenv13.png)](assets/2015/10/devenv13.png)
+[![Continuous Integration](/assets/2015/10/devenv13.png)](/assets/2015/10/devenv13.png)
 
 > As mentioned in the diagram, the actual push to production, or "continuous deployment" is a totally separate topic that has it's own challenges. For this post, we're concerned with the initial push of developer code into an integration pipeline.
 
@@ -55,7 +55,7 @@ It's important to remember that our development environment isn't just about set
 
 Another important concept to note is that our environment MUST be light. No one wants to pass around virtual machine images to each other - modern development environments are described in simple text files, from the VM itself, to provisioning all of the dependencies on top. Most modern build and deploy workflow function on text file that you can and should place directly in the source code repository. Example include [Dockerfiles](https://docs.docker.com/reference/builder/), [Vagrantfiles](https://docs.vagrantup.com/v2/vagrantfile/), [Makefiles](https://en.wikipedia.org/wiki/Makefile), [Travis CI YAML files](http://docs.travis-ci.com/user/customizing-the-build/), and on and on.
 
-[![](assets/2015/10/devenv1.png)](assets/2015/10/devenv1.png)
+[![](/assets/2015/10/devenv1.png)](/assets/2015/10/devenv1.png)
 
 The benefit of putting all this in the repository is so that all of the build configuration is passed around with the code, and not kept within some server configuration. Rather than building excessively complex build steps in Jenkins, just write a script to do it all, and have Jenkins call that script. Developers no longer have to guess how Jenkins will build or test their software, because all of the configuration artifacts that Jenkins would use to do this are already in the repository, and the developer can run these tests in the **exact same way**.
 
@@ -82,11 +82,11 @@ First, we need to clone the MegaAwesome project. The project is hosted on Github
 
 Once in the MegaAwesome directory, we can spin up a virtual machine very easily using Vagrant.
 
-[![](assets/2015/10/devenv2.png)](assets/2015/10/devenv2.png)
+[![](/assets/2015/10/devenv2.png)](/assets/2015/10/devenv2.png)
 
 Vagrant will take care of spinning up our virtual machine, as well as integrating with Ansible to install all of the necessary software dependencies described in our [Ansible playbook](https://github.com/Mierdin/MegaAwesome/blob/master/megaawesome_provision.yml).
 
-[![](assets/2015/10/devenv3.png)](assets/2015/10/devenv3.png)
+[![](/assets/2015/10/devenv3.png)](/assets/2015/10/devenv3.png)
 
 Note that this playbook is distributed alongside the Vagrantfile, all within the repository itself. There's no more need to email around a list of APT packages to install - everything is contained within [requirements.txt](https://github.com/Mierdin/MegaAwesome/blob/master/requirements.txt) (which is a method of specifying [Python/Pip software dependencies](http://pip.readthedocs.org/en/stable/user_guide/#requirements-files)) as well as the [Ansible playbook](https://github.com/Mierdin/MegaAwesome/blob/master/megaawesome_provision.yml). Yes, I know I'm harping on this point. **It's that important.**
 
@@ -96,7 +96,7 @@ Change your workflow? Add dependencies that you forgot the first time, or maybe 
 
 We can SSH very easily into the virtual machine thanks to Vagrant.
 
-[![](assets/2015/10/devenv4.png)](assets/2015/10/devenv4.png)
+[![](/assets/2015/10/devenv4.png)](/assets/2015/10/devenv4.png)
 
 Once inside, it's time to create a directory that contains our source code. I tend to use a someone lengthy one-liner for this:
 
@@ -123,33 +123,33 @@ These are just a few examples - and each project may have specific tasks that ar
 
 You may have guessed - there is a text file ([tox.ini](https://github.com/Mierdin/MegaAwesome/blob/master/tox.ini)) present in the MegaAwesome repository that instructs Tox how to run. With this file present in the repo, we can run Tox commands right there in that directory. For instance, we can simply run "tox -epep8" to ask Tox to check that our Python code is pep8 compliant.
 
-[![](assets/2015/10/devenv5.png)](assets/2015/10/devenv5.png)
+[![](/assets/2015/10/devenv5.png)](/assets/2015/10/devenv5.png)
 
 > The particular ([tox.ini](https://github.com/Mierdin/MegaAwesome/blob/master/tox.ini)) configuration we're using here leverages both flake8, as well as pylint (the latter of which is configured in [.pylintrc](https://github.com/Mierdin/MegaAwesome/blob/master/.pylintrc)) for our linting needs.
 
 Obviously, we've got some work to do. So, we make some changes to make our code more pep8-compliant, then we re-run that long command from further up in the blog post that re-imports our code. Finally, we can re-run PEP8 checks to see that our changes were successful:
 
-[![](assets/2015/10/devenv6.png)](assets/2015/10/devenv6.png)
+[![](/assets/2015/10/devenv6.png)](/assets/2015/10/devenv6.png)
 
 Tox is useful for other things too - if you have specified an environment in your tox.ini file for running unit tests, these can be run with simply a different environment argument to the main "tox" command:
 
-[![](assets/2015/10/devenv7.png)](assets/2015/10/devenv7.png)
+[![](/assets/2015/10/devenv7.png)](/assets/2015/10/devenv7.png)
 
 Obviously we have some work to do, since the assertion in our unit test is not passing. Looks like we need to implement the "time travel" function so that our assertion passes:
 
-[![](assets/2015/10/devenv8.png)](assets/2015/10/devenv8.png)
+[![](/assets/2015/10/devenv8.png)](/assets/2015/10/devenv8.png)
 
 That should do it! Like with before, we run our long chained command to "re-import" our code, and we can then re-run the unit tests to show that we're now passing.
 
-[![](assets/2015/10/devenv9.png)](assets/2015/10/devenv9.png)
+[![](/assets/2015/10/devenv9.png)](/assets/2015/10/devenv9.png)
 
 It's also very easy to do coverage testing in Tox, thanks largely to coverage.py and testr, but there are plenty of options to show how well your unit tests are covering your codebase, in any language. When doing this in Tox, we - as with before - only need to call a different environment, also specified in our tox.ini file:
 
-[![](assets/2015/10/devenv10.png)](assets/2015/10/devenv10.png)
+[![](/assets/2015/10/devenv10.png)](/assets/2015/10/devenv10.png)
 
 You can view the results of the coverage testing using an in-terminal brower like Lynx, or you can copy the "cover" directory back to /vagrant so you can view it on your laptop's native browser. Up to you.
 
-[![](assets/2015/10/devenv11.png)](assets/2015/10/devenv11.png)
+[![](/assets/2015/10/devenv11.png)](/assets/2015/10/devenv11.png)
 
 Finally, build servers like Jenkins can [very easily integrate with Tox](http://tox.readthedocs.org/en/latest/example/jenkins.html) so that the same build steps that a developer may be running locally are run within the context of a CI pipeline. Because these configuration files are in the repository, there is no mismatch between how things are configured on the developer's laptop and in Jenkins.
 
@@ -159,7 +159,7 @@ Of course, the source code for MegaAwesome is still present outside of the virtu
 
 This means that when we make changes, we do so in our editor of choice outside of the VM, and then copy those changes into the VM for testing. We can also manage our Git commits natively outside of the VM as well.
 
-[![](assets/2015/10/devenv14.png)](assets/2015/10/devenv14.png)
+[![](/assets/2015/10/devenv14.png)](/assets/2015/10/devenv14.png)
 
 We're really only using the VM when we feel we've made some changes we wish to test out - either by running our software, or by using a tool like Tox. When we're ready to share those changes with the world, we can always exit out of our virtual machine, and open the native terminal there to commit and push our changes to our Git remote.
 

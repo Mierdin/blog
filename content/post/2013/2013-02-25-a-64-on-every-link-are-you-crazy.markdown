@@ -31,7 +31,7 @@ The impact of using prefix lengths greater than /64 on a LAN where clients will 
 
 ## Okay - what *really* breaks when you use a /127?
 
-[![Well, first off....this happens.](assets/2013/02/2588900543_b74701c1cd.jpg)](assets/2013/02/2588900543_b74701c1cd.jpg)
+[![Well, first off....this happens.](/assets/2013/02/2588900543_b74701c1cd.jpg)](/assets/2013/02/2588900543_b74701c1cd.jpg)
 
 Originally, this was a pretty easy question. In [RFC 3627](http://tools.ietf.org/html/rfc3627) made it pretty clear that a /127 prefix had some serious problems, specifically with respect to subnet-router anycast addresses. The big "oh wait nevermind" RFC came 8 years later with [RFC 6164](http://tools.ietf.org/html/rfc6164), which makes two points: not only is the use of a /127 on a point-to-point possible, but it may be a good idea. Two specific issues are cited: the ping-pong routing issue that was mitigated in a later release of ICMPv6, and the problem of a neighbor cache exhaustion attack. This attack takes advantage of the fact that there are a bazillion addresses in a /64 (so this doesn't just apply to point-to-point links) and creates INCOMPLETE resolutions for each address on the router by spamming traffic to these unused addresses. Eventually the resources of the routers spike, and the legitimate addresses assigned to the routers are not able to be resolved across the point-to-point link, so this attack is viewed as most harmful to point-to-point links.
 

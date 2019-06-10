@@ -18,7 +18,7 @@ tags: ['junos']
 
 In the same way a software developer might write tests in Python or Go that describe and effect desired behavior, the network engineer now has a growing set of tools they can use to make assertions about what "should be" and constantly be made aware of deviations. One of those tools popped up on my radar this week - [`jsnapy`](https://github.com/Juniper/jsnapy).
 
-<div style="text-align:center;"><a href="assets/2018/02/JSNAPy.png"><img src="assets/2018/02/JSNAPy.png" width="150" ></a></div>
+<div style="text-align:center;"><a href="/assets/2018/02/JSNAPy.png"><img src="/assets/2018/02/JSNAPy.png" width="150" ></a></div>
 
 # JSNAPy
 
@@ -137,7 +137,7 @@ test_bgp_neighbor:
 
 You can also use the `--diff` flag to compare two snapshots. Let's say we run another snapshot, call it `post`, and then run a diff against the two (click to zoom):
 
-<div style="text-align:center;"><a href="assets/2018/02/diffcheck.png"><img src="assets/2018/02/diffcheck.png" width="800" ></a></div>
+<div style="text-align:center;"><a href="/assets/2018/02/diffcheck.png"><img src="/assets/2018/02/diffcheck.png" width="800" ></a></div>
 
 The bottom line is, in order to test our network devices, we need a way to describe how to get the information needed to run these tests. These snapshots provide this for us.
 

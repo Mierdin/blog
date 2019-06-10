@@ -25,7 +25,7 @@ Beyond all this - the discussion isn't even about even load-sharing across an ar
 
 However, this still isn't sufficient when you consider how dynamic storage requirements (both inside and outside the array) can be. Most of the time, gratuitous ARPs are used to quickly upstream changes to a L2 topology, but there's more to this than that. Coho wanted to be able to accept requests on one interface, and send the responses out another interface, presumably closer to the workload.
 
-[![Screenshot 2014-11-07 00.19.03](assets/2014/11/Screenshot-2014-11-07-00.19.03-1024x655.png)](assets/2014/11/Screenshot-2014-11-07-00.19.03.png)
+[![Screenshot 2014-11-07 00.19.03](/assets/2014/11/Screenshot-2014-11-07-00.19.03-1024x655.png)](/assets/2014/11/Screenshot-2014-11-07-00.19.03.png)
 
 Coho decided to use OpenFlow to solve this problem - they've effectively turned the entire storage array into a distributed TCP endpoint. Requests arrive on a single interface (and are inherently quite small). If the data being accessed is on a different endpoint on the array, the request is forwarded back through the network to that endpoint. This is actually pretty common, because most vendors have some kind of optimization in place. However, the response, containing the actual data, must be sent back to the original array endpoint interface somehow, because that's where NFS clients are expecting the data to come from.
 

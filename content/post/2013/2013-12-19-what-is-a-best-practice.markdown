@@ -17,7 +17,7 @@ I see a lot of articles and even vendor whitepapers that like to throw the term 
 
 Here's a good example. I've heard on multiple occasions regarding the standard vSwitch in VMWare vSphere that it is a "best practice" to set the load balancing policy to "route based on the originating virtual port ID".  This Load Balancing Policy is no exception. There is no "best practice" for configuring this policy - each policy is selected based entirely on what the upstream switching configuration looks like. (The default of "virtual port ID" is there I'm guessing because it's the most common use case.)
 
-[![diagram1](assets/2013/12/diagram1.png)](assets/2013/12/diagram1.png)
+[![diagram1](/assets/2013/12/diagram1.png)](/assets/2013/12/diagram1.png)
 
 Allow me to elaborate.
 

@@ -32,7 +32,7 @@ I mean, I happen to really like Cisco's product offering in this space and in ge
 
 OSPF (and link state protocols in general) is pretty cool because it allows us to decide the path through the network by being aware of all links in a given logical topology (usually an OSPF area). While this does place some additional load on the router, it means that each router guarantees the shortest path, even through other routers, because they're all using the same algorithm, and they all have visibility to the same links.
 
-[![screen1](assets/2013/03/screen1.png)](assets/2013/03/screen1.png)
+[![screen1](/assets/2013/03/screen1.png)](/assets/2013/03/screen1.png)
 
 The below output is not the same topology, but you can still see that each link has a Link-State Advertisement associated with it. We make forwarding decisions based off how the entire network looks, not just the parts a certain router is touching.
 
@@ -61,7 +61,7 @@ The below output is not the same topology, but you can still see that each link 
 
 With EIGRP and other distance vector routing protocols, we lose this visibility. Distance Vector has also been informally dubbed "routing by rumor, since forwarding decisions rely entirely on route advertisements from the neighboring and adjacent routers.
 
-[![screen2](assets/2013/03/screen2.png)](assets/2013/03/screen2.png)
+[![screen2](/assets/2013/03/screen2.png)](/assets/2013/03/screen2.png)
 
 > Please, save your applause for my introduction of the term "Distance Vector Fog of War" for the comments.
 

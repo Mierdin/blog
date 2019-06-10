@@ -15,7 +15,7 @@ Sadly, this will be another post regarding issues I've had with UCSM firmware re
 
 Here is the error report for a single blade where I was seeing these errors:
 
-[![vif_down errors](assets/2014/01/vif_down-errors-1024x236.png)](assets/2014/01/vif_down-errors.png)
+[![vif_down errors](/assets/2014/01/vif_down-errors-1024x236.png)](/assets/2014/01/vif_down-errors.png)
 
 The ones I was most worried about were those that said "ether/fc VIF [id] on server [server] of switch [switchid] down, reason: Unknown". Pretty much any time I see a reason of "unknown", an eyebrow gets raised.
 
@@ -25,7 +25,7 @@ Now - errors regarding VIFs being offline or disconnect are normal after a firmw
 
 It wasn't just this server, either - oh no. It appears that this impacted quite a few servers. I made this upgrade quite a few times (I was working with multiple UCS domains), and although the number of servers affected has been different every time I've made the upgrade, the fact that it happens at all is consistently true.
 
-[![lotsoferrors](assets/2014/01/lotsoferrors.png)](assets/2014/01/lotsoferrors.png)
+[![lotsoferrors](/assets/2014/01/lotsoferrors.png)](/assets/2014/01/lotsoferrors.png)
 
 Each server highlighted in orange was suffering from this issue - they were literally and completely disconnected from the Fabric Interconnect that had just been upgraded to 2.2(1b). Because of this consistency, I am fortunately getting some additional attention from TAC and they're looking into this more deeply, with the intention of getting it identified as a defect, potentially resulting in a new UCSM release.
 
@@ -43,7 +43,7 @@ So how do we fix this? (This is the part that really sucks) Unfortunately, the o
 
 This process should allow the blade to come up normally, with all VIFs active and forwarding. Check the "VIF Paths" tab to verify this.
 
-[![normal_vif](assets/2014/01/normal_vif.png)](assets/2014/01/normal_vif.png)
+[![normal_vif](/assets/2014/01/normal_vif.png)](/assets/2014/01/normal_vif.png)
 
 Unfortunately....this really sucks if there are a large number of blades with this issue (like I did), since you'll have to repeat this process for every affected blade. While it's true that when running workloads like vSphere, you can easily place these hosts into maintenance mode while running this task, it's still a massive inconvenience, and takes up huge chunks of time during an otherwise brief maintenance window.
 

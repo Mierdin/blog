@@ -103,7 +103,7 @@ As the walkthrough states, you first need to:
 
 My host profile was designed JUST to enable stateful installations. Everything else was configured via PowerCLI so this was all I needed it to do.
 
-[![diagram1](assets/2013/11/diagram11.png)](assets/2013/11/diagram11.png)
+[![diagram1](/assets/2013/11/diagram11.png)](/assets/2013/11/diagram11.png)
 
 Note that the "arguments for first disk" field contains the word "remote". This is key if you want to install to a SAN LUN - the documentation doesn't mention this keyword.
 
@@ -181,7 +181,7 @@ for ($i=1; $i -le 60; $i++) {
 
 After a while, all of your hosts will show up in the cluster specified in the auto deploy rule configuration.
 
-[![diagram2](assets/2013/11/diagram21.png)](assets/2013/11/diagram21.png)
+[![diagram2](/assets/2013/11/diagram21.png)](/assets/2013/11/diagram21.png)
 
 ## Summary
 

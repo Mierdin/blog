@@ -46,7 +46,7 @@ In this model, rather than worrying about the details of how two network endpoin
 
 Once this is done, an administrator connects groups together with a "contract" that states what these groups are allowed to do with each other. This is similar to "old school" access control lists - statements like "allow communication on destination TCP port 80" would be a common contract statement.
 
-![opflex1](assets/2014/09/opflex1-1024x367.png)
+![opflex1](/assets/2014/09/opflex1-1024x367.png)
 
 The purpose of a model like this isn't to hide the details from those that understand them (i.e. a network administrator) but instead from those that do not (i.e. application developers). They are able to re-use contracts and groups that a network administrator defines, and as a result, this model is geared more towards that portion of IT.
 
@@ -62,7 +62,7 @@ However we still need to get things like VXLAN and VLAN connectivity working. We
 
 For lack of a better term, I'm calling this the "translation boundary" - the place where the declarative model is interpreted into discrete actions.
 
-[![opflex2](assets/2014/09/opflex2-1024x655.png)](assets/2014/09/opflex2.png)
+[![opflex2](/assets/2014/09/opflex2-1024x655.png)](/assets/2014/09/opflex2.png)
 
 When interacting with specific network elements - typically heterogenous - a controller like OpenDaylight will have to interpret calls made via the northbound API into specific network elements based off of what they're known to support. As shown above, a Juniper switch may use NETCONF, a Cisco switch may leverage the onePK libraries, and Open vSwitch can use the ever-popular OVSDB+OpenFlow combo. The controller must keep track of which method each device supports, and leverage the appropriate protocol for each device.
 
@@ -70,7 +70,7 @@ Group Policy doesn't inherently change this - [as shown on the wiki](https://wik
 
 Rather than deal with the translation in this way, OpFlex fundamentally moves this translation boundary closer to the network devices themselves. OpFlex becomes the protocol that communicates generic policies and intentions to a local agent on each network device, and that agent is responsible for translating to specific protocols.
 
-[![opflex3](assets/2014/09/opflex3-1024x700.png)](assets/2014/09/opflex3.png)
+[![opflex3](/assets/2014/09/opflex3-1024x700.png)](/assets/2014/09/opflex3.png)
 
 Again, this is all very new, but the arguments in favor of a model like this seem to be well-founded. Time will tell what kind of environments require this shift of the translation boundary, but on paper, this greatly simplifies the interaction with the network edge from both a scalability and complexity perspective. The controller doesn't have to speak multiple protocols southbound - each endpoint is responsible for interpreting the controller's original intent in a locally significant way. This is the fundamental basis of [Promise Theory](http://en.wikipedia.org/wiki/Promise_theory), which ACI is largely based on.
 

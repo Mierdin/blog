@@ -50,7 +50,7 @@ while True:
 s.close()
 {{< /highlight >}}
 
-[![python](assets/2013/10/python.png)](assets/2013/10/python.png)
+[![python](/assets/2013/10/python.png)](/assets/2013/10/python.png)
 
 
 

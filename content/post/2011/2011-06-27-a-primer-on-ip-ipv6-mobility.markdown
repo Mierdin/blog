@@ -59,7 +59,7 @@ As you can see, this is a relatively complex process, but one that allows a devi
 
 I know I struggled with this before the bulk of my research, and I have a feeling that you are too - why use IP Mobility? Why would someone really care that they have the same IP address as they move from network to network?
 
-[![](assets/2011/06/Network_Info_II-e1308755204713-300x215.png)](assets/2011/06/Network_Info_II.png)
+[![](/assets/2011/06/Network_Info_II-e1308755204713-300x215.png)](/assets/2011/06/Network_Info_II.png)
 
 Well, the big use case for IP Mobility is the typical mobile devices like smart phones. With the rise in demand for mobile access to the internet, an even higher level of importance has been placed on having a seamless ability to roam using the same connection. From a network access perspective, this is as simple as moving from one cell tower to another. However, there are underlying implications to consider. For instance - whose tower are you now connected to? Does that company also own the same tower you just moved from? (See [PSDN](http://en.wikipedia.org/wiki/Packet_data_serving_node)) Because of these questions, it is impossible to maintain state with applications like voice, or many others, if a device is moving around geographically like this. As a result, mobility is used within a carrier to ensure that communication to the same device located at the same IP address can remain constant.
 

@@ -30,7 +30,7 @@ Before diving into the individual StackStorm services, it's important to start a
 
 The best place to start for this is the [StackStorm Overview](https://docs.stackstorm.com/overview.html), where StackStorm concepts and a very high-level walkthrough of how the components interact is shown. In addition, the [High-Availability Deployment Guide](https://docs.stackstorm.com/reference/ha.html) (which you should absolutely read if you're serious about deploying StackStorm) contains a much more detailed diagram, showing the actual, individual process that make up a running StackStorm instance:
 
-<div style="text-align:center;"><a href="assets/2017/04/services.png"><img src="assets/2017/04/services.png" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2017/04/services.png"><img src="/assets/2017/04/services.png" width="500" ></a></div>
 
 > It would be a good idea to keep this diagram open in another tab while you read on, to understand where each service fits in the cohesive whole that is StackStorm
 

@@ -35,7 +35,7 @@ If you listen, the characters in the video are mumbling about some nonsense abou
 
 Shows like NUMB3RS, CSI New York, and video games like Quantum of Solace are all examples of what I just so happened to come across recently in the area of malformed IP addresses. In fact, they were a large part of my inspiration for this article.
 
-![They're calling it Class F space.](assets/2011/08/ip-fail.jpg)
+![They're calling it Class F space.](/assets/2011/08/ip-fail.jpg)
 
 I'm not sure if this has happened yet, but I want to make sure I lay claim to this as early as possible. When and if TV shows pick up on IPv6 addresses, they are going to mess it up so bad. My specific prediction is that the most common mistake will be using letters beyond F in the addresses, though I'm sure colon misplacement will also be fairly common. We'll have to see.
 
@@ -45,7 +45,7 @@ I recently purchased the game "Quantum of Solace" so that I could play online wi
 
 As a result of Bond's barging in to this party, and the "bad guys" not appreciating his presence, a noisy shootout soon takes place. In the server room.
 
-![Direct Gunfire: NOT covered by your vendor maintenance contracts](assets/2011/08/server-room-fail.jpg)
+![Direct Gunfire: NOT covered by your vendor maintenance contracts](/assets/2011/08/server-room-fail.jpg)
 
 Now, to be honest, that's not the main reason I thought of this particular scene, its just the most painful to watch. The earlier part of this scene included the following statement from someone back at MI6:
 

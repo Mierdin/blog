@@ -19,7 +19,7 @@ This post will serve as a precursor to that overall post, but I want to point ou
 
 This lab topology is very much a work in progress (note the cross-over cable between the two hosts) and will change as my research for the next post continues, but the point I'm trying to get across does not require an elaborate setup. Observe:
 
-[![Simple Lab Topology](assets/2013/04/CSR2screen1.png)](assets/2013/04/CSR2screen1.png)
+[![Simple Lab Topology](/assets/2013/04/CSR2screen1.png)](/assets/2013/04/CSR2screen1.png)
 
 So I configured the two routers in the manner shown above - a simple VRRP group with the priority set on the CSR so that it fulfilled the role of "master":
 
@@ -67,11 +67,11 @@ So I configured the two routers in the manner shown above - a simple VRRP group 
 
 As you can see, the Vyatta router is plainly working correctly with the CSR just fine - it's taking it's role as backup, and acknowledging that the master is the CSR. However, though I can ping the actual IP addresses of each router, I cannot ping the virtual IP address of 192.168.123.1:
 
-[![csr2screen3](assets/2013/04/csr2screen3.png)](assets/2013/04/csr2screen3.png)
+[![csr2screen3](/assets/2013/04/csr2screen3.png)](/assets/2013/04/csr2screen3.png)
 
 It didn't appear to be any kind of Layer 2 problem, since I could ping the routers directly, and I was even getting the MAC address of all three addresses correctly via ARP:
 
-[![csr2screen4](assets/2013/04/csr2screen4.png)](assets/2013/04/csr2screen4.png)
+[![csr2screen4](/assets/2013/04/csr2screen4.png)](/assets/2013/04/csr2screen4.png)
 
 After some research (I even went so far as to scrap the Vyatta, spin up another CSR and just do HSRP - same results), [I reminded myself about a frequently overlooked feature in the vSphere standard switch - promiscuous mode. ](http://pubs.vmware.com/vsphere-51/index.jsp?topic=%2Fcom.vmware.vsphere.networking.doc%2FGUID-74E2059A-CC5E-4B06-81B5-3881C80E46CE.html)If promiscuous mode is disabled, a frame will only get delivered to the exact virtual NIC that it is addressed to, so that other NICs on the vSwitch cannot see the traffic. Therefore, an ethernet frame will get dropped unless the **destination** MAC address is one of the following:
 	
@@ -81,13 +81,13 @@ After some research (I even went so far as to scrap the Vyatta, spin up another 
 
 Let's take a look at some traffic flow diagrams. First, when the two routers need to communicate, they use the destination MAC address of 0100.5e00.0012 - the very common VRRP multicast address (224.0.0.18 in the IPv4 multicast format). Since this is a properly formed multicast address destination, this traffic is allowed through perfectly fine. Note that the VRRP virtual MAC address (0000.5e00.0101), which is not recognized by vSphere, is the source address.
 
-[![VRRP Hellos on VMware Standard vSwitch](assets/2013/04/CSR2screen5.png)](assets/2013/04/CSR2screen5.png)
+[![VRRP Hellos on VMware Standard vSwitch](/assets/2013/04/CSR2screen5.png)](/assets/2013/04/CSR2screen5.png)
 
 However, as I mentioned before, any attempt to access the virtual IP address failed - even though the VRRP "neighbors" were seeing each other correctly. I was even getting an ARP entry for the virtual IP address, and it was correct! So what gives?
 
 Keep in mind that the MAC address used for this virtual IP address is essentially made up. vSphere knows that the "hard coded" MAC addresses of all the vNICs, including those on the routers themselves, because that MAC address is configured in vSphere itself. So when traffic is sent to this virtual MAC address:
 
-[![Traffic to Virtual MAC Address - Blocked by vSphere](assets/2013/04/CSR2screen6.png)](assets/2013/04/CSR2screen6.png)
+[![Traffic to Virtual MAC Address - Blocked by vSphere](/assets/2013/04/CSR2screen6.png)](/assets/2013/04/CSR2screen6.png)
 
 The vSS will not forward this traffic to the router, because promiscuous mode is not enabled, and this traffic is destined for a MAC address the switch does not recognize. Essentially what happens is the traffic is forwarded out the uplink, which is the other host. Since that MAC address isn't recognized on that vSwitch either, the traffic dies. Either way, the traffic does not get delivered to the correct NIC, because the MAC address is an unknown unicast address.
 
@@ -95,7 +95,7 @@ As most network-savvy virtualization admins know, a standard vSwitch does not do
 
 I enabled promiscuous mode on the standard vSwitches on each host, and I was immediately able to get routed out using the virtual IP address.
 
-[![CSR2screen7](assets/2013/04/CSR2screen7.png)](assets/2013/04/CSR2screen7.png)
+[![CSR2screen7](/assets/2013/04/CSR2screen7.png)](/assets/2013/04/CSR2screen7.png)
 
 So, in summary - you might want to consider enabling promiscuous mode or a similar policy if you plan on running these FHRP protocols within your virtual environment.
 

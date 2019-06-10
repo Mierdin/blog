@@ -109,15 +109,15 @@ As I mentioned, there really isn't any documentation on NX-API generically, only
 
 The NX-API sandbox has also been re-vamped (and it looks MUCH better). Here's the sandbox present on older versions of code, and what was provided on the initial launch of Nexus 900:
 
-[![nxapi1](assets/2014/10/nxapi1-1024x637.png)](assets/2014/10/nxapi1.png)The new sandbox looks much better:
+[![nxapi1](/assets/2014/10/nxapi1-1024x637.png)](/assets/2014/10/nxapi1.png)The new sandbox looks much better:
 
-[![nxapi2](assets/2014/10/nxapi2-1024x715.png)](assets/2014/10/nxapi2.png)
+[![nxapi2](/assets/2014/10/nxapi2-1024x715.png)](/assets/2014/10/nxapi2.png)
 
 Again - you'll only use this sandbox to test requests. This is not a very useful tool for experienced developers, but for those that are looking to get into how an API works, and using it to make switch configurations, it's a great place to start.
 
 If you look at the request box, not only does the new sandbox provide the JSON-RPC, JSON or XML required to form the request, it can also provide you with a snippet of Python code that utilizes the core "requests" library to make the request on your own machine.
 
-[![nxapi3](assets/2014/10/nxapi3.png)](assets/2014/10/nxapi3.png)
+[![nxapi3](/assets/2014/10/nxapi3.png)](/assets/2014/10/nxapi3.png)
 
 This is useful for those that are new to Python and making REST calls.
 

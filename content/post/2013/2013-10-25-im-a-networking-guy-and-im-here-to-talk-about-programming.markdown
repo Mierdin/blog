@@ -29,7 +29,7 @@ I've seen some stellar articles like this one from [this one from Steven Iveso
 
 There's another issue that hasn't really been addressed. While it's likely that many reasons are given for tackling this new skillset, the biggest one they've heard is that it will help automate repetitive tasks - for instance, configuring VLANs on a set of 10 switches. If we're doing this manually, one at a time, of course this is not going to work:
 
-[![diagram1](assets/2013/10/diagram13.png)](assets/2013/10/diagram13.png)
+[![diagram1](/assets/2013/10/diagram13.png)](/assets/2013/10/diagram13.png)
 
 Network engineers aren't gluttons for punishment - they've  actually figured out how to automate many of their tasks already. The single biggest argument for learning code - while in my eyes a very valid one - is totally invalid to the network engineer that has already learned how to write just enough VBA or Excel macros to be able to provide a customer with a spreadsheet, say "Fill in the blanks", and plop out some IOS configs that they then hand off to a junior engineer to paste into each device using a console cable.
 
@@ -37,7 +37,7 @@ Network engineers aren't gluttons for punishment - they've  actually figured ou
 
 To network guys, the need to learn code then becomes someone else's need, not theirs. They have an automated solution. They don't even feel the need to pursue anything further.
 
-[![diagram2](assets/2013/10/diagram23.png)](assets/2013/10/diagram23.png)
+[![diagram2](/assets/2013/10/diagram23.png)](/assets/2013/10/diagram23.png)
 
 Guess what? It's not just the networking industry that has this problem. Every platform in the data center uses some kind of GUI and/or CLI interface, whether it's a storage array, or a switch, a server platform or a hypervisor. While many of these products may have some kind of interface like an API you can consume programmatically, the vast majority of engineers doing deployments or operations on these platforms either aren't aware of them or don't use them.
 
@@ -51,7 +51,7 @@ Clearly there's more discussion to be had. As a network engineer that has IOS an
 	
   * Getting real data out of the infrastructure, in real time, in a format that isn't created to be consumed by human eye balls, but by the applications that need it.
 
-[![diagram3](assets/2013/10/diagram31.png)](assets/2013/10/diagram31.png)
+[![diagram3](/assets/2013/10/diagram31.png)](/assets/2013/10/diagram31.png)
 
 I've written before about the [value of infrastructure APIs](https://keepingitclassless.net/2013/09/the-benefit-of-infrastructure-apis/) and why we need them. If you're unfamiliar with the term, go read that article.
 

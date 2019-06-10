@@ -29,7 +29,7 @@ The Plexxi controller computes the most efficient optical topology based on appl
 
 Plexxi introduced the PSI to provide more of a hub and spoke topology, as opposed to the physical ring topology they introduced earlier. The idea is to still implement the same kind of topology that allows you to do photonic switching, producing programmable L1 topologies, but in the hub-and-spoke model.
 
-[![diagram5](assets/2013/10/diagram5.png)](assets/2013/10/diagram5.png)
+[![diagram5](/assets/2013/10/diagram5.png)](/assets/2013/10/diagram5.png)
 
 A compelling use case for using the PSI is, for example, big scale-out deployments, or any data center where repeatable, consistent growth is observed in a pod-like format. Each PSI can connect up to six  top-of-rack switches, and then the optical spine on the PSIs is able to form the ring topology we saw earlier. This occurs over the extender ports on each PSI, separate from the LightRail interfaces meant to go to ToR switches.
 
@@ -41,7 +41,7 @@ By the way, the PSI is totally passive, so the idea of redundancy is a little le
 
 The 2SP is a dense access-layer switch (16x QSFP and 8x SFP+)
 
-[![diagram6](assets/2013/10/diagram6.png)](assets/2013/10/diagram6.png)
+[![diagram6](/assets/2013/10/diagram6.png)](/assets/2013/10/diagram6.png)
 
 I found the concept of Flexxports quite interesting - there are four of these per switch (SFP+) - these allow direct layer 1 native access to the lightrail interfaces for a server-side connected device, bypassing the switching ASIC entirely. This is for things like FC or Infiniband where you just need some direct L1 connectivity for something that is non-ethernet. Setting the connection up between Flexxport and Lightrail strand is programmable, not fixed - which is pretty cool.
 
@@ -55,7 +55,7 @@ Plexxi's view is that DevOps has not completed its goal in the network until the
 
 In the second half of their presentation, the Plexxi team talks about their work towards this effort, specifically focusing on the Data Services Engine that they're on the verge of releasing to the world. The DSE is aimed at providing normalization for the gratuitous amounts of metadata present is all aspects of data center infrastructure.
 
-[![diagram4](assets/2013/10/diagram4.png)](assets/2013/10/diagram4.png)
+[![diagram4](/assets/2013/10/diagram4.png)](/assets/2013/10/diagram4.png)
 
 This normalization is actually the most difficult part when considering DC-wide orchestration, because everyone does it differently. Working with APIs is easy. Populating them with relevant data cross-platform is the difficult part.
 
@@ -67,7 +67,7 @@ Check out what they're doing with this, mixed in with good-old [CloudToad ](http
 
 The DSE software that Plexxi is developing is aimed at providing a normalization engine for the metadata in your DC infrastructure, whether it's servers, networking, hypervisor, storage, etc. With DSE you can have various channels that are designed to take data from important sources like VMware and OpenStack, and provide a sort of "translation service" so that integrating these services with the other infrastructure in your DC is less painful.
 
-[![diagram2](assets/2013/10/diagram21.png)](assets/2013/10/diagram21.png)
+[![diagram2](/assets/2013/10/diagram21.png)](/assets/2013/10/diagram21.png)
 
 As Derick points out, Orchestration is a data integration problem first and foremost. How do I access that data, how do I get it in a usable format, and how do I know when that data has changed?
 
@@ -83,7 +83,7 @@ Plexxi's most prominent idea is their concept of "application affinities". Affin
 
 Rather than simply force customers to purchase their hardware to see what this is all about, Plexxi pushed this "affinity API" code[ into the OpenDaylight project](https://wiki.opendaylight.org/view/Project_Proposals:Affinity_Metadata_Service). Go ahead and pull down the code and take a look.
 
-[![ODPAffinity](assets/2013/10/ODPAffinity.png)](assets/2013/10/ODPAffinity.png)
+[![ODPAffinity](/assets/2013/10/ODPAffinity.png)](/assets/2013/10/ODPAffinity.png)
     
     git clone https://git.opendaylight.org/gerrit/p/affinity.git
     cd affinity
@@ -104,6 +104,6 @@ Derick puts it best: "It's not enough to say we have an API, we have to do some
 
 If the idea takes off, then people are going to start looking at Plexxi's hardware as a foundation to that logic inside ODL or elsewhere. They're not pushing whitepapers - they're pushing code. Now.
 
-[![tumblr_inline_mfd3t0Vl061qiv5yk](assets/2013/10/tumblr_inline_mfd3t0Vl061qiv5yk.gif)](assets/2013/10/tumblr_inline_mfd3t0Vl061qiv5yk.gif)
+[![tumblr_inline_mfd3t0Vl061qiv5yk](/assets/2013/10/tumblr_inline_mfd3t0Vl061qiv5yk.gif)](/assets/2013/10/tumblr_inline_mfd3t0Vl061qiv5yk.gif)
 
 > Plexxi was a vendor presenter at [Networking Tech Field Day 6](http://techfieldday.com/event/nfd6/), an event organized [by Gestalt IT](http://techfieldday.com/about/). These events are sponsored by networking vendors who thus indirectly cover our travel costs. In addition to a presentation (or more), vendors may give us a tasty unicorn burger, [warm sweater made from presenter's beard](http://www.youtube.com/watch?v=oQrJk9JzW8o) or a similar tchotchke. The vendors sponsoring Tech Field Day events don't ask for, nor are they promised any kind of consideration in the writing of my blog posts ... and as always, all opinions expressed here are entirely my own. ([Full disclaimer here](https://keepingitclassless.net/disclaimers/))

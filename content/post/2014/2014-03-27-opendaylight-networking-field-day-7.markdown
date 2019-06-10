@@ -23,7 +23,7 @@ Plexxi's contribution is officially called the "Affinity Metadata Service" proje
 
 The end-goal here is outlined by Nils - OpenDaylight can become the common configuration element for Plexxi customers that  have Plexxi infrastructure, but also wish to extend this policy framework into an OpenFlow-capable vSwitch, such as OVS.
 
-[![plexxi](assets/2014/03/plexxi-1024x531.png)](assets/2014/03/plexxi.png)
+[![plexxi](/assets/2014/03/plexxi-1024x531.png)](/assets/2014/03/plexxi.png)
 
 This is not to say that this policy framework couldn't be used entirely using OpenFlow networks, but I'm sure Plexxi would make the argument that on the physical side, their gear does a better job. In a non-Plexxi data center, I imagine the common idea would be to leverage the Affinity service to map OpenFlow rules into the virtual switches, but rely on overlays and traditional L3 ECMP to get the job done on the physical side.
 

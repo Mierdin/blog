@@ -17,7 +17,7 @@ Nuage was a presenter at Networking Field Day 6. We definitely made our share of
 
 The solution includes three layers: a virtual networking agent, an OpenFlow controller, and a directory server that communicates policy information to and from each controller instance.
 
-[![pic1](assets/2013/09/pic1.png)](assets/2013/09/pic1.png)
+[![pic1](/assets/2013/09/pic1.png)](/assets/2013/09/pic1.png)
 	
   * **VRS** - hypervisor-based networking agent (pretty much vanilla Open vSwitch with nuage-specific module in userspace)
 	
@@ -84,7 +84,7 @@ Nuage offers a simple software gateway, and they also work with a few vendors to
 
 I was REALLY impressed by the zone-based ACLs, not using explicit IP subnet statements. We're abstracting over the subnets, and defining access using business rules. If I'm an apps guy, this is perfect - I don't care about subnets.
 
-[![pic2](assets/2013/09/pic2.png)](assets/2013/09/pic2.png)
+[![pic2](/assets/2013/09/pic2.png)](/assets/2013/09/pic2.png)
 
 The subnet is defined in the creation of these zones. So the ACL can be created by someone with limited knowledge of the actual network itself. On the controller side, these are evaluated into actual subnets. This simplification is only reflected on the policy side.
 

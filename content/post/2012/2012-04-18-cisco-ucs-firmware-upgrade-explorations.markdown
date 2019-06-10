@@ -21,11 +21,11 @@ First, I needed to get the test blades back to the old firmware, since they happ
 
 Once detached, I unchecked everything in both packages, to ensure that they would be blank when I re-attached them. As expected, nothing happens.
 
-[![](assets/2012/04/2.png)](assets/2012/04/2.png)
+[![](/assets/2012/04/2.png)](/assets/2012/04/2.png)
 
 I then went into firmware management, and manually set the startup version from 2.0(1s) to 1.4(3q). I ensured that "set startup version only" at the top of this window was checked. Applying these changes caused a "reboot" message to appear next to the CIMC controller:
 
-[![](assets/2012/04/1.png)](assets/2012/04/1.png)
+[![](/assets/2012/04/1.png)](/assets/2012/04/1.png)
 
 I'm not _terribly _worried about this since I will not be affecting production blades in this way - this is only to simulate servers that have not been given the new code yet. However,  after reading this in the [Cisco 1.4 to 2.0 upgrade documentation ](http://www.cisco.com/en/US/docs/unified_computing/ucs/sw/upgrading/from1.4/to2.0/b_UpgradingCiscoUCSFrom1.4To2.0.pdf)(page 32):
 
@@ -46,7 +46,7 @@ As you can see, not a single ping was dropped. Also, the KVM session I was in di
 
 (You'll also notice that the M81KR adapters for each blade have not been upgraded yet - unlike the CIMC controllers, these cannot be upgraded while the system is active, and UCS is notifying us that a reboot is necessary to finish the job on these.)
 
-[![](assets/2012/04/9.png)](assets/2012/04/9.png)
+[![](/assets/2012/04/9.png)](/assets/2012/04/9.png)
 
 > NOTE: This was only done because I checked "set startup version only".
 
@@ -54,13 +54,13 @@ Now that all my test blades are on the old version of code, I can go through the
 
 Re-attaching the blank firmware packages may bring up this message:
 
-[![](assets/2012/04/5.png)](assets/2012/04/5.png)
+[![](/assets/2012/04/5.png)](/assets/2012/04/5.png)
 
 Don't freak out - this message is a minor one, though the wording could be improved somewhat to prevent the sudden surge in blood pressure it causes. It simply means that you need to set your desired BIOS version in the host firmware package after it's attached.
 
 The order of the following is my own preference to get the bios errors addressed so they don't pop up later. The CIMC upgrade is accomplished via the management firmware package:
 
-[![](assets/2012/04/6.png)](assets/2012/04/6.png)
+[![](/assets/2012/04/6.png)](/assets/2012/04/6.png)
 
 You'll notice that when this is applied, the blades do not reboot, but they do undergo a reconfiguration as the new CIMC firmware is applied.  Similar to the manual firmware change, the KVM session is disconnected, but normal VM traffic is uninterrupted.
 
@@ -68,7 +68,7 @@ Setting the version of the BIOS did nothing since the BIOS version was already u
 
 Next, the upgrade of the M81KRs. This should require a reboot, so the hope is that the change will trigger the maintenance policy linked to the service profiles, rather than reboot the blades immediately. A quick change to the host firmware package confirms this is the case:
 
-[![](assets/2012/04/7.png)](assets/2012/04/7.png)
+[![](/assets/2012/04/7.png)](/assets/2012/04/7.png)
 
 Once the blades rebooted and came back up, I upgraded the SAS controllers for the onboard storage. This also triggered a user-ack.
 

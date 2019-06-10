@@ -24,7 +24,7 @@ Unfortunately, with OSPF we aren't able to do load balancing between links of d
 
 Observe the following diagram:
 
-[![](assets/2011/09/Diagram.png)](assets/2011/09/Diagram.png)
+[![](/assets/2011/09/Diagram.png)](/assets/2011/09/Diagram.png)
 
 This diagram isn't completely different from my original post. We're on R1 and we're trying to get to the remote 172.16.0.0/24 network. I set up R4 just so we had something in the middle to ping. I also statically configured the bandwidth of the serial links as shown in the diagram. If you do the math, you'll notice that the link between R1 and R2 is T1 speed, and the link between R1 and R3 is precisely half that.
 

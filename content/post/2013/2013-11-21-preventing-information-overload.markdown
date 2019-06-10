@@ -15,7 +15,7 @@ Man, did I pick a tumultuous time to start a career in technology - there are so
 
 There are a few key ideas that have helped me straighten things out. It doesn't matter if you're a blogger (or want to start one), a vendor, a customer, a unicorn, or The Borg - the information available today can either be very helpful, or very harmful - all depending on the structure you've put into place to consume it.
 
-[![borg](assets/2013/11/borg.png)](assets/2013/11/borg.png)
+[![borg](/assets/2013/11/borg.png)](/assets/2013/11/borg.png)
 
 Here are three key ideas to follow in order to stay up to date with the latest technology trends
 
@@ -29,7 +29,7 @@ It's also important to take notes - but again, not every word. The key is to abs
 
 Think of it this way - in the movie Inception, implanting an idea in someone's head was only possible if the target believed that the idea was original - that it grew naturally in their own mind. Kind of the same concept.
 
-[![4xn6r](assets/2013/11/4xn6r.jpg)](assets/2013/11/4xn6r.jpg)
+[![4xn6r](/assets/2013/11/4xn6r.jpg)](/assets/2013/11/4xn6r.jpg)
 
 ## Time Management and Allocation
 

@@ -19,13 +19,13 @@ I'd like to point out a very reasonable solution to this problem. Keep in mind t
 
 You'll notice that you have an "EtherSwitch Router" over to the left on your toolbar. This needs a c3700 image to run, and I selected the following:
 
-[![screen2](assets/2013/02/screen21.png)](assets/2013/02/screen21.png)
+[![screen2](/assets/2013/02/screen21.png)](/assets/2013/02/screen21.png)
 
 Now that there's an image selected, don't forget to set an IDLE PC value, as you should with every platform in GNS3 so that your environment can run smoothly. There are walkthroughs all over the web on how to do this.
 
 My main point in writing this article is to get some switches powered on and show you how to do some basic switching tasks on this platform. For that, we need to see a topology. I have thrown this lab together in GNS3:
 
-[![screen3](assets/2013/02/screen31.png)](assets/2013/02/screen31.png)
+[![screen3](/assets/2013/02/screen31.png)](/assets/2013/02/screen31.png)
 
 You may need to enable "Always use manual mode when adding links" under Preferences >> General >> GUI Settings to pick these specific interfaces.
 
@@ -238,7 +238,7 @@ We're running all of this in GNS3, which is good for practicing Layer 3 stuff, s
 
 Let's change up the topology a little bit. I've placed R1 as the center of a now-linear network, where R2 must go through R1 to get to R3.
 
-[![screen4](assets/2013/02/screen4.png)](assets/2013/02/screen4.png)
+[![screen4](/assets/2013/02/screen4.png)](/assets/2013/02/screen4.png)
 
 I placed each port on R1 in different VLANs (access), and assign IP addresses to each SVI:
     

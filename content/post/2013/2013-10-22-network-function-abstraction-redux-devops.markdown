@@ -23,7 +23,7 @@ Jeremy Schulman, who really is one of the leading pioneers of bringing DevOps in
 
 This is quite a unique model of network automation, given all of the recent products involving control plane separation and whatnot. Here, the puppet agent installed on each device merely takes advantage of a local XML API, which could also just as easily be consumed by another outside entity.
 
-[![diagram1](assets/2013/10/diagram11.png)](assets/2013/10/diagram11.png)
+[![diagram1](/assets/2013/10/diagram11.png)](/assets/2013/10/diagram11.png)
 
 The value in using Puppet in this way, rather than a separate tool that calls the XML directly, is that Puppet is a known commodity among DevOps groups today. Bringing Puppet into the discussion of network provisioning is clearly targeted at shops that already have a strong DevOps-practicing operations team. Those guys don't know, nor should they, how to configure a VLAN trunk. The role of the network engineer then moves into more design, and more supplying the DevOps guys with the tools they need to automate network-centric tasks.
 

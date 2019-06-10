@@ -33,7 +33,7 @@ You might understand their frustration, but the reality is that the network engi
 
 Yes, it can be tempting to make fun of some developers that can't tell a frame from a packet. However, it may be useful to remember that a developer wrote the software in your router. Someone had to write the algorithms that power your load balancer. It is indeed possible that some software developers know networking - even better than most network engineers out there. Then, if you put them in the constantly-innovating culture of silicon valley that is always looking for a problem to solve, it's inevitable; the arduous processes and inflexible tooling that has dominated networking for so long provided those developers and sysadmins with a problem to solve on a silver platter.
 
-<div style="text-align:center;"><a href="assets/2017/04/cheese.png"><img src="assets/2017/04/cheese.png" width="300" ></a></div>
+<div style="text-align:center;"><a href="/assets/2017/04/cheese.png"><img src="/assets/2017/04/cheese.png" width="300" ></a></div>
 
 And solve it they did. When x86 virtualization was really hitting the mainstream, network engineers didn't really acknowledge the vSwitch. They wrote it off as "those server guys". What about when we started routing in the host or hypervisor? I know a lot of people like to make fun of the whole `docker0` bridge/NAT thing. Those silly server people, right? Developers are spinning up haproxy instances for load balancing, and learning how to use iptables to secure their own infrastructure. On top of that, all of these network services are **also being offered by AWS** and are all in one nice dashboard and also totally programmable. Can you really blame the developer now? Put yourself in their shoes - if you were faced with an inflexible network infrastructure that your application depended on, and you had no control over it, how long would it take you to follow the shiny red ball over to Amazon where they make all those same network *services* totally abstract and API-controllable?
 
@@ -51,7 +51,7 @@ For instance - Kubernetes is an increasingly popular choice for those looking to
 
 As you might expect, all these systems need to work together, and we've historically "integrated" them by hand for a long time by looking at different areas of our technology stack, and "rendering" abstract concepts of desired state into implementation-specific commands and configurations. Just take networking as a specific example - a network engineer is the human manifestation of a cross platform orchestrator, seamlessly translating between Cisco and Juniper CLI syntaxes.
 
-<div style="text-align:center;"><a href="assets/2017/04/dr_garencieres.jpg"><img src="assets/2017/04/dr_garencieres.jpg" width="500" ></a></div>
+<div style="text-align:center;"><a href="/assets/2017/04/dr_garencieres.jpg"><img src="/assets/2017/04/dr_garencieres.jpg" width="500" ></a></div>
 
 So, to return to the main point; the network is now no longer the sole proprietor of network services - those are slowly but surely migrating into the realm of the sysadmin and software developer. How can we adapt to this? One way is to acknowledge that the new "network edge" is very blurred. No longer is there a physical demarcation like a switchport; rather, these services are being provided either directly adjacent, or even co-resident with the application.
 

@@ -29,7 +29,7 @@ For now, suffice it to say that OpenFlow and OVSDB do not have inherent depende
 
 OVSDB has filled this void in many ways, primarily because Open vSwitch has become the de facto platform on which to innovate with SDN, and OVSDB is obviously very supported on this platform. If you take a look at the [OVSDB RFC](http://tools.ietf.org/html/rfc7047) you'll notice a diagram that simply outlines the complementary but very clearly separate relationship between the control and management processes:
 
-[![ovsdb-openflow-difference](assets/2014/07/Screenshot-2014-07-29-10.07.44.png)](assets/2014/07/Screenshot-2014-07-29-10.07.44.png)
+[![ovsdb-openflow-difference](/assets/2014/07/Screenshot-2014-07-29-10.07.44.png)](/assets/2014/07/Screenshot-2014-07-29-10.07.44.png)
 
 In an Open vSwitch deployment, there is a dedicated process  - "ovsdb-server" - made specifically to accept configuration changes from an OVSDB client. This OVSDB client can be a [piece of software co-resident with a controller platform like OpenDaylight](https://wiki.opendaylight.org/view/OVSDB_Integration:Main), or it could be a simple, interactive client like "[ovsdb-client](http://openvswitch.org/cgi-bin/ovsman.cgi?page=ovsdb%2Fovsdb-client.1.in)", which is also typically packaged with Open vSwitch builds.
 
@@ -41,7 +41,7 @@ Let's take a step back from OVSDB and OpenFlow for a second and analyze the prot
 
 Similarly, your configuration protocols - whether this is a proprietary API like NX-API, or something like NETCONF - shouldn't have any dependencies on what routing protocol is used. These protocols do not manage forwarding state, they manage all of the other configuration options on a networking platform. Even if you're doing everything manually, your human network administrator doesn't have any more dependency on the routing protocol being used as NETCONF does - it is just a slightly different implementation detail.
 
-![ovsdb1](assets/2014/08/ovsdb1-1024x396.png)
+![ovsdb1](/assets/2014/08/ovsdb1-1024x396.png)
 
 In summary, the role of the management plane is fundamentally different from the role of the control plane. OVSDB and OpenFlow certainly work very well together because they each fill one of these two important roles, but that doesn't mean it's the only possible combination.
 
@@ -136,7 +136,7 @@ In the same way, the OVSDB specification and the tables it manipulates are very 
 
 > This is very similar to the way Wordpress has it's own database schema, created on install. Is it the only way to use MySQL? Of course not....but it's probably very optimized for Wordpress.
 
-[![OVSDB Schema and Table Relationships](assets/2014/08/ovsdb2-1024x384.png)](assets/2014/08/ovsdb2.png)
+[![OVSDB Schema and Table Relationships](/assets/2014/08/ovsdb2-1024x384.png)](/assets/2014/08/ovsdb2.png)
 
 Because of this separation, you could implement a completely different schema, and still use the same old OVSDB protocol. You could even create your own schema, if none of the existing schemas fit your use case. Nothing about OVSDB prevents anyone from doing this. Again, if this were the case, it would be analogous to the SQL language dictating what kind of tables or data you can create - obviously not useful.
 

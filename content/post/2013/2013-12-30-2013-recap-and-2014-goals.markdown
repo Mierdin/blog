@@ -33,7 +33,7 @@ This is on top for a reason. 2013 was full of growth for me in terms of communit
 
 This year, the traffic to Keeping It Classless more than tripled. I was amazed at the stats last year and would never have foreseen this level of growth. 2013 was responsible for just about 75% of total pageviews ever to the site.
 
-[![statswp](assets/2013/12/statswp-1024x136.png)](assets/2013/12/statswp.png)
+[![statswp](/assets/2013/12/statswp-1024x136.png)](/assets/2013/12/statswp.png)
 
 Thanks to all for reading, commenting, sharing, and yes, sometimes tolerating. I find that my main goal in writing is still a little bit selfish - to learn more from others that have been doing this far longer than I have. In that spirit, I've succeeded dramatically, because this tool has put me into those circles where I couldn't really do much of anything except learn, learn, learn. For that I am immensely grateful.
 

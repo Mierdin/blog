@@ -25,7 +25,7 @@ Some NXOS mode products are shipping now, more to follow beginning of next year.
 
 The Nexus 9000 series will start off with an 8-slot chassis, the Nexus 9508. The 4-slot and 16 slot models will be released later. The Nexus 9508  is 13RU high, meaning each rack could hold up to 3 chassis. This will be a modular chassis with no mid-plane, for complete front to back airflow across each line card.
 
-[![9500](assets/2013/11/9500.jpg)](assets/2013/11/9500.jpg)
+[![9500](/assets/2013/11/9500.jpg)](/assets/2013/11/9500.jpg)
 
 Some hardware specs:
 
@@ -40,7 +40,7 @@ The initial line card with the Nexus 9508 will serve as a 40GbE aggregation line
 
 The Nexus 9300 is being positioned as either a small, collapsed access/aggregation, with no core feature set - a ToR switch to be uplinked to a spine of 9500s.
 
-[![9300](assets/2013/11/9300.jpg)](assets/2013/11/9300.jpg)
+[![9300](/assets/2013/11/9300.jpg)](/assets/2013/11/9300.jpg)
 
 It is initially provided in two models:
 	

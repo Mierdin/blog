@@ -11,7 +11,7 @@ tags: ['cisco']
 ---
 
 
-![](assets/2011/10/noarp.png)
+![](/assets/2011/10/noarp.png)
 
 Like most others that start tinkering with IPv6, I quickly learned that there was no such thing as broadcasts on v6 networks. Since I thought that was a pretty revolutionary concept, I started thinking about all the protocols that until now have relied upon the ability to send via broadcast. The first that came to mind was ARP, which resolves known IP addresses to unknown MAC addresses by sending to the Layer 2 broadcast address of FF:FF:FF:FF:FF:FF. It wasn't thought of as a big deal when TCP/IP was first invented, but now it's rather pesky, as each broadcast, ARP included, must be  processed by every device on the segment.
 
@@ -19,7 +19,7 @@ I concluded, and quickly confirmed that **there's no such thing as ARP in IPv6**
 
 Today's example carries a simple network topology - remember that we're focusing on the ability of one router to find the other using IPv6 Neighbor Solicitation. Both devices are Cisco 2691 routers.
 
-![](assets/2011/10/diagram.png)
+![](/assets/2011/10/diagram.png)
 
 The only thing I've set up at this point is IPv6 addressing. I haven't tried to initiate any kind of communication between the routers, so there shouldn't be existing neighbor entries, but a quick check to confirm couldn't hurt:
 
@@ -51,7 +51,7 @@ This is fairly similar to what we'd see in the ARP table in the IPv4 world, but 
 
 We had a packet capture running, so lets take a look at the first neighbor solicitation sent from R1:
 
-[![ipv6screen1](assets/2011/10/ipv6screen1-1024x340.png)](assets/2011/10/ipv6screen1.png)
+[![ipv6screen1](/assets/2011/10/ipv6screen1-1024x340.png)](/assets/2011/10/ipv6screen1.png)
 
 I'd like to compare and contrast this a bit with what an ARP message would look like. First, at the very bottom of the packet, you'll see the IPv6 address that R1 is looking for. R1 has no ARP entry for 2001:DB2::1F5C:7A92, and therefore must ask who has this address. This is much the same as ARP, this just says:
 
@@ -103,7 +103,7 @@ Wireshark tells us that the first 24 bits, "33:33:FF" is the prefix to indicate 
 
 Now that we've identified the mechanism used to limit broadcast frames, which is pretty cool in my opinion, we can finally see the response from R2 in the form of a Neighbor Advertisement message:
 
-[![ipv6screen2](assets/2011/10/ipv6screen2-1024x344.png)](assets/2011/10/ipv6screen2.png)
+[![ipv6screen2](/assets/2011/10/ipv6screen2-1024x344.png)](/assets/2011/10/ipv6screen2.png)
 
  Note that, much like ARP, the advertisement is sourced from the actual unicast Ethernet address of the host we're trying to reach, and we can now send traffic to it normally.
 

@@ -148,13 +148,13 @@ So, in short, there are two ways to be a blocked port in RSTP - Alternate and Ba
 
 RSTP uses the same BPDU length to ensure some level of compatibility with switches that are running 802.1D. Traditional STP BPDUs are actually pretty simple. Beyond advertising information about the root bridge, they didn't do much else. See that the "version identifier" is set to 0 to indicate STP:
 
-[![stp_bpdu](assets/2013/06/stp_bpdu.png)](assets/2013/06/stp_bpdu.png)
+[![stp_bpdu](/assets/2013/06/stp_bpdu.png)](/assets/2013/06/stp_bpdu.png)
 
 You've got some information in there about Topology Change bits but that's about it. However, if you look at "BPDU flags" you'll notice that only two bits are used for BPDU flags, and a whole byte was allocated for flags.
 
 RSTP actually makes use of these additional flag bits:
 
-[![rstp_bpdu](assets/2013/06/rstp_bpdu.png)](assets/2013/06/rstp_bpdu.png)
+[![rstp_bpdu](/assets/2013/06/rstp_bpdu.png)](/assets/2013/06/rstp_bpdu.png)
 
 In addition to the familiar topology change bits, we can now specify if this BPDU is part of an RSTP Synchronization handshake (more on this later), the port role that this was sent on, and more.
 
@@ -188,7 +188,7 @@ The idea of detecting indirect links is not new, but in traditional STP, this wa
 
 Let's take a look at our three-bridge topology. SW1 is the root, and the link between SW1 and SW2 fails. SW3 receives a BPDU from SW2 advertising itself as the root bridge. Since SW3 knows that the correct root bridge, SW1 is still alive and well, SW3 is able to inform SW2 that it's not the root, and that the root bridge is now accessible to SW2 through SW3, instead of a direct connection.
 
-[![rstp_backbonefast](assets/2013/06/rstp_backbonefast.png)](assets/2013/06/rstp_backbonefast.png)
+[![rstp_backbonefast](/assets/2013/06/rstp_backbonefast.png)](/assets/2013/06/rstp_backbonefast.png)
 
 This means that SW3 is actually able to accept inferior BPDUs on it's previously blocked ports. Remember, superior BPDUs are required to be constantly received on a blocked port for it to stay blocked. Since SW2 should not be the root, SW3 sees the new BPDUs come into the blocked port connected to SW2, see that it's inferior, and inform SW2 that a true root port is available through SW3. Through this, SW2 moves it's connection to SW3 from the designated to the root port role, and stops sending its own BPDUs.
 

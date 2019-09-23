@@ -131,10 +131,10 @@ for {
 
 Running the publisher is simple, and we see the expected log messages.
 
-``` it's important that our type and its fields are exported - meaning they start with a capital letter.
-go run exa it's important that our type and its fields are exported - meaning they start with a capital letter.mple1/natstest-publisher.go
-INFO[0000] it's important that our type and its fields are exported - meaning they start with a capital letter. Connected to NATS and ready to send messages 
-INFO[0000] it's important that our type and its fields are exported - meaning they start with a capital letter. Sending request 0                            
+```
+go run example1/natstest-publisher.go
+INFO[0000] Connected to NATS and ready to send messages 
+INFO[0000] Sending request 0                            
 INFO[0001] Sending request 1                            
 INFO[0002] Sending request 2                            
 INFO[0003] Sending request 3                            

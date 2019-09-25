@@ -102,8 +102,8 @@ and then using the `BindSendChan()` function of our encoded connection to bind t
 sending to NATS.
 
 ```go
-personChanSend := make(chan *Request)
-ec.BindSendChan("request_subject", personChanSend)
+requestChanSend := make(chan *Request)
+ec.BindSendChan("request_subject", requestChanSend)
 ```
 
 > `request_subject` is the name for the subject we intend to send messages to. In NATS, a ["subject"](https://nats-io.github.io/docs/developer/concepts/subjects.html) is roughly equivalent to a Kafka "topic", or a RabbitMQ "queue". Our subscriber must subscribe to the same subject name to receive these messages.
@@ -121,7 +121,7 @@ for {
 
 	// Just send to the channel! :)
 	log.Infof("Sending request %d", req.Id)
-	personChanSend <- &req
+	requestChanSend <- &req
 
 	// Pause and increment counter
 	time.Sleep(time.Second * 1)
@@ -156,8 +156,8 @@ with a different function name that indicates we intend to receive messages, ins
 type Request struct {
 	Id int
 }
-personChanRecv := make(chan *Request)
-ec.BindRecvChan("request_subject", personChanRecv)
+requestChanRecv := make(chan *Request)
+ec.BindRecvChan("request_subject", requestChanRecv)
 ```
 
 Again, we now have native Go constructs to work with, and listening for channels is a blocking operation,
@@ -167,7 +167,7 @@ as soon as they're received:
 ```go
 for {
 	// Wait for incoming messages
-	req := <-personChanRecv
+	req := <-requestChanRecv
 
 	log.Infof("Received request: %d", req.Id)
 }

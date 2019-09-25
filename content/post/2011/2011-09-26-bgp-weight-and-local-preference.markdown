@@ -17,11 +17,11 @@ I was recently contemplating several of these and it occurred to me that two of 
 
 I'll be referring to this diagram throughout the article, use it for reference. We'll be trying to use weight and local preference to modify the default routing behavior from R1 to a remote network not pictured that's available through both R2 or R3.
 
-[![](/assets/2011/09/diagram6.png)](/assets/2011/09/diagram6.png)
+<div style="text-align:center;"><a href="/assets/2011/09/diagram6.png"><img src="/assets/2011/09/diagram6.png" width="500" ></a></div>
 
 ## Weight
 
-First, I'd like to discuss the "WEIGHT" attribute. This is a cisco-proprietary attribute that is really just a marker placed **on a per-neighbor basis** that instructs the local router that it should prefer routes that it receives from that neighbor, if there is a tie.
+First, I'd like to discuss the `weight` attribute. This is a Cisco-proprietary attribute that is really just a marker placed **on a per-neighbor basis** that instructs the local router that it should prefer routes that it receives from that neighbor, if there is a tie.
 
 Take a look at a sample BGP table:
     

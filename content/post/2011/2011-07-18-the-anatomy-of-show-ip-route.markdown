@@ -15,7 +15,7 @@ One of the most important skills to have when it comes to basic networking is th
 
 Today we'll be working with the following topology (click for larger view):
 
-[![topology](/assets/2011/07/blog-post-topology1-1024x510.png)](/assets/2011/07/blog-post-topology1.png)
+<div style="text-align:center;"><a href="/assets/2011/07/blog-post-topology1-1024x510.png"><img src="/assets/2011/07/blog-post-topology1-1024x510.png" width="500" ></a></div>
 
  This small network is running OSPF on all links.  No special configurations are used at the moment - all routers were simply configured to run OSPF on all links, and in one OSPF area. We will be exploring OSPF's view of the network after convergence, and how it built the routing table on each router. I constructed this topology to show connectivity between two hosts - namely PC1 and PC2, and gain some visibility into how these routers have chosen to pass traffic between them.
 

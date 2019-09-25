@@ -75,3 +75,5 @@ If this was your first exposure to pub/sub systems, it's likely you might want s
 
 I'm really starting to enjoy the way NATS does things - everything is kept as simple as possible but no more.
 In the next post, I'll dive into how to structure your NATS code to be as reusable as possible (and also talk about a stupid mistake I made in blind pursuit of this goal). Until next time!
+
+<div style="text-align:center;display:none;"><a href="/assets/2019/09/nats-queues-preview.png"><img src="/assets/2019/09/nats-queues-preview.png"></a></div>

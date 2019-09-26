@@ -45,7 +45,7 @@ group. This means that if a single message is sent into a subject and there are 
 
 > As mentioned in [the docs](https://nats-io.github.io/docs/developer/concepts/queue.html), a great feature of NATS is that all of this is determined by the application that is subscribing to the subject or queue - and requires no server configuration at all. Subscribers simply tell NATS how they would like to receive information when they connect.
 
-In [this example](https://github.com/Mierdin/nats-go-examples/blob/master/example1/subscriber-queue.go), subscribing to a NATS Queue is mostly the same as before, but with a different function for binding to our channel:
+In [this example](https://github.com/Mierdin/nats-go-examples/blob/master/example2/subscriber-queue.go), subscribing to a NATS Queue is mostly the same as before, but with a different function for binding to our channel:
 
 ```go
 type Request struct {
@@ -75,5 +75,3 @@ If this was your first exposure to pub/sub systems, it's likely you might want s
 
 I'm really starting to enjoy the way NATS does things - everything is kept as simple as possible but no more.
 In the next post, I'll dive into how to structure your NATS code to be as reusable as possible (and also talk about a stupid mistake I made in blind pursuit of this goal). Until next time!
-
-<div style="text-align:center;display:none;"><a href="/assets/2019/09/nats-queues-preview.png"><img src="/assets/2019/09/nats-queues-preview.png"></a></div>

@@ -62,7 +62,7 @@ Our testing file `jsnapytest.yaml` contains our test(s). In this case, I've cons
 
 ```yaml
 ---
-{% raw >}}test_applications:
+test_applications:
   - rpc: get-config
   - item:
       id: ./name
@@ -70,7 +70,7 @@ Our testing file `jsnapytest.yaml` contains our test(s). In this case, I've cons
       tests:
         - is-equal: destination-port, 30589
           info: "Test Succeeded!!, destination-port is <{{post['destination-port']}}>"
-          err: "Test Failed!!!, destination-port is <{{post['destination-port']}}>"{% endraw >}}
+          err: "Test Failed!!!, destination-port is <{{post['destination-port']}}>"
 ```
 
 In short, our config file contains all of the information we need for connectivity to Junos devices, and references to tests to run on those devices. We'll explore these in detail in the following sections.
@@ -151,7 +151,7 @@ For instance, the previous example inspects my vSRX configuration for a custom a
 
 ```yaml
 ---
-{% raw >}}test_applications:
+test_applications:
   - rpc: get-config
   - item:
       id: ./name
@@ -159,7 +159,7 @@ For instance, the previous example inspects my vSRX configuration for a custom a
       tests:
         - is-equal: destination-port, 30589
           info: "Test Succeeded!!, destination-port is <{{post['destination-port']}}>"
-          err: "Test Failed!!!, destination-port is <{{post['destination-port']}}>"{% endraw >}}
+          err: "Test Failed!!!, destination-port is <{{post['destination-port']}}>"
 ```
 
 In my recent [Network Field Day](https://www.youtube.com/watch?v=pHwkwjd2WtQ) demo, I did a lot of this check logic myself in Python. With this format, I can succinctly declare the checks that are important to me, and the YAML format is more accessible to non-programmers.

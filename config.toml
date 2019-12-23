@@ -1,5 +1,5 @@
-baseurl = "https://keepingitclassless.net"
-title = "Keeping It Classless"
+baseurl = "https://oswalt.dev"
+title = "Matt Oswalt"
 
 theme = "hugo-coder"
 
@@ -20,9 +20,9 @@ disqusShortname = "keepingitclassless"
 
 [params]
     author = "Matt Oswalt"
-    description = "Systems, networking, software, and reliability engineering"
+    description = "Developer, distributed systems enthusiast, perpetual tinkerer."
     keywords = "blog,developer,personal"
-    info = "Systems, networking, software, and reliability engineering"
+    info = "Developer, distributed systems enthusiast, perpetual tinkerer."
     
     avatarurl = "avatar.jpg"
     footercontent = ""
@@ -41,7 +41,7 @@ disqusShortname = "keepingitclassless"
     custom_css = []
 
     images = ["avatar.jpg"]
-    title = "Keeping It Classless"
+    title = "Matt Oswalt"
 
 
 [[params.social]]
@@ -78,13 +78,11 @@ disqusShortname = "keepingitclassless"
 [languages]
     [languages.en]
         languagename = "English"
-        title = "Keeping It Classless"
+        title = "Matt Oswalt"
 
         [languages.en.params]
         author = "Matt Oswalt"
-        description = "Systems, networking, software, and reliability engineering"
         keywords = "blog,developer,personal"
-        info = "Systems, networking, software, and reliability engineering"
 
         [languages.en.menu]
 

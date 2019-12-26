@@ -13,7 +13,7 @@ tags: ['fragmentation']
 
 I've run into many circumstances where jumbo frames are enabled, most notably in the data center. After all, allowing for a maximum tranmission unit of greater than 1500 bytes allows us to transmit more data per frame
 
-As I explained in [Part 2 of my QoS Series](https://keepingitclassless.net/2012/11/qos-part-2-qos-and-jumbo-frames-on-nexus-ucs-and-vmware/), MTU can be a touch subject. Do it wrong, and you encounter one of two big network problems. One potential issue when configuring jumbo frames at L2 is that stuff just doesn't work. Switches that attempt to forward a frame out of a port that through policy or otherwise has an MTU setting lower than the frame size, the frame is dropped. This is true if a port with a smaller MTU receives such a frame. The traffic just dies.
+As I explained in [Part 2 of my QoS Series](https://oswalt.dev/2012/11/qos-part-2-qos-and-jumbo-frames-on-nexus-ucs-and-vmware/), MTU can be a touch subject. Do it wrong, and you encounter one of two big network problems. One potential issue when configuring jumbo frames at L2 is that stuff just doesn't work. Switches that attempt to forward a frame out of a port that through policy or otherwise has an MTU setting lower than the frame size, the frame is dropped. This is true if a port with a smaller MTU receives such a frame. The traffic just dies.
 
 [![layer2](/assets/2012/11/layer2.png)](/assets/2012/11/layer2.png)
 

@@ -10,7 +10,7 @@ tags: ['automation']
 ---
 
 
-A while ago, I wrote about [basic concepts in StackStorm](https://keepingitclassless.net/2016/12/introduction-to-stackstorm/). Since then I've been knee-deep in the code, fixing bugs and creating new features, and I've learned a lot about how StackStorm is put together.
+A while ago, I wrote about [basic concepts in StackStorm](https://oswalt.dev/2016/12/introduction-to-stackstorm/). Since then I've been knee-deep in the code, fixing bugs and creating new features, and I've learned a lot about how StackStorm is put together.
 
 In this series, I'd like to spend some time exploring the StackStorm architecture. What subcomponents make up StackStorm? How do they interact? How can we scale StackStorm? These are all questions that come up from time to time in the StackStorm community, and there are a lot of little details that I even forget from time-to-time. I'll be doing this in a series of posts, so we can explore a particular topic in detail without getting overwhelmed.
 
@@ -96,7 +96,7 @@ While `st2rulesengine` might be considered one of the simpler services in StackS
 
 For an engaging primer on rules engines in general, I'd advise listening to [Sofware Engineering Radio Episode 299](http://www.se-radio.net/2017/08/se-radio-episode-299-edson-tirelli-on-rules-engines/). I had already been working with StackStorm for a while when I first listened to that so I was generally familiar with the concept, but it was nice to get a generic perspective that explored some of the theory behind rules engines.
 
-Remember my earlier post on [StackStorm concepts](https://keepingitclassless.net/2016/12/introduction-to-stackstorm/)? In it, I briefly touched on Triggers - these are definitions of an "event" that may by actionable. For instance, when someone posts a tweet that matches a search we've configured, the Twitter sensor may use the `twitter.matched_tweet` trigger to notify us of that event. A specific instance of that trigger being raised is known creatively as a "trigger instance".
+Remember my earlier post on [StackStorm concepts](https://oswalt.dev/2016/12/introduction-to-stackstorm/)? In it, I briefly touched on Triggers - these are definitions of an "event" that may by actionable. For instance, when someone posts a tweet that matches a search we've configured, the Twitter sensor may use the `twitter.matched_tweet` trigger to notify us of that event. A specific instance of that trigger being raised is known creatively as a "trigger instance".
 
 In short, StackStorm's rules engine looks for incoming trigger instances, and decides if an Action needs to be executed. It makes this decision based on the rules that are currently installed and enabled from the various packs that are currently present in the database.
 

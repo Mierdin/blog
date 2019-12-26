@@ -11,7 +11,7 @@ tags: ['bandwidth']
 ---
 
 
-I mentioned in a [previous post](https://keepingitclassless.net/2013/06/cisco-ucs-ascii-art/) regarding the connectivity options to each blade if you're using the appropriate hardware.
+I mentioned in a [previous post](https://oswalt.dev/2013/06/cisco-ucs-ascii-art/) regarding the connectivity options to each blade if you're using the appropriate hardware.
 
 If you're using a 2208 FEX, you have 8 upstream ports, each at 10GbE. This means the FEX can support up to 80 Gbps total. You can provide potentially 4:1 oversubscription (math later) to each blade by connecting a 2208 FEX into a blade chassis with blades that can also support 80Gbps each.
     

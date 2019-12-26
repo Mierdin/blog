@@ -4,7 +4,7 @@ title: 'Controlling Information Flow: NATS Subjects and Queues'
 author: Matt Oswalt
 comments: true
 categories: ['Blog']
-featured_image: https://keepingitclassless.net/assets/2019/09/nats-queues-preview.png
+featured_image: https://oswalt.dev/assets/2019/09/nats-queues-preview.png
 date: 2019-09-25T00:00:00-00:00
 tags:
   - 'go'
@@ -12,17 +12,17 @@ tags:
   - 'microservices'
 ---
 
-Publish/subscribe messaging platforms like NATS allow us to build highly *event-driven* software systems, where we can build software to constantly listen for relevant messages and take action accordingly. This is what makes EDI projects like [StackStorm](https://github.com/stackstorm/st2) (a project I've worked on and [written about before](https://keepingitclassless.net/2016/12/introduction-to-stackstorm/)) - and others like it- so powerful.
+Publish/subscribe messaging platforms like NATS allow us to build highly *event-driven* software systems, where we can build software to constantly listen for relevant messages and take action accordingly. This is what makes EDI projects like [StackStorm](https://github.com/stackstorm/st2) (a project I've worked on and [written about before](https://oswalt.dev/2016/12/introduction-to-stackstorm/)) - and others like it- so powerful.
 
 Another advantage of pub/sub systems is that publishers don't have to know or care if anyone is listening. Whenever information needs to be sent, it's sent. It's up to the pub/sub system (in this case NATS) to decide what to do with it. Now - there are quite a variety of ways to control how these messages make it to one or more subscribers, and they all depend greatly on the implementation - NATS does things very differently from RabbitMQ, which does things differently from Kafka, etc.
 
-In the [previous post](https://keepingitclassless.net/2019/09/kicking-the-tires-with-the-nats-go-client/)
+In the [previous post](https://oswalt.dev/2019/09/kicking-the-tires-with-the-nats-go-client/)
 I covered the basics of connecting to NATS in Go. In this post, I'd like to cover how information flow is controlled from publisher to subscriber in NATS using "Subjects" and "Queues".
 
 # NATS Subjects
 
 You've already seen [NATS Subjects](https://nats-io.github.io/docs/developer/concepts/subjects.html) in use in the
-[previous post](https://keepingitclassless.net/2019/09/kicking-the-tires-with-the-nats-go-client/). To review,
+[previous post](https://oswalt.dev/2019/09/kicking-the-tires-with-the-nats-go-client/). To review,
 when we called the `BindSendChan()` function to bind our channel to the NATS encoded client, we declared the subject name we wished to subscribe to: `request_subject`:
 
 ```go

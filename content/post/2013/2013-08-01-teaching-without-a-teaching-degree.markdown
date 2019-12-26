@@ -49,4 +49,4 @@ It's difficult to see the value in being a teacher when your job is to do the wo
 
 In my day job, this mindset helps me feel more confident, makes my customers feel like they're getting their money's worth, the sales folks see that they're getting some additional love from the customer, and I get to do more of what I love to do. When done consistently, this mindset shows it's value again, and again.
 
-By the way, this topic is a tenet in my theory on the [Unified Engineer](https://keepingitclassless.net/the-unified-engineer/). As a result of the hunger for knowledge, a Unified Engineer will also seek to spread the knowledge elsewhere, paying it forward so that the entire industry can benefit.
+By the way, this topic is a tenet in my theory on the [Unified Engineer](https://oswalt.dev/the-unified-engineer/). As a result of the hunger for knowledge, a Unified Engineer will also seek to spread the knowledge elsewhere, paying it forward so that the entire industry can benefit.

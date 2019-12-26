@@ -23,7 +23,7 @@ Let's say that R1 is our network core, and we have redundant routers to reach R4
 
 EIGRP is configured in a fairly standard way here, with no routers configured as stub, the K-values for all routers are left at their defaults, and because the default variance is 1, R1 will install both equal-cost paths to R4's loopback network into it's routing table and load-balance between them. Auto-summarization has been disabled.
 
-> Well, with CEF it's more [flow-based load-balancing](https://keepingitclassless.net/2013/04/igp-route-multipathing/) so it ends up only using one path, but you get the point.
+> Well, with CEF it's more [flow-based load-balancing](https://oswalt.dev/2013/04/igp-route-multipathing/) so it ends up only using one path, but you get the point.
 
 With this standard configuration in mind, the routing table on R1 is as we'd expect:
     
@@ -60,7 +60,7 @@ OSPF works much the same way. With a standard configuration, all networks advert
     O       172.16.1.1/32 [110/3] via 10.1.3.3, 00:01:12, FastEthernet1/0
                           [110/3] via 10.1.1.2, 00:01:12, FastEthernet0/0
 
-The appropriate place to make a metric tweak to influence the routing behavior for this network would be on Fa1/0 here as well, because the "cost" property is considered on the interfaces that are pointing towards the route in question. We explored this in a [previous post](https://keepingitclassless.net/2013/04/multi-vendor-ospf-cost-calculations/), specifically referring back to the OSPF standard, [RFC2328](http://tools.ietf.org/html/rfc2328#page-18):
+The appropriate place to make a metric tweak to influence the routing behavior for this network would be on Fa1/0 here as well, because the "cost" property is considered on the interfaces that are pointing towards the route in question. We explored this in a [previous post](https://oswalt.dev/2013/04/multi-vendor-ospf-cost-calculations/), specifically referring back to the OSPF standard, [RFC2328](http://tools.ietf.org/html/rfc2328#page-18):
 
     A cost is associated with the output side of each router
     interface.  This cost is configurable by the system

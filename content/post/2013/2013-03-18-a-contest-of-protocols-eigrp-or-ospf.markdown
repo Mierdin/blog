@@ -11,7 +11,7 @@ tags: ['cisco']
 ---
 
 
-Ah, the age old question that nearly every CCNA and CCNP candidate asks of themselves and others at some point. We see a minimum of 4 routing protocols in our networking studies, more if you decide to take on the Service Provider track. What makes one routing protocol better than another? I think it's clear **why** (at least mostly) these particular two protocols are different, keeping in mind that one is distance vector (yes, distance vector, not hybrid distance vector) and the other is link state. At this point, we at least have [a fundamental understanding of what's different](https://keepingitclassless.net/2011/10/link-state-vs-distance-vector-the-lowdown/) between those two families of protocols, so it's also likely that you already realize one is not necessarily _better_, but rather just different. Both are simply tools in the tool chest we can use to solve a problem they're well suited to solve.
+Ah, the age old question that nearly every CCNA and CCNP candidate asks of themselves and others at some point. We see a minimum of 4 routing protocols in our networking studies, more if you decide to take on the Service Provider track. What makes one routing protocol better than another? I think it's clear **why** (at least mostly) these particular two protocols are different, keeping in mind that one is distance vector (yes, distance vector, not hybrid distance vector) and the other is link state. At this point, we at least have [a fundamental understanding of what's different](https://oswalt.dev/2011/10/link-state-vs-distance-vector-the-lowdown/) between those two families of protocols, so it's also likely that you already realize one is not necessarily _better_, but rather just different. Both are simply tools in the tool chest we can use to solve a problem they're well suited to solve.
 
 Unfortunately, any curriculum on either protocol doesn't go into too much detail on WHY we would use one or the other. It's true, OSPF is powered by the very powerful [Dijkstra Algorithm](http://en.wikipedia.org/wiki/Dijkstra's_algorithm), which does require more resources on the device than most other protocols, such as the relatively light DUAL algorithm that sits behind EIGRP. However, OSPF gives us a bit more control, seeing as each router knows about every other link in an OSPF area, allowing us to get really granular path selection. EIGRP is, after all, routing by rumor (as is every distance vector protocol).
 
@@ -95,8 +95,8 @@ Again, a classic case of "it depends", but hopefully I correctly covered some of
 
 I highly encourage you to read my other three related posts. These go into a bit more detail on how distance vector and link state are different, as well as additional detail on the way EIGRP performs path selection in redundant networks.
 
-* [Link State vs. Distance Vector: The Lowdown](https://keepingitclassless.net/2011/10/link-state-vs-distance-vector-the-lowdown/)
+* [Link State vs. Distance Vector: The Lowdown](https://oswalt.dev/2011/10/link-state-vs-distance-vector-the-lowdown/)
 
-* [EIGRP Unequal Cost Load Balancing](https://keepingitclassless.net/2011/09/eigrp-unequal-cost-load-balancing/)
+* [EIGRP Unequal Cost Load Balancing](https://oswalt.dev/2011/09/eigrp-unequal-cost-load-balancing/)
 
-* [EIGRP Feasible Successors](https://keepingitclassless.net/2011/07/eigrp-feasible-successors/)
+* [EIGRP Feasible Successors](https://oswalt.dev/2011/07/eigrp-feasible-successors/)

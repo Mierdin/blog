@@ -11,7 +11,7 @@ tags: ['cisco']
 ---
 
 
-[In a previous post](https://keepingitclassless.net/2011/07/the-anatomy-of-show-ip-route/), I explored the basics of IP routing, and in the process, we discovered an interesting default feature of OSPF. When there were two OSPF routes in the routing table to a network, and both routes had the same cost, the router performed load balancing between the two. Take, for instance, the following route:
+[In a previous post](https://oswalt.dev/2011/07/the-anatomy-of-show-ip-route/), I explored the basics of IP routing, and in the process, we discovered an interesting default feature of OSPF. When there were two OSPF routes in the routing table to a network, and both routes had the same cost, the router performed load balancing between the two. Take, for instance, the following route:
 
        172.16.2.0 [110/12] via 1.1.1.13, 00:09:24, FastEthernet0/0
                   [110/12] via 1.1.1.2, 00:09:24, FastEthernet0/1

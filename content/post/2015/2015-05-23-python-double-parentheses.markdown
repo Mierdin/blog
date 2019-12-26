@@ -67,4 +67,4 @@ Because we have a second pair of parenthesis (2), this ends up being the paramet
 
 Therefore, `2 + 3 + 1 = 6`.
 
-> As pointed out [in the comments](https://keepingitclassless.net/2015/05/python-double-parentheses/#comment-2069279567) - this whole concept is commonly referred to as a "closure", and it is most often used to implement decorators.
+> As pointed out [in the comments](https://oswalt.dev/2015/05/python-double-parentheses/#comment-2069279567) - this whole concept is commonly referred to as a "closure", and it is most often used to implement decorators.

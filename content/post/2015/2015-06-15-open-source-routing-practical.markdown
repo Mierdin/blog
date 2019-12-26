@@ -10,7 +10,7 @@ tags: ['bgp']
 ---
 
 
-Earlier, [I wrote](https://keepingitclassless.net/2015/05/open-source-routing-comparison/) about some interesting open source routing software that I've been exploring lately. In this post, I'll provide you with some tools to get this lab running on your lab, using Vagrant and Ansible.
+Earlier, [I wrote](https://oswalt.dev/2015/05/open-source-routing-comparison/) about some interesting open source routing software that I've been exploring lately. In this post, I'll provide you with some tools to get this lab running on your lab, using Vagrant and Ansible.
 
 > In this post, I'll be using VirtualBox, and also Ansible and Vagrant. For this purpose, I'm assuming you're at least somewhat familiar with these tools.
 

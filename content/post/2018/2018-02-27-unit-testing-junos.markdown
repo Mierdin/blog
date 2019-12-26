@@ -10,7 +10,7 @@ tags: ['junos']
 ---
 
 
-[I've been passionate](https://keepingitclassless.net/2016/03/test-driven-network-automation/) about the idea of proactively testing network infrastructure for some time. I revived and added to these ideas in my [last post](https://keepingitclassless.net/2018/02/intentional-infrastructure/). In that post's video, I lay out three types of network testing in my presentation:
+[I've been passionate](https://oswalt.dev/2016/03/test-driven-network-automation/) about the idea of proactively testing network infrastructure for some time. I revived and added to these ideas in my [last post](https://oswalt.dev/2018/02/intentional-infrastructure/). In that post's video, I lay out three types of network testing in my presentation:
 
 1. **Config-Centric** - Verify my network is configured correctly
 2. **State-Centric** - Verify the network has the operational state I expect
@@ -143,7 +143,7 @@ The bottom line is, in order to test our network devices, we need a way to descr
 
 ## Checks
 
-While the main messaging around JSNAPy tends to focus on snapshots, I feel that the ability to make assertions on the data in these snapshots is where the true value really lies. I've been a strong advocate of "[test-driven network automation](https://keepingitclassless.net/2016/03/test-driven-network-automation/)" for a while, and this concept can take place in many forms. One of these forms is the ability to run detailed and specific tests on your network devices.
+While the main messaging around JSNAPy tends to focus on snapshots, I feel that the ability to make assertions on the data in these snapshots is where the true value really lies. I've been a strong advocate of "[test-driven network automation](https://oswalt.dev/2016/03/test-driven-network-automation/)" for a while, and this concept can take place in many forms. One of these forms is the ability to run detailed and specific tests on your network devices.
 
 It's also worth noting that while JSNAPy is a great tool to enable this, Junos definitely meets us halfway here, since everything in Junos can be represented in XML. As a result of this, anything retrieved in the aforementioned snapshots is available to have assertions made on them, using the variety of generic primitives offered in JSNAPy. These range from checking to ensure a certain number of elements are seen, to ensuring a certain value within one of those elements is equal to a certain value.
 

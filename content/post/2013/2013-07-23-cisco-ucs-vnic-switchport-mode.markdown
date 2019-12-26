@@ -11,7 +11,7 @@ tags: ['cisco']
 ---
 
 
-I wrote [an article](https://keepingitclassless.net/2012/05/management-vlan-best-practices-in-esxi-and-cisco-ucs/) a while back regarding VLAN configuration when running vSphere ESXi on top of Cisco UCS.
+I wrote [an article](https://oswalt.dev/2012/05/management-vlan-best-practices-in-esxi-and-cisco-ucs/) a while back regarding VLAN configuration when running vSphere ESXi on top of Cisco UCS.
 
 A comment pointed out that all vNICs are automatically configured as trunks. I had not heard of this before, so I got into the CLI to take a look.
 

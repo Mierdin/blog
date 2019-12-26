@@ -25,7 +25,7 @@ In addition, I am planning on dedicating more consistent time to writing - I've 
 
 I will not be attending Cisco Live this year. In addition to the simple fact that the move is too close to the date, my short term goals will require some pretty severe focus. Undoubtedly, I will tune in online, and I have already been lucky enough to participate in some pretty sweet NDA presentations concerning material I'm sure we'll all be hearing about at Live this year. So, suffice it to say that I won't be putting my head in the sand this year, but I do need to make sure my goals have everything they need to succeed.
 
-I'm constantly reminded that the [Unified Skillset](https://keepingitclassless.net/2013/01/the-unified-skillset/) is not a goal, or an end-state, but a constant, always changing, never ending journey. I was given some great advice not too long ago - "If you're not getting better, you're getting worse". In some ways, my day-to-day will change, but in a big way, this is still pretty much business as usual. I still love technology, I still strive to be better than I was yesterday, and I still try hard to fill the room with people smarter than me.
+I'm constantly reminded that the [Unified Skillset](https://oswalt.dev/2013/01/the-unified-skillset/) is not a goal, or an end-state, but a constant, always changing, never ending journey. I was given some great advice not too long ago - "If you're not getting better, you're getting worse". In some ways, my day-to-day will change, but in a big way, this is still pretty much business as usual. I still love technology, I still strive to be better than I was yesterday, and I still try hard to fill the room with people smarter than me.
 
 Thanks to all who have made the past two years what it is for me.
 

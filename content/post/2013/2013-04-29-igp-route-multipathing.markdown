@@ -53,7 +53,7 @@ The goal is to cause certain failures within the environment and observe the imp
 
 This LSA lists the 10.1.3.0 network as a stub network, whereas it would normally be a transit network if there was connectivity to another subnet. This LSA would make it's way back to R1 within a few seconds, meaning the network would reconverge on the working link quickly. So I'm using switches in this topology to help me cause indirect failures.
 
-"Why all these extra steps to produce more downtime?" you say. It's true, most point-to-point connections between two routers don't involve a few dumb switches. However, with the advent of [virtual routing](https://keepingitclassless.net/2013/04/virtual-routing-part-1-csr-1000v-first-glance/), the likelihood of failures not causing link-down events is actually significantly higher. This is a way for me to simulate this behavior in GNS3.
+"Why all these extra steps to produce more downtime?" you say. It's true, most point-to-point connections between two routers don't involve a few dumb switches. However, with the advent of [virtual routing](https://oswalt.dev/2013/04/virtual-routing-part-1-csr-1000v-first-glance/), the likelihood of failures not causing link-down events is actually significantly higher. This is a way for me to simulate this behavior in GNS3.
 
 So, while the quick reconvergence that this provides is nice, but the cause doesn't properly show the behavior that might be produced in a virtual routing environment, where failures may not cause link-down events, which would normally cause relatively quick reconvergence.
 The normal routing table on R1 (all links and OSPF neighbor relationships up) is as expected:

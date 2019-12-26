@@ -53,7 +53,7 @@ Clearly there's more discussion to be had. As a network engineer that has IOS an
 
 [![diagram3](/assets/2013/10/diagram31.png)](/assets/2013/10/diagram31.png)
 
-I've written before about the [value of infrastructure APIs](https://keepingitclassless.net/2013/09/the-benefit-of-infrastructure-apis/) and why we need them. If you're unfamiliar with the term, go read that article.
+I've written before about the [value of infrastructure APIs](https://oswalt.dev/2013/09/the-benefit-of-infrastructure-apis/) and why we need them. If you're unfamiliar with the term, go read that article.
 
 I have a really good example, and it happened very recently. I write quite a few scripts to automate various tasks of mine, but one that I wrote lately felt different to me. It reaches into a Cisco UCS domain, pulls out all of the Fibre Channel WWPNs for each Service Profile, then reaches into the Netapp storage system - a completely different entity - and uses the data from UCS to create the necessary LUN masking configuration. [Take a look at the script](https://gist.github.com/Mierdin/7094271) - there's not a single WWPN written anywhere. It's built to generate a data-set in real time, then use that data set to configure another system. This script is going to be used in one of my customer's orchestration tools so that they can simply and easily create more boot LUNs when they add additional compute resources, with zero human interaction.
 

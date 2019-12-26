@@ -33,9 +33,9 @@ Of course, networks are not usually made of one box, so we invented protocols li
 
 ## OpenFlow as an API
 
-These days, we have **some** programmatic interfaces (APIs) to existing network equipment. Many vendors have implemented their own XML or JSON API that allows you to make network configurations remotely using a language like Python. [Arista's eAPI](http://ipyandy.net/2014/03/arista-eos-api-eapi-using-python/) and [Cisco's NX-API](https://keepingitclassless.net/2014/02/cisco-aci-nexus-9000-nxapi/) are examples of this.
+These days, we have **some** programmatic interfaces (APIs) to existing network equipment. Many vendors have implemented their own XML or JSON API that allows you to make network configurations remotely using a language like Python. [Arista's eAPI](http://ipyandy.net/2014/03/arista-eos-api-eapi-using-python/) and [Cisco's NX-API](https://oswalt.dev/2014/02/cisco-aci-nexus-9000-nxapi/) are examples of this.
 
-Some decided that it would be useful to instead define a standardized configuration API so that the common stuff doesn't have to get re-written - all vendors would need to do is implement a specific schema within such a protocol to make it work with their configuration structures. [NETCONF](http://tools.ietf.org/html/rfc6241) and [OVSDB](https://keepingitclassless.net/2014/08/sdn-protocols-3-ovsdb/) are good examples of this.
+Some decided that it would be useful to instead define a standardized configuration API so that the common stuff doesn't have to get re-written - all vendors would need to do is implement a specific schema within such a protocol to make it work with their configuration structures. [NETCONF](http://tools.ietf.org/html/rfc6241) and [OVSDB](https://oswalt.dev/2014/08/sdn-protocols-3-ovsdb/) are good examples of this.
 
 OpenFlow should be thought of as another attempt at a standardized API - a programmatic interface that can be used by all vendors. However, where other APIs like NETCONF focused on the configuration of the device, OpenFlow intends to provide access to the data plane itself. It does this by specifying a language that a switch can recognize and use in lieu of making it's own rules through a local control plane. OpenFlow is a language for generically defining characteristics of a particular flow of traffic (for instance, all traffic from a certain IP address and using a certain TCP port), and what to do with traffic that matches such characteristics.
 
@@ -59,7 +59,7 @@ This is why it is up to the vendor of the networking device to implement OpenFlo
 
 > For this reason, features made available by OpenFlow don't always match up perfectly with the available features for the hardware platform. Every ASIC has it's own unique capabilities that another ASIC doesn't share, and vice versa. More on that in the second part of my coverage of OpenFlow.
 
-This isn't specific to physical networking gear either. One of the most popular and active implementations of OpenFlow is [Open vSwitch](https://keepingitclassless.net/2013/10/introduction-to-open-vswitch/), which works in much the same way - a local process handles OpenFlow messages, runs all necessary tables locally, and interprets them into forwarding actions that the OVS kernel module can understand.
+This isn't specific to physical networking gear either. One of the most popular and active implementations of OpenFlow is [Open vSwitch](https://oswalt.dev/2013/10/introduction-to-open-vswitch/), which works in much the same way - a local process handles OpenFlow messages, runs all necessary tables locally, and interprets them into forwarding actions that the OVS kernel module can understand.
 
 [![openflow3](/assets/2014/07/openflow3.png)](/assets/2014/07/openflow3.png)
 

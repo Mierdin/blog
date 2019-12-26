@@ -16,18 +16,18 @@ If you haven't seen this kind of thing before, I make this post yearly to public
 
 # 2015 Goal Recap
 
-First, let me recap some of the goals [I set for myself at the beginning of the year](https://keepingitclassless.net/2014/12/2014-recap-2015-goals/), and see how well I did.
+First, let me recap some of the goals [I set for myself at the beginning of the year](https://oswalt.dev/2014/12/2014-recap-2015-goals/), and see how well I did.
 
 ## Public Presence (aka Community Contributions)
 
 Last year I added this goal because I was doing a lot more than just blogging, and wanted to capture it all. This was a good move, since - as expected - I did quite a bit of community-oriented work, and a large portion of it didn't take place on the blog.
-So, while I didn't hit that (admittedly fairly arbitrary) 50 post number, I can say I truly feel good about what little writing I did manage to get done in 2015. [One particular post](https://keepingitclassless.net/2015/07/big-flowering-thing/) (or should I say rant?) received a significant amount of attention, and is the main source of inspiration for a talk I'll be giving at Interop Vegas 2016. More on that in a later post.
+So, while I didn't hit that (admittedly fairly arbitrary) 50 post number, I can say I truly feel good about what little writing I did manage to get done in 2015. [One particular post](https://oswalt.dev/2015/07/big-flowering-thing/) (or should I say rant?) received a significant amount of attention, and is the main source of inspiration for a talk I'll be giving at Interop Vegas 2016. More on that in a later post.
 
 I generally feel really good about the topics I tackled in 2015; it was definitely a quality over quantity year. Looking back on the 27 posts I did manage to get published in 2015, I feel good about their content. I do still have a significant number of posts in draft, so who knows - maybe I'll beat this number in 2016. All I can say is that my priority is now on quality, and addressing the issues that really matter in this industry. I also managed to upload a few more screencasts on my [YouTube channel](https://www.youtube.com/user/keepingitclassless).
 
-Besides writing, I also did a few talks (one workshop) at [Interop Vegas 2015](https://keepingitclassless.net/2015/01/network-automation-interop-vegas-2015/). This was a lot of fun. I had several other speaking engagements in 2015, but this was easily the largest, and demanded the most preparation. Interop is one of the last remaining independent conferences in the networking industry, and I am planning on continuing to contribute as long as they're willing to have me.
+Besides writing, I also did a few talks (one workshop) at [Interop Vegas 2015](https://oswalt.dev/2015/01/network-automation-interop-vegas-2015/). This was a lot of fun. I had several other speaking engagements in 2015, but this was easily the largest, and demanded the most preparation. Interop is one of the last remaining independent conferences in the networking industry, and I am planning on continuing to contribute as long as they're willing to have me.
 
-Finally, I was very pleased to be able to annouce that I am [co-authoring a new book on network automation](https://keepingitclassless.net/2015/12/training-next-generation-network-engineer/) along with [Scott Lowe](https://twitter.com/scott_lowe) and [Jason Edelman](https://twitter.com/jedelman8). I plan on doing a lot more in 2016 to contribute simple tools and methodologies to the various communities in which I am involved, and this is just the start.
+Finally, I was very pleased to be able to annouce that I am [co-authoring a new book on network automation](https://oswalt.dev/2015/12/training-next-generation-network-engineer/) along with [Scott Lowe](https://twitter.com/scott_lowe) and [Jason Edelman](https://twitter.com/jedelman8). I plan on doing a lot more in 2016 to contribute simple tools and methodologies to the various communities in which I am involved, and this is just the start.
 
 
 ## Software Development
@@ -53,7 +53,7 @@ In summary, I feel I could have done more explicit learning in this area, but be
 
 # Goals for 2016
 
-**Network Automation Book** - As mentioned previously, [I recently announced](https://keepingitclassless.net/2015/12/training-next-generation-network-engineer/) that we have published the first few chapters of a new network automation book. Now, this particular goal has some hard deadlines that are pretty much guaranteed to be met, but nevertheless, finishing this book will occupy a large portion of my time in 2016, so I want to list it here. By the time next year's recap rolls around, I should have quite a story to tell about how the book has managed post-release.
+**Network Automation Book** - As mentioned previously, [I recently announced](https://oswalt.dev/2015/12/training-next-generation-network-engineer/) that we have published the first few chapters of a new network automation book. Now, this particular goal has some hard deadlines that are pretty much guaranteed to be met, but nevertheless, finishing this book will occupy a large portion of my time in 2016, so I want to list it here. By the time next year's recap rolls around, I should have quite a story to tell about how the book has managed post-release.
 
 **Open Source** - This goal is a bit loosely defined, but in short I want to be more involved with open source. It's hard to do this now that my official role is a software developer, and employment agreements get in the way of being able to work very freely on open source projects. However, it's not impossible, and I want to pursue this more vigorously in 2016. I am already expecting to open source my main personal project in the first half of the year, so I feel good that this will be something I can reach.
 

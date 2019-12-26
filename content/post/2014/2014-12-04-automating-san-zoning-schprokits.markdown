@@ -98,7 +98,7 @@ we see some pretty cool information - a dump of the dictionary provided to us by
 
 ## Template Build
 
-Now, we want to create a rendered template with this information. For this, we need to actually create the template itself. If you've never worked with [Jinja2](https://keepingitclassless.net/2014/03/network-config-templates-jinja2/) before, I highly recommend you check it out, as it will be a very powerful tool going forward, and it's the language Schprokits uses to define configuration templates.
+Now, we want to create a rendered template with this information. For this, we need to actually create the template itself. If you've never worked with [Jinja2](https://oswalt.dev/2014/03/network-config-templates-jinja2/) before, I highly recommend you check it out, as it will be a very powerful tool going forward, and it's the language Schprokits uses to define configuration templates.
 
 For reference, here is the original SAN configuration that we're going to convert into a template:
 

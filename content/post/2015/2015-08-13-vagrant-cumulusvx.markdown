@@ -23,7 +23,7 @@ What we get out of a tool like Vagrant is a consistent distribution model, in a 
 
 # Vagrant for Network Exploration
 
-I've [written before](https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/) about how awesome it is to be able to run networking labs and demos using this tool, and I'm glad Cumulus jumped on the bandwagon.
+I've [written before](https://oswalt.dev/2015/03/go-go-gadget-networking-lab/) about how awesome it is to be able to run networking labs and demos using this tool, and I'm glad Cumulus jumped on the bandwagon.
 
 I also like the fact that vendors like Juniper and Cumulus have leveraged existing tools like Vagrant and Ansible rather than [reinventing the wheel](http://virl.cisco.com/). Rather than forcing us to use their own tools, they provide the basic building block, and use Vagrant as a "demilitarized zone" where all network OSs can come to play.
 
@@ -120,7 +120,7 @@ I have created a short video outlining all these steps, so you can see it all in
 
 # Conclusion
 
-Cumulus is on the right track here. I've [written before](https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/) about how easy of a decision it was for me to start using JunOS for all of my demos since they made a Vagrant box available, and Cumulus is now on that very short list of vendors.
+Cumulus is on the right track here. I've [written before](https://oswalt.dev/2015/03/go-go-gadget-networking-lab/) about how easy of a decision it was for me to start using JunOS for all of my demos since they made a Vagrant box available, and Cumulus is now on that very short list of vendors.
 
 I would like to see Cumulus move the CumulusVX image into a public repository like Hashicorp Atlas, just to cut out that extra step of importing the .box file. This would also help them avoid the uncomfortable situation that arises when someone else publishes it for them ([like what happened to Fedora](https://vagrantcloud.com/chef/boxes/fedora-20)). Ultimately, the value of a tool like Vagrant is to accurately reproduce a test/dev environment, and the location of the .box file is just a part of that configuration, so why leave this up to the user? I'd much rather have vagrant download this from the source listed in the vagrantfile, and I would know that anyone else that used my vagrantfile is running the same image. 
 

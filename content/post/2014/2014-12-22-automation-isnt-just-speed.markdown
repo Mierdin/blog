@@ -37,7 +37,7 @@ In summary, **standardization** is one of the most important prerequisites of in
 
 Rather than have everyone touch infrastructure directly - taking all of their baggage into it - working through a software layer allows us to push our standard practices into code to be strictly enforced. The SMEs on a particular technology will come together once and agree on the best practices for their gear, push those standards into code (or infrastructure-as-code products like [Schprokits](http://www.schprokits.com/)), and call it a day. This must be something enforced at the cultural level, however, as you need the SMEs to provide this guidance to those writing/extending the tools, and you also need commitment that these tools will not be worked around (which defeats the whole automation project).
 
-> Software middleware can also help with garbage collection - things like [SAN zoning](https://keepingitclassless.net/2014/12/automating-san-zoning-schprokits/) and ACL entries will be more relevant because they're actively tracked. No more bloated configs.
+> Software middleware can also help with garbage collection - things like [SAN zoning](https://oswalt.dev/2014/12/automating-san-zoning-schprokits/) and ACL entries will be more relevant because they're actively tracked. No more bloated configs.
 
 Infrastructure predictability is a product of combining the right tools with cultural rigor and discipline. If you do not standardize and then automate the operations of your infrastructure, you're accruing technical debt. Someone will pay for that.
 

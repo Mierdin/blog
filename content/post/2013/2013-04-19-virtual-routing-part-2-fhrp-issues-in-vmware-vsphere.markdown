@@ -13,7 +13,7 @@ tags: ['csr1000v']
 ---
 
 
-I was working on a topology for another post regarding interoperability between the recently released [Cisco Cloud Services Router (CSR 1000v)](https://keepingitclassless.net/2013/04/virtual-routing-part-1-csr-1000v-first-glance/) and Vyatta when I ran into an issue regarding vSphere network security policies and First Hop Redundancy Procotols (FHRP) such as VRRP.
+I was working on a topology for another post regarding interoperability between the recently released [Cisco Cloud Services Router (CSR 1000v)](https://oswalt.dev/2013/04/virtual-routing-part-1-csr-1000v-first-glance/) and Vyatta when I ran into an issue regarding vSphere network security policies and First Hop Redundancy Procotols (FHRP) such as VRRP.
 
 This post will serve as a precursor to that overall post, but I want to point out a key configuration piece when performing redundant gateways with a FHRP like VRRP.
 

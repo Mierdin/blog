@@ -10,7 +10,7 @@ categories: ['Blog']
 ---
 
 
-Last week [I attended the Open Networking User Group](https://keepingitclassless.net/2014/05/onug-2014/) conference. My main reason for attending was to participate in three roundtable discussions put on by Tech Field Day. These sessions were [recorded](http://vimeo.com/album/2863232), and I'll be following up with specific thoughts on each session in later blog posts.
+Last week [I attended the Open Networking User Group](https://oswalt.dev/2014/05/onug-2014/) conference. My main reason for attending was to participate in three roundtable discussions put on by Tech Field Day. These sessions were [recorded](http://vimeo.com/album/2863232), and I'll be following up with specific thoughts on each session in later blog posts.
 
 These round-tables only occupied a portion of the two-day conference, so I spent the remainder of the time speaking with some of the vendors and sitting in a few of the sessions.
 
@@ -69,4 +69,4 @@ Based on this, if one of my peers were to ask if the price of attending ONUG was
 
 I mentioned that I spent a good chunk of time in Tech Field Day round tables. We spoke with Nuage, Glue Networks, and HP Networking. There were some great discussions and I fully expect to have a few blog posts on those, so stay tuned, and those will be popping up here on the blog shortly.
 
-> I attended ONUG as a delegate as part of [Tech Field Day](http://techfieldday.com/about/). Events like these are sponsored by networking vendors who may cover a portion of our travel costs. In addition to a presentation (or more), vendors may give us a tasty unicorn burger, [warm sweater made from presenter’s beard](http://www.youtube.com/watch?v=oQrJk9JzW8o) or a similar tchotchke. The vendors sponsoring Tech Field Day events don’t ask for, nor are they promised any kind of consideration in the writing of my blog posts … and as always, all opinions expressed here are entirely my own. ([Full disclaimer here](https://keepingitclassless.net/disclaimers/))
+> I attended ONUG as a delegate as part of [Tech Field Day](http://techfieldday.com/about/). Events like these are sponsored by networking vendors who may cover a portion of our travel costs. In addition to a presentation (or more), vendors may give us a tasty unicorn burger, [warm sweater made from presenter’s beard](http://www.youtube.com/watch?v=oQrJk9JzW8o) or a similar tchotchke. The vendors sponsoring Tech Field Day events don’t ask for, nor are they promised any kind of consideration in the writing of my blog posts … and as always, all opinions expressed here are entirely my own. ([Full disclaimer here](https://oswalt.dev/disclaimers/))

@@ -10,7 +10,7 @@ tags: ['computer', 'science']
 ---
 
 
-First in [this series](https://keepingitclassless.net/2016/08/new-series-cs101/) is the subject of Algorithms. This topic is very interesting to me because when I first strived to understand what exactly they were, I was expecting something a lot more complicated than what they turned out to be. I think, shamefully, that Hollywood may have had an influence on this, as the term "algorithm" is one of many terms abused by "cyber" movies and the like, portrayed to be some sort of ultimate cyber weapon in the war against Ellingson Mineral Company.
+First in [this series](https://oswalt.dev/2016/08/new-series-cs101/) is the subject of Algorithms. This topic is very interesting to me because when I first strived to understand what exactly they were, I was expecting something a lot more complicated than what they turned out to be. I think, shamefully, that Hollywood may have had an influence on this, as the term "algorithm" is one of many terms abused by "cyber" movies and the like, portrayed to be some sort of ultimate cyber weapon in the war against Ellingson Mineral Company.
 
 The reality is much simpler. "Algorithm" is defined as "a set of steps that are followed in order to solve a mathematical problem or to complete a computer process". It really is that simple. Think of a mathematical problem that you'd need to solve yourself (ignoring for the moment that there's likely a 3rd party library that has already done this).
 

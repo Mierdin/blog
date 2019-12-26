@@ -9,7 +9,7 @@ slug = "portfolio"
 
 Matt Oswalt hails from Portland, OR, and focuses on the intersection of network infrastructure, automation, systems, and software engineering. He’s passionate about enabling engineers to evolve their careers to the next level, and sharing the bright spots that exist within the technology industry with the masses.
 
-You can often find him speaking at conferences or meetups about these topics, as well as writing about them on his blog (https://keepingitclassless.net) or on Twitter as [@Mierdin](https://twitter.com/mierdin).
+You can often find him speaking at conferences or meetups about these topics, as well as writing about them on his blog (https://oswalt.dev) or on Twitter as [@Mierdin](https://twitter.com/mierdin).
 
 # Open Source
 
@@ -38,11 +38,11 @@ Not recorded, but also:
 - Interop 2019:
     - [Introduction to NRE](https://schedule.interop.com/session/an-introduction-to-network-reliability-engineering/863583)
     - Deep-dive into NRE Labs at the [Automated Network Operations Summit](https://schedule.interop.com/session/networking-summit-automated-network-operations-presented-by-network-to-code-day-1)
-- [Interop 2016](https://keepingitclassless.net/2016/04/interop-vegas-2016/) which included three separate talks:
+- [Interop 2016](https://oswalt.dev/2016/04/interop-vegas-2016/) which included three separate talks:
   - “Test-Driven Network Automation”
   - “The Network Revolution is a Lie”
   - “DevOps-Centric Networking at eBay" (I was working for eBay at the time)
-- [Interop 2015: “Practical Network Automation Workshop with Ansible and Python”](https://keepingitclassless.net/2015/01/network-automation-interop-vegas-2015/)
+- [Interop 2015: “Practical Network Automation Workshop with Ansible and Python”](https://oswalt.dev/2015/01/network-automation-interop-vegas-2015/)
 
 # Teaching
 

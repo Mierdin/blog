@@ -48,4 +48,4 @@ The controller needs to be aware of all of the overlay networks so that it can c
 
 This is also where we get implement nifty network services like distributed routing in the vSwitch, load balancing, firewalling, etc. etc. That's ultimately the job of the controller, since we've now centralized the control plane. The data plane now just does what it's told.
 
-As a data center network engineer, I've spent a lot of time thinking about the "underlay", or the physical infrastructure on which these overlays run. I have split this off into a third and final part, [Part 3](https://keepingitclassless.net/2013/09/overlay-networking-part-3-underlay/).
+As a data center network engineer, I've spent a lot of time thinking about the "underlay", or the physical infrastructure on which these overlays run. I have split this off into a third and final part, [Part 3](https://oswalt.dev/2013/09/overlay-networking-part-3-underlay/).

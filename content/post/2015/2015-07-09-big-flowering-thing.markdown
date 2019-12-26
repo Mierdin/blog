@@ -18,7 +18,7 @@ All of that said, I feel like the entire networking industry (as well as other, 
 
 We keep talking about how the networking industry has been massively disrupted in the past few years, but honestly much of it seems to be centered on vendors and their new products, which is intensely discouraging to me. I believe the true disruption lies in improvements of methodology and culture, and technology improvements and vendor products are just one small part of that.
 
-[As always, I speak for myself](https://keepingitclassless.net/disclaimers/), and not my employer. That said.....
+[As always, I speak for myself](https://oswalt.dev/disclaimers/), and not my employer. That said.....
 
 # The Big Flowering Thing
 

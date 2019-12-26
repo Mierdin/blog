@@ -25,7 +25,7 @@ If you're just getting started down the path of following basic configuration ma
 
 # Your Cheese Has Moved
 
-We've all heard the lamentations that come from server admins ([throwback alert](https://keepingitclassless.net/2015/02/free-form-discussion-cleur/)) like "why does it take weeks to provision a new VLAN?"; I worked as a network and data center consultant for a number of years and I can tell you that these stories are true, and it gets much worse than that. 
+We've all heard the lamentations that come from server admins ([throwback alert](https://oswalt.dev/2015/02/free-form-discussion-cleur/)) like "why does it take weeks to provision a new VLAN?"; I worked as a network and data center consultant for a number of years and I can tell you that these stories are true, and it gets much worse than that. 
 
 As I've said before, what the sysadmin usually doesn't know is all the activity that goes on behind the scenes to deliver that VLAN. Usually what they're asking for is a new logical network, which isn't just a tag on a switchport - it's also adding a layer 3 interface, and potentially routing changes, edits to the firewall, a new load balancing configuration, and on and on and on. The network has traditionally provided a lot of these services, that the sysadmin took for granted.
 
@@ -45,7 +45,7 @@ So what's happening here is that "those server guys" are basically running their
 
 Network automation is about so much more than merely solving a configuration management problem. If it was, this would all be a bit anticlimactic, wouldn't it? Everyone would just learn Ansible/Salt/Puppet and be done with it.
 
-Network automation, just like all other forms, is about **services integration**. There aren't "existing tools" for your legacy, internal applications. At some point [you're going to have to write some code](https://keepingitclassless.net/2017/03/learn-programming-or-perish/), even if it's an extension to an existing tool. It's time to get over this aversion to dealing with even basic scripting, and start filling in the 20% of our workflows that can't be addressed by a turnkey tool or product. To me, this is the next step of network automation - being able to fill in the gaps between historically air-gapped services to create an automated broader IT system.
+Network automation, just like all other forms, is about **services integration**. There aren't "existing tools" for your legacy, internal applications. At some point [you're going to have to write some code](https://oswalt.dev/2017/03/learn-programming-or-perish/), even if it's an extension to an existing tool. It's time to get over this aversion to dealing with even basic scripting, and start filling in the 20% of our workflows that can't be addressed by a turnkey tool or product. To me, this is the next step of network automation - being able to fill in the gaps between historically air-gapped services to create an automated broader IT system.
 
 For instance - Kubernetes is an increasingly popular choice for those looking to deploy distributed applications (don't make me say "cloud native"). It's great at managing the entities (like pods) under it's control, but it's not meant to run everything meaningful to your business. If you're running Kubernetes in your organization, it will have to run alongside a bunch of other stuff like OpenStack, vSphere, even mainframes. This is the reality of brownfield.
 
@@ -59,7 +59,7 @@ It's actually a bit encouraging that this has happened. This change represents a
 
 # Conclusion
 
-The migration of network services out of the network itself was inevitable, but it's absolutely not a death blow to the network engineer - it's a huge opportunity to move forward in a big way. There's a lot of work to do, but as [I wrote about last week](https://keepingitclassless.net/2017/03/learn-programming-or-perish/), the networking skill set is still sought after, and still needed in this new world.
+The migration of network services out of the network itself was inevitable, but it's absolutely not a death blow to the network engineer - it's a huge opportunity to move forward in a big way. There's a lot of work to do, but as [I wrote about last week](https://oswalt.dev/2017/03/learn-programming-or-perish/), the networking skill set is still sought after, and still needed in this new world.
 
 [I'll be speaking at Interop ITX](http://info.interop.com/itx/2017/scheduler/session/fundamental-principles-of-automation) in Vegas next month, about this, and more related topics. If you want to talk about automation, or just geek out about beer or food, I'd love to chat with you.
 

@@ -29,7 +29,7 @@ These protocols, however, are used for different things, so let's explain.
 
 ## OpenFlow
 
-Open vSwitch is one of the most popular implementations of [OpenFlow](https://keepingitclassless.net/2011/06/introduction-to-openflow/). OpenFlow allows us to use just about any field in a frame of traffic (L2 to L4) and make decisions. This decision might be to modify some fields, or to encapsulate the frame inside something else, or simply forward out a port.
+Open vSwitch is one of the most popular implementations of [OpenFlow](https://oswalt.dev/2011/06/introduction-to-openflow/). OpenFlow allows us to use just about any field in a frame of traffic (L2 to L4) and make decisions. This decision might be to modify some fields, or to encapsulate the frame inside something else, or simply forward out a port.
 
 OpenFlow is a leading example in SDN of a controller-based network architecture. The idea in this case would be to use the OVS as an access layer to the virtual environment, taking instructions from some kind of centralized controller that pushes flows down to the vSwitch.
 
@@ -51,7 +51,7 @@ As was mentioned by Ben Pfaff in the comments below, you can use the "next_cfg"
 
 The database is also persistent across restarts, as it's immediately written to disk. Therefore, OVSDB is used as a very reliable way of configuring OVS instances.
 
-OVSDB can be used in very simple scripts (like [this one](https://keepingitclassless.net/2013/10/ovsdb-echo-in-python/) I threw together in python) or as part of a larger framework like OpenDaylight. In fact, OVSDB support is one of the big projects [going on right now](https://wiki.opendaylight.org/view/Project_Proposals:OVSDB-Integration) inside ODL. OVSDB can be used locally on the host running OVS or remotely, using tools like ovsdb-client, or by serializing your own JSON-RPC and sending it to OVS.
+OVSDB can be used in very simple scripts (like [this one](https://oswalt.dev/2013/10/ovsdb-echo-in-python/) I threw together in python) or as part of a larger framework like OpenDaylight. In fact, OVSDB support is one of the big projects [going on right now](https://wiki.opendaylight.org/view/Project_Proposals:OVSDB-Integration) inside ODL. OVSDB can be used locally on the host running OVS or remotely, using tools like ovsdb-client, or by serializing your own JSON-RPC and sending it to OVS.
 
 A simple example of this is the OVSDB "echo" function, provided simply by sending the following:
     

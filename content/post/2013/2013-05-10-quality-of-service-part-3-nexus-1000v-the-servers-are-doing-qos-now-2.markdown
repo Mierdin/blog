@@ -15,11 +15,11 @@ tags: ['1000v']
 
 I'm going to talk a little bit about performing QoS functions from within the Nexus 1000v. Since it's been awhile since I made the last post in this series, a recap is in order:
 	
-  1. In my [first post](https://keepingitclassless.net/2012/11/cisco-quality-of-service-part-1-types-of-qos-policies/), I explained what the different types of QoS policies were in the context of Cisco's MQC
+  1. In my [first post](https://oswalt.dev/2012/11/cisco-quality-of-service-part-1-types-of-qos-policies/), I explained what the different types of QoS policies were in the context of Cisco's MQC
 	
-  2. In my [second post](https://keepingitclassless.net/2012/11/qos-part-2-qos-and-jumbo-frames-on-nexus-ucs-and-vmware/), I went through the actual configuration on specific platforms like the Cisco Nexus and Unified Compute platforms, as well as a brief mention of vSphere's participation, but less on the QoS aspects and more on MTU.
+  2. In my [second post](https://oswalt.dev/2012/11/qos-part-2-qos-and-jumbo-frames-on-nexus-ucs-and-vmware/), I went through the actual configuration on specific platforms like the Cisco Nexus and Unified Compute platforms, as well as a brief mention of vSphere's participation, but less on the QoS aspects and more on MTU.
 
-  3. I also made a [QoS-related post](https://keepingitclassless.net/2013/04/the-importance-of-qos-in-a-converged-infrastructure/) that explored why it's important to have a proper QoS configuration, especially in a converged infrastructure like so many data centers are becoming.
+  3. I also made a [QoS-related post](https://oswalt.dev/2013/04/the-importance-of-qos-in-a-converged-infrastructure/) that explored why it's important to have a proper QoS configuration, especially in a converged infrastructure like so many data centers are becoming.
 
 In today's converged environments, it's no longer acceptable to simply group all traffic on a single interface into a QoS policy, if the end device is not performing marking of it's own. While there are many ways to classify traffic, the most efficient way is to use L2 markings, otherwise known as Class of Service (CoS). Since this is in the Ethernet header, performing classification does not require deep inspection of the packet.
 

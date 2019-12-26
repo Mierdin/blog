@@ -15,11 +15,11 @@ tags: ['cisco']
 
 Moving along in my "Virtual Routing" series, I'd like to switch gears and talk a little more "big picture". In the previous posts, we've discussed a few different things:
 
-  1. [Part 1](https://keepingitclassless.net/2013/04/virtual-routing-part-1-csr-1000v-first-glance/) - A first look at the CSR 1000v from Cisco
+  1. [Part 1](https://oswalt.dev/2013/04/virtual-routing-part-1-csr-1000v-first-glance/) - A first look at the CSR 1000v from Cisco
 	
-  2. [Part 2](https://keepingitclassless.net/2013/04/virtual-routing-part-1-9-fhrp-issues-in-vmware-vsphere/) - An examinations of using FHRPs in a virtual environment
+  2. [Part 2](https://oswalt.dev/2013/04/virtual-routing-part-1-9-fhrp-issues-in-vmware-vsphere/) - An examinations of using FHRPs in a virtual environment
 	
-  3. [Part 3](https://keepingitclassless.net/2013/05/virtual-routing-part-2-router-redundancy-in-vmware-vsphere-2/) - A comparison of virtual routing redundancy options
+  3. [Part 3](https://oswalt.dev/2013/05/virtual-routing-part-2-router-redundancy-in-vmware-vsphere-2/) - A comparison of virtual routing redundancy options
 
 Seeing as these were all pretty technical configuration-oriented posts, I wanted to take a step back and think about some of the reasons why one would want to perform routing in a virtual environment. Clearly, the main focus is Data Center, where you get the most bang for your buck. While it's true that companies like Vyatta can be offered in a physical form factor, the vast majority of those looking to perform x86-based routing will do so in the context of a hypervisor, where the virtual router can enjoy the reliability and mobility that comes with today's virtual and cloud infrastructures.
 

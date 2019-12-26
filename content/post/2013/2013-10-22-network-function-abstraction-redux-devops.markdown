@@ -11,7 +11,7 @@ tags: ['api']
 ---
 
 
-[I wrote a few days ago](https://keepingitclassless.net/2013/10/opendaylight-and-those-pesky-southbound-apis) about how cool projects like OpenDaylight are abstracting network functions into consumable policies that non-network folks can use (and that's a good thing!). I felt this quick follow-up was necessary.
+[I wrote a few days ago](https://oswalt.dev/2013/10/opendaylight-and-those-pesky-southbound-apis) about how cool projects like OpenDaylight are abstracting network functions into consumable policies that non-network folks can use (and that's a good thing!). I felt this quick follow-up was necessary.
 
 Providing the right tools to the application folks that allow network provisioning to occur as quickly as anything else that's software-defined, such as servers, while keeping those tools light on the learning curve, is exactly what the apps folks have been wanting from the network for the last 10 years or so. OpenDaylight allows us to hand off a single interface that combines many "southbound APIs" together in order to manage everything from your open source hypervisor switch all the way up to the black box at the end of the cabinet row.
 

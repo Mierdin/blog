@@ -11,7 +11,7 @@ tags: ['ansible']
 ---
 
 
-I've mentioned before the need for networks to be addressed in a very programmatic way. Very often, I've found the discussion is actually a lot less about "programming language" details and more about getting rid of the methodology of addressing the network as a mere "collection of boxes" (see "[Box Mentality](https://keepingitclassless.net/2014/05/evolution-network-programmability/)").
+I've mentioned before the need for networks to be addressed in a very programmatic way. Very often, I've found the discussion is actually a lot less about "programming language" details and more about getting rid of the methodology of addressing the network as a mere "collection of boxes" (see "[Box Mentality](https://oswalt.dev/2014/05/evolution-network-programmability/)").
 
 Instead, we have the ability to address the network as any developer would address the distributed components of an application. We acknowledge that networks are a distributed system - it's what makes them as scalable as they have been. However, it's important to understand we can address configuration and troubleshooting needs in a unified, automated way as well.
 

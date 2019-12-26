@@ -27,7 +27,7 @@ The interfaces shown are our FEX interfaces, or the ports facing the FIs from ea
 
 Anyone that's set up a UCS system can tell you that the supported connectivity is 1, 2, 4, or 8 cables to each IOM, but never 3, 5, 6, or 7. The reason for this is the way that Host Interfaces (HIF) are selected for sending traffic outbound from a UCS blade.
 
-As I touched on in an [earlier post](https://keepingitclassless.net/2013/06/cisco-ucs-ascii-art/), you can get a visual representation of the IOM ASIC by typing some simple commands. I'll show the output for a 2104 IOM for now because it's a bit simpler for this particular part of the post.
+As I touched on in an [earlier post](https://oswalt.dev/2013/06/cisco-ucs-ascii-art/), you can get a visual representation of the IOM ASIC by typing some simple commands. I'll show the output for a 2104 IOM for now because it's a bit simpler for this particular part of the post.
     
     F340-31-16-UCS-2-B# connect iom 1
     fex-1# show platform software redwood sts
@@ -111,7 +111,7 @@ In this IOM, there are 8 downward-facing interfaces (HIFs). This corresponds wit
 
 The 2208XP IOM has up to 4 connections for each blade. This gets pretty powerful when you have blades with multiple adapters (and multiple DCE interfaces per adapter, like with the VIC 1240 and VIC 1280).
 
-> [See here](https://keepingitclassless.net/2012/10/cisco-ucs-b200-m3-invalid-adaptor-iocard/) for more info on the bandwidth capabilities for various combinations of UCS hardware.
+> [See here](https://oswalt.dev/2012/10/cisco-ucs-b200-m3-invalid-adaptor-iocard/) for more info on the bandwidth capabilities for various combinations of UCS hardware.
 
 So, when we're considering the connectivity between the blade and the IOM (and in turn the IOM and the FI), we encounter the act of "pinning" a blade's adapter interface to a HIF on the IOM. If you go to the "VIF Paths" tab of any blade, you can see this clearly:
 
@@ -123,7 +123,7 @@ This particular blade is a B250 full-width blade, which means there are two mezz
 
 In addition, each adapter is bound to a corresponding NIF, or more commonly, the FEX port. These are the ports you physically see on the back of the chassis IOM. So, what we essentially have is source-based forwarding of traffic, meaning that the age-old problem of single-link oversubscription is very possible. Example - you have one server that is VERY active (let's say an FTP server). It's used by all users in an organization so it sees pretty heavy use. With this configuration, you would only be able to utilize this single 10GbE link per FEX module.
 
-> This problem is extremely similar to the problem encountered when configuring the [load-sharing policy for a vSwitch ](https://keepingitclassless.net/2013/05/esxi-vswitch-load-balancing-woes/)in VMware.
+> This problem is extremely similar to the problem encountered when configuring the [load-sharing policy for a vSwitch ](https://oswalt.dev/2013/05/esxi-vswitch-load-balancing-woes/)in VMware.
 
 So, to rectify this, we have the ability to configure port-channels. All of what I mentioned previously regarding the "pinning" that takes place by default is quite important, because now you can realize exactly what you're gaining by moving to this policy. First, when you connect to the NX-OS instance running on a Fabric Interconnect and show the interface status for a particular vNIC, you can clearly see that the bound interface is now a port-channel, not a specific HIF:
 

@@ -13,7 +13,7 @@ tags: ['onf']
 
 ![](/assets/2011/09/openflowlogo-300x289.png)
 
-I wrote a [post](https://keepingitclassless.net/2011/06/introduction-to-openflow/) a while back introducing OpenFlow, and I informed you of my thoughts concerning this relatively new technology. Regardless of your need for a programmable network, the concept is certainly interesting and warrants some tinkering. It's important to remember that OpenFlow itself is just a protocol definition, and until recently, there wasn't a lot of software available that implemented it, and thus, no in-home tinkering. I'd like to point out a few new projects that are implementing OpenFlow and making it relatively easy to implement on your own.
+I wrote a [post](https://oswalt.dev/2011/06/introduction-to-openflow/) a while back introducing OpenFlow, and I informed you of my thoughts concerning this relatively new technology. Regardless of your need for a programmable network, the concept is certainly interesting and warrants some tinkering. It's important to remember that OpenFlow itself is just a protocol definition, and until recently, there wasn't a lot of software available that implemented it, and thus, no in-home tinkering. I'd like to point out a few new projects that are implementing OpenFlow and making it relatively easy to implement on your own.
 
 ## OpenFlow
 

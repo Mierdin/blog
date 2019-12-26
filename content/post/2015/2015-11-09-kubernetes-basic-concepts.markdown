@@ -40,7 +40,7 @@ In Kubernetes, "[pods](http://kubernetes.io/v1.0/docs/user-guide/pods.html)" pro
 
 First off, it's important to remember that pods are the "atom" of Kubernetes. Here, you aren't meant to deploy individual containers - rather, pods are the smallest deployable units within Kubernetes. Thus, all containers run in a pod. Generally, pods are composed of multiple containers that require some shared resources, but this isn't required.
 
-Pods provide a way to share certain system resources among containers within those pods. For instance, as I mention in a [previous post](https://keepingitclassless.net/2015/10/namespaces-new-access-layer/), all containers in a Kubernetes pod share a single IP address because they are all in the same network namespace.
+Pods provide a way to share certain system resources among containers within those pods. For instance, as I mention in a [previous post](https://oswalt.dev/2015/10/namespaces-new-access-layer/), all containers in a Kubernetes pod share a single IP address because they are all in the same network namespace.
 
 It's also important to remember that - like containers - pods are not meant to be treated as pets. Unlike the "vMotion" capabilities of server virtualization, pods are not meant to be transferred, but rather killed and restarted elsewhere.
 

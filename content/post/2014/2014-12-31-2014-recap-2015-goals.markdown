@@ -20,7 +20,7 @@ Oh well.....let's give this a try anyways.
 
 ## 2014 Recap
 
-I'll list off the goals I set in [my post one year ago](https://keepingitclassless.net/2013/12/2013-recap-and-2014-goals/), and reflect upon how they were pursued in 2014:
+I'll list off the goals I set in [my post one year ago](https://oswalt.dev/2013/12/2013-recap-and-2014-goals/), and reflect upon how they were pursued in 2014:
 
 **Write Code** – I knew when I made this goal that it was going to be hard to quantify; I just knew that writing code was something I had been passionate about. Though I have always maintained this skillset in some form or another, I knew I wanted more, and a year ago, I made the goal of increasing my involvement with software development.
 

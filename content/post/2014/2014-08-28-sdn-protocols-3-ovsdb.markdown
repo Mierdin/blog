@@ -25,7 +25,7 @@ In order to really know what OVSDB is all about, we should first understand it's
 
 For now, suffice it to say that OpenFlow and OVSDB do not have inherent dependencies on each other, However, they are often used together, as they have very complementary purposes.
 
-[OpenFlow](https://keepingitclassless.net/2014/07/sdn-protocols-1-openflow-basics/) is a control plane protocol. It's goal is to manipulate the forwarding pipeline on a networking device using imperatively stated match and action rules. It is not capable of making other configuration changes to a switch or router. OpenFlow cannot, for instance, create a tunnel interface, or shut down a physical port. Some kind of configuration protocol is needed for this.
+[OpenFlow](https://oswalt.dev/2014/07/sdn-protocols-1-openflow-basics/) is a control plane protocol. It's goal is to manipulate the forwarding pipeline on a networking device using imperatively stated match and action rules. It is not capable of making other configuration changes to a switch or router. OpenFlow cannot, for instance, create a tunnel interface, or shut down a physical port. Some kind of configuration protocol is needed for this.
 
 OVSDB has filled this void in many ways, primarily because Open vSwitch has become the de facto platform on which to innovate with SDN, and OVSDB is obviously very supported on this platform. If you take a look at the [OVSDB RFC](http://tools.ietf.org/html/rfc7047) you'll notice a diagram that simply outlines the complementary but very clearly separate relationship between the control and management processes:
 

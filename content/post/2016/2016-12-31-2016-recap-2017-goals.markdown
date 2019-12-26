@@ -10,17 +10,17 @@ tags: ['blogging']
 ---
 
 
-Yet another recap post to follow up on [last year's](https://keepingitclassless.net/2015/12/2015-recap-2016-goals/). 2015 was a big transition year for me, and last year I wanted to make sure I kept the momentum going.
+Yet another recap post to follow up on [last year's](https://oswalt.dev/2015/12/2015-recap-2016-goals/). 2015 was a big transition year for me, and last year I wanted to make sure I kept the momentum going.
 
 > I make this post yearly to publicly track my own professional development goals. I find this helps me stay accountable to these goals, and it also allows others to give me a kick in the butt if I'm falling behind.
 
 # 2015 Goal Recap
 
-First, let me recap some of the goals [I set for myself at the beginning of the year](https://keepingitclassless.net/2014/12/2014-recap-2015-goals/), and see how well I did.
+First, let me recap some of the goals [I set for myself at the beginning of the year](https://oswalt.dev/2014/12/2014-recap-2015-goals/), and see how well I did.
 
-**Network Automation Book** - [At this time last year](https://keepingitclassless.net/2015/12/training-next-generation-network-engineer/), I announced that I was working on a network automation book with Scott Lowe and Jason Edelman. This has certainly taken a bit more time than any of us would have liked, but we're very near the end. The three of us have had a very busy year, and there are very few things to do for this release. However, we have pushed several additional chapters to O'Reilly, so you can still read these via Safari.
+**Network Automation Book** - [At this time last year](https://oswalt.dev/2015/12/training-next-generation-network-engineer/), I announced that I was working on a network automation book with Scott Lowe and Jason Edelman. This has certainly taken a bit more time than any of us would have liked, but we're very near the end. The three of us have had a very busy year, and there are very few things to do for this release. However, we have pushed several additional chapters to O'Reilly, so you can still read these via Safari.
 
-**Open Source** - Given that [I now work for a company centered around an open source project](https://keepingitclassless.net/2016/10/new-automation-chapter-begins/), I'd say I definitely made a good move towards this goal. I also open sourced [ToDD](https://keepingitclassless.net/2016/03/test-driven-network-automation/) earlier this year, which has been steadily growing and becoming more stable over the last few months.
+**Open Source** - Given that [I now work for a company centered around an open source project](https://oswalt.dev/2016/10/new-automation-chapter-begins/), I'd say I definitely made a good move towards this goal. I also open sourced [ToDD](https://oswalt.dev/2016/03/test-driven-network-automation/) earlier this year, which has been steadily growing and becoming more stable over the last few months.
 
 **Deeper into Go and Python** - I did well in this goal as well, for some of the same reasons as the open source goal - namely, that I work for a company centered around a Python-based open source project, and that I maintain ToDD, which is written in Go. I decided early this year, that in order to continue the momentum from my transition to full-time developer in 2015, I want to focus on Go and Python, so that I can be more flexible than knowing a single language, but also focused enough that I can get depth. is a new topic to me. This is a big reason I am getting more involved with Go.
 

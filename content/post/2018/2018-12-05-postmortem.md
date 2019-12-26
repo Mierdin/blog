@@ -4,7 +4,7 @@ title: 'December 4 - NRE Labs Outage Post-Mortem'
 author: Matt Oswalt
 comments: true
 categories: ['Blog']
-featured_image: https://keepingitclassless.net/assets/2018/12/thisisfine.jpg
+featured_image: https://oswalt.dev/assets/2018/12/thisisfine.jpg
 date: 2018-12-05T00:00:00-00:00
 tags: ['kubernetes']
 ---

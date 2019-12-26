@@ -12,7 +12,7 @@ tags: ['automation']
 
 I'm happy to be given the opportunity to speak once more at Interop Vegas in 2016. No workshop for me this year, but I will be putting on three individual talks, all focusing on topics that have been very near and dear to me over the past year.
 
-[Last year](https://keepingitclassless.net/2015/01/network-automation-interop-vegas-2015/) I was very focused on putting the theory behind network automation into practical terms, and making it "real". Over the past year I've seen rapid growth in adoption of these ideas, and I was happy to be just one very small part of helping to make that happen.
+[Last year](https://oswalt.dev/2015/01/network-automation-interop-vegas-2015/) I was very focused on putting the theory behind network automation into practical terms, and making it "real". Over the past year I've seen rapid growth in adoption of these ideas, and I was happy to be just one very small part of helping to make that happen.
 
 Since the last Interop, my career has steered me towards a more direct approach to network automation, specifically through software development. So I'd like to spend some time providing an overview of my sessions at the upcoming Interop Vegas 2016, which are all inspired by the last year of my career.
 
@@ -26,7 +26,7 @@ At Interop, [I'm giving a talk on test-driven network automation](http://info.in
 
 ## The Network Revolution Is A Lie
 
-I am quite excited for this one. [I wrote a post quite a few months ago](https://keepingitclassless.net/2015/07/big-flowering-thing/) during a period in my career where I was quite disillusioned with our industry.
+I am quite excited for this one. [I wrote a post quite a few months ago](https://oswalt.dev/2015/07/big-flowering-thing/) during a period in my career where I was quite disillusioned with our industry.
 
 In short, what started as a "revolution" with ideas like SDN and network automation, which are sorely needed in some areas, has turned into something entirely different and meaningless. It's quite sad, but in short, really good ideas like open networking and proper network automation are being discarded as marketing fluff, because that's what's taken the industry over.
 

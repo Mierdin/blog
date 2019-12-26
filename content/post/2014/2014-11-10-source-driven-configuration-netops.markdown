@@ -13,13 +13,13 @@ tags: ['ansible']
 ---
 
 
-I mentioned in a [previous post](https://keepingitclassless.net/2014/10/five-dev-tools-network-engineers/) that version control is an important component of efficiently managing network infrastructure. I'm going to take is a step further than what most are doing with RANCID, which is traditionally used at the end of a workflow (gathering running config diffs) and show you what it's like to **start** with version controlled configuration artifacts, specifically using Ansible's "template" module.
+I mentioned in a [previous post](https://oswalt.dev/2014/10/five-dev-tools-network-engineers/) that version control is an important component of efficiently managing network infrastructure. I'm going to take is a step further than what most are doing with RANCID, which is traditionally used at the end of a workflow (gathering running config diffs) and show you what it's like to **start** with version controlled configuration artifacts, specifically using Ansible's "template" module.
 
 I'm not going to discuss how you get the resulting configurations actually running on your network devices - that is best saved for another post. This is more focused on using version control and review workflows to initiate what will eventually turn into a networking-centric CI pipeline.
 
 ## Config Review and Versioning with Gerrit
 
-Let's say you are the Senior Network Engineer for your entire company, which boasts a huge network. You don't have time to touch every device, so you have a team of junior-level network engineers that help you out with move/add/change kinds of tasks. You've already moved your configurations into [Jinja2 templates](https://keepingitclassless.net/2014/03/network-config-templates-jinja2/), and have created an Ansible role that takes care of moving configuration variables into a rendered instance of this template. You would like your junior engineers to make changes to the files needed to render these templates, but you want to be able to look them over before they hit production.
+Let's say you are the Senior Network Engineer for your entire company, which boasts a huge network. You don't have time to touch every device, so you have a team of junior-level network engineers that help you out with move/add/change kinds of tasks. You've already moved your configurations into [Jinja2 templates](https://oswalt.dev/2014/03/network-config-templates-jinja2/), and have created an Ansible role that takes care of moving configuration variables into a rendered instance of this template. You would like your junior engineers to make changes to the files needed to render these templates, but you want to be able to look them over before they hit production.
 
 > If you want to follow along at home, the Ansible role I use below is on [GitHub](https://github.com/Mierdin/ansible-switchconfig).
 

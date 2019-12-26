@@ -4,7 +4,7 @@ https://keybase.io/mierdin
 
 I hereby claim:
 
-  * I am an admin of https://keepingitclassless.net
+  * I am an admin of https://oswalt.dev
   * I am mierdin (https://keybase.io/mierdin) on keybase.
   * I have a public key with fingerprint 00C7 E9A2 0246 7786 8A3F  7E3D 384D 2A75 E85B B5E6
 
@@ -29,7 +29,7 @@ To do so, I am signing this object:
             "seqno": 223237
         },
         "service": {
-            "hostname": "keepingitclassless.net",
+            "hostname": "oswalt.dev",
             "protocol": "https:"
         },
         "type": "web_service_binding",

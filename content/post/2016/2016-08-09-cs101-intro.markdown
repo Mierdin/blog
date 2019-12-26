@@ -20,4 +20,4 @@ This series will not be exhaustive, or as deep as a real CS course or degree pro
 
 I start this series primarily because I've been doing this software development thing for long enough to have realized the benefits of returning to these fundamentals, so I would like to share some of the most important concepts with you in the hope that the additional perspective is useful to you. Take what I share and run with it on your own. The intention is to whet your appetite so that you go hunting for more.
 
-Enjoy, and check out the [first post in our series, which focuses on Algorithms](https://keepingitclassless.net/2016/08/cs101-algorithms/).
+Enjoy, and check out the [first post in our series, which focuses on Algorithms](https://oswalt.dev/2016/08/cs101-algorithms/).

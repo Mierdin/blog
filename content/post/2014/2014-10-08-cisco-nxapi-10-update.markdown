@@ -11,7 +11,7 @@ tags: ['cisco']
 ---
 
 
-If you weren't paying attention, it was easy to miss. NX-API, Cisco's new JSON/XML switch API is now shipping as version 1.0. NX-API originated on the Nexus 9000 platform created by the Insieme group, and I've explored this [in detail before](https://keepingitclassless.net/2014/02/cisco-aci-nexus-9000-nxapi/).
+If you weren't paying attention, it was easy to miss. NX-API, Cisco's new JSON/XML switch API is now shipping as version 1.0. NX-API originated on the Nexus 9000 platform created by the Insieme group, and I've explored this [in detail before](https://oswalt.dev/2014/02/cisco-aci-nexus-9000-nxapi/).
 
 In review, NX-API is a new, programmatic method of interacting with a Cisco Nexus switch. In many ways, Cisco is playing catch-up here, since this interface is really just a wrapper for the CLI (admittedly with some convenient output parsing), and most of their competitors have had similar interfaces for a while. Nevertheless, it is better than scraping an SSH session, so it's worth looking into.
 
@@ -97,7 +97,7 @@ You are also able to submit the params in an (assumed) ordered list:
 
 For more info on parameters in JSON-RPC 2.0, check the specification, under the section labeled "[Parameter Structures](http://www.jsonrpc.org/specification#parameter_structures)". That's the part of the spec I'm referring to.
 
-There are a few limitations in the JSON-RPC implementation present in NX-API 1.0. First, [the issue I brought up about "multiples"](https://keepingitclassless.net/2014/07/handling-multiples-cisco-nx-api/) still exists. Not a huge deal, but you will have to continue to handle the difference in JSON described in that post, even when using this new JSON-RPC functionality.
+There are a few limitations in the JSON-RPC implementation present in NX-API 1.0. First, [the issue I brought up about "multiples"](https://oswalt.dev/2014/07/handling-multiples-cisco-nx-api/) still exists. Not a huge deal, but you will have to continue to handle the difference in JSON described in that post, even when using this new JSON-RPC functionality.
 
 Also as mentioned before, there is no JSON-RPC method for accessing the bash shell, so if you want to send those commands, you'll have to use the traditional XML/JSON interface.
 

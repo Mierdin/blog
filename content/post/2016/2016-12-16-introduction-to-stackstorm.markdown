@@ -10,7 +10,7 @@ tags: ['automation']
 ---
 
 
-[Earlier](https://keepingitclassless.net/2016/10/principles-of-automation/) I wrote about some fundamental principles that I believe apply to any form of automation, whether it's network automation, or even building a virtual factory.
+[Earlier](https://oswalt.dev/2016/10/principles-of-automation/) I wrote about some fundamental principles that I believe apply to any form of automation, whether it's network automation, or even building a virtual factory.
 
 One of the most important concepts in mature automation is **autonomy**; that is, a system that is more or less self-sufficent. Instead of relying on human beings for input, always try to provide that input with yet another automated piece of the system. There are several benefits to this approach:
 
@@ -20,7 +20,7 @@ One of the most important concepts in mature automation is **autonomy**; that is
 
 The reality is that we as operations teams are already event-driven by nature, we're just doing it in our brains. Every operations shop works this way; there is a monitoring tool in place, and the ops folks watch for alerts and respond in some sort of planned way. This sort of event-driven activity is happening all the time without us thinking about it. As you explore the concepts below, note that the main focus here is to simply reproduce those reactions in an automated way with StackStorm.
 
-These are all concepts I've been seriously pondering for the past 2 years, and have spoken about at several conferences like [Interop](https://keepingitclassless.net/2016/04/interop-vegas-2016/). Recently, when [I saw what the team at StackStorm was building](https://www.youtube.com/watch?v=M_hacp2qd70), and how well it aligned with my beliefs about mature automation practices, [I had to get involved](https://keepingitclassless.net/2016/10/new-automation-chapter-begins/).
+These are all concepts I've been seriously pondering for the past 2 years, and have spoken about at several conferences like [Interop](https://oswalt.dev/2016/04/interop-vegas-2016/). Recently, when [I saw what the team at StackStorm was building](https://www.youtube.com/watch?v=M_hacp2qd70), and how well it aligned with my beliefs about mature automation practices, [I had to get involved](https://oswalt.dev/2016/10/new-automation-chapter-begins/).
 
 StackStorm is event-driven automation. As opposed to alternative approaches (which have their own unique benefits) that rely on human input, StackStorm works on the premise that a human being will instead configure the system to watch for certain events and react autonomously on their behalf.
 

@@ -16,11 +16,11 @@ tags: ['DoS']
 ---
 
 
-> I'm pleased to announce the first post in my blog's new location, here at [keepingitclassless.net](https://keepingitclassless.net). I have been running a casual blog from my house for the past two years with mixed success. Residential internet connections as they are, this was usually hit or miss regarding whether or not my blog was even reachable. I've moved all that content to a web host which should prove to be much more reliable.
+> I'm pleased to announce the first post in my blog's new location, here at [oswalt.dev](https://oswalt.dev). I have been running a casual blog from my house for the past two years with mixed success. Residential internet connections as they are, this was usually hit or miss regarding whether or not my blog was even reachable. I've moved all that content to a web host which should prove to be much more reliable.
 >
 > I'm taking advantage of the whole Facebook thing to get the word out about the new blog, so feel free to "Like", and you'll receive updates more often!
 >
-> With that, I'd like to welcome you to [keepingitclassless.net](https://keepingitclassless.net)!
+> With that, I'd like to welcome you to [oswalt.dev](https://oswalt.dev)!
 
 Some recent academic experiences allowed me to play with some IPv6 hacking tools. By far, the easiest to use tool that's specifically designed to exploit vulnerabilities in an IPv6 network is the "thc-ipv6" suite by The Hacker's Choice. There are about 25 scripts in this suite that allow a hacker (Okay....or pentester....)  to do all kinds of nasty stuff on an IPv6 network.
 

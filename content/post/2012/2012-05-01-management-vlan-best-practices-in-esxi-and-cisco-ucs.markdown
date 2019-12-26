@@ -43,7 +43,7 @@ Is this best practice? I'm doing this in a UCS blade but the same applies for ph
 
 When setting the VLAN tag as shown previously, the above config will not work. Doing this essentially places the vNIC into "access mode". Remember that we are sending tagged frames from the ESXi host now, and access ports by nature drop all tagged frames. Thus, we will not be able to connect to our host. In order to make this work, you can do one of three things.
 
-> EDIT: This statement is actually not entirely true. I recommend checking out [a more recent post](https://keepingitclassless.net/2013/07/cisco-ucs-vnic-switchport-mode/) of mine that explains the trunk nature of UCS vNICs.
+> EDIT: This statement is actually not entirely true. I recommend checking out [a more recent post](https://oswalt.dev/2013/07/cisco-ucs-vnic-switchport-mode/) of mine that explains the trunk nature of UCS vNICs.
 
 The first option is to select another VLAN. It can be a dummy VLAN, or another management VLAN you wish to expose to that interface on the ESXi host. It's not uncommon to use the main vSwitch for other network connectivity purposes besides management, so this is a viable option.
 

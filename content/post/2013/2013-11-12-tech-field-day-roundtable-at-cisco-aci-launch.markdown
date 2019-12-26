@@ -17,4 +17,4 @@ I was honored to be part of a round table discussion held at the Cisco ACI launc
 
 For more on Tech Field Day, head over to [TechFieldDay.com](http://techfieldday.com/)
 
-> I attended the Cisco ACI launch event as a Tech Field Day delegate. Attending events like these mean that the vendor may pay for a certain portion of my travel arrangements, but any opinions given are my own and are never influenced in any way. ([Full disclaimer here](https://keepingitclassless.net/disclaimers/))
+> I attended the Cisco ACI launch event as a Tech Field Day delegate. Attending events like these mean that the vendor may pay for a certain portion of my travel arrangements, but any opinions given are my own and are never influenced in any way. ([Full disclaimer here](https://oswalt.dev/disclaimers/))

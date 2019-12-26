@@ -16,13 +16,13 @@ For many, this is all very new, and there's a lot to soak up. Linux networking h
 
 At this point, I'd like to ask you this question; with all of this tooling, which admittedly helps us achieve consistency of change, does it really ensure the __success__ of a change? How do we even define __success__? At what point can we sit back and be able to truly say, "that change did not negatively impact business services"? I would argue that the right answer is much more complicated than simply being content that config snippets have been pushed to a switch.
 
-Over a year ago, I was fortunate to be a part of a conversation that touched on this exact topic at a [Tech Field Day roundtable](https://keepingitclassless.net/2015/02/free-form-discussion-cleur/) in Milan. In this discussion, it was mentioned that while easy enough to push changes in an automated fashion (i.e. "writing scripts"), there was still a requirement that a human being go back in and manually verify those changes, resulting in a more or less moot point.
+Over a year ago, I was fortunate to be a part of a conversation that touched on this exact topic at a [Tech Field Day roundtable](https://oswalt.dev/2015/02/free-form-discussion-cleur/) in Milan. In this discussion, it was mentioned that while easy enough to push changes in an automated fashion (i.e. "writing scripts"), there was still a requirement that a human being go back in and manually verify those changes, resulting in a more or less moot point.
 
 As a result of this conversation, I was worried that others also believed that post-change validation still required a human being, and immediately began thinking of ways to change this.
 
 # Continuous Integration for Networking?
 
-In software development, there is a strong desire to be able to make changes to the source code of an application at any time of the day, but with the safety and predicability necessary to do this to production code. [I wrote before](https://keepingitclassless.net/2015/01/continuous-integration-pipeline-network/) about the idea of using these practices to produce some of the same benefits with network infrastructure, and I still believe in those concepts today.
+In software development, there is a strong desire to be able to make changes to the source code of an application at any time of the day, but with the safety and predicability necessary to do this to production code. [I wrote before](https://oswalt.dev/2015/01/continuous-integration-pipeline-network/) about the idea of using these practices to produce some of the same benefits with network infrastructure, and I still believe in those concepts today.
 
 To power a continuous integration pipeline, a developer will likely write a set of unit tests and integration tests for their software. If you really think about it, these tests do more than just execute code. They exist as reference implementations of that software. A properly written test is really a description of a particular avenue through which someone might run the software being developed.
 

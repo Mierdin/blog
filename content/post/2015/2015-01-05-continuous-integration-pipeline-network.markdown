@@ -21,7 +21,7 @@ For this, I'm gong to show you how I'm managing my own home DHCP server (ISC) wi
 
 ## Config Review and Versioning with Git and Gerrit
 
-I mentioned in [a previous post](https://keepingitclassless.net/2014/10/five-dev-tools-network-engineers/) that version control is an important component of efficiently managing network infrastructure. I'm going to take it a step further than what most are doing with RANCID, which is traditionally used at the end of a workflow (by gathering running configs) and show you what it's like to [**start** your workflow](https://keepingitclassless.net/2014/11/source-driven-configuration-netops/) with version controlled configuration artifacts.
+I mentioned in [a previous post](https://oswalt.dev/2014/10/five-dev-tools-network-engineers/) that version control is an important component of efficiently managing network infrastructure. I'm going to take it a step further than what most are doing with RANCID, which is traditionally used at the end of a workflow (by gathering running configs) and show you what it's like to [**start** your workflow](https://oswalt.dev/2014/11/source-driven-configuration-netops/) with version controlled configuration artifacts.
 
 I'll be demonstrating this idea with Gerrit, which is used for managing contributions on software projects. It's very popular in open source; used in the OpenDaylight and Openstack projects, as an example. At it's core, Gerrit is a version control system (it's fundamentally based on Git for version control) but it adds a bunch of nifty tools and workflows on top.
 

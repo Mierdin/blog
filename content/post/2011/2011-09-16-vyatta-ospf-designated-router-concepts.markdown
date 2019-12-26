@@ -11,7 +11,7 @@ tags: ['designated', 'router']
 ---
 
 
-I was inspired by a (relatively) recent [post by Jeremy Stretch at Packetlife.net](http://packetlife.net/blog/2011/jun/2/ospf-designated-router-election/) that explained OSPF designated router configuration in Cisco IOS. I'd like to go into a bit more detail regarding the need for a designated router, and explore the same configuration steps on the Vyatta Core platform. [I've already shown how easy it is to integrate a Cisco router with a Vyatta router using OSPF](https://keepingitclassless.net/networking/routing-and-switching/configuring-ospf-between-vyatta-and-cisco-ios/), so you can use a mix of Cisco and Vyatta gear if you wish.
+I was inspired by a (relatively) recent [post by Jeremy Stretch at Packetlife.net](http://packetlife.net/blog/2011/jun/2/ospf-designated-router-election/) that explained OSPF designated router configuration in Cisco IOS. I'd like to go into a bit more detail regarding the need for a designated router, and explore the same configuration steps on the Vyatta Core platform. [I've already shown how easy it is to integrate a Cisco router with a Vyatta router using OSPF](https://oswalt.dev/networking/routing-and-switching/configuring-ospf-between-vyatta-and-cisco-ios/), so you can use a mix of Cisco and Vyatta gear if you wish.
 
 To understand the purpose of a Designated Router in OSPF, you need to know how OSPF distributes routing information around the network. In order to establish neighbor relationships with other routers, OSPF will send hello messages to the multicast address 224.0.0.5. Once neighbor relationships have been established, routing information must be distributed via Link State Advertisements, or LSAs. In a shared-media environment, this can be problematic.
 

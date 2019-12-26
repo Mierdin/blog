@@ -11,7 +11,7 @@ tags: ['cisco']
 ---
 
 
-A while back [I wrote about the problems](https://keepingitclassless.net/2012/10/cisco-ucs-b200-m3-invalid-adaptor-iocard/) with using some of the newer 3rd generation blade hardware from Cisco with older generations of the chassis FEX/IOM. Because of the way that the VIC and the chassis IOM interact, certain combinations yield different amounts of aggregate bandwidth, and certain combinations don't work at all, as was evidenced in that post.
+A while back [I wrote about the problems](https://oswalt.dev/2012/10/cisco-ucs-b200-m3-invalid-adaptor-iocard/) with using some of the newer 3rd generation blade hardware from Cisco with older generations of the chassis FEX/IOM. Because of the way that the VIC and the chassis IOM interact, certain combinations yield different amounts of aggregate bandwidth, and certain combinations don't work at all, as was evidenced in that post.
 
 As a reminder, here are the valid combinations (these are still accurate to my knowledge, but may change in a few weeks if any new tech is announced at Cisco Live) of FEX and blade VIC:
 

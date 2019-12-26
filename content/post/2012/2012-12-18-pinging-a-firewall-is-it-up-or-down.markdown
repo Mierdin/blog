@@ -41,7 +41,7 @@ You see that although this device did not respond to pings, it DID still respond
 
 Unfortunately, if you were to run a simple ping scan with a tool like nmap, it does not take ARP into account, so it will still report the IP as down. I have not found another ping sweep tool that changes this. If you want to be more accurate, you'll have to do more than a simple ping sweep.
 
-It should also be said that this is an IPv4 concept only - not just because [ARP is gone in IPv6](https://keepingitclassless.net/2011/10/neighbor-solicitation-ipv6s-replacement-for-arp/), but also because outright disabling ICMP in IPv6 is just a bad idea. Many of IPv6's new features are built directly into ICMPv6, like neighbor discovery, router advertisements, and more.
+It should also be said that this is an IPv4 concept only - not just because [ARP is gone in IPv6](https://oswalt.dev/2011/10/neighbor-solicitation-ipv6s-replacement-for-arp/), but also because outright disabling ICMP in IPv6 is just a bad idea. Many of IPv6's new features are built directly into ICMPv6, like neighbor discovery, router advertisements, and more.
 
 Here, we've disabled (blocked with an access list) ICMPv6 altogether, and we are unable to discover IPv6 neighbors entirely. This doesn't just mean we can't ping the device, it means we can't resolve a MAC address either, so communication doesn't happen.
 

@@ -11,7 +11,7 @@ tags: ['bgp']
 ---
 
 
-I received a [comment](https://keepingitclassless.net/2011/07/the-anatomy-of-show-ip-route/#comment-909366194) on an old post regarding the identification of outgoing interface for learned routes through BGP. In fact, it's not the first time I've had a discussion in the comment section regarding the interaction between the control plane and the forwarding plane.
+I received a [comment](https://oswalt.dev/2011/07/the-anatomy-of-show-ip-route/#comment-909366194) on an old post regarding the identification of outgoing interface for learned routes through BGP. In fact, it's not the first time I've had a discussion in the comment section regarding the interaction between the control plane and the forwarding plane.
 
 So, let's work backwards from the point where our packet leaves *some* interface on a router, which would be considered purely an act of the forwarding plane. In order to get to that point, we need to populate the RIB with some entries.
 

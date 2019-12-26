@@ -91,7 +91,7 @@ Even simple APIs like NX-API as shown above can be changed, as long as the vendo
 
 Now, all this is well and good but something has to be done about the times when - for some reason - standards are not followed. Your database admins will make a change that they don't think needed to be communicated, a vendor will fail to add a certain XML tag under conditions they didn't test for, et cetera. These things do happen. So how can we deal with it?
 
-I [recently wrote](https://keepingitclassless.net/2014/07/handling-multiples-cisco-nx-api/) about anticipating a certain quirkiness with a vendor API I was working with. This is a good example of putting mechanisms into place that help "soften the blow" when APIs don't act like they're supposed to.
+I [recently wrote](https://oswalt.dev/2014/07/handling-multiples-cisco-nx-api/) about anticipating a certain quirkiness with a vendor API I was working with. This is a good example of putting mechanisms into place that help "soften the blow" when APIs don't act like they're supposed to.
 
 The methods vary on implementation, but you can use techniques like XML validation to ensure that a particular document follows the intended schema. [Libxml](http://xmlsoft.org/) is a very popular tool, and I've used a very similar [Python equivalent](http://lxml.de/) on multiple occasions.
 

@@ -13,7 +13,7 @@ tags: ['ipv6']
 
 After watching the recent epic that was the [comment thread](http://networkingnerd.net/2011/12/01/whats-the-point-of-nat66/#comment-2575) on [networkingnerd](https://twitter.com/networkingnerd)'s NAT66 blog post from last year, I was initially persuaded to sit and watch from afar.
 
-I've had the opportunity to work with IPv6 quite a bit, and though [I've done a few IPv6-related posts on the site](https://keepingitclassless.net/category/blog/ipv6-2/), I still feel like there's always something missing. After all, much of IPv6 is still just talk (sadly) and not enough wide-spread adoption to really put it through it's paces. The "network engineers" to whom the gods have gifted the great power of omniscience speak against IPv6 IN GENERAL on something as petty as NAT, keeping us as an industry from moving forward.
+I've had the opportunity to work with IPv6 quite a bit, and though [I've done a few IPv6-related posts on the site](https://oswalt.dev/category/blog/ipv6-2/), I still feel like there's always something missing. After all, much of IPv6 is still just talk (sadly) and not enough wide-spread adoption to really put it through it's paces. The "network engineers" to whom the gods have gifted the great power of omniscience speak against IPv6 IN GENERAL on something as petty as NAT, keeping us as an industry from moving forward.
 
 Here's what we **know**. NAT is a band-aid. I don't care if it's baked into every Linksys device you buy your grandmother - I don't care if it's included in every curriculum and enforced at every internet boundary you've ever seen in your life. It started as a band-aid, and has resulted in a big tourniquet.
 

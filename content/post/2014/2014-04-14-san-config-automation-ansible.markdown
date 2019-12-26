@@ -11,7 +11,7 @@ tags: ['ansible']
 ---
 
 
-My previous post on [automatically generating a SAN configuration](https://keepingitclassless.net/2014/03/san-automation-python-jinja/) explored what is possible when using a templating language like Jinja2, and a little Python work.
+My previous post on [automatically generating a SAN configuration](https://oswalt.dev/2014/03/san-automation-python-jinja/) explored what is possible when using a templating language like Jinja2, and a little Python work.
 
 I'd like to take this a step further. There are two areas I did not address in that post.
 	
@@ -213,7 +213,7 @@ Now - though an analysis of how my module is written is beyond the scope of this
     zoneset activate name ZONESET_VSAN_{{ vsan }} vsan {{ vsan }}
 {% endraw >}}
 
-> If you're interested in how this is used in this context, my [earlier post](https://keepingitclassless.net/2014/03/network-config-templates-jinja2/) may be of interest to you.
+> If you're interested in how this is used in this context, my [earlier post](https://oswalt.dev/2014/03/network-config-templates-jinja2/) may be of interest to you.
 
 Our end-to-end playbook is now finished, and it is glorious ([completed version here](https://github.com/Mierdin/ansible-autozone/blob/master/playbooks/autozone.yml)). If we run it now, the "getucswwpns" module will run once more, grab a fresh copy of all of the UCS vHBA/WWPN information, and write it to a JSON file on our filesystem. Then the "installconfig" module will immediately read this file, and using the Jinja2 template, generate a full configuration snippet that includes zoning, aliases, and then some. Just about everything in a FC configuration that is considered "tedious". It will then iterate through that snippet, and write every line to an SSH session to the correct switch. The user needs only run this playbook - not log into a single UCS Manager, or Nexus 5K.
 

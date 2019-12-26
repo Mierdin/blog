@@ -11,7 +11,7 @@ tags: ['sddc']
 ---
 
 
-About a year and a half ago, arguably well before the biggest of all the SDN hype that we've come to know and love, Stephen Foskett and company organized a fantastic [OpenFlow Symposium](https://keepingitclassless.net/2011/10/review-openflow-symposium-2011-morning-session/) aimed at getting deep into the state of the protocol at that time and what was being done with it at some of the leading tech companies like Google, Yahoo, Cisco, Brocade, and others.
+About a year and a half ago, arguably well before the biggest of all the SDN hype that we've come to know and love, Stephen Foskett and company organized a fantastic [OpenFlow Symposium](https://oswalt.dev/2011/10/review-openflow-symposium-2011-morning-session/) aimed at getting deep into the state of the protocol at that time and what was being done with it at some of the leading tech companies like Google, Yahoo, Cisco, Brocade, and others.
 
 > For those keeping track, Dave Meyer was on the panel at the time representing Cisco but is now CTO and Chief Scientist with Brocade and getting to do some [really cool stuff with OpenDaylight](http://searchsdn.techtarget.com/news/2240183332/Keeping-OpenDaylight-truly-open-QA-with-Brocades-Dave-Meyer).
 

@@ -21,7 +21,7 @@ Before I get started, I would be remiss to not point you towards a brilliant art
 
 Before we get into the weeds of the OpFlex protocol, it's important to understand the model that OpFlex intends to address. OpFlex is the protocol du jour within a Cisco ACI based datacenter fabric, but broadly, OpFlex represents a declarative programmability model, and is being adopted by a few other vendors, as well as Open Source initiatives like [OpenDaylight](https://wiki.opendaylight.org/view/OpFlex:Main). But what is declarative programming?
 
-In contrast, Cisco refers to the [OVSDB](https://keepingitclassless.net/2014/08/sdn-protocols-3-ovsdb/) protocol as "imperative". In their view, if the OVSDB server schema contains table information about ports and bridges, then the client making OVSDB calls must also know about these constructs. Cisco likes to repeatedly refer to OVSDB as the "imperative" SDN protocol, but this is a bit of a misnomer in my opinion.
+In contrast, Cisco refers to the [OVSDB](https://oswalt.dev/2014/08/sdn-protocols-3-ovsdb/) protocol as "imperative". In their view, if the OVSDB server schema contains table information about ports and bridges, then the client making OVSDB calls must also know about these constructs. Cisco likes to repeatedly refer to OVSDB as the "imperative" SDN protocol, but this is a bit of a misnomer in my opinion.
 
 OVSDB methods function very similar to a database language like SQL, and as with SQL, we can be much less verbose with the data we want to manipulate within an OVSDB implementation. We can do things like:
 

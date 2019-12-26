@@ -15,7 +15,7 @@ tags: ['ios']
 
 For those that followed my SDN Protocols series last summer, you might have noticed a missing entry: NETCONF. This protocol has actually existed for some time (the original now-outdated specification was [published in 2006](https://tools.ietf.org/html/rfc4741)), but is appearing more often, especially in discussions pertaining to network automation. The current, updated specification - [RFC6241 ](https://tools.ietf.org/html/rfc6241)- covers a fairly large amount of material, so I will attempt to condense here.
 
-NETCONF operates at the management layer of the network, and therefore plays a role similar to that of OVSDB. This is in contrast to protocols like [OpenFlow ](https://keepingitclassless.net/2014/07/sdn-protocols-1-openflow-basics/) which operate at the control plane.
+NETCONF operates at the management layer of the network, and therefore plays a role similar to that of OVSDB. This is in contrast to protocols like [OpenFlow ](https://oswalt.dev/2014/07/sdn-protocols-1-openflow-basics/) which operate at the control plane.
 
 A key difference between NETCONF and other management protocols (including SNMP) is that NETCONF is built around the idea of a transaction-based configuration model. The NETCONF specification provides for some optional device capabilities aimed at assisting operators with the lifecycle of configuring a network device, such as rolling back a configuration upon an error. Unfortunately, not all network devices support such capabilities, but the protocol was built to make it easier to discover what kind of capabilities a network device can support.
 
@@ -57,7 +57,7 @@ Next, a reply to a request uses an "rpc-reply" tag:
         </data>
     </rpc-reply>
     
-As you can see, the encapsulating transport for NETCONF is not incredibly interesting. If you remember the [OVSDB post](https://keepingitclassless.net/2014/08/sdn-protocols-3-ovsdb/) I wrote several months ago, you'll recall that it uses a similar, relatively uninteresting transport (JSON-RPC). It is the operations inside that perform valuable tasks.
+As you can see, the encapsulating transport for NETCONF is not incredibly interesting. If you remember the [OVSDB post](https://oswalt.dev/2014/08/sdn-protocols-3-ovsdb/) I wrote several months ago, you'll recall that it uses a similar, relatively uninteresting transport (JSON-RPC). It is the operations inside that perform valuable tasks.
 
 ## Operations
 

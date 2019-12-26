@@ -29,7 +29,7 @@ Please read the [workshop page](http://www.interop.com/lasvegas/scheduler/sessio
 
 ## SDN Building Blocks
 
-The kind folks at Interop were apparently reading my [SDN Protocols series](https://keepingitclassless.net/series/sdn-protocols/), and asked if I wanted to turn this into a talk. With all of the confusing jargon out there, I figured it was worth doing [an hour-long session](http://www.interop.com/lasvegas/scheduler/session/sdn-building-blocks) to put some interactivity into this idea. Essentially I'll be expanding on this blog series during this hour, and I'll show some practical examples of these protocols when possible.
+The kind folks at Interop were apparently reading my [SDN Protocols series](https://oswalt.dev/series/sdn-protocols/), and asked if I wanted to turn this into a talk. With all of the confusing jargon out there, I figured it was worth doing [an hour-long session](http://www.interop.com/lasvegas/scheduler/session/sdn-building-blocks) to put some interactivity into this idea. Essentially I'll be expanding on this blog series during this hour, and I'll show some practical examples of these protocols when possible.
 
 My goal for this session is to cut through the fog, and offer a bias-free view into their operation, leaving you free to make the right decision for your own infrastructure. Where possible, I'll give a brief example of these protocols in action.
 

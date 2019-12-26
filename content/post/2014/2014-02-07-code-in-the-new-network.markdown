@@ -15,7 +15,7 @@ I was inspired by many little things over the past few days to begin writing a p
 
 I've said before I know that most network engineers already write some kind of code - even if it's as simple as a snippet of VBA in an Excel spreadsheet to automatically convert a spreadsheet of configuration options into an actual running configuration. I believe I also said I thought that was pretty boring.
 
-The big gaping hole I intentionally left in my post last week titled "[Why Python?](https://keepingitclassless.net/2014/01/why-python/)" is going to be addressed in this post. What does the network engineer of the future - empowered with a brand new software-defined network infrastructure - look like?
+The big gaping hole I intentionally left in my post last week titled "[Why Python?](https://oswalt.dev/2014/01/why-python/)" is going to be addressed in this post. What does the network engineer of the future - empowered with a brand new software-defined network infrastructure - look like?
 
 This post is aimed primarily at discussing the changes that will come about in the next 5 years or so - not a far-fetched distant future conversation. I've been told on many occassions from close friends and colleagues that a lot of the discussions around SDN don't seem very relevant to the here and now. Hopefully after this post you'll have a better sense for the options we have (or will soon) to choose from when it comes to networking, automation, orchestration, and BREAKING DOWN THOSE UGLY SILOS!
 

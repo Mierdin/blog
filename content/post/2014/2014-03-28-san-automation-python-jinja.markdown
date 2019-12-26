@@ -11,7 +11,7 @@ tags: ['automation']
 ---
 
 
-One of my least favorite things to do in my day job is create or maintain a zoning configuration on a fibre channel switch, such as a Cisco Nexus or MDS. It's tedious, very error prone, and annoying when changes need to be made. I [wrote earlier](https://keepingitclassless.net/2014/03/network-config-templates-jinja2/) in the week on the value of using a templating language like Jinja to define the structure of a switch configuration, but dynamic enough to accept all kinds of input from some higher-level intelligence elsewhere. In this post, I'm going to use this, and other tools in our "automation toolchest" to get fibre channel zoning configuration down to a science.
+One of my least favorite things to do in my day job is create or maintain a zoning configuration on a fibre channel switch, such as a Cisco Nexus or MDS. It's tedious, very error prone, and annoying when changes need to be made. I [wrote earlier](https://oswalt.dev/2014/03/network-config-templates-jinja2/) in the week on the value of using a templating language like Jinja to define the structure of a switch configuration, but dynamic enough to accept all kinds of input from some higher-level intelligence elsewhere. In this post, I'm going to use this, and other tools in our "automation toolchest" to get fibre channel zoning configuration down to a science.
 
 Each WWPN belongs to a single HBA and is considered to be unique (hopefully) on the SAN. I'm using Cisco UCS, so I've derived each vHBA's WWPN from a pool, and it's guaranteed to be unique. I like to name my FC zones by using some kind of combination of the service profile name and the vHBA name on that service profile.
 

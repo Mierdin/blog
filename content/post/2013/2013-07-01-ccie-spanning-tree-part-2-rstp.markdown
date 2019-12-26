@@ -11,7 +11,7 @@ tags: ['bpdu']
 ---
 
 
-> This post picks up where the [previous](https://keepingitclassless.net/2013/06/ccie-spanning-tree-part-1-nerd-knobs) left off. Again, a CCNP-level knowledge of STP is recommended.
+> This post picks up where the [previous](https://oswalt.dev/2013/06/ccie-spanning-tree-part-1-nerd-knobs) left off. Again, a CCNP-level knowledge of STP is recommended.
 
 So...Spanning Tree didn't converge quickly enough for some people, and enabling PortFast everywhere kind of defeats the purpose, so 802.1w Rapid Spanning Tree was born. RSTP in essence puts into place some additional features to speed up STP reconvergence. Old-school 802.1D meant that you had to wait at least 30 seconds to get a port from blocking to forwarding, and this means that recovering from a failure takes at least that much time (sometimes more depending on other factors).
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keepingitclassless.net/sitemap.xml
+Sitemap: https://oswalt.dev/sitemap.xml

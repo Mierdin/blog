@@ -13,7 +13,7 @@ tags: ['experience']
 
 So you've recently changed jobs, and you have a very extensive linux skillset. Your new job doesn't include or require this skillset. Does that mean that experience will not serve you in this new role?
 
-Absolutely false. The most valuable thing these experiences give us is **perspective**. The ability to see things from a unique point of view makes you a unique and valuable addition to any team. This is a strong reason for my advocacy of the [Unified Skillset](https://keepingitclassless.net/2013/01/the-unified-skillset/).
+Absolutely false. The most valuable thing these experiences give us is **perspective**. The ability to see things from a unique point of view makes you a unique and valuable addition to any team. This is a strong reason for my advocacy of the [Unified Skillset](https://oswalt.dev/2013/01/the-unified-skillset/).
 
 I will say this - a great tactic when looking for a position is asking the hiring position how easy it is to fill multiple roles from a technical perspective. Some have the internal org structure that allows you to work on technical projects outside of the core skillset you may have been immediately hired for. This is a really good way to keep your blade sharp in multiple areas.
 

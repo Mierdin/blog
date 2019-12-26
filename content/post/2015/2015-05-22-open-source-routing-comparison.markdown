@@ -206,4 +206,4 @@ I wanted to keep this post to a "top three" kind of thing, but wanted to call ou
 
 This wasn't a comprehensive list. In fact, the ExaBGP wiki [provides a list of projects](https://github.com/Exa-Networks/exabgp/wiki/Other-OSS-BGP-implementations) (mostly focused on BGP) with VERY brief overview explanations of each, focused mostly on providing guidance to programmers on which project they should pick. My introduction was to introduce the "typical" network operator to open source routing.
 
-Please read [my next post](https://keepingitclassless.net/2015/06/open-source-routing-practical/) for an easy, quick way to get all of this set up on your laptop for you to play with.
+Please read [my next post](https://oswalt.dev/2015/06/open-source-routing-practical/) for an easy, quick way to get all of this set up on your laptop for you to play with.

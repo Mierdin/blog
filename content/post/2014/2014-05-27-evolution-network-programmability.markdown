@@ -89,7 +89,7 @@ At scale, repetitive tasks are the not-so-silent killer. Adding a VLAN on a few 
 
 These tasks are prime candidates for automation. This is an important phase on our pyramid because it is not a pie-in-the-sky idea. Very simple, existing frameworks can be used to make this happen. As I wrote before, this is all about culture - allowing the business to see that network automation can be done in a responsible way, so that the benefits are even clearer. So this phase is all about baby steps. It's all about slowly pushing more and more automation into your organization's operations model, not just for the sake of automation, but to allow the business to become accustomed to doing it the right way.
 
-I [wrote before](https://keepingitclassless.net/2014/03/network-config-templates-jinja2/) about using Jinja2 and a VERY small amount of Python to generate some standard build processes around network configuration. This is a fairly easy way to start a part of Phase 2 that is extremely crucial - the standard build process. An organization-wide, standardized way of producing new configuration. This [Jinja2 template](https://github.com/Mierdin/jinja2-nxos-config/) is a great example of what you can do with very basic knowledge of general code constructs.
+I [wrote before](https://oswalt.dev/2014/03/network-config-templates-jinja2/) about using Jinja2 and a VERY small amount of Python to generate some standard build processes around network configuration. This is a fairly easy way to start a part of Phase 2 that is extremely crucial - the standard build process. An organization-wide, standardized way of producing new configuration. This [Jinja2 template](https://github.com/Mierdin/jinja2-nxos-config/) is a great example of what you can do with very basic knowledge of general code constructs.
 
 {% raw >}}
     {% for int in pints >}}
@@ -107,7 +107,7 @@ I [wrote before](https://keepingitclassless.net/2014/03/network-config-templates
     {% endfor >}}
 {% endraw >}}
 
-So that's great, but it still requires a little code knowledge to really do well, right? Well there's been quite a bit of attention around automation frameworks like Puppet, that allow you to make use of automation without knowing any code at all. My favorite framework is Ansible, and there has already been [quite a bit of buzz](http://www.jedelman.com/home/ansible-for-networking) regarding the use of Ansible for all kinds of [infrastructure automation](https://keepingitclassless.net/2014/04/san-config-automation-ansible/).
+So that's great, but it still requires a little code knowledge to really do well, right? Well there's been quite a bit of attention around automation frameworks like Puppet, that allow you to make use of automation without knowing any code at all. My favorite framework is Ansible, and there has already been [quite a bit of buzz](http://www.jedelman.com/home/ansible-for-networking) regarding the use of Ansible for all kinds of [infrastructure automation](https://oswalt.dev/2014/04/san-config-automation-ansible/).
 
 Templates like the one shown above serve as a fundamental building block of many existing automation toolkits like Ansible that are all aimed at doing more without becoming a full-blown developer.
 

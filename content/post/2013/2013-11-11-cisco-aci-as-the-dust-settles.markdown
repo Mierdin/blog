@@ -11,7 +11,7 @@ tags: ['aci']
 ---
 
 
-So, the industry is sufficiently abuzz about the Cisco ACI launch last week, and the stats on my [introductory series](https://keepingitclassless.net/2013/11/insieme-and-cisco-aci-part-2-aci-and-programmability/) I wrote tells me that, like it or not, this is having a pretty big impact.
+So, the industry is sufficiently abuzz about the Cisco ACI launch last week, and the stats on my [introductory series](https://oswalt.dev/2013/11/insieme-and-cisco-aci-part-2-aci-and-programmability/) I wrote tells me that, like it or not, this is having a pretty big impact.
 
 The focus on the application is clearly the right approach - all of this talk about SDN and network virtualization is taking place because the current network model's complexity results in bad kluges and long provisioning times, and the applications folks are always waiting on the network to respond. So - any product in this space has to solve this problem first and foremost. Whether a hardware solution or a software solution, this is the use case.
 
@@ -27,7 +27,7 @@ There's nothing that I've seen in ACI that will eliminate the need for collabora
 
 This kind of policy creation **actually**** requires****** that the network team and the server team work in tandem. There still exists a field where you define the TCP/UDP port that the application works on, and the network team will have to fill that in. We have these conversations now when we want to build firewall rules. However, now we have the option to populate other fields with dynamic information. How about identifying an application based off of it's currently assigned subnet? That's a network function that can only be derived programmatically. If you've been looking for a use case for network engineers to learn a bit of code, it's with things like this.
 
-Derick Winkworth of Plexxi teased this idea in [his presentation of their Data Services Engine](https://keepingitclassless.net/2013/10/plexxi-optimized-workload-and-workflow/) - that it's not that far-fetched to use a function call from Chef to populate an Access Control List dynamically.
+Derick Winkworth of Plexxi teased this idea in [his presentation of their Data Services Engine](https://oswalt.dev/2013/10/plexxi-optimized-workload-and-workflow/) - that it's not that far-fetched to use a function call from Chef to populate an Access Control List dynamically.
 
 Speaking of Plexxi, in terms of the technical vision of the product, I see a lot of similarities between Cisco ACI and Plexxi's affinity API. This is not a bad thing - thinking from an application engineer's mindset, the concept of creating application profiles using detailed identification mechanisms then linking them together with policies that are dynamic and programmable is the right thing to do.
 
@@ -64,4 +64,4 @@ So, here are a few things I think Cisco should focus on for the next few years r
   * **Unified Computing Integration** - We need to see the next generation of a UCS Fabric Interconnect integrate with ACI in some way. This will provide a ton of visibility all the way to the server nic (or to the virtual machine if you love Cisco enough to deploy VM-FEX). Since they're using the concept of service profiles in a different way for ACI, I can only assume this is on the roadmap.
 
 > Disclaimer - This article was written as a follow-up to my two intial posts on the Cisco Nexus 9000 and ACI announcement, and this article in particular is purely my own opinions.
-I attended the Cisco ACI launch event as a Tech Field Day delegate. Attending events like these mean that the vendor may pay for a certain portion of my travel arrangements, but any opinions given are my own and are never influenced in any way. ([Full disclaimer here](https://keepingitclassless.net/disclaimers/))
+I attended the Cisco ACI launch event as a Tech Field Day delegate. Attending events like these mean that the vendor may pay for a certain portion of my travel arrangements, but any opinions given are my own and are never influenced in any way. ([Full disclaimer here](https://oswalt.dev/disclaimers/))

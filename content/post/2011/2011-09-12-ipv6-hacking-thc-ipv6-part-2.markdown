@@ -11,7 +11,7 @@ tags: ['backtrack']
 ---
 
 
-A while back I did a post called [IPv6 Hacking - "thc-ipv6" Part 1](https://keepingitclassless.net/2011/05/new-blog-location-ipv6-hacking-thc-ipv6-part-1/) - it was, in fact, the first post here on Keeping It Classless. That post focused on the flood_router6 script, which unleashed a flood of IPv6 Router Advertisements (RAs) on a layer 2 network segment, bringing vulnerable operating systems like Windows 7 to their knees.
+A while back I did a post called [IPv6 Hacking - "thc-ipv6" Part 1](https://oswalt.dev/2011/05/new-blog-location-ipv6-hacking-thc-ipv6-part-1/) - it was, in fact, the first post here on Keeping It Classless. That post focused on the flood_router6 script, which unleashed a flood of IPv6 Router Advertisements (RAs) on a layer 2 network segment, bringing vulnerable operating systems like Windows 7 to their knees.
 
 ![](https://siliconangle.com/files/2011/05/network-security-lock.jpg)
 

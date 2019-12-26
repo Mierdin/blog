@@ -57,4 +57,4 @@ Virtual appliances like Vyatta or CSR 1000v are still very relevant in this mode
 
 Distributing stateful functions like NAT or load-balancing can be extremely tricky. As a result, it's nice to have that central point in the virtual environment where global policies are enforced. The better the integration between the SDN controller handling the overlays and these appliances, the more seamless the experience.
 
-> This post is continued in [Part 2](https://keepingitclassless.net/2013/09/overlay-networking-part2/).
+> This post is continued in [Part 2](https://oswalt.dev/2013/09/overlay-networking-part2/).

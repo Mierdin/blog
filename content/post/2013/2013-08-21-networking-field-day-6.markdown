@@ -72,7 +72,7 @@ Delegates are selected by the Field Day community. Many of these folks are respo
 
 ## Software-Defined Datacenter Symposium
 
-In addition to Networking Field Day, I will also be attending the [Software-Defined Datacenter Symposium on September 10th](https://keepingitclassless.net/2013/06/the-software-defined-datacenter-symposium-2013-tech-field-day/). This event focuses on the broader subject of SDDC from the perspective of vendors like Plexxi, but also non-networking vendors like Nutanix. I have spoken with folks from Nutanix as well as customers, and I look forward to hearing from them again.
+In addition to Networking Field Day, I will also be attending the [Software-Defined Datacenter Symposium on September 10th](https://oswalt.dev/2013/06/the-software-defined-datacenter-symposium-2013-tech-field-day/). This event focuses on the broader subject of SDDC from the perspective of vendors like Plexxi, but also non-networking vendors like Nutanix. I have spoken with folks from Nutanix as well as customers, and I look forward to hearing from them again.
 
 Use the hashtag #SDDC13 (NOT #SDCC - comiccon is over, folks!) to chat it up with the attendees during the event, and watch for the live streams on [Tech Field Day's site](http://techfieldday.com/).
 

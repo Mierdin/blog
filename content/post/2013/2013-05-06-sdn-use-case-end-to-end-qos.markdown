@@ -13,7 +13,7 @@ tags: ['api']
 
 Just a little unicorn-y brainstorming today.
 
-This post is in some ways an extension of my [earlier post](https://keepingitclassless.net/2013/04/the-importance-of-qos-in-a-converged-infrastructure/) on the importance of QoS in a converged environment like FCoE or VoIP (or both). This will be a good example of a case where SDN very efficiently solves a policy problem that is present in an unfortunately large number of networks today.
+This post is in some ways an extension of my [earlier post](https://oswalt.dev/2013/04/the-importance-of-qos-in-a-converged-infrastructure/) on the importance of QoS in a converged environment like FCoE or VoIP (or both). This will be a good example of a case where SDN very efficiently solves a policy problem that is present in an unfortunately large number of networks today.
 
 For many organizations, large or small, the network is approached with a very siloed, "good enough" mentality - meaning that each portion of an organization's technology implementation is typically allocated to those that have that particular skillset. The folks that configure and maintain the Data Center network can often be a separate group (or at least a separate person) from the folks that support the campus network infrastructure, which is even further removed from the team that manages the server infrastructure, the storage infrastructure, etc. - all of which have a piece to play in what should be considered that organization's "global" QoS policy.
 

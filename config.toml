@@ -38,7 +38,7 @@ disqusShortname = ""
     rtl = false
 
     # Custom CSS
-    custom_css = []
+    custom_css = ["/css/custom.css"]
 
     images = ["avatar.jpg"]
     title = "Matt Oswalt"

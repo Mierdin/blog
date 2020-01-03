@@ -25,7 +25,7 @@ disqusShortname = ""
     info = "Developer, distributed systems enthusiast, perpetual tinkerer."
     
     avatarurl = "avatar.jpg"
-    footercontent = ""
+    footercontent = "Comments welcome <a href='https://twitter.com/mierdin'>via Twitter</a>."
 
     dateformat = "January 2, 2006"
 

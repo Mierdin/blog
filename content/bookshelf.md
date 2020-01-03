@@ -13,19 +13,23 @@ way. I do occassionally listen to/read fiction, etc but for this list I'm focusi
 development or IT process improvement. I also don't include references, like books on Python, Go, networking, systems
 etc, though my physical bookshelf is quite full of those.
 
-# Currently Listening
+# Currently Listening/Reading
 
-- [Seven Habits of Highly Effective People](https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/0743269519)
+Currently, [I'm working through some more technical books](https://oswalt.dev/2020/01/returning-to-first-principles/) and will be returning to this list shortly.
 
 # On Deck
 
 These aren't in any particular order - these are just books I've had recommended to me that I haven't
 gotten to yet.
 
+- [Dealers of Lightning: Xerox PARC and the Dawn of the Computer Age](https://www.amazon.com/Dealers-Lightning-Xerox-PARC-Computer/dp/0887309895)
+- [The Idea Factory: Bell Labs and the Great Age of American Innovation](https://www.amazon.com/Idea-Factory-Great-American-Innovation/dp/0143122797/)
+- [Datapoint: The Lost Story of the Texans Who Invented the Personal Computer Revolution](https://www.amazon.com/Datapoint-Invented-Personal-Computer-Revolution/dp/1936449366)
 - [Now, Discover Your Strengths](https://www.amazon.com/Discover-Your-Strengths-Marcus-Buckingham/dp/0743201140)
 - [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002)
 - [Antifragile: Things That Gain From Disorder](https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680)
 - [Radical Candor](https://www.amazon.com/Radical-Candor-Kim-Scott/dp/B01KTIEFEE)
+- [Seven Habits of Highly Effective People](https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/0743269519)
 
 # Finished
 

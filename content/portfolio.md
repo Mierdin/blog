@@ -46,6 +46,6 @@ Not recorded, but also:
 
 # Teaching
 
-[Introduction to Docker](https://www.ipspace.net/Introduction_to_Docker)
-[Introduction to Ansible](http://www.ipspace.net/Ansible-v1)
-[Network Programmability 101](http://www.ipspace.net/Network_Programmability_101)
+- [Introduction to Docker](https://www.ipspace.net/Introduction_to_Docker)
+- [Introduction to Ansible](http://www.ipspace.net/Ansible-v1)
+- [Network Programmability 101](http://www.ipspace.net/Network_Programmability_101)

@@ -20,9 +20,9 @@ disqusShortname = ""
 
 [params]
     author = "Matt Oswalt"
-    description = "Developer, distributed systems enthusiast, perpetual tinkerer."
+    description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
     keywords = "blog,developer,personal"
-    info = "Developer, distributed systems enthusiast, perpetual tinkerer."
+    info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
     
     avatarurl = "avatar.jpg"
     footercontent = "Comments welcome <a href='https://twitter.com/mierdin'>via Twitter</a>."

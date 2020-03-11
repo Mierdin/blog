@@ -4,7 +4,7 @@ title: 'Building Your Own Junos Router With cRPD and LinuxKit'
 author: Matt Oswalt
 comments: true
 categories: ['Blog']
-featured_image: https://oswalt.dev/assets/2020/03/rusty.jpg
+featured_image: https://oswalt.dev/assets/2020/03/tux-junos.png
 date: 2020-03-10T00:00:00-00:00
 tags:
   - 'crpd'
@@ -43,7 +43,7 @@ Because it's so stripped down, it is **not** designed/able to function as a full
 
 <div style="text-align:center;"><a href="/assets/2020/03/crpd-layers.png"><img src="/assets/2020/03/crpd-layers.png" width="700" ></a></div>
 
-For our purposes, this is a match made in heaven - pairing the powerful, mature routing stack and management daemon/CLI of cRPD with the automated, moduler, and lightweight Linux distribution built with LinuxKit, we get the best of both worlds.
+For our purposes, this is a match made in heaven - pairing the powerful, mature routing stack and management daemon/CLI of cRPD with the automated, modular, and lightweight Linux distribution built with LinuxKit, we get the best of both worlds.
 
 ## Building Our Custom cRPD Image
 
@@ -58,7 +58,7 @@ git clone https://github.com/Mierdin/crpd-linuxkit.git && cd crpd-linuxkit/
 
 Next, follow the [cRPD installation instructions](https://www.juniper.net/documentation/en_US/crpd/topics/task/multi-task/crr-linux-server-install.html) (and specifically the section titled `Download the cRPD Software `) to download a `.tgz` file containing the crpd image. This is a tarball that Docker will recognize and allow you to import into your local Docker image cache. Continue only once you see your image in the output of `docker image ls | grep crpd`.
 
-We're going to build a custom Docker image that uses this cRPD image as its base, so we can add things like a proper SSH configuration. This Dockerfile uses `crpd:latest` as it's base image reference, which doesn't yet exist. The following command will look up the ID of the image we just imported, and re-tag it as `crpd:latest` so we can use it in our custom build:
+We're going to build a custom Docker image that uses this cRPD image as its base, so we can add things like a proper SSH configuration. This Dockerfile uses `crpd:latest` as its base image reference, which doesn't yet exist. The following command will look up the ID of the image we just imported, and re-tag it as `crpd:latest` so we can use it in our custom build:
 
 ```
 docker tag $(docker image ls --filter=reference='crpd*' --format {{.ID}}) crpd:latest
@@ -142,7 +142,7 @@ docker kill crpd01
 
 Okay, so we have our cRPD container image, but again, it's not designed to function as a full-blown operating system. To actually pass traffic, we will use this container image as an "app" to be deployed in a brand-new Linux distribution that LinuxKit will create for us. The end-result is that we have a Linux-based VM that runs Junos software.
 
-At the time of this writing, LinuxKit's [latest release is v0.7](https://github.com/linuxkit/linuxkit/releases/tag/v0.7). Since I'm running on Linux, I'll grab the precompiled binary for me, and pop it into `/usr/local/bin`:
+At the time of this writing, LinuxKit's [latest release is v0.7](https://github.com/linuxkit/linuxkit/releases/tag/v0.7). Since I'm running on Linux, I'll grab the precompiled binary for my platform, and pop it into `/usr/local/bin`:
 
 ```
 curl -L -o linuxkit https://github.com/linuxkit/linuxkit/releases/download/v0.7/linuxkit-linux-amd64 \

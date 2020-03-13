@@ -299,4 +299,9 @@ In addition to using something like Free-Range Routing as your routing stack, yo
 - [RancherOS](https://rancher.com/docs/os/v1.x/en/overview/) - This seems to be much closer to the traditional Docker toolchain, and could very well work for this.
 - [CoreOS](https://docs.fedoraproject.org/en-US/fedora-coreos/) - Also might work, though not sure of the state of this post RH acquisition. May also work.
 
+After I published this blog post, a few folks gave me a few more to keep an eye on:
+
+- [Vorteil](https://vorteil.io/) (Don't ask me how to pronounce it)
+- [BottleRocketOS](https://github.com/bottlerocket-os/bottlerocket) - Seems to be made by the AWS folks, so I have to assume it has something to do with Firecracker, but not sure how. Seems cool, and looks like it's written in Rust, which is cooler.
+
 I hope this was helpful to someone that might be thinking of doing the same things I am. For a long time, I've viewed the UX of a Dockerfile as something I could only get if I was willing to part with the security and isolation of virtual machines. I love that there are a number of ways in 2020 that I can bypass that tradeoff entirely.

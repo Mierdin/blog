@@ -41,7 +41,7 @@ impl Vec3f {
 
 In some cases, I want to do more. For instance, a common task in graphics programming is to "[normalize](http://www.fundza.com/vectors/normalize/)" a vector - that is to actively change its properties so that its direction is unchanged, but its magnitude is reduced to 1. Such a vector is also referred to as a [unit vector](https://www.mathsisfun.com/algebra/vector-unit.html).
 
-This is done by multiplying the result of dividing `1.0` over the original magnitude of the vector. In my original attempt, I came up with this:
+This is done by multiplying each property by the result of dividing `1.0` over the original magnitude of the vector. In my original attempt, I came up with this:
 
 ```rust
 impl Vec3f {
@@ -166,13 +166,13 @@ fn normalize(&mut self) {
 }
 ```
 
-Prior to this change, since `self` was a copy of the value, all we were doing was declaring that we wanted to be able to mutate that copy. By adding the ampersand, we're allowing the `normalize` function to actually borrow ownership of the original value; together with the `mut` keyword, we're now able to make the changes successfully. Re-running this example shows a normalized vector:
+Prior to this change, since `self` was a copy of the value, all we were doing was declaring that we wanted to be able to mutate that copy. By adding the ampersand, we're allowing the `normalize` function to actually borrow ownership of the original value. Together with the `mut` keyword, we're now able to make the changes successfully. Re-running this example shows a normalized vector:
 
 ```rust
 Vec3f { x: 0.26726124, y: 0.5345225, z: 0.8017837 }
 ```
 
-> Note that rust only allows one mutable reference to a variable at a time, but fortunately that's all we need our function takes the reference, makes a quick change, and returns. The calling code blocks until this is done, at which point the scope the mutable reference was created in is gone.
+> Note that rust only allows one mutable reference to a variable at a time, but fortunately that's all we need. Our normalization function borrows the reference, makes a quick change, and gives it back. The calling code blocks until this is done, at which point the scope the mutable reference was created in is gone.
 
 # Someday I'll Learn
 

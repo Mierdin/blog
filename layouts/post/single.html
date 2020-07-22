@@ -34,7 +34,15 @@
       </div>
 
       <footer>
-        {{ partial "posts/disqus" . }}
+        <!-- {{ partial "posts/disqus" . }} -->
+        <script src="https://utteranc.es/client.js"
+                repo="Mierdin/blog"
+                issue-term="pathname"
+                label="comment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
       </footer>
     </article>
 

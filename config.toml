@@ -25,8 +25,8 @@ disqusShortname = ""
     info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
     
     avatarurl = "avatar.jpg"
-    footercontent = "Comments welcome <a href='https://twitter.com/mierdin'>via Twitter</a>."
-
+    #footercontent = "Comments welcome <a href='https://twitter.com/mierdin'>via Twitter</a>."
+    footercontent = ""
     dateformat = "January 2, 2006"
 
     hideCredits = true

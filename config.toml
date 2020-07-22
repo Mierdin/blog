@@ -18,6 +18,10 @@ disqusShortname = ""
 [permalinks]	
   post = "/:year/:month/:title/"
 
+# Because I use HTML all over my blog posts
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
     author = "Matt Oswalt"
     description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."

@@ -126,11 +126,6 @@ url = "https://www.youtube.com/user/keepingitclassless"
         weight = 6
         url = "/bookshelf/"
 
-        [[languages.en.menu.main]]
-        name = "Portfolio"
-        weight = 7
-        url = "/portfolio/"
-
 [outputs]
 home = ["HTML", "AMP", "RSS"]
 page = ["HTML"]

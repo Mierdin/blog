@@ -9,13 +9,9 @@ going on a long walk or drive, and Audible has made it so much easier for me to 
 "reading".
 
 Since I started doing this, I'd like to share the books that I've been able to get through this
-way. I do occassionally listen to/read fiction, etc but for this list I'm focusing on books for professional
+way. I do occasionally listen to/read fiction, etc but for this list I'm focusing on books for professional
 development or IT process improvement. I also don't include references, like books on Python, Go, networking, systems
 etc, though my physical bookshelf is quite full of those.
-
-# Currently Listening/Reading
-
-Currently, [I'm working through some more technical books](https://oswalt.dev/2020/01/returning-to-first-principles/) and will be returning to this list shortly.
 
 # On Deck
 
@@ -36,6 +32,10 @@ gotten to yet.
 For now, I'll just link to the books I've read below. In the future I'm hoping to provide a brief review,
 but in the meantime, I put a rating in front of each for my high-level take.
 
+- (5 of 5) [Atomic Habits](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299)
+- (4 of 5) [Failure is Not an Option](https://www.amazon.com/Failure-Not-Option-Mission-Control/dp/1439148813)
+- (4 of 5) [The Martian](https://www.amazon.com/Martian-Andy-Weir/dp/0553418025)
+- (5 of 5) [Carrying the Fire](https://www.amazon.com/Carrying-Fire-Astronauts-Michael-Collins/dp/0374531943)
 - (5 of 5) [Drive: The Surprising Truth About What Motivates Us](https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805)
 - (4 of 5) [Crossing the Chasm](https://www.amazon.com/Crossing-Chasm-Marketing-High-Tech-Mainstream/dp/0060517123)
 - (3 of 5) [The Goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951)

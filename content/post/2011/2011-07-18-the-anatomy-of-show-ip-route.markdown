@@ -3,7 +3,7 @@ layout: post
 title: The Anatomy of "Show IP Route"
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-07-18"
 wordpress_id: 595
 slug: the-anatomy-of-show-ip-route

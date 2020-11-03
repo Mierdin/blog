@@ -3,7 +3,7 @@ layout: post
 title: 'Rust: Constants, Variables, and Mutability - Oh My!'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2020/03/rusty.jpg
 date: 2020-03-05T00:00:00-00:00
 tags:

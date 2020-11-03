@@ -3,7 +3,7 @@ layout: post
 title: The Benefit of Infrastructure APIs
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2013-09-18"
 wordpress_id: 4639
 slug: the-benefit-of-infrastructure-apis

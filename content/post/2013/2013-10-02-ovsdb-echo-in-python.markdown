@@ -3,7 +3,7 @@ layout: post
 title: OVSDB Echo in Python
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-10-02"
 wordpress_id: 4712
 slug: ovsdb-echo-in-python

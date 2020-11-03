@@ -3,7 +3,7 @@ layout: post
 title: ESXi vSwitch Load Balancing Woes
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-05-21"
 wordpress_id: 3766
 slug: esxi-vswitch-load-balancing-woes

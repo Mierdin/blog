@@ -3,7 +3,7 @@ layout: post
 title: Open Networking User Group Conference 2014
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-05-04"
 wordpress_id: 5831
 slug: onug-2014

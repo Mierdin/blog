@@ -3,7 +3,7 @@ layout: post
 title: Three Tips for Technical Blogging
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2015-03-31"
 wordpress_id: 6061
 slug: three-tips-for-technical-blogging

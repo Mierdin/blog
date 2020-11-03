@@ -3,7 +3,7 @@ layout: post
 title: 'NFD6 Vendor Preview: Big Switch'
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-09-05"
 wordpress_id: 4588
 slug: nfd6-vendor-preview-big-switch

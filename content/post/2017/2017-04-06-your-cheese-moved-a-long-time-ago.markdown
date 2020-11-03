@@ -3,7 +3,7 @@ layout: post
 title: Your Cheese Moved a Long Time Ago
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2017-04-06"
 slug: cheese-moved-long-time-ago
 tags: ['networking']

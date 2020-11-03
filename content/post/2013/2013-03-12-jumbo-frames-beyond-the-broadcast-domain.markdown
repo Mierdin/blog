@@ -3,7 +3,7 @@ layout: post
 title: Jumbo Frames Beyond the Broadcast Domain
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-03-12"
 wordpress_id: 3205
 slug: jumbo-frames-beyond-the-broadcast-domain

@@ -5,7 +5,7 @@ series:
 - SDN Protocols
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-07-20"
 wordpress_id: 5890
 slug: sdn-protocols-new-series

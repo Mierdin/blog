@@ -3,7 +3,7 @@ layout: post
 title: New Feature - Keeping It Classless LABS
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2011-08-30"
 wordpress_id: 931
 slug: new-feature-keeping-it-classless-labs

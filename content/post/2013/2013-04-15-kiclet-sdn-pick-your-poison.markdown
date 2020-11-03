@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: SDN - Pick Your Poison'
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-04-15"
 wordpress_id: 3460
 slug: kiclet-sdn-pick-your-poison

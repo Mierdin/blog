@@ -3,7 +3,7 @@ layout: post
 title: '[IPv6] Subnetting - Wait, we still need to do that?'
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-01-11"
 wordpress_id: 290
 slug: ipv6-subnetting-wait-we-still-need-to-do-that

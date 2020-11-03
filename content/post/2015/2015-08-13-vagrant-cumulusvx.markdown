@@ -3,7 +3,7 @@ layout: post
 title: Using Vagrant with CumulusVX
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-08-13"
 slug: cumulus-vx-vagrant
 tags: ['vagrant']

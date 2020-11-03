@@ -3,7 +3,7 @@ layout: post
 title: StackStorm Architecture Part I - StackStorm Core Services
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2017-08-28"
 slug: stackstorm-architecture-core-services
 tags: ['automation']

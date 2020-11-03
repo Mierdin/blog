@@ -3,7 +3,7 @@ layout: post
 title: Management VLAN Best Practices in ESXi and Cisco UCS
 author: Matt Oswalt
 comments: true
-categories: ['Virtualization']
+categories: ['Infrastructure']
 date: "2012-05-01"
 wordpress_id: 2186
 slug: management-vlan-best-practices-in-esxi-and-cisco-ucs

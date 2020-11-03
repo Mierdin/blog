@@ -3,7 +3,7 @@ layout: post
 title: The Failing Crusade Against NAT
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2012-11-20"
 wordpress_id: 2624
 slug: the-failing-crusade-against-nat

@@ -3,7 +3,7 @@ layout: post
 title: vSphere 5.1 Auto Deploy on Cisco UCS C220 M3 Server
 author: Matt Oswalt
 comments: true
-categories: ['Virtualization']
+categories: ['Infrastructure']
 date: "2013-01-07"
 wordpress_id: 2755
 slug: vsphere-5-1-auto-deploy-on-cisco-ucs-c220-m3-server

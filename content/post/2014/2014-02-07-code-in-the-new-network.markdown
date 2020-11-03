@@ -3,7 +3,7 @@ layout: post
 title: The Role of Code In "The New Network"
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-02-07"
 wordpress_id: 5456
 slug: code-in-the-new-network

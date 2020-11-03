@@ -3,7 +3,7 @@ layout: post
 title: 'Review: Ethernet Fabric Whitepaper by Brocade'
 author: Matt Oswalt
 comments: true
-categories: ['Reviews']
+categories: ['Infrastructure']
 date: "2011-09-20"
 wordpress_id: 1447
 slug: review-ethernet-fabric-whitepaper-brocade

@@ -3,7 +3,7 @@ layout: post
 title: Service Profiles and Service Profile Templates in Cisco UCS PowerTool
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-06-10"
 wordpress_id: 3972
 slug: service-profiles-and-service-profile-templates-in-cisco-ucs-powertool

@@ -1,0 +1,126 @@
+baseurl = "https://oswalt.dev"
+title = "Matt Oswalt"
+
+theme = "hugo-coder"
+
+languagecode = "en"
+googleAnalytics = "UA-23075631-1"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = ""
+
+[permalinks]	
+  post = "/:year/:month/:title/"
+
+# Because I use HTML all over my blog posts
+[markup.goldmark.renderer]
+unsafe= true
+
+[params]
+    author = "Matt Oswalt"
+    description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+    keywords = "blog,developer,personal"
+    info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+
+    avatarurl = "avatar.jpg"
+    #footercontent = "Comments welcome <a href='https://twitter.com/mierdin'>via Twitter</a>."
+    footercontent = ""
+    dateformat = "January 2, 2006"
+
+    hideCredits = true
+    hideCopyright = false
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    # commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+    rtl = false
+
+    # Custom CSS
+    custom_css = ["/css/custom.css"]
+
+    images = ["avatar.jpg"]
+    title = "Matt Oswalt"
+
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/mierdin/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/mierdin/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/oswaltmatt/"
+[[params.social]]
+    name = "YouTube"
+    icon = "fab fa-youtube"
+    weight = 4
+    url = "https://www.youtube.com/user/keepingitclassless"
+[[params.social]]
+    name = "Facebook"
+    icon = "fab fa-facebook"
+    weight = 5
+    url = "https://www.facebook.com/keepingitclassless/"
+[[params.social]]
+    name = "Medium"
+    icon = "fa fa-rss"
+    weight = 6
+    url = "/feed/"
+
+[languages]
+    [languages.en]
+        languagename = "English"
+        title = "Matt Oswalt"
+
+        [languages.en.params]
+        author = "Matt Oswalt"
+        keywords = "blog,developer,personal"
+
+        [languages.en.menu]
+
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1
+        url = "/about/"
+
+        [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 2
+        url = "/post/"
+
+        [[languages.en.menu.main]]
+        name = "Bookshelf"
+        weight = 3
+        url = "/bookshelf/"
+
+        [[languages.en.menu.main]]
+        name = "Portfolio"
+        weight = 4
+        url = "/portfolio/"
+
+[outputs]
+home = ["HTML", "AMP", "RSS"]
+page = ["HTML"]
+
+[outputFormats]
+[outputFormats.HTML]
+mediaType = "text/html"
+
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[taxonomies]
+  series = "series"

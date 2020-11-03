@@ -6,7 +6,7 @@ comments: true
 date: "2011-11-03"
 wordpress_id: 1721
 slug: hopping-on-the-fcotr-bandwagon
-categories: ['Humor']
+categories: ['Infrastructure']
 ---
 
 

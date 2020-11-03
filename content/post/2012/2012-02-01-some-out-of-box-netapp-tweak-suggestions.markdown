@@ -3,7 +3,7 @@ layout: post
 title: Some Out-of-Box NetApp Tweak Suggestions
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2012-02-01"
 wordpress_id: 1922
 slug: some-out-of-box-netapp-tweak-suggestions

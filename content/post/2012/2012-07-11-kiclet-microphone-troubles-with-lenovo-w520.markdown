@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: Microphone troubles with Lenovo W520'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2012-07-11"
 wordpress_id: 2228
 slug: kiclet-microphone-troubles-with-lenovo-w520

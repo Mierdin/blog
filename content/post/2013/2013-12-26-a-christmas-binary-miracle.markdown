@@ -3,7 +3,7 @@ layout: post
 title: A Christmas Binary Miracle
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-12-26"
 wordpress_id: 5237
 slug: a-christmas-binary-miracle

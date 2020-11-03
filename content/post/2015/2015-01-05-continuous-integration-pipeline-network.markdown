@@ -5,7 +5,7 @@ series:
 - DevOps for Networking
 author: Matt Oswalt
 comments: true
-categories: ['DevOps']
+categories: ['Infrastructure']
 date: "2015-01-05"
 wordpress_id: 5983
 slug: continuous-integration-pipeline-network

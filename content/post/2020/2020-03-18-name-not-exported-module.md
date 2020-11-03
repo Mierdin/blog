@@ -3,7 +3,7 @@ layout: post
 title: 'Solving "NAME is not exported by MODULE" When Using Local NPM Dependencies'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2020/03/npm-logo.png
 date: 2020-03-18T00:00:00-00:00
 tags:

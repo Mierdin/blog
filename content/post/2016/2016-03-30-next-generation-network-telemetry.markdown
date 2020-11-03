@@ -3,7 +3,7 @@ layout: post
 title: Next-Generation Network Telemetry
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2016-03-30"
 slug: next-generation-network-telemetry
 tags: ['monitoring']

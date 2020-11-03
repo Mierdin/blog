@@ -3,7 +3,7 @@ layout: post
 title: My CCIE Journey Begins
 author: Matt Oswalt
 comments: true
-categories: ['My', 'CCIE', 'Journey']
+categories: ['Infrastructure']
 date: "2012-09-05"
 wordpress_id: 2410
 slug: my-ccie-journey-begins

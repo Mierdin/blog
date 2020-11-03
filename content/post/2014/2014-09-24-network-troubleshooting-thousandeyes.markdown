@@ -3,7 +3,7 @@ layout: post
 title: Network Troubleshooting with ThousandEyes
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2014-09-24"
 wordpress_id: 5940
 slug: network-troubleshooting-thousandeyes

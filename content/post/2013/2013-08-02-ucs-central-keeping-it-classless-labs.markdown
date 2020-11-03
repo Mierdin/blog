@@ -3,7 +3,7 @@ layout: post
 title: UCS Central - Keeping It Classless Labs
 author: Matt Oswalt
 comments: true
-categories: ['KIC', 'LABS']
+categories: ['Infrastructure']
 date: "2013-08-02"
 wordpress_id: 4350
 slug: ucs-central-keeping-it-classless-labs

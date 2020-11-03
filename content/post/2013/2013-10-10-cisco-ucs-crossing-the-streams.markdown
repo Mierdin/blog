@@ -3,7 +3,7 @@ layout: post
 title: 'Cisco UCS: Crossing the Streams'
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-10-10"
 wordpress_id: 4755
 slug: cisco-ucs-crossing-the-streams

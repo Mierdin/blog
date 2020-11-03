@@ -3,7 +3,7 @@ layout: post
 title: Pinging a Firewall - Is It Up Or Down?
 author: Matt Oswalt
 comments: true
-categories: ['Security']
+categories: ['Infrastructure']
 date: "2012-12-18"
 wordpress_id: 2654
 slug: pinging-a-firewall-is-it-up-or-down

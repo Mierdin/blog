@@ -3,7 +3,7 @@ layout: post
 title: OpenDaylight at Networking Field Day 7
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-03-27"
 wordpress_id: 5783
 slug: opendaylight-networking-field-day-7

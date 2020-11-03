@@ -3,7 +3,7 @@ layout: post
 title: Thoughts on vXLAN and Cisco 1000v
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2012-08-29"
 wordpress_id: 2386
 slug: thoughts-on-vxlan-and-cisco-1000v

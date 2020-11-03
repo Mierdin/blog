@@ -3,7 +3,7 @@ layout: post
 title: The Unspoken Benefits of Open Networking
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2016-01-27"
 slug: unspoken-benefits-open-networking
 tags: ['networking']

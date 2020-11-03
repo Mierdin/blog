@@ -3,7 +3,7 @@ layout: post
 title: Intentional Infrastructure
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2018-02-04"
 slug: intentional-infrastructure
 tags: ['network', 'field', 'day']

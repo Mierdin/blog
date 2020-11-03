@@ -3,7 +3,7 @@ layout: post
 title: Android & Eclipse Troubles
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2010-06-30"
 wordpress_id: 184
 slug: android-eclipse-troubles

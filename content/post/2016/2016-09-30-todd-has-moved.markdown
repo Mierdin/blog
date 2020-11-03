@@ -3,7 +3,7 @@ layout: post
 title: ToDD Has Moved!
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2016-09-30"
 slug: todd-has-moved
 tags: ['go']

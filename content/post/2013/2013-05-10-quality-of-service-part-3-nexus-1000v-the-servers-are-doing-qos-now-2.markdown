@@ -5,7 +5,7 @@ series:
 - Cisco QoS
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-05-10"
 wordpress_id: 3740
 slug: quality-of-service-part-3-nexus-1000v-the-servers-are-doing-qos-now-2

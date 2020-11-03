@@ -3,7 +3,7 @@ layout: post
 title: The Formation of "Brocatta" - Brocade Aquires Vyatta
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2012-11-05"
 wordpress_id: 2531
 slug: the-formation-of-brocatta-brocade-acquires-vyatta

@@ -3,7 +3,7 @@ layout: post
 title: What's New in vSphere 5.1 Networking
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2012-08-28"
 wordpress_id: 2369
 slug: whats-new-in-vsphere-51-networking

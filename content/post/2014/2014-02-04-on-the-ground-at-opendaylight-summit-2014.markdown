@@ -3,7 +3,7 @@ layout: post
 title: On The Ground at OpenDaylight Summit 2014
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-02-04"
 wordpress_id: 5469
 slug: on-the-ground-at-opendaylight-summit-2014

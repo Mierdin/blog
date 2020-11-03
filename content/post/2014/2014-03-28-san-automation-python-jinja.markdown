@@ -3,7 +3,7 @@ layout: post
 title: SAN Automation with Python and Jinja
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2014-03-28"
 wordpress_id: 5799
 slug: san-automation-python-jinja

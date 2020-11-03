@@ -3,7 +3,7 @@ layout: post
 title: Three Traits of an Effective Network Engineer
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2011-08-24"
 wordpress_id: 831
 slug: three-traits-of-an-effective-network-engineer

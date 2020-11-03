@@ -3,7 +3,7 @@ layout: post
 title: ESXi 5 on Cisco UCS - No Local Disks Showing Up
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-09-06"
 wordpress_id: 2423
 slug: esxi-5-on-cisco-ucs-no-local-disks-showing-up

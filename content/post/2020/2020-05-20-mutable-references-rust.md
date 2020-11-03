@@ -3,7 +3,7 @@ layout: post
 title: "Mutable References To 'self' In Rust's Object Methods"
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2020/05/rust-borrowing.png
 date: 2020-05-20T00:00:00-00:00
 tags:

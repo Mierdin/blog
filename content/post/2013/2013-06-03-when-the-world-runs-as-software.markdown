@@ -3,7 +3,7 @@ layout: post
 title: When The World Runs As Software
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2013-06-03"
 wordpress_id: 3899
 slug: when-the-world-runs-as-software

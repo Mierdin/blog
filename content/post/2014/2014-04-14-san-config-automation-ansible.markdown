@@ -3,7 +3,7 @@ layout: post
 title: Introduction to Ansible and SAN Configuration Automation
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-04-14"
 wordpress_id: 5810
 slug: san-config-automation-ansible

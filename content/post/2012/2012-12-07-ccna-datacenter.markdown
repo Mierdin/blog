@@ -3,7 +3,7 @@ layout: post
 title: CCNA Datacenter
 author: Matt Oswalt
 comments: true
-categories: ['Datacenter']
+categories: ['Infrastructure']
 date: "2012-12-07"
 wordpress_id: 2650
 slug: ccna-datacenter

@@ -3,7 +3,7 @@ layout: post
 title: Link-State vs. Distance Vector - The Lowdown
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-10-25"
 wordpress_id: 1655
 slug: link-state-vs-distance-vector-the-lowdown

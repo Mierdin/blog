@@ -3,7 +3,7 @@ layout: post
 title: Mass Customization
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-11-05"
 wordpress_id: 5975
 slug: mass-customization

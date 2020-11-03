@@ -3,7 +3,7 @@ layout: post
 title: 2014 Recap and 2015 Goals
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-12-31"
 wordpress_id: 6020
 slug: 2014-recap-2015-goals

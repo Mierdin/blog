@@ -3,7 +3,7 @@ layout: post
 title: SDN and Virtualization Utilizing IP over Avian Carrier Networks
 author: Matt Oswalt
 comments: true
-categories: ['Humor']
+categories: ['Infrastructure']
 date: "2013-04-01"
 wordpress_id: 3351
 slug: sdn-and-virtualization-utilizing-ip-over-avian-carrier-networks

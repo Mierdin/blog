@@ -3,7 +3,7 @@ layout: post
 title: IPv6 Host Networking and Insomnia
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2013-03-20"
 wordpress_id: 3258
 slug: ipv6-host-networking-and-insomnia

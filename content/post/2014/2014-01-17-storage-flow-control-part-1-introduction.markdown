@@ -5,7 +5,7 @@ series:
 - Storage Flow Control
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2014-01-17"
 wordpress_id: 5312
 slug: storage-flow-control-part-1-introduction

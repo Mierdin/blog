@@ -3,7 +3,7 @@ layout: post
 title: TCP Handshakes, Routing, Hairpinning - Oh My!
 author: Matt Oswalt
 comments: true
-categories: ['Security']
+categories: ['Infrastructure']
 date: "2013-01-28"
 wordpress_id: 2868
 slug: tcp-handshakes-routing-hairpinning-oh-my

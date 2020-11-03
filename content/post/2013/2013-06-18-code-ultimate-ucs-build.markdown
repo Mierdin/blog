@@ -3,7 +3,7 @@ layout: post
 title: '[Code] UltimateUCSBuild'
 author: moswalt_kic
 comments: true
-categories: ['Compute']
+categories: ['Programming']
 date: "2013-06-18"
 wordpress_id: 4065
 slug: code-ultimate-ucs-build

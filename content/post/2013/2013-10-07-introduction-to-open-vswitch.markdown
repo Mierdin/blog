@@ -3,7 +3,7 @@ layout: post
 title: Introduction to Open vSwitch
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-10-07"
 wordpress_id: 4727
 slug: introduction-to-open-vswitch

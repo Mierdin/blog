@@ -3,7 +3,7 @@ layout: post
 title: The "D" in SDN
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-02-12"
 wordpress_id: 2934
 slug: the-d-in-sdn

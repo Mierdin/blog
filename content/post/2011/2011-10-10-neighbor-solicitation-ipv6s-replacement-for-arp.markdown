@@ -3,7 +3,7 @@ layout: post
 title: Neighbor Solicitation - IPv6's Replacement for ARP
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-10-10"
 wordpress_id: 1585
 slug: neighbor-solicitation-ipv6s-replacement-for-arp

@@ -3,7 +3,7 @@ layout: post
 title: The Importance of QoS in a Converged Infrastructure
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-04-10"
 wordpress_id: 3381
 slug: the-importance-of-qos-in-a-converged-infrastructure

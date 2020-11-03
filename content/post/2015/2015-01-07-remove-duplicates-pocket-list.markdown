@@ -3,7 +3,7 @@ layout: post
 title: Remove Duplicates from Pocket List
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2015-01-07"
 wordpress_id: 6022
 slug: remove-duplicates-pocket-list

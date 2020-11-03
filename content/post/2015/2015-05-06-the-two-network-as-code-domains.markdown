@@ -5,7 +5,7 @@ series:
 - DevOps for Networking
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2015-05-06"
 wordpress_id: 6078
 slug: the-two-network-as-code-domains

@@ -3,7 +3,7 @@ layout: post
 title: Automating SAN Zoning with Schprokits
 author: Matt Oswalt
 comments: true
-categories: ['Datacenter']
+categories: ['Infrastructure']
 date: "2014-12-04"
 wordpress_id: 5993
 slug: automating-san-zoning-schprokits

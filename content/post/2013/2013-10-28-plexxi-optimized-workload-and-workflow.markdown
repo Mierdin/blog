@@ -3,7 +3,7 @@ layout: post
 title: Plexxi - Optimized Workload and Workflow
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-10-28"
 wordpress_id: 4824
 slug: plexxi-optimized-workload-and-workflow

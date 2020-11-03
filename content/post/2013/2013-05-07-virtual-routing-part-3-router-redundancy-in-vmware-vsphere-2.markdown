@@ -5,7 +5,7 @@ series:
 - Virtual Routing
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-05-07"
 wordpress_id: 3536
 slug: virtual-routing-part-3-router-redundancy-in-vmware-vsphere-2

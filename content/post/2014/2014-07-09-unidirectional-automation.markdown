@@ -3,7 +3,7 @@ layout: post
 title: What is Unidirectional Automation?
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-07-09"
 wordpress_id: 5863
 slug: unidirectional-automation

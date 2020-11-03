@@ -3,7 +3,7 @@ layout: post
 title: Networking and the Consumption Model
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-04-17"
 wordpress_id: 5815
 slug: networking-and-the-consumption-model

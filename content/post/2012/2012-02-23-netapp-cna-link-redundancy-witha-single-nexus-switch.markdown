@@ -3,7 +3,7 @@ layout: post
 title: Netapp CNA Link Redundancy with a Single Nexus Switch
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2012-02-23"
 wordpress_id: 1984
 slug: netapp-cna-link-redundancy-witha-single-nexus-switch

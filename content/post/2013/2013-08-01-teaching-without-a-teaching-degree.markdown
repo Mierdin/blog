@@ -3,7 +3,7 @@ layout: post
 title: Teaching Without a Teaching Degree
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2013-08-01"
 wordpress_id: 4311
 slug: teaching-without-a-teaching-degree

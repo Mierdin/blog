@@ -3,7 +3,7 @@ layout: post
 title: Network Automation or SDN?
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-06-24"
 wordpress_id: 5865
 slug: network-automation-or-sdn

@@ -3,7 +3,7 @@ layout: post
 title: Nexgen Storage (Part 1) - Solution Overview
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2013-01-11"
 wordpress_id: 2785
 slug: nexgen-storage-part-1-solution-overview

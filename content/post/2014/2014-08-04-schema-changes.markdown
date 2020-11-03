@@ -3,7 +3,7 @@ layout: post
 title: Dealing with Schema Changes
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-08-04"
 wordpress_id: 5920
 slug: schema-changes

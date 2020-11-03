@@ -3,7 +3,7 @@ layout: post
 title: Rapid Spanning Tree Synchronization - Keeping It Classless Labs
 author: Matt Oswalt
 comments: true
-categories: ['KIC', 'LABS']
+categories: ['Infrastructure']
 date: "2013-07-01"
 wordpress_id: 4168
 slug: rapid-spanning-tree-synchronization-keeping-it-classless-labs

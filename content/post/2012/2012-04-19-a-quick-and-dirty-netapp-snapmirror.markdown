@@ -3,7 +3,7 @@ layout: post
 title: A Quick and Dirty Netapp SnapMirror
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2012-04-19"
 wordpress_id: 2116
 slug: a-quick-and-dirty-netapp-snapmirror

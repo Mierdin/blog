@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: IOS "network" Command Cheating'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-07-12"
 wordpress_id: 4196
 slug: kiclet-ios-network-command-cheating

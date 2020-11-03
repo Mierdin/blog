@@ -3,7 +3,7 @@ layout: post
 title: FusionIO Acquires Nexgen
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2013-04-25"
 wordpress_id: 3628
 slug: fusionio-acquires-nexgen

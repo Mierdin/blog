@@ -3,7 +3,7 @@ layout: post
 title: IPv6 Next-Hop Best Practices
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2013-03-21"
 wordpress_id: 3299
 slug: ipv6-next-hop-best-practices

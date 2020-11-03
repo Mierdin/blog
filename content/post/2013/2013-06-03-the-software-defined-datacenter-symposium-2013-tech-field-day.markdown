@@ -3,7 +3,7 @@ layout: post
 title: The Software Defined Datacenter Symposium 2013 - Tech Field Day
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-06-03"
 wordpress_id: 3912
 slug: the-software-defined-datacenter-symposium-2013-tech-field-day

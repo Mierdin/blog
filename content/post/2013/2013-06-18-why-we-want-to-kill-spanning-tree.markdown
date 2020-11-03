@@ -3,7 +3,7 @@ layout: post
 title: Why We Want to Kill Spanning Tree
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-06-18"
 wordpress_id: 3970
 slug: why-we-want-to-kill-spanning-tree

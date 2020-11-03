@@ -3,7 +3,7 @@ layout: post
 title: The Dangers of Fanboyism
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2013-07-31"
 wordpress_id: 4304
 slug: the-dangers-of-fanboyism

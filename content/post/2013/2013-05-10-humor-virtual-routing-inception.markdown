@@ -3,7 +3,7 @@ layout: post
 title: '[Humor] Virtual Routing Inception'
 author: Matt Oswalt
 comments: true
-categories: ['Humor']
+categories: ['Infrastructure']
 date: "2013-05-10"
 wordpress_id: 3748
 slug: humor-virtual-routing-inception

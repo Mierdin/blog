@@ -3,7 +3,7 @@ layout: post
 title: The New Face of the Access Layer
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-11-20"
 wordpress_id: 5028
 slug: the-new-face-of-the-access-layer

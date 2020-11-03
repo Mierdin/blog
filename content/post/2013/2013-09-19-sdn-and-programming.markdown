@@ -3,7 +3,7 @@ layout: post
 title: SDN and Programming (a.k.a. What The Heck is a REST API??)
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2013-09-19"
 wordpress_id: 4626
 slug: sdn-and-programming

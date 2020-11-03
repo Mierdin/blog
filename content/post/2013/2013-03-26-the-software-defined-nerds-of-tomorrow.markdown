@@ -3,7 +3,7 @@ layout: post
 title: The Software-Defined Nerds of Tomorrow
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-03-26"
 wordpress_id: 3340
 slug: the-software-defined-nerds-of-tomorrow

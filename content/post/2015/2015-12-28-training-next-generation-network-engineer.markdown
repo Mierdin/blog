@@ -3,7 +3,7 @@ layout: post
 title: Training the Next-Generation Network Engineer
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-12-28"
 slug: training-next-generation-network-engineer
 tags: ['networking']

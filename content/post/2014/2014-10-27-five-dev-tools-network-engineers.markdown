@@ -5,7 +5,7 @@ series:
 - DevOps for Networking
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-10-27"
 wordpress_id: 5964
 slug: five-dev-tools-network-engineers

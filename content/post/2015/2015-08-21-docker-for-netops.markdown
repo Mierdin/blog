@@ -3,7 +3,7 @@ layout: post
 title: Docker for NetOps
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-08-21"
 slug: docker-for-netops
 tags: ['nuage']

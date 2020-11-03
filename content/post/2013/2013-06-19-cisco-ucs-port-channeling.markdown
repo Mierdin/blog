@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS Port-Channeling
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-06-19"
 wordpress_id: 4015
 slug: cisco-ucs-port-channeling

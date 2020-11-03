@@ -3,7 +3,7 @@ layout: post
 title: Mass ESXi Deployment using Auto Deploy, Boot from SAN, and PowerShell
 author: Matt Oswalt
 comments: true
-categories: ['Virtualization']
+categories: ['Infrastructure']
 date: "2013-11-19"
 wordpress_id: 5062
 slug: mass-esxi-deployment-using-auto-deploy-boot-from-san-and-powershell

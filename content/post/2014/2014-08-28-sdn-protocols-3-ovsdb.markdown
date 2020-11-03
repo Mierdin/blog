@@ -5,7 +5,7 @@ series:
 - SDN Protocols
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-08-28"
 wordpress_id: 5882
 slug: sdn-protocols-3-ovsdb

@@ -3,7 +3,7 @@ layout: post
 title: Vital Gadgets for a Datacenter Network Engineer
 author: Matt Oswalt
 comments: true
-categories: ['Datacenter']
+categories: ['Infrastructure']
 date: "2012-04-11"
 wordpress_id: 2067
 slug: vital-gadgets-for-a-datacenter-network-engineer

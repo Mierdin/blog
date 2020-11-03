@@ -3,7 +3,7 @@ layout: post
 title: NX-OS Virtual PortChannels and Best Practices
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-02-08"
 wordpress_id: 1863
 slug: nexus-virtual-port-channels-best-practices

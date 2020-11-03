@@ -3,7 +3,7 @@ layout: post
 title: Interop Vegas 2016
 author: Matt Oswalt
 comments: true
-categories: ['Network', 'Automation']
+categories: ['Infrastructure']
 date: "2016-04-05"
 slug: interop-vegas-2016
 tags: ['automation']

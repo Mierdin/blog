@@ -3,7 +3,7 @@ layout: post
 title: A Primer on IP/IPv6 Mobility
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-06-27"
 wordpress_id: 470
 slug: a-primer-on-ip-ipv6-mobility

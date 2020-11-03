@@ -3,7 +3,7 @@ layout: post
 title: 'Plexxi DSE: An Informal Analogy'
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-09-11"
 wordpress_id: 4623
 slug: plexxi-dse-an-informal-analogy

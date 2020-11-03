@@ -3,7 +3,7 @@ layout: post
 title: 'Redundancy Protocols vs Stacking: Pros and Cons'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-12-12"
 wordpress_id: 1826
 slug: redundancy-protocols-vs-stacking-pros-and-cons

@@ -3,7 +3,7 @@ layout: post
 title: OpenDaylight Summit 2014
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-01-22"
 wordpress_id: 5405
 slug: opendaylight-summit-2014

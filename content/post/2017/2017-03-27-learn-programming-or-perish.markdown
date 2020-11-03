@@ -3,7 +3,7 @@ layout: post
 title: Learn Programming or Perish(?)
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2017-03-27"
 slug: learn-programming-or-perish
 tags: ['networking']

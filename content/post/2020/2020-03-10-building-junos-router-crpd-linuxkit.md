@@ -3,7 +3,7 @@ layout: post
 title: 'Building Your Own Junos Router With cRPD and LinuxKit'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2020/03/tux-junos.png
 date: 2020-03-10T00:00:00-00:00
 tags:

@@ -3,7 +3,7 @@ layout: post
 title: Grumpy Cat Hates IPv6
 author: Matt Oswalt
 comments: true
-categories: ['Humor']
+categories: ['Infrastructure']
 date: "2012-12-03"
 wordpress_id: 2645
 slug: grumpy-cat-hates-ipv6

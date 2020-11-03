@@ -3,7 +3,7 @@ layout: post
 title: Call for IPv6 Papers
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2013-04-01"
 wordpress_id: 3357
 slug: call-for-ipv6-papers

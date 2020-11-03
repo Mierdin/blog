@@ -3,7 +3,7 @@ layout: post
 title: Libvirt - Intro and Basic Configuration
 author: Matt Oswalt
 comments: true
-categories: ['Virtualization']
+categories: ['Infrastructure']
 date: "2014-01-07"
 wordpress_id: 5274
 slug: libvirt-intro-basic-configuration

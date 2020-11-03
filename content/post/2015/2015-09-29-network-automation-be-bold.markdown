@@ -3,7 +3,7 @@ layout: post
 title: 'Network Automation: Be Bold!'
 author: Matt Oswalt
 comments: true
-categories: ['Network', 'Automation']
+categories: ['Infrastructure']
 date: "2015-09-29"
 slug: network-automation-be-bold
 tags: ['networking']

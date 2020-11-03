@@ -3,7 +3,7 @@ layout: post
 title: Outgoing Interface Determination
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-05-27"
 wordpress_id: 3859
 slug: outgoing-interface-determination

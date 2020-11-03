@@ -3,7 +3,7 @@ layout: post
 title: Raw IP Traffic Export (RITE) on Cisco IOS
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2010-10-13"
 wordpress_id: 266
 slug: raw-ip-traffic-export-rite-on-cisco-ios

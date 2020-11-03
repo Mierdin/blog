@@ -3,7 +3,7 @@ layout: post
 title: Storage Traffic Magic with OpenFlow
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2014-11-07"
 wordpress_id: 5980
 slug: openflow-based-storage-traffic-steering-coho-data

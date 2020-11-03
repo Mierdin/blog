@@ -3,7 +3,7 @@ layout: post
 title: IPv6 Prefix Lengths
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-09-14"
 wordpress_id: 1228
 slug: ipv6-prefix-lengths

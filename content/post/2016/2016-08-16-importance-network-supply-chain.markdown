@@ -3,7 +3,7 @@ layout: post
 title: The Importance of the Network Software Supply Chain
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2016-08-16"
 slug: importance-network-supply-chain
 tags: ['nfd12']

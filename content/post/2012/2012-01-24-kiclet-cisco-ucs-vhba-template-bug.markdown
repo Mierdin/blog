@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: Cisco UCS vHBA Template Bug'
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-01-24"
 wordpress_id: 1895
 slug: kiclet-cisco-ucs-vhba-template-bug

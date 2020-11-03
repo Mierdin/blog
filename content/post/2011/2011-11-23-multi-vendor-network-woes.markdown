@@ -3,7 +3,7 @@ layout: post
 title: Multi-Vendor Network Woes
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-11-23"
 wordpress_id: 1730
 slug: multi-vendor-network-woes

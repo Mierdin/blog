@@ -3,7 +3,7 @@ layout: post
 title: IPv6 Hacking - "thc-ipv6" [Part 2]
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-09-12"
 wordpress_id: 1150
 slug: ipv6-hacking-thc-ipv6-part-2

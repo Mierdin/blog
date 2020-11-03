@@ -3,7 +3,7 @@ layout: post
 title: A /64 On Every Link? Are You Crazy?
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2013-02-25"
 wordpress_id: 3032
 slug: a-64-on-every-link-are-you-crazy

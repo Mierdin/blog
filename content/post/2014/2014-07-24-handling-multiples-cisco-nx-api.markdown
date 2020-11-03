@@ -3,7 +3,7 @@ layout: post
 title: Handling "Multiples" in Cisco NX-API with Python
 author: Matt Oswalt
 comments: true
-categories: ['Code']
+categories: ['Infrastructure']
 date: "2014-07-24"
 wordpress_id: 5903
 slug: handling-multiples-cisco-nx-api

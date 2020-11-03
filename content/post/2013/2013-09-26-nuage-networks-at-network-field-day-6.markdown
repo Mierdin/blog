@@ -3,7 +3,7 @@ layout: post
 title: Nuage Networks at Network Field Day 6
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-09-26"
 wordpress_id: 4661
 slug: nuage-networks-at-network-field-day-6

@@ -3,7 +3,7 @@ layout: post
 title: 'New Post Type: KIClets'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2012-01-19"
 wordpress_id: 1877
 slug: new-post-type-kiclets

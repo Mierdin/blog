@@ -3,7 +3,7 @@ layout: post
 title: UCS Central 1.1 Lab
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-08-02"
 wordpress_id: 4345
 slug: ucs-central-1-1-lab

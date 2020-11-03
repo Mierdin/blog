@@ -3,7 +3,7 @@ layout: post
 title: Using GNS3 for Switching Labs
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-02-13"
 wordpress_id: 1810
 slug: using-gns3-for-switching-labs

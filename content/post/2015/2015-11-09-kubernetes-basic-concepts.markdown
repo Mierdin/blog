@@ -3,7 +3,7 @@ layout: post
 title: 'Kubernetes: Basic Concepts'
 author: Matt Oswalt
 comments: true
-categories: ['Containers']
+categories: ['Infrastructure']
 date: "2015-11-09"
 slug: kubernetes-basic-concepts
 tags: ['kubernetes']

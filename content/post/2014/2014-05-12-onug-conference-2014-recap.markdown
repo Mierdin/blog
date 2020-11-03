@@ -6,7 +6,7 @@ comments: true
 date: "2014-05-12"
 wordpress_id: 5833
 slug: onug-conference-2014-recap
-categories: ['Blog']
+categories: ['Infrastructure']
 ---
 
 

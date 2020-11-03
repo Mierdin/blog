@@ -3,7 +3,7 @@ layout: post
 title: The Global Internet Speedup (NOT)
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2011-09-02"
 wordpress_id: 955
 slug: the-global-internet-speedup-not

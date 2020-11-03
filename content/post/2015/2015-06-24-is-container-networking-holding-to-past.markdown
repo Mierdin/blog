@@ -3,7 +3,7 @@ layout: post
 title: Is Container Networking Holding On To The Past?
 author: Matt Oswalt
 comments: true
-categories: ['Software']
+categories: ['Infrastructure']
 date: "2015-06-24"
 slug: container-networking-holding-to-past
 tags: ['containers']

@@ -3,7 +3,7 @@ layout: post
 title: Cisco Nexus 9000 NX-API
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-02-18"
 wordpress_id: 5520
 slug: cisco-aci-nexus-9000-nxapi

@@ -3,7 +3,7 @@ layout: post
 title: EIGRP over NBMA Networks
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-09-19"
 wordpress_id: 1366
 slug: eigrp-over-nbma-networks

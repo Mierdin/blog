@@ -3,7 +3,7 @@ layout: post
 title: Powerless Words and Technology
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2013-06-19"
 wordpress_id: 4075
 slug: powerless-words-and-technology

@@ -3,7 +3,7 @@ layout: post
 title: The Foundation of Network Programmability
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-03-25"
 wordpress_id: 5782
 slug: foundation-of-network-programmability

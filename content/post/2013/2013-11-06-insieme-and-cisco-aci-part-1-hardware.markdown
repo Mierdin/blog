@@ -5,7 +5,7 @@ series:
 - Cisco ACI Announcement
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-11-06"
 wordpress_id: 4938
 slug: insieme-and-cisco-aci-part-1-hardware

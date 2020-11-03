@@ -3,7 +3,7 @@ layout: post
 title: IGP Route Multipathing
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-04-29"
 wordpress_id: 3626
 slug: igp-route-multipathing

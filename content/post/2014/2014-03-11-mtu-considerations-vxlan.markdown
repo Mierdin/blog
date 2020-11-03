@@ -3,7 +3,7 @@ layout: post
 title: MTU Considerations for VXLAN
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2014-03-11"
 wordpress_id: 5467
 slug: mtu-considerations-vxlan

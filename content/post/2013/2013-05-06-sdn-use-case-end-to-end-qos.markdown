@@ -3,7 +3,7 @@ layout: post
 title: 'SDN Use Case: End-to-End QoS'
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-05-06"
 wordpress_id: 3409
 slug: sdn-use-case-end-to-end-qos

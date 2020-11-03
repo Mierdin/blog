@@ -3,7 +3,7 @@ layout: post
 title: '[Code] PowerTool: PowerOnUCSBlades'
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-06-14"
 wordpress_id: 3990
 slug: code-install-boot-from-san-policy-ucs-powertool

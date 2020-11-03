@@ -3,7 +3,7 @@ layout: post
 title: Nexgen Storage (Part 2) - Hardware Overview
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2013-01-22"
 wordpress_id: 2801
 slug: nexgen-storage-part-2-hardware-overview

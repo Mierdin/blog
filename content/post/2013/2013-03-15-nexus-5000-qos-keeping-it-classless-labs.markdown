@@ -3,7 +3,7 @@ layout: post
 title: Nexus 5000 QoS - Keeping It Classless Labs
 author: Matt Oswalt
 comments: true
-categories: ['KIC', 'LABS']
+categories: ['Infrastructure']
 date: "2013-03-15"
 wordpress_id: 3233
 slug: nexus-5000-qos-keeping-it-classless-labs

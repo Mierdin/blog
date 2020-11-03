@@ -5,7 +5,7 @@ series:
 - Overlay Networking
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-09-05"
 wordpress_id: 4523
 slug: overlay-networking-part-3-underlay

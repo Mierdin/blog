@@ -3,7 +3,7 @@ layout: post
 title: EIGRP Unequal-Cost Load-Balancing
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-09-22"
 wordpress_id: 1470
 slug: eigrp-unequal-cost-load-balancing

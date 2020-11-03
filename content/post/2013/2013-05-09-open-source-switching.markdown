@@ -3,7 +3,7 @@ layout: post
 title: Open Source Switching
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-05-09"
 wordpress_id: 3719
 slug: open-source-switching

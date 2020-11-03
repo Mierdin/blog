@@ -3,7 +3,7 @@ layout: post
 title: 2012 in Review, and 2013 Resolutions
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-01-01"
 wordpress_id: 2702
 slug: 2012-in-review-and-2013-resolutions

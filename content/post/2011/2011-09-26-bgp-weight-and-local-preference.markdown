@@ -3,7 +3,7 @@ layout: post
 title: 'BGP: Weight and Local-Preference'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-09-26"
 wordpress_id: 1491
 slug: bgp-weight-and-local-preference

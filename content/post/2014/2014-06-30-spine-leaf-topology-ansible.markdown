@@ -3,7 +3,7 @@ layout: post
 title: Spine/Leaf Topology Explorer with Ansible
 author: Matt Oswalt
 comments: true
-categories: ['DevOps']
+categories: ['Infrastructure']
 date: "2014-06-30"
 wordpress_id: 5870
 slug: spine-leaf-topology-ansible

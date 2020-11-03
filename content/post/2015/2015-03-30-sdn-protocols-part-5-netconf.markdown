@@ -5,7 +5,7 @@ series:
 - SDN Protocols
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2015-03-30"
 wordpress_id: 5906
 slug: sdn-protocols-part-5-netconf

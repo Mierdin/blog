@@ -3,7 +3,7 @@ layout: post
 title: Moving Soon!
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-05-16"
 wordpress_id: 6090
 slug: moving-soon

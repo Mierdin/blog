@@ -3,7 +3,7 @@ layout: post
 title: Get Started with Junos Quickly (and free!)
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2018-04-23"
 slug: get-started-junos-quickly-free
 tags: ['vagrant']

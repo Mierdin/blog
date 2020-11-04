@@ -3,7 +3,7 @@ layout: post
 title: 'Message Queues: RabbitMQ in Go and Python'
 author: Matt Oswalt
 comments: true
-categories: ['Software']
+categories: ['Programming']
 date: "2015-06-20"
 slug: mq-rabbitmq-go-python
 tags: ['message', 'queues']

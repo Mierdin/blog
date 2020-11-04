@@ -3,7 +3,7 @@ layout: post
 title: Important FCoE Considerations - Cisco Nexus and Netapp
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-08-22"
 wordpress_id: 2298
 slug: important-fcoe-considerations-cisco-nexus-and-netapp

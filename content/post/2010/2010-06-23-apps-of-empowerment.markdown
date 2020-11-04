@@ -6,7 +6,7 @@ comments: true
 date: "2010-06-23"
 wordpress_id: 173
 slug: apps-of-empowerment
-categories: ['Blog']
+categories: ['Infrastructure']
 ---
 
 

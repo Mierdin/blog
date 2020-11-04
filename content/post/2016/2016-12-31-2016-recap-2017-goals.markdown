@@ -3,7 +3,7 @@ layout: post
 title: 2016 Recap and 2017 Goals
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Personal']
 date: "2016-12-31"
 slug: 2016-recap-2017-goals
 tags: ['blogging']

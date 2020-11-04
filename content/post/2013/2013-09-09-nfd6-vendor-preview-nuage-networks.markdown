@@ -3,7 +3,7 @@ layout: post
 title: 'NFD6 Vendor Preview: Nuage Networks'
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-09-09"
 wordpress_id: 4605
 slug: nfd6-vendor-preview-nuage-networks

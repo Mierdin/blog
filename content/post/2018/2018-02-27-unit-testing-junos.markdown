@@ -3,7 +3,7 @@ layout: post
 title: Unit Testing Junos with JSNAPy
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2018-02-27"
 slug: unit-testing-junos-jsnapy
 tags: ['junos']

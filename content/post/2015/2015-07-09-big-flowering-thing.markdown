@@ -3,7 +3,7 @@ layout: post
 title: Big Flowering Thing
 author: Matt Oswalt
 comments: true
-categories: ['Rant']
+categories: ['Infrastructure']
 date: "2015-07-09"
 slug: big-flowering-thing
 tags: ['networking']

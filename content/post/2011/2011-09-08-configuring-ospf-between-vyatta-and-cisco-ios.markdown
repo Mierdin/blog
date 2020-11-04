@@ -3,7 +3,7 @@ layout: post
 title: Configuring OSPF Between Vyatta and Cisco IOS
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-09-08"
 wordpress_id: 1100
 slug: configuring-ospf-between-vyatta-and-cisco-ios

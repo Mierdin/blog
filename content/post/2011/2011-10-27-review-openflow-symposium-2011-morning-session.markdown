@@ -3,7 +3,7 @@ layout: post
 title: OpenFlow Symposium 2011 - Morning Session
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2011-10-27"
 wordpress_id: 1689
 slug: review-openflow-symposium-2011-morning-session

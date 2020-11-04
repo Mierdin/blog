@@ -3,7 +3,7 @@ layout: post
 title: 'The Learning Curve: Implementations vs Fundamentals'
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2014-04-08"
 wordpress_id: 5805
 slug: learning-curve

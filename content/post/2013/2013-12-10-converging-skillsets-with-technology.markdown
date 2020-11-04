@@ -3,7 +3,7 @@ layout: post
 title: Converging Skillsets With Technology
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-12-10"
 wordpress_id: 5169
 slug: converging-skillsets-with-technology

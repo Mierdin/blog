@@ -3,7 +3,7 @@ layout: post
 title: No Experience is Irrelevant
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2013-04-09"
 wordpress_id: 3385
 slug: no-experience-is-irrelevant

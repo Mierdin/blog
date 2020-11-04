@@ -3,7 +3,7 @@ layout: post
 title: Routing iSCSI Traffic
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2013-04-23"
 wordpress_id: 3607
 slug: routing-iscsi-traffic

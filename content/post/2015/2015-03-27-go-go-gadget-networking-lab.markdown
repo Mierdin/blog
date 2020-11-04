@@ -3,7 +3,7 @@ layout: post
 title: Go Go Gadget Networking Lab!
 author: Matt Oswalt
 comments: true
-categories: ['DevOps']
+categories: ['Infrastructure']
 date: "2015-03-27"
 wordpress_id: 6054
 slug: go-go-gadget-networking-lab

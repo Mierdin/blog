@@ -5,7 +5,7 @@ series:
 - Cisco QoS
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-11-07"
 wordpress_id: 2543
 slug: cisco-quality-of-service-part-1-types-of-qos-policies

@@ -3,7 +3,7 @@ layout: post
 title: Network Automation @Interop Vegas 2015
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2015-01-22"
 wordpress_id: 6026
 slug: network-automation-interop-vegas-2015

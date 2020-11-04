@@ -3,7 +3,7 @@ layout: post
 title: Principles of Automation
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2016-10-18"
 slug: principles-of-automation
 tags: ['automation']

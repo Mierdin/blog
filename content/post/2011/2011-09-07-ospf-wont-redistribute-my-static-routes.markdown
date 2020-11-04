@@ -3,7 +3,7 @@ layout: post
 title: OSPF Won't Redistribute My Static Routes!
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-09-07"
 wordpress_id: 1030
 slug: ospf-wont-redistribute-my-static-routes

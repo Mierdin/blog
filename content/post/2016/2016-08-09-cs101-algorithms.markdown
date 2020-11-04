@@ -3,7 +3,7 @@ layout: post
 title: 'CS101: Algorithms'
 author: Matt Oswalt
 comments: true
-categories: ['Computer', 'Science']
+categories: ['Programming']
 date: "2016-08-09"
 slug: cs101-algorithms
 tags: ['computer', 'science']

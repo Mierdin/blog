@@ -3,7 +3,7 @@ layout: post
 title: 'Network Humor: Partial Mesh'
 author: Matt Oswalt
 comments: true
-categories: ['Humor']
+categories: ['Infrastructure']
 date: "2011-10-18"
 wordpress_id: 1640
 slug: network-humor-partial-mesh

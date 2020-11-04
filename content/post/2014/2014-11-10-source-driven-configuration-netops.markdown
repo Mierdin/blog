@@ -5,7 +5,7 @@ series:
 - DevOps for Networking
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-11-10"
 wordpress_id: 5973
 slug: source-driven-configuration-netops

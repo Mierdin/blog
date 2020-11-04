@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: NX-OS - Ethernet[X] is down (inactive)'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-09-21"
 wordpress_id: 2480
 slug: kiclet-nx-os-ethernet-is-down-inactive

@@ -3,7 +3,7 @@ layout: post
 title: Preventing Information Overload
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-11-21"
 wordpress_id: 5055
 slug: preventing-information-overload

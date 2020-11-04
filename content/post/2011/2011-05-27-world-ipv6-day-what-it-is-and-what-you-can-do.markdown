@@ -8,7 +8,7 @@ excerpt: Arguably the most important day for IPv6 since it was created is World 
   connectivity to their sites. But what does this mean? And how can you be prepared?
   Most of all, what will break, if anything?
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-05-27"
 wordpress_id: 360
 slug: world-ipv6-day-what-it-is-and-what-you-can-do

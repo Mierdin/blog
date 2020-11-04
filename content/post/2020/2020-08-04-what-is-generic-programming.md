@@ -3,7 +3,7 @@ layout: post
 title: "What Is Generic Programming?"
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2020/08/spectrum.png
 date: 2020-08-04T00:00:00-00:00
 tags:

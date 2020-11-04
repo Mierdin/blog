@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS vNIC Switchport Mode
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-07-23"
 wordpress_id: 4231
 slug: cisco-ucs-vnic-switchport-mode

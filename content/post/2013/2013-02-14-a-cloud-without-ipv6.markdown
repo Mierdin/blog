@@ -3,7 +3,7 @@ layout: post
 title: A Cloud Without IPv6
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2013-02-14"
 wordpress_id: 2451
 slug: a-cloud-without-ipv6

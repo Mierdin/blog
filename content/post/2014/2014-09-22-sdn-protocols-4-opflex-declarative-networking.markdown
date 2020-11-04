@@ -5,7 +5,7 @@ series:
 - SDN Protocols
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-09-22"
 wordpress_id: 5883
 slug: sdn-protocols-4-opflex-declarative-networking

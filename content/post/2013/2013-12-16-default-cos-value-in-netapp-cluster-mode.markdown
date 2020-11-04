@@ -3,7 +3,7 @@ layout: post
 title: Default CoS Value in Netapp Cluster Mode
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2013-12-16"
 wordpress_id: 5186
 slug: default-cos-value-in-netapp-cluster-mode

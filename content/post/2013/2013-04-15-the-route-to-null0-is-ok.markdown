@@ -3,7 +3,7 @@ layout: post
 title: The Route to Null0 is OK
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-04-15"
 wordpress_id: 3412
 slug: the-route-to-null0-is-ok

@@ -3,7 +3,7 @@ layout: post
 title: 'Controlling Information Flow: NATS Subjects and Queues'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2019/09/nats-queues-preview.png
 date: 2019-09-25T00:00:00-00:00
 tags:

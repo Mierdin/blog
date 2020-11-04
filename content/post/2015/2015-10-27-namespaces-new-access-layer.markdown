@@ -3,7 +3,7 @@ layout: post
 title: 'Network Namespaces: The New Access Layer'
 author: Matt Oswalt
 comments: true
-categories: ['Containers']
+categories: ['Infrastructure']
 date: "2015-10-27"
 slug: network-namespaces-new-access-layer
 tags: ['networking']

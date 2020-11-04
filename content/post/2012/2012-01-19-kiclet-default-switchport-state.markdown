@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: NX-OS Default Switchport State'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-01-19"
 wordpress_id: 1872
 slug: kiclet-default-switchport-state

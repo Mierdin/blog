@@ -3,7 +3,7 @@ layout: post
 title: Keeping It Classless Labs - Static Routing
 author: Matt Oswalt
 comments: true
-categories: ['KIC', 'LABS']
+categories: ['Infrastructure']
 date: "2011-08-30"
 wordpress_id: 923
 slug: keeping-it-classless-labs-static-routing

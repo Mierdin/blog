@@ -3,7 +3,7 @@ layout: post
 title: The DRY Principle, and Why Network Engineers Should Care
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-03-12"
 wordpress_id: 5683
 slug: dry-principle-why-network-engineers-should-care

@@ -3,7 +3,7 @@ layout: post
 title: Double Parentheses in Python
 author: Matt Oswalt
 comments: true
-categories: ['Code']
+categories: ['Programming']
 date: "2015-05-23"
 slug: python-double-parentheses
 tags: ['python']

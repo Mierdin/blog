@@ -3,7 +3,7 @@ layout: post
 title: IGP Metric Tweaks - Direction is Important
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-07-29"
 wordpress_id: 4191
 slug: igp-metric-tweaks-direction-is-important

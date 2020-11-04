@@ -3,7 +3,7 @@ layout: post
 title: 'KICLet: Cisco UCS Socket Connect Error'
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-04-18"
 wordpress_id: 2103
 slug: kiclet-cisco-ucs-socket-connect-error

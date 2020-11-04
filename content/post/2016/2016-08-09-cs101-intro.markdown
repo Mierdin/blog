@@ -3,7 +3,7 @@ layout: post
 title: 'New Series: CS 101'
 author: Matt Oswalt
 comments: true
-categories: ['Computer', 'Science']
+categories: ['Programming']
 date: "2016-08-09"
 slug: new-series-cs101
 tags: ['computer', 'science']

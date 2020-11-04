@@ -3,7 +3,7 @@ layout: post
 title: Virtual Switching System (VSS) on Cisco Catalyst 6500
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-10-05"
 wordpress_id: 1530
 slug: virtual-switching-system-on-cisco-catalyst-6500

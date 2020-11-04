@@ -3,7 +3,7 @@ layout: post
 title: Networking Field Day 7 - Here We Go Again!
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2014-01-28"
 wordpress_id: 5396
 slug: networking-field-day-7-here-we-go-again

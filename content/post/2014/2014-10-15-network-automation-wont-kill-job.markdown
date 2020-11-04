@@ -3,7 +3,7 @@ layout: post
 title: Why Network Automation Won't Kill Your Job
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-10-15"
 wordpress_id: 5960
 slug: network-automation-wont-kill-job

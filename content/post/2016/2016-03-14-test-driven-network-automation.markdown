@@ -3,7 +3,7 @@ layout: post
 title: The Power of Test-Driven Network Automation
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2016-03-14"
 slug: test-driven-network-automation
 tags: ['go']

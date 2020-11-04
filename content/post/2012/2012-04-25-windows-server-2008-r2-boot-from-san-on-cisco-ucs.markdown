@@ -3,7 +3,7 @@ layout: post
 title: Windows Server 2008 R2 Boot From SAN on Cisco UCS
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-04-25"
 wordpress_id: 2148
 slug: windows-server-2008-r2-boot-from-san-on-cisco-ucs

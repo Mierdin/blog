@@ -3,7 +3,7 @@ layout: post
 title: '"VIF down" Issues with UCSM 2.2(1b)'
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2014-01-20"
 wordpress_id: 5375
 slug: vif-down-issues-with-ucsm-2-21b

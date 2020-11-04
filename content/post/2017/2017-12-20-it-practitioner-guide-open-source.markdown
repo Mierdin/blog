@@ -3,7 +3,7 @@ layout: post
 title: A Guide to Open Source for IT Practitioners
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2017-12-20"
 slug: a-guide-open-source-it-practitioners
 tags: ['open', 'source']

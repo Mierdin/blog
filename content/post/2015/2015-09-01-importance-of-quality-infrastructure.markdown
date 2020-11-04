@@ -3,7 +3,7 @@ layout: post
 title: The Importance of Quality in Infrastructure Software
 author: Matt Oswalt
 comments: true
-categories: ['Code']
+categories: ['Infrastructure']
 date: "2015-09-01"
 slug: importance-quality-infrastructure-software
 tags: ['networking']

@@ -3,7 +3,7 @@ layout: post
 title: '[CCIE] Spanning-Tree Part 1 - Nerd Knobs'
 author: Matt Oswalt
 comments: true
-categories: ['My', 'CCIE', 'Journey']
+categories: ['Infrastructure']
 date: "2013-06-27"
 wordpress_id: 4099
 slug: ccie-spanning-tree-part-1-nerd-knobs

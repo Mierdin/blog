@@ -3,7 +3,7 @@ layout: post
 title: Spanning Tree Nerd Knobs - Keeping It Classless Labs
 author: Matt Oswalt
 comments: true
-categories: ['KIC', 'LABS']
+categories: ['Infrastructure']
 date: "2013-06-27"
 wordpress_id: 4140
 slug: spanning-tree-nerd-knobs-keeping-it-classless-labs

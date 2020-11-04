@@ -3,7 +3,7 @@ layout: post
 title: Cisco ACI - Nexus 9000 Initial Configuration
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-02-17"
 wordpress_id: 5517
 slug: cisco-aci-nexus-9000-initial-configuration

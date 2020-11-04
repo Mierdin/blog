@@ -3,7 +3,7 @@ layout: post
 title: 'KIClet: Sub-Optimal Fibre Channel Path Selection'
 author: Matt Oswalt
 comments: true
-categories: ['Storage']
+categories: ['Infrastructure']
 date: "2012-07-12"
 wordpress_id: 2238
 slug: kiclet-sub-optimal-fibre-channel-path-selection

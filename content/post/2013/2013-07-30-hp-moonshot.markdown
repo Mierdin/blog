@@ -3,7 +3,7 @@ layout: post
 title: HP Moonshot
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-07-30"
 wordpress_id: 4266
 slug: hp-moonshot

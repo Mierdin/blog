@@ -3,7 +3,7 @@ layout: post
 title: 'Open Source Routing: A Comparison'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-05-22"
 slug: open-source-routing-comparison
 tags: ['bgp']

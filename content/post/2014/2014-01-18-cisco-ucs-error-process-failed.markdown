@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS Error - "Process Failed"
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2014-01-18"
 wordpress_id: 5344
 slug: cisco-ucs-error-process-failed

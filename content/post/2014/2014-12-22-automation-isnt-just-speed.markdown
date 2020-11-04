@@ -3,7 +3,7 @@ layout: post
 title: Automation Isn't Just About Speed
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2014-12-22"
 wordpress_id: 5994
 slug: automation-isnt-just-speed

@@ -3,7 +3,7 @@ layout: post
 title: Glue Networks at ONUG 2014
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2014-06-07"
 wordpress_id: 5856
 slug: glue-networks-onug-2014

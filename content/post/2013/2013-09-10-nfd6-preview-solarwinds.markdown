@@ -3,7 +3,7 @@ layout: post
 title: 'NFD6 Preview: Solarwinds'
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-09-10"
 wordpress_id: 4618
 slug: nfd6-preview-solarwinds

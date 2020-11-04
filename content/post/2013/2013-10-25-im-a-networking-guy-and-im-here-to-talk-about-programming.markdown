@@ -3,7 +3,7 @@ layout: post
 title: I'm a Networking Guy, and I'm Here To Talk About Programming
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2013-10-25"
 wordpress_id: 4878
 slug: im-a-networking-guy-and-im-here-to-talk-about-programming

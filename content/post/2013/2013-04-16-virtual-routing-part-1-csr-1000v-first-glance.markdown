@@ -5,7 +5,7 @@ series:
 - Virtual Routing
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-04-16"
 wordpress_id: 3470
 slug: virtual-routing-part-1-csr-1000v-first-glance

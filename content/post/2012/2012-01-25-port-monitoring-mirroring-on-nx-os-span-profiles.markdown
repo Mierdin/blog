@@ -3,7 +3,7 @@ layout: post
 title: 'Port Monitoring/Mirroring on NX-OS: SPAN Profiles'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-01-25"
 wordpress_id: 1904
 slug: port-monitoring-mirroring-on-nx-os-span-profiles

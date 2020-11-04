@@ -3,7 +3,7 @@ layout: post
 title: Host Interfaces on UCS FEX 2204 vs FEX 2208
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-06-20"
 wordpress_id: 4086
 slug: host-interfaces-on-ucs-fex-2204-vs-fex-2208

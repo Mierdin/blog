@@ -3,7 +3,7 @@ layout: post
 title: What is a "Best Practice"?
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2013-12-19"
 wordpress_id: 5158
 slug: what-is-a-best-practice

@@ -3,7 +3,7 @@ layout: post
 title: Moving Forward, Changing Focus
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-05-22"
 wordpress_id: 3775
 slug: moving-forward-changing-focus

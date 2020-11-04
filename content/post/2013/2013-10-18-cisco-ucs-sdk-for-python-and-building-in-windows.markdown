@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS SDK for Python, and Building in Windows
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-10-18"
 wordpress_id: 4766
 slug: cisco-ucs-sdk-for-python-and-building-in-windows

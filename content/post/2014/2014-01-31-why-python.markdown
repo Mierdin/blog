@@ -3,7 +3,7 @@ layout: post
 title: Why Python?
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Programming']
 date: "2014-01-31"
 wordpress_id: 5305
 slug: why-python

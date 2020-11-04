@@ -5,7 +5,7 @@ series:
 - SDN Protocols
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-07-21"
 wordpress_id: 5867
 slug: sdn-protocols-1-openflow-basics

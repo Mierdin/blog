@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS B440 Blade Replacement
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-05-09"
 wordpress_id: 2200
 slug: cisco-ucs-b440-blade-replacement

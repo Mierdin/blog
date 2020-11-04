@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS - "Unable to Communicate With UCSM Controller"
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2014-01-19"
 wordpress_id: 5357
 slug: cisco-ucs-unable-to-communicate-with-ucsm-controller

@@ -3,7 +3,7 @@ layout: post
 title: The Benefits of a Proper Development Environment
 author: Matt Oswalt
 comments: true
-categories: ['Software', 'Development']
+categories: ['Programming']
 date: "2015-10-29"
 slug: benefits-development-environment
 tags: ['software']

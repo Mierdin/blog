@@ -3,7 +3,7 @@ layout: post
 title: The Evolution of Network Programmability
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2014-05-27"
 wordpress_id: 5847
 slug: evolution-network-programmability

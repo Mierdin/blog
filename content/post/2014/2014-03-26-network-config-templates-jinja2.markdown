@@ -3,7 +3,7 @@ layout: post
 title: Network Configuration Templates Using Jinja2
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-03-26"
 wordpress_id: 5793
 slug: network-config-templates-jinja2

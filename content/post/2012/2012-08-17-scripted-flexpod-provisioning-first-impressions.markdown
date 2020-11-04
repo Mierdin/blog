@@ -3,7 +3,7 @@ layout: post
 title: Scripted Flexpod Provisioning - First Impressions
 author: Matt Oswalt
 comments: true
-categories: ['Datacenter']
+categories: ['Infrastructure']
 date: "2012-08-17"
 wordpress_id: 2277
 slug: scripted-flexpod-provisioning-first-impressions

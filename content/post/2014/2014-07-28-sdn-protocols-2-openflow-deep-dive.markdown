@@ -5,7 +5,7 @@ series:
 - SDN Protocols
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-07-28"
 wordpress_id: 5898
 slug: sdn-protocols-2-openflow-deep-dive

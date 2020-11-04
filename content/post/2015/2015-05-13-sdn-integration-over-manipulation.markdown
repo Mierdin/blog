@@ -3,7 +3,7 @@ layout: post
 title: 'SDN: Integration over Manipulation'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-05-13"
 wordpress_id: 6087
 slug: sdn-integration-over-manipulation

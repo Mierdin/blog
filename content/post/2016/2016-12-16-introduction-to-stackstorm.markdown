@@ -3,7 +3,7 @@ layout: post
 title: Introduction to StackStorm
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2016-12-16"
 slug: introduction-to-stackstorm
 tags: ['automation']

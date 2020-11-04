@@ -3,7 +3,7 @@ layout: post
 title: The Pros/Cons of Public DNS
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2012-09-11"
 wordpress_id: 2437
 slug: the-proscons-of-public-dns

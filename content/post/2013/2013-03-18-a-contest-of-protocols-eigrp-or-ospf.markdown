@@ -3,7 +3,7 @@ layout: post
 title: 'A Contest of Protocols: EIGRP or OSPF?'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-03-18"
 wordpress_id: 3110
 slug: a-contest-of-protocols-eigrp-or-ospf

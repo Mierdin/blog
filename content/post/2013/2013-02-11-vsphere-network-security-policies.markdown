@@ -3,7 +3,7 @@ layout: post
 title: vSphere Network Security Policies
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-02-11"
 wordpress_id: 2918
 slug: vsphere-network-security-policies

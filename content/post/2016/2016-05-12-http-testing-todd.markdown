@@ -3,7 +3,7 @@ layout: post
 title: Introducing HTTP Testing in ToDD
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2016-05-12"
 slug: introducing-http-testing-todd
 tags: ['go']

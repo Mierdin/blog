@@ -3,7 +3,7 @@ layout: post
 title: Breaking firewalls with SSH and puTTY - NOT with a proxy.
 author: Matt Oswalt
 comments: true
-categories: ['Security']
+categories: ['Infrastructure']
 date: "2010-02-11"
 wordpress_id: 68
 slug: breaking-firewalls-with-ssh-and-putty-not-with-a-proxy

@@ -3,7 +3,7 @@ layout: post
 title: Pylint Errors - Final Newline Missing
 author: Matt Oswalt
 comments: true
-categories: ['Code']
+categories: ['Infrastructure']
 date: "2014-05-27"
 wordpress_id: 5854
 slug: pylint-errors-final-newline-missing

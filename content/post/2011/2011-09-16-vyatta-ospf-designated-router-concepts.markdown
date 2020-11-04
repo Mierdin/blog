@@ -3,7 +3,7 @@ layout: post
 title: Vyatta OSPF Designated Router Concepts
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2011-09-16"
 wordpress_id: 1300
 slug: vyatta-ospf-designated-router-concepts

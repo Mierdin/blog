@@ -3,7 +3,7 @@ layout: post
 title: Network Function Abstraction Redux (Now with DevOps!)
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-10-22"
 wordpress_id: 4819
 slug: network-function-abstraction-redux-devops

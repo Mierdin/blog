@@ -3,7 +3,7 @@ layout: post
 title: 'Changing Gears: Virtual Networking'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2011-09-21"
 wordpress_id: 1451
 slug: changing-gears-virtual-networking

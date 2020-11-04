@@ -3,7 +3,7 @@ layout: post
 title: Free-Form Discussion at CLEUR
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2015-02-18"
 wordpress_id: 6033
 slug: free-form-discussion-cleur

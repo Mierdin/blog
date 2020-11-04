@@ -3,7 +3,7 @@ layout: post
 title: Multi-Vendor OSPF Cost Calculations
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-04-22"
 wordpress_id: 3577
 slug: multi-vendor-ospf-cost-calculations

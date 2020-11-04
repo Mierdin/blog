@@ -3,22 +3,54 @@ title = "About Matt"
 slug = "about"
 +++
 
-My name is Matt Oswalt, and I have a fairly eclectic background. When I was 14, I created my first program - an alien shooter on my TI-82 calculator. Since then, I've enjoyed building new things and showing them to anyone who will listen. This passion continues to this day, as you'll find with projects like [ToDD](https://github.com/toddproject/todd) and [NRE Labs](https://labs.networkreliability.engineering), I just really enjoy building cool stuff. You can explore these and all my other open source projects on my <a href="http://github.com/mierdin" target="_blank">GitHub profile.</a></p>
+<div style="float:left;margin:10px;margin-right:20px;"><img src="/avatar.jpg" width="200"></div>
 
-I've held a variety of different roles in my career thus far. My technical background includes infrastructure consulting, network operations and engineering as well as software engineering. Lately I've been exploring the application of these technical skill-sets to a traditionally non-technical role as a Product Marketing Manager for Juniper Networks.
+Matt Oswalt hails from Portland, OR, and focuses on the intersection of network infrastructure, automation, systems, and software engineering. He’s passionate about enabling engineers to evolve their careers to the next level, and sharing the bright spots that exist within the technology industry with the masses.
 
-<div style="text-align:center;"><img src="/assets/intent.png" width="700" ></div>
+You can often find him speaking at conferences or meetups about these topics, as well as writing about them on his blog (https://oswalt.dev) or on Twitter as [@Mierdin](https://twitter.com/mierdin).
 
-I am finding more and more that I love acquiring new skills and learning to apply them in unique ways to drive value for myself and my employer. I especially like that my combined experience in a wide variety of seemingly unrelated technology disciplines has allowed me the ability to help folks learn and accelerate their own careers.
+## Interests
 
-Blogging is a big passion of mine - I started Keeping It Classless because my writing is a form of my own learning. When I write about something, there's a pretty good chance that the article was one of my first experiences with the topic. The writing is a way for me to force myself to do the research, generate some useful information, and as an added benefit, share it with the community as a form of giving back. It also helps me, because by participating in this community, I get exposed to a bunch of incredibly smart and helpful folks.
+I work on all kinds of things these days, but here's a brief summary:
 
-In addition to my technical passions, I also enjoy gaming, making beer, and spending time outdoors in the amazing state of Oregon, USA:
+- Being a Dad
+- Software Development (primarily Go and Rust)
+- Infrastructure Automation (especially Cloud and Networking))
+- Graphics Programming (primarily Vulkan, but learning others)
 
-<div style="text-align:center;"><img src="/assets/hiking.jpg" width="700" ></div>
+## Open Source
 
-If you want to know more, the majority of my technical work is on my <a href="http://github.com/mierdin" target="_blank">GitHub profile</a>, but also consider <a href="https://twitter.com/Mierdin" target="_blank">following me on Twitter</a>. I am super responsive there, and I try to keep my tweets relevant and interesting.
+I still regularly contribute to Open Source projects, so[my profile](https://github.com/mierdin/) will offer some good insight into many of the things I've worked on. Some highlights:
 
-<p>Thanks for stopping by!</p>
+- I created and help maintain the [Antidote project](https://antidoteproject.readthedocs.io/en/latest/), which powers [NRE Labs](https://nrelabs.io)
+- I worked as a core developer on the [StackStorm event-driven automation project](https://github.com/StackStorm/st2) for a few years, and still contribute when I find the time.
+- I started a project called [ToDD](https://github.com/toddproject/todd) which performs distributed network testing. It's suffering from a bit of neglect at the moment, and I'm hoping to have some time to get back into it and restructure things.
 
-<p>-Matt Oswalt</p>
+## Presentations
+
+A brief summary of some of my speaking engagements, with special emphasis on instances where public recordings are available:
+
+- [Introduction to NRE Labs at Open Source Summit EU 2019](https://osseu19.sched.com/event/TLFe/learning-automation-without-barriers-using-antidote-and-nre-labs-matt-oswalt-juniper-networks/)
+- [Introduction to NRE at INOG::10](https://www.youtube.com/watch?v=EFTrxDIBKC4)
+- [NRE Labs at Network Field Day 20](https://www.youtube.com/watch?v=Q2k-BXzLp_Y)
+- [Network Automation and Verification at NFD17](https://www.youtube.com/watch?v=pHwkwjd2WtQ)
+- [Three Traits of NRE (Juniper Video)](https://www.youtube.com/watch?v=uLnEOjoPhDY)
+- [NRE at Open Networking Summit](https://onsna18.sched.com/event/Dm4v/network-reliability-engineering-nre-and-devnetops-james-kelly-matt-oswalt-juniper-networks)
+- [Open Source Summit NA 2019](https://events.linuxfoundation.org/events/open-source-summit-north-america-2019/program/schedule/)
+- [PyOhio 2015: “Network Automation with Ansible and Python”](https://www.youtube.com/watch?v=VYEVjKvMKqU)
+
+Not recorded, but also:
+
+- Interop 2019:
+    - [Introduction to NRE](https://schedule.interop.com/session/an-introduction-to-network-reliability-engineering/863583)
+    - Deep-dive into NRE Labs at the [Automated Network Operations Summit](https://schedule.interop.com/session/networking-summit-automated-network-operations-presented-by-network-to-code-day-1)
+- [Interop 2016](https://oswalt.dev/2016/04/interop-vegas-2016/) which included three separate talks:
+  - “Test-Driven Network Automation”
+  - “The Network Revolution is a Lie”
+  - “DevOps-Centric Networking at eBay" (I was working for eBay at the time)
+- [Interop 2015: “Practical Network Automation Workshop with Ansible and Python”](https://oswalt.dev/2015/01/network-automation-interop-vegas-2015/)
+
+## Courses
+
+- [Introduction to Docker](https://www.ipspace.net/Introduction_to_Docker)
+- [Network Programmability 101](http://www.ipspace.net/Network_Programmability_101)

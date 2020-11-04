@@ -3,7 +3,7 @@ layout: post
 title: My Three Favorite "Pop Culture Meets Computers" EPIC FAILS
 author: Matt Oswalt
 comments: true
-categories: ['Humor']
+categories: ['Infrastructure']
 date: "2011-08-29"
 wordpress_id: 861
 slug: my-three-favorite-pop-culture-meets-computers-epic-fails

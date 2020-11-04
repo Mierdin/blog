@@ -3,7 +3,7 @@ layout: post
 title: Up and Running with Kubernetes and Tungsten Fabric
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2018-05-08"
 slug: up-running-kubernetes-tungsten-fabric
 tags: ['kubernetes']

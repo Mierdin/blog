@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS Firmware Upgrade Explorations
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-04-18"
 wordpress_id: 2080
 slug: cisco-ucs-firmware-upgrade-explorations

@@ -3,7 +3,7 @@ layout: post
 title: I Am "Cisco Man"
 author: Matt Oswalt
 comments: true
-categories: ['Humor']
+categories: ['Infrastructure']
 date: "2011-10-04"
 wordpress_id: 1518
 slug: i-am-cisco-man

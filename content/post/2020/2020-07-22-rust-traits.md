@@ -3,7 +3,7 @@ layout: post
 title: "Rust Traits: Defining Behavior"
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://oswalt.dev/assets/2020/07/rust-trait.png
 date: 2020-07-22T00:00:00-00:00
 tags:

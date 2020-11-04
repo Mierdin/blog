@@ -3,7 +3,7 @@ layout: post
 title: Tech Field Day Round Table at Cisco ACI Launch
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-11-12"
 wordpress_id: 5034
 slug: tech-field-day-roundtable-at-cisco-aci-launch

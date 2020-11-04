@@ -3,7 +3,7 @@ layout: post
 title: 'KICLet: Solarwinds'' Dirty Google Tricks'
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2012-07-27"
 wordpress_id: 2255
 slug: kiclet-a-poison-named-solarwinds

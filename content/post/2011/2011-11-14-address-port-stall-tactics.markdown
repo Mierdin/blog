@@ -3,7 +3,7 @@ layout: post
 title: Address + Port = "Stall Tactics"
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2011-11-14"
 wordpress_id: 1756
 slug: address-port-stall-tactics

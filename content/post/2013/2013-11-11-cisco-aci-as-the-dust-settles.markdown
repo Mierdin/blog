@@ -3,7 +3,7 @@ layout: post
 title: 'Cisco ACI: As The Dust Settles'
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-11-11"
 wordpress_id: 4965
 slug: cisco-aci-as-the-dust-settles

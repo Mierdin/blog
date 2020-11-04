@@ -3,7 +3,7 @@ layout: post
 title: Cisco NX-API 1.0 Update
 author: Matt Oswalt
 comments: true
-categories: ['Code']
+categories: ['Infrastructure']
 date: "2014-10-08"
 wordpress_id: 5948
 slug: cisco-nxapi-10-update

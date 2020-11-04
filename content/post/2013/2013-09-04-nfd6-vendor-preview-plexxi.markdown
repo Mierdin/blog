@@ -3,7 +3,7 @@ layout: post
 title: 'NFD6 Vendor Preview: Plexxi'
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-09-04"
 wordpress_id: 4396
 slug: nfd6-vendor-preview-plexxi

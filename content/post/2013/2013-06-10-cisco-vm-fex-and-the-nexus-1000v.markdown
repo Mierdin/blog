@@ -3,7 +3,7 @@ layout: post
 title: Cisco VM-FEX and the Nexus 1000v
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-06-10"
 wordpress_id: 3922
 slug: cisco-vm-fex-and-the-nexus-1000v

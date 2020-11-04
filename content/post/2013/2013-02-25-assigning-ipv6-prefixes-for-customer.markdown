@@ -3,7 +3,7 @@ layout: post
 title: Assigning IPv6 Prefixes for Customers
 author: Matt Oswalt
 comments: true
-categories: ['IPv6']
+categories: ['Infrastructure']
 date: "2013-02-25"
 wordpress_id: 3174
 slug: assigning-ipv6-prefixes-for-customer

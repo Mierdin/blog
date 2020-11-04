@@ -3,7 +3,7 @@ layout: post
 title: Securely Wipe Your Hard Drive the Quick and Dirty Way
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2011-06-20"
 wordpress_id: 481
 slug: securely-wipe-your-hard-drive-the-quick-and-dirty-way

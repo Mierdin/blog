@@ -3,7 +3,7 @@ layout: post
 title: Monitoring an entire VLAN on a Layer 3 Switch
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-08-09"
 wordpress_id: 714
 slug: monitoring-an-entire-vlan-on-a-layer-3-switch

@@ -3,7 +3,7 @@ layout: post
 title: Heatsink Upgrade
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-07-14"
 wordpress_id: 4209
 slug: heatsink-upgrade

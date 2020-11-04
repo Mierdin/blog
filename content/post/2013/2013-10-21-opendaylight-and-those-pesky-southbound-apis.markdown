@@ -3,7 +3,7 @@ layout: post
 title: OpenDaylight and Those Pesky Southbound APIs
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2013-10-21"
 wordpress_id: 4751
 slug: opendaylight-and-those-pesky-southbound-apis

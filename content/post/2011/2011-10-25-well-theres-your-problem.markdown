@@ -6,7 +6,7 @@ comments: true
 date: "2011-10-25"
 wordpress_id: 1683
 slug: well-theres-your-problem
-categories: ['Humor']
+categories: ['Infrastructure']
 ---
 
 

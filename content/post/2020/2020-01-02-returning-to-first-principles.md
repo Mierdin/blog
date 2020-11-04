@@ -3,7 +3,7 @@ layout: post
 title: 'Returning to First Principles'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Personal']
 featured_image: https://oswalt.dev/assets/2020/01/blocks.jpg
 date: 2020-01-02T00:00:00-00:00
 tags:

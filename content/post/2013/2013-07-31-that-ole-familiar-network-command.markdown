@@ -3,7 +3,7 @@ layout: post
 title: That Ole Familiar "Network" Command
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-07-31"
 wordpress_id: 4316
 slug: that-ole-familiar-network-command

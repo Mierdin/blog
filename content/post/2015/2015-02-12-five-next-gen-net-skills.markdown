@@ -3,7 +3,7 @@ layout: post
 title: Five Next-Gen Networker Skills
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2015-02-12"
 wordpress_id: 6027
 slug: five-next-gen-net-skills

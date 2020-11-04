@@ -3,7 +3,7 @@ layout: post
 title: 'Open Source Routing: Practical Lab'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2015-06-15"
 slug: open-source-routing-practical-lab
 tags: ['bgp']

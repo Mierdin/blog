@@ -3,7 +3,7 @@ layout: post
 title: A New Automation Chapter Begins
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Personal']
 date: "2016-10-19"
 slug: new-automation-chapter-begins
 tags: ['career']

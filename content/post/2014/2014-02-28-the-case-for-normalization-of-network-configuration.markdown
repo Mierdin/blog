@@ -3,7 +3,7 @@ layout: post
 title: 'Network Configuration: The Case for Normalization'
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2014-02-28"
 wordpress_id: 5552
 slug: the-case-for-normalization-of-network-configuration

@@ -3,7 +3,7 @@ layout: post
 title: Cisco Exams
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-03-14"
 wordpress_id: 3220
 slug: cisco-exam

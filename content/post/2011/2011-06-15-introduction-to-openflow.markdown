@@ -3,7 +3,7 @@ layout: post
 title: Introduction to OpenFlow
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2011-06-15"
 wordpress_id: 428
 slug: introduction-to-openflow

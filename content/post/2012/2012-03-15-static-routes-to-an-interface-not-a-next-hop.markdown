@@ -3,7 +3,7 @@ layout: post
 title: Static Routes to an Interface, Not A Next-Hop
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-03-15"
 wordpress_id: 1979
 slug: static-routes-to-an-interface-not-a-next-hop

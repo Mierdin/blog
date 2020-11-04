@@ -3,7 +3,7 @@ layout: post
 title: Spanning-tree Requirements for Cisco ISSU
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2012-09-19"
 wordpress_id: 2458
 slug: spanning-tree-requirements-for-cisco-issu

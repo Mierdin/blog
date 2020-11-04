@@ -3,7 +3,7 @@ layout: post
 title: 'SDN and Network Automation: Splitting Hairs?'
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2016-01-27"
 slug: sdn-network-automation-splitting-hairs
 tags: ['networking']

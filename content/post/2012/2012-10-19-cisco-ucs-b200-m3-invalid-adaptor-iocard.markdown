@@ -3,7 +3,7 @@ layout: post
 title: 'Cisco UCS B200 M3: "Invalid Adaptor IOcard"'
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2012-10-19"
 wordpress_id: 2496
 slug: cisco-ucs-b200-m3-invalid-adaptor-iocard

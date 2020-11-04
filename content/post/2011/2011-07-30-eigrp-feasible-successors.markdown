@@ -3,7 +3,7 @@ layout: post
 title: EIGRP Feasible Successors
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-07-30"
 wordpress_id: 649
 slug: eigrp-feasible-successors

@@ -3,7 +3,7 @@ layout: post
 title: New Role, Same Goal
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Personal']
 date: "2018-01-29"
 slug: new-role-same-goal
 tags: ['career']

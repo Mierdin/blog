@@ -3,7 +3,7 @@ layout: post
 title: Troubleshooting NGINX Ingress Rewrites in Kubernetes
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 featured_image: https://upload.wikimedia.org/wikipedia/en/0/00/Kubernetes_%28container_engine%29.png
 date: "2018-11-13"
 slug: troubleshooting-nginx-ingress-rewrites

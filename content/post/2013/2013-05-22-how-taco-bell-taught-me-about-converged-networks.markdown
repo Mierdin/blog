@@ -3,7 +3,7 @@ layout: post
 title: How Taco Bell Taught Me About Converged Networks
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2013-05-22"
 wordpress_id: 3760
 slug: how-taco-bell-taught-me-about-converged-networks

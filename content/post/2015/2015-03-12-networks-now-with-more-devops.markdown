@@ -3,7 +3,7 @@ layout: post
 title: Networks! Now, With More DevOps!
 author: Matt Oswalt
 comments: true
-categories: ['DevOps']
+categories: ['Infrastructure']
 date: "2015-03-12"
 wordpress_id: 6043
 slug: networks-now-with-more-devops

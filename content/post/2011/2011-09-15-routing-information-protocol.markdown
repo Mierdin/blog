@@ -3,7 +3,7 @@ layout: post
 title: Routing Information Protocol - Keeping It Classless Labs
 author: Matt Oswalt
 comments: true
-categories: ['KIC', 'LABS']
+categories: ['Infrastructure']
 date: "2011-09-15"
 wordpress_id: 1275
 slug: routing-information-protocol

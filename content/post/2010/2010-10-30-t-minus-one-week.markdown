@@ -3,7 +3,7 @@ layout: post
 title: T-Minus One Week!
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2010-10-30"
 wordpress_id: 283
 slug: t-minus-one-week

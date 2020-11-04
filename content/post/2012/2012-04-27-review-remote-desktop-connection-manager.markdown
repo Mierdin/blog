@@ -3,7 +3,7 @@ layout: post
 title: 'Review: Remote Desktop Connection Manager'
 author: Matt Oswalt
 comments: true
-categories: ['Reviews']
+categories: ['Infrastructure']
 date: "2012-04-27"
 wordpress_id: 2182
 slug: review-remote-desktop-connection-manager

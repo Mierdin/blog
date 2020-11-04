@@ -3,7 +3,7 @@ layout: post
 title: Network Field Day 5
 author: Matt Oswalt
 comments: true
-categories: ['Tech', 'Field', 'Day']
+categories: ['Infrastructure']
 date: "2013-03-07"
 wordpress_id: 3183
 slug: network-field-day-5

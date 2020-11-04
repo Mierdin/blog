@@ -3,7 +3,7 @@ layout: post
 title: 'Kicking the Tires With the NATS Go Client'
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Programming']
 featured_image: https://nats-io.github.io/docs/nats-horizontal-color.png
 date: 2019-09-22T00:00:00-00:00
 tags:

@@ -3,7 +3,7 @@ layout: post
 title: The Unified Skillset
 author: Matt Oswalt
 comments: true
-categories: ['Blog']
+categories: ['Infrastructure']
 date: "2013-01-14"
 wordpress_id: 2323
 slug: the-unified-skillset

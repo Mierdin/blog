@@ -3,7 +3,7 @@ layout: post
 title: Virtual Networking and the Concept of Abstraction
 author: Matt Oswalt
 comments: true
-categories: ['The', 'Evolution']
+categories: ['Infrastructure']
 date: "2013-09-03"
 wordpress_id: 4354
 slug: virtual-networking-and-concept-abstraction

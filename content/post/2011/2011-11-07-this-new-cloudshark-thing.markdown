@@ -3,7 +3,7 @@ layout: post
 title: This New "Cloudshark" Thing
 author: Matt Oswalt
 comments: true
-categories: ['Networking']
+categories: ['Infrastructure']
 date: "2011-11-07"
 wordpress_id: 1735
 slug: this-new-cloudshark-thing

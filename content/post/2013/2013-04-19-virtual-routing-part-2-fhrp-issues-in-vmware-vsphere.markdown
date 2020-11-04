@@ -5,7 +5,7 @@ series:
 - Virtual Routing
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-04-19"
 wordpress_id: 3510
 slug: virtual-routing-part-2-fhrp-issues-in-vmware-vsphere

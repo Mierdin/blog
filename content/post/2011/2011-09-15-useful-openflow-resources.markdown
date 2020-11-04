@@ -3,7 +3,7 @@ layout: post
 title: Useful OpenFlow Resources
 author: Matt Oswalt
 comments: true
-categories: ['SDN']
+categories: ['Infrastructure']
 date: "2011-09-15"
 wordpress_id: 1089
 slug: useful-openflow-resources

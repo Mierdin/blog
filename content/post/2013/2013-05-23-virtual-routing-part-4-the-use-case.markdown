@@ -5,7 +5,7 @@ series:
 - Virtual Routing
 author: Matt Oswalt
 comments: true
-categories: ['Virtual', 'Networking']
+categories: ['Infrastructure']
 date: "2013-05-23"
 wordpress_id: 3746
 slug: virtual-routing-part-4-the-use-case

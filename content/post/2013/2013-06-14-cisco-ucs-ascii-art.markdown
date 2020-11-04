@@ -3,7 +3,7 @@ layout: post
 title: Cisco UCS ASCII Art
 author: Matt Oswalt
 comments: true
-categories: ['Compute']
+categories: ['Infrastructure']
 date: "2013-06-14"
 wordpress_id: 3997
 slug: cisco-ucs-ascii-art

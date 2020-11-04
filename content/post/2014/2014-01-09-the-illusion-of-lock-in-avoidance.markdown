@@ -3,7 +3,7 @@ layout: post
 title: The Illusion of Lock-In Avoidance
 author: Matt Oswalt
 comments: true
-categories: ['Opinion']
+categories: ['Infrastructure']
 date: "2014-01-09"
 wordpress_id: 5203
 slug: the-illusion-of-lock-in-avoidance

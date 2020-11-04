@@ -115,15 +115,20 @@ url = "https://www.youtube.com/user/keepingitclassless"
         weight = 4
         url = "/categories/infrastructure/"
 
+        [[languages.en.menu.main]]
+        name = "Personal"
+        weight = 5
+        url = "/categories/personal/"
+
         # TODO - enable when you have graphics posts
         #[[languages.en.menu.main]]
         #name = "Graphics"
-        #weight = 5
+        #weight = 6
         #url = "/categories/graphics/"
 
         [[languages.en.menu.main]]
         name = "Bookshelf"
-        weight = 6
+        weight = 7
         url = "/bookshelf/"
 
 [outputs]

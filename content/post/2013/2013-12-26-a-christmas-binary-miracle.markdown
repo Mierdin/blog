@@ -13,7 +13,7 @@ tags: ['binary']
 
 My brother got a little puzzle in his stocking this Christmas. It was a little cardboard booklet, and on each page was written a block of numbers, like so:
 
-    
+```
     BLOCK ONE
     1    3    5    7    9    11   13   15
     17   19   21   23   25   27   29   31
@@ -49,6 +49,7 @@ My brother got a little puzzle in his stocking this Christmas. It was a little c
     40   41   42   43   44   45   46   47
     48   49   50   51   52   53   54   55
     56   57   58   59   60   61   62   63
+```
 
 You're to ask someone to pick any number they see in any block, and don't tell you what it is. They are, however, required to find every instance of that number in the entire booklet, and tell you which blocks of numbers that specific number shows up in. Of those blocks that they've identified, you as the "puzzler" are supposed to add the first number (top left corner) in each of those blocks, and the resulting number will be the number they selected.
 

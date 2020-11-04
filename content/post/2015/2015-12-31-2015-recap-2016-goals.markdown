@@ -3,7 +3,7 @@ layout: post
 title: 2015 Recap and 2016 Goals
 author: Matt Oswalt
 comments: true
-categories: ['Infrastructure']
+categories: ['Personal']
 date: "2015-12-31"
 slug: 2015-recap-2016-goals
 tags: ['blogging']

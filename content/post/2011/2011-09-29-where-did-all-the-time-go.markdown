@@ -3,7 +3,7 @@ layout: post
 title: Where Did All The Time Go?!?
 author: Matt Oswalt
 comments: true
-categories: ['Infrastructure']
+categories: ['Personal']
 date: "2011-09-29"
 wordpress_id: 1506
 slug: where-did-all-the-time-go

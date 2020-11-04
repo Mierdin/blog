@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: ['Infrastructure']
+categories: ['Personal']
 title: 'A New Home: Looking Back'
 date: "2015-05-18"
 author: Matt Oswalt

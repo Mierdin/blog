@@ -4,11 +4,11 @@ slug = "about"
 +++
 
 <div style="float:left;margin:10px;margin-right:20px;"><img src="/avatar.jpg" width="200"></div>
-
+<div>
 Matt Oswalt hails from Portland, OR, and focuses on the intersection of network infrastructure, automation, systems, and software engineering. He’s passionate about enabling engineers to evolve their careers to the next level, and sharing the bright spots that exist within the technology industry with the masses.
 
 You can often find him speaking at conferences or meetups about these topics, as well as writing about them on his blog (https://oswalt.dev) or on Twitter as [@Mierdin](https://twitter.com/mierdin).
-
+</div>
 ## Interests
 
 I work on all kinds of things these days, but here's a brief summary:

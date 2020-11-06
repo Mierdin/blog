@@ -40,7 +40,7 @@ These days, it's really easy to take such questions for granted, but if you're c
 
 > "But what **is** that file?"
 
-I mean we all generally know that it's an "executable", in that we run it and our program happens. But what does that mean? What is contained in that file that means our computer automatically just **knows** how to run it? And how is it possible that a three line program (two of which were boilerplate function start/end syntax) can take up 3 megabytes??
+I mean we all generally know that it's an "executable", in that we run it and our program happens. But what does that mean? What is contained in that file that means our computer automatically just **knows** how to run it? And how is it possible that a program with 7 lines of code can take up over 3 megabytes of disk space?!?
 
 It turns out that in order to create an executable for this ridiculously simple program, the Rust compiler must include quite a bit of additional software to make it possible.
 

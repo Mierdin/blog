@@ -23,7 +23,7 @@ I work on all kinds of things these days, but here's a brief summary:
 
 ## Open Source
 
-I still regularly contribute to Open Source projects, so[my profile](https://github.com/mierdin/) will offer some good insight into many of the things I've worked on. Some highlights:
+I still regularly contribute to Open Source projects, so [my profile](https://github.com/mierdin/) will offer some good insight into many of the things I've worked on. Some highlights:
 
 - I created and help maintain the [Antidote project](https://antidoteproject.readthedocs.io/en/latest/), which powers [NRE Labs](https://nrelabs.io)
 - I worked as a core developer on the [StackStorm event-driven automation project](https://github.com/StackStorm/st2) for a few years, and still contribute when I find the time.

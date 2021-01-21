@@ -1,34 +1,47 @@
-baseURL = "http://www.example.com"
-title = "johndoe"
+baseurl = "https://oswalt.dev"
+title = "Matt Oswalt"
 
 theme = "hugo-coder"
 
-languageCode = "en"
-defaultContentLanguage = "en"
+languagecode = "en"
+googleAnalytics = "UA-23075631-1"
 
 paginate = 20
+canonifyurls = true
 
-pygmentsStyle = "b2"
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = ""
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+# Because I use HTML all over my blog posts
+[markup.goldmark.renderer]
+unsafe= true
 
 [params]
-    author = "John Doe"
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
-    avatarURL = "images/avatar.jpg"
-    #gravatar = "john.doe@example.com"
-    footerContent = "Enter a text here."
+    author = "Matt Oswalt"
+    description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+    keywords = "programming,networks,automation,infrastructure,rust,golang"
+    info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
 
-    dateFormat = "January 2, 2006"
+    avatarurl = "avatar.jpg"
+    footercontent = ""
+    dateformat = "January 2, 2006"
+
+    # Custom CSS
+    custom_css = ["/css/custom.css"]
+
+    images = ["avatar.jpg"]
+    title = "Matt Oswalt"
 
     hideFooter = false
-    hideCredits = false
+    hideCredits = true
     hideCopyright = false
-    since = 2019
+    since = 2010
 
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"
@@ -49,7 +62,7 @@ disqusShortname = "yourdiscussshortname"
     maxSeeAlsoItems = 5
 
     # Enable Twemoji
-    enableTwemoji = true
+    enableTwemoji = false
 
     # Custom CSS
     customCSS = []
@@ -60,122 +73,99 @@ disqusShortname = "yourdiscussshortname"
     # Custom JS
     customJS = []
 
-# If you want to use fathom(https://usefathom.com) for analytics, add this section
-[params.fathomAnalytics]
-    siteID = "ABCDE"
-    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-    serverURL = "analytics.example.com"
-
-# If you want to use plausible(https://plausible.io) for analytics, add this section
-[params.plausibleAnalytics]
-    domain = "example.com"
-    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
-    serverURL = "analytics.example.com"
-
-# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
-[params.goatCounter]
-    code = "code"
-
 # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
 [params.cloudflare]
     token = "token"
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+# Plural seems to be required by anatole at least by default
+tag = "tags"
+category = "categories"
+series = "series"  # From old blog stuff, when I did series on things. Keeping this around to just ensure it doesn't break
 
 [[params.social]]
     name = "Github"
     icon = "fa fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fa fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://github.com/mierdin/"
 [[params.social]]
     name = "Twitter"
     icon = "fa fa-twitter"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
+    weight = 2
+    url = "https://twitter.com/mierdin/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fa fa-linkedin"
-    weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
+    weight = 3
+    url = "https://www.linkedin.com/in/oswaltmatt/"
 [[params.social]]
-    name = "Medium"
-    icon = "fa fa-medium"
+    name = "YouTube"
+    icon = "fa fa-youtube"
+    weight = 4
+    url = "https://www.youtube.com/user/keepingitclassless"
+[[params.social]]
+    name = "Facebook"
+    icon = "fa fa-facebook"
     weight = 5
-    url = "https://medium.com/@johndoe"
+    url = "https://www.facebook.com/moswalt/"
 [[params.social]]
     name = "RSS"
     icon = "fa fa-rss"
     weight = 6
-    url = "https://myhugosite.com/index.xml"
+    url = "/feed/"
     rel = "alternate"
     type = "application/rss+xml"
 
+[params.utterances]
+  repo = "Mierdin/blog" # https://utteranc.es/#heading-repository
+  issueTerm = "pathname" # https://utteranc.es/#heading-mapping
+  label = "comment" # https://utteranc.es/#heading-issue-label
+  theme = "github-light" # https://utteranc.es/#heading-theme
 
 [languages]
     [languages.en]
-        languageName = "English"
+        languagename = "English"
+        title = "Matt Oswalt"
+
+        [languages.en.params]
+        author = "Matt Oswalt"
+        keywords = "programming,networks,automation,infrastructure,rust,golang"
 
         [languages.en.menu]
 
-            [[languages.en.menu.main]]
-            name = "About"
-            weight = 1
-            url = "about/"
+        [[languages.en.menu.main]]
+        name = "Home"
+        weight = 1
+        url = "/"
 
-            [[languages.en.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 2
+        url = "/about/"
 
-            [[languages.en.menu.main]]
-            name = "Projects"
-            weight = 3
-            url = "projects/"
+        [[languages.en.menu.main]]
+        name = "Programming"
+        weight = 3
+        url = "/categories/programming/"
 
-            [[languages.en.menu.main]]
-            name = "Contact me"
-            weight = 5
-            url = "contact/"
+        [[languages.en.menu.main]]
+        name = "Infrastructure"
+        weight = 4
+        url = "/categories/infrastructure/"
 
+        [[languages.en.menu.main]]
+        name = "Personal"
+        weight = 5
+        url = "/categories/personal/"
 
-    [languages.pt-br]
-        languageName = "Português"
-        title = "João Ninguém"
+        # TODO - enable when you have graphics posts
+        #[[languages.en.menu.main]]
+        #name = "Graphics"
+        #weight = 6
+        #url = "/categories/graphics/"
 
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footerContent = "Coloque algum texto aqui."
+        [[languages.en.menu.main]]
+        name = "Bookshelf"
+        weight = 7
+        url = "/bookshelf/"
 
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Sobre"
-            weight = 1
-            url = "about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Projetos"
-            weight = 3
-            url = "projects/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
-            weight = 5
-            url = "contact/"

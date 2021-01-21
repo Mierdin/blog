@@ -11,6 +11,8 @@
 [context.deploy-preview]
   command = "hugo --buildDrafts --buildFuture"
 
+
+# Doesn't seem to work (maybe because of cloudflare) and not relied upon right now (the RSS button just goes straight to rss.xml)
 [[redirects]]
   from = "/feed"
   to = "/feed.xml"

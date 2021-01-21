@@ -42,7 +42,7 @@ This paradigm is extremely helpful - it's not safe or feasible to expect every a
 Linux is optimized for being an end-device, and working with large packets, not so much for packet forwarding/decisions and lots of small packets. This is a big reason for Linux's reputation as a very poorly performing substitute for the big ASIC-driven machines that most IT shops and service providers are accustomed to. One reason for this is the penalty of crossing the userspace boundary. For traffic that cannot be handled purely by the kernel, the entire packet must be copied into the memory space available to a userspace process, which means each packet incurs a performance cost, and the more packets you have to receive, make decisions on, and forward, the more this cost becomes apparent.
 
 <div style="text-align:center;">
-<a href="/assets/2021/01/memcopy.png"><img style="max-width: 400px;" src="/assets/2021/01/memcopy.png"></a>
+<a href="/assets/2021/01/memcopy.png"><img src="/assets/2021/01/memcopy.png"></a>
 </div>
 
 
@@ -98,7 +98,7 @@ You'd be forgiven for being confused about the difference between eBPF and BPF w
 I've often seen eBPF and BPF used interchangeably, and in fact, when classic/legacy BPF is meant (which is rare), I've seen it described as "cBPF". So I would recommend you use the same convention. These days, BPF and eBPF are the same; they both refer to BPF in the modern sense, with all of the aforementioned enhancements.
 
 <div style="text-align:center;">
-<a title="Credit: https://ebpf.io" href="/assets/2021/01/loader-ebpf.png"><img width="700" alt="Credit: https://ebpf.io" src="/assets/2021/01/loader-ebpf.png"></a>
+<a title="Credit: https://ebpf.io" href="/assets/2021/01/loader-ebpf.png"><img alt="Credit: https://ebpf.io" src="/assets/2021/01/loader-ebpf.png"></a>
 </div>
 
 When I think about eBPF, I like to break it down to the following three topic areas. Together, these provide a really valuable set of tools for anyone looking to add functionality on top of an existing Linux kernel.
@@ -121,7 +121,9 @@ The number one link to bookmark when learning eBPF is [ebpf.io](https://ebpf.io/
 
 At its core, BPF can be thought of as a simplified general-purpose [instruction set](https://docs.cilium.io/en/stable/bpf/#instruction-set). It is similar to something like the x86 instruction set in that it is a series of instructions and registers that can be used to execute programs. However, it is **highly simplified**. How simplified, you ask?
 
-<div style="text-align:center;"><a target="_blank" href="https://www.youtube.com/watch?v=Qhm1Zn_BNi4"><img style="max-width: 450px;" src="/assets/2021/01/bpf_x86_comparison.png" ></a></div>
+<div style="text-align:center;"><a target="_blank" href="https://www.youtube.com/watch?v=Qhm1Zn_BNi4"><img src="/assets/2021/01/bpf_x86_comparison.png" ></a></div>
+
+
 
 So, BPF is sort of a ["general-purpose execution engine"](https://www.youtube.com/watch?v=Qhm1Zn_BNi4), but not quite a fully generic instruction set (when compared to something like x86_64). It is [highly constrained and simplified](https://events.static.linuxfound.org/sites/events/files/slides/bpf_collabsummit_2015feb20.pdf) to maintain the promise of safe and stable code within the kernel (this is in addition to a series of other verifications that take place at a higher level).
 
@@ -131,7 +133,7 @@ The other thing to consider is that once a BPF program is compiled into BPF byte
 
 So, while there are a lot more components that play a role in getting a BPF program from inception to execution, it generally flows through these three states: source code, then BPF bytecode, and finally, native machine instructions.
 
-<div style="text-align:center;"><a href="/assets/2021/01/bpf-program-lifecycle.png"><img style="max-width: 500px;" src="/assets/2021/01/bpf-program-lifecycle.png" ></a></div>
+<div style="text-align:center;"><a href="/assets/2021/01/bpf-program-lifecycle.png"><img src="/assets/2021/01/bpf-program-lifecycle.png" ></a></div>
 
 ## Who Cares?
 

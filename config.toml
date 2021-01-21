@@ -24,7 +24,8 @@ unsafe= true
 
 [params]
     author = "Matt Oswalt"
-    description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+    description = "Posts on Software Development, Network Infrastructure, IT Automation, Graphics Programming, and more."
+
     keywords = "programming,networks,automation,infrastructure,rust,golang"
     info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
 

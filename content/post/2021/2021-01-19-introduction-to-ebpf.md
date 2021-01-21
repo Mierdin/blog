@@ -27,7 +27,7 @@ eBPF itself as a topic is **huge**, and there is a multitude of resources out th
 
 - Who should care about eBPF, and for what reasons?
 
-# Why We Use Operating Systems
+## Why We Use Operating Systems
 
 Operating systems give us a lot to build on top of. The tradeoff is that you have to play by their rules. If for instance, you want to send some packets over the network, you don't access the NIC directly; rather you have to work through the API that sits on top of the underlying kernel, using a mechanism typically referred to as "syscalls". The applications you use every day, even the very browser you're using to read this post right now is leveraging a similar API. This creates a clear demarcation between the space where our apps run (userspace) and the space where the operating system internals and hardware interactions take place (kernel space). In fact, operating systems often partition system memory so that the two are kept separate from each other.
 
@@ -56,7 +56,7 @@ The attempt to use Linux as a full-blown networking platform, therefore, has res
 
 eBPF gives us a fourth option. But before we get there, we need to discuss a little history.
 
-# Berkeley Packet Filter
+## Berkeley Packet Filter
 
 The origin story of eBPF lies in it's first, more narrowly-focused implementation known at the time as Berkeley Packet Filter. This was a new architecture that allowed systems to filter packets **well** before they were further received by the kernel - or worse - copied into userspace. In addition, this made use of a new register-based virtual machine, with a very limited set of instructions, that could be provided by a userspace process. This meant that utilities like `tcpdump` could compile very simple filtering programs (influenced by more human-readable filter strings provided by the user via command-line) that ran entirely in kernel space, without the need for kernel modules.
 
@@ -83,7 +83,7 @@ A fun exercise is to run `tcpdump` with the `-d` flag to see the resulting BPF p
 
 I highly recommend reading the [original BPF paper](https://www.tcpdump.org/papers/bpf-usenix93.pdf), as it discusses these ideas quite well.
 
-# Enter: "eBPF"
+## Enter: "eBPF"
 
 The "[elevator pitch](https://ebpf.io/what-is-ebpf/#why-ebpf)" you'll hear about eBPF ("extended BPF") is that it does to the kernel what Javascript did for HTML. The Linux kernel is mostly presented "as is" - in that you have a surface area you can interact with via syscalls, and that's about it. This may be fine for some applications, but for others, this is a pretty significant constraint that warranted some of the workarounds we discussed in the sections above. eBPF expands on the original architecture behind classic BPF by providing a set of tools for writing fairly generic programs that are run purely in kernel space, safely, and with a suite of other tools to complete the picture.
 
@@ -111,7 +111,7 @@ When I think about eBPF, I like to break it down to the following three topic ar
 
 There's certainly more to talk about with eBPF, and each of these subjects probably warrants multiple blog posts on their own. However, I think this gives the best 10,000' view of what eBPF allows you to do. Write safe, performant kernel-space programs, run those programs only when needed, and get the relevant data out into userspace so you can do something meaningful with it.
 
-# Diving a Bit Deeper
+## Diving a Bit Deeper
 
 With the high-level out of the way, I'd like to dive a little deeper into exactly what's going on with BPF programs themselves. I'm planning to address some of the other topics like the toolchain, and the various other resources available **to** a BPF program in other posts. These are crucial things to know to understand the full value of eBPF, but for now, let's just focus on what exactly BPF programs **are**.
 
@@ -133,7 +133,7 @@ So, while there are a lot more components that play a role in getting a BPF prog
 
 <div style="text-align:center;"><a href="/assets/2021/01/bpf-program-lifecycle.png"><img style="max-width: 500px;" src="/assets/2021/01/bpf-program-lifecycle.png" ></a></div>
 
-# Who Cares?
+## Who Cares?
 
 If you're not a kernel developer (statistically speaking, most of you), you may be asking why you should care about eBPF. This is a valid concern, but I'd like to raise a few important points.
 
@@ -151,13 +151,13 @@ That said, I do think eBPF is more directly applicable to a software-savvy infra
 
 So, while the vast majority of those reading this post won't need to dive into the weeds of eBPF, I believe it's important for everyone to be aware of it, understand the problems it solves, and consider this new architecture when making technology decisions going forward. Whether you're rack-mounting switches or allocating memory on the heap, eBPF will be a part of your supply chain, and you owe it to yourself to be informed. This is really about making the kernel programmable - which is such a fundamental change, I think we'll be experiencing the repercussions on this for years to come.
 
-# Conclusion
+## Conclusion
 
 Honestly, I'm excited to dig into eBPF. The architecture is very pleasing to me, not only because of the speed and safety aspects but because [event-driven architectures](https://oswalt.dev/2016/12/introduction-to-stackstorm/) have been a part of my upbringing for a while and it's the way my brain works. eBPF also happens to be spiritually aligned with what I've come to appreciate from other technologies like the [Rust compiler](https://oswalt.dev/2020/03/getting-rusty/), which goes a long way (sometimes painfully) to ensure your software is safe while still keeping performance as high as possible.
 
 I'll be following up with some posts focused on some specifics, but hopefully, this suffices as a high-level introduction to eBPF and the problems it aims to solve.
 
-# Additional Resources
+## Additional Resources
 
 Some other super useful resources I didn't link to above:
 

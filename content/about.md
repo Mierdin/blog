@@ -3,10 +3,10 @@ title = "About Matt"
 slug = "about"
 +++
 
-<div style="margin-top:10px;display: inline-block;">
-  <img style="margin-right:20px;float:left;" src="/avatar-sunset.jpg" width="200">
-  <p>
-Matt Oswalt hails from Portland, OR, and focuses on the intersection of network infrastructure, automation, systems, and software engineering. He’s passionate about enabling engineers to evolve their careers to the next level, and getting the word out about bright spots across the technology landscape.
+<div style="margin-top:0px;display: inline-block;">
+  <img style="margin-top:20px; margin-right:20px;float:left;" src="/avatar-sunset.jpg" width="200">
+<p>
+Matt Oswalt is a technologist with a wide range of interests, including software development, network infrastructure, IT automation, and computer graphics. He's passionate about diving into highly technical and challenging topics, and sharing this knowledge with the technology community.
 
 You can often find him speaking at conferences or meetups about these topics, as well as writing about them on his blog (https://oswalt.dev) or on Twitter as [@Mierdin](https://twitter.com/mierdin).
 </p>
@@ -19,11 +19,11 @@ I work on all kinds of things these days, but here's a brief summary:
 - Being a Dad
 - Systems Software Development (primarily Go and Rust).
 - Infrastructure Automation (especially Cloud and Networking))
-- Graphics Programming (primarily Vulkan, but learning others)
+- Graphics Programming (e.g. Vulkan)
 
 ## Open Source
 
-I still regularly contribute to Open Source projects, so [my profile](https://github.com/mierdin/) will offer some good insight into many of the things I've worked on. Some highlights:
+I still regularly contribute to Open Source projects, so [my GitHub profile](https://github.com/mierdin/) will offer some good insight into many of the things I've worked on. Some highlights:
 
 - I created and help maintain the [Antidote project](https://antidoteproject.readthedocs.io/en/latest/), which powers [NRE Labs](https://nrelabs.io)
 - I worked as a core developer on the [StackStorm event-driven automation project](https://github.com/StackStorm/st2) for a few years, and still contribute when I find the time.

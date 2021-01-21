@@ -53,7 +53,7 @@ unsafe= true
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorScheme = "auto"
+    colorScheme = "dark"
 
     # Hide the toggle button, along with the associated vertical divider
     hideColorSchemeToggle = false

@@ -5,6 +5,8 @@
   HUGO_VERSION = "0.78.2"
 
 # hugo extended required by new hugo-coder theme
+# Netlify doesn't seem to run this right now so I'm running it locally, and if any changes are made to the resources/ directory,
+# I'm committing them. This should be figured out soon, netlify should be able to do everything on its own too
 [context.deploy-preview]
   command = "hugo --buildDrafts --buildFuture"
 

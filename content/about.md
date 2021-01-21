@@ -17,7 +17,7 @@ You can often find him speaking at conferences or meetups about these topics, as
 I work on all kinds of things these days, but here's a brief summary:
 
 - Being a Dad
-- Systems Software Development (primarily Go and Rust)
+- Systems Software Development (primarily Go and Rust).
 - Infrastructure Automation (especially Cloud and Networking))
 - Graphics Programming (primarily Vulkan, but learning others)
 

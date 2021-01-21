@@ -1,7 +1,7 @@
 baseurl = "https://oswalt.dev"
 title = "Matt Oswalt"
 
-theme = "anatole"
+theme = "hugo-coder"
 
 languagecode = "en"
 googleAnalytics = "UA-23075631-1"
@@ -9,18 +9,73 @@ googleAnalytics = "UA-23075631-1"
 paginate = 20
 canonifyurls = true
 
-# pygmentsstyle = "b2"
-# pygmentscodefences = true
-# pygmentscodefencesguesssyntax = true
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 disqusShortname = ""
 
-[permalinks]	
+[permalinks]
   post = "/:year/:month/:title/"
 
 # Because I use HTML all over my blog posts
 [markup.goldmark.renderer]
 unsafe= true
+
+[params]
+    author = "Matt Oswalt"
+    description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+    keywords = "programming,networks,automation,infrastructure,rust,golang"
+    info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+
+    avatarurl = "avatar.jpg"
+    footercontent = ""
+    dateformat = "January 2, 2006"
+
+    # Custom CSS
+    custom_css = ["/css/custom.css"]
+
+    images = ["avatar.jpg"]
+    title = "Matt Oswalt"
+
+    hideFooter = false
+    hideCredits = true
+    hideCopyright = false
+    since = 2010
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorScheme = "auto"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hideColorSchemeToggle = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Enable Twemoji
+    enableTwemoji = false
+
+    # Custom CSS
+    customCSS = []
+
+    # Custom SCSS
+    customSCSS = []
+
+    # Custom JS
+    customJS = []
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+[params.cloudflare]
+    token = "token"
 
 [taxonomies]
 # Plural seems to be required by anatole at least by default
@@ -28,61 +83,44 @@ tag = "tags"
 category = "categories"
 series = "series"  # From old blog stuff, when I did series on things. Keeping this around to just ensure it doesn't break
 
-[params]
-    author = "Matt Oswalt"
-    description = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
-    keywords = "blog,developer,personal"
-    info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github"
+    weight = 1
+    url = "https://github.com/mierdin/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fa fa-twitter"
+    weight = 2
+    url = "https://twitter.com/mierdin/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/oswaltmatt/"
+[[params.social]]
+    name = "YouTube"
+    icon = "fa fa-youtube"
+    weight = 4
+    url = "https://www.youtube.com/user/keepingitclassless"
+[[params.social]]
+    name = "Facebook"
+    icon = "fa fa-facebook"
+    weight = 5
+    url = "https://www.facebook.com/moswalt/"
+[[params.social]]
+    name = "RSS"
+    icon = "fa fa-rss"
+    weight = 6
+    url = "/feed/"
+    rel = "alternate"
+    type = "application/rss+xml"
 
-    displayMode = "dark"
-    profilePicture = "avatar.jpg"
-    footercontent = ""
-    dateformat = "January 2, 2006"
-
-    hideCredits = true
-    hideCopyright = false
-
-    rtl = false
-
-    images = ["avatar.jpg"]
-    title = "Matt Oswalt"
-
-## Math settings
-[params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-use = "katex"  # options: "katex", "mathjax". default is "katex".
-
-## Social links
-# use 'fab' when brand icons, use 'fas' when standard solid icons.
-[[params.socialIcons]]
-icon = "fab fa-linkedin"
-title = "Linkedin"
-url = "https://www.linkedin.com/in/oswaltmatt/"
-
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/mierdin/"
-
-[[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "twitter"
-url = "https://twitter.com/mierdin/"
-
-[[params.socialIcons]]
-icon = "fa fa-rss"
-title = "RSS"
-url = "/feed.xml"
-
-[[params.socialIcons]]
-icon = "fab fa-facebook"
-title = "Facebook"
-url = "https://www.facebook.com/keepingitclassless/"
-
-[[params.socialIcons]]
-icon = "fab fa-youtube"
-title = "YouTube"
-url = "https://www.youtube.com/user/keepingitclassless"
+[params.utterances]
+  repo = "Mierdin/blog" # https://utteranc.es/#heading-repository
+  issueTerm = "pathname" # https://utteranc.es/#heading-mapping
+  label = "comment" # https://utteranc.es/#heading-issue-label
+  theme = "github-light" # https://utteranc.es/#heading-theme
 
 [languages]
     [languages.en]
@@ -91,7 +129,7 @@ url = "https://www.youtube.com/user/keepingitclassless"
 
         [languages.en.params]
         author = "Matt Oswalt"
-        keywords = "blog,developer,personal"
+        keywords = "programming,networks,automation,infrastructure,rust,golang"
 
         [languages.en.menu]
 
@@ -130,16 +168,4 @@ url = "https://www.youtube.com/user/keepingitclassless"
         name = "Bookshelf"
         weight = 7
         url = "/bookshelf/"
-
-[outputs]
-home = ["HTML", "AMP", "RSS"]
-page = ["HTML"]
-
-[outputFormats]
-[outputFormats.HTML]
-mediaType = "text/html"
-
-[outputFormats.RSS]
-mediatype = "application/rss"
-baseName = "feed"   # results in /feed.xml
 

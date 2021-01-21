@@ -1,9 +1,10 @@
 [context.production.environment]
-  HUGO_VERSION = "0.74.2"
+  HUGO_VERSION = "0.78.2"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.74.2"
+  HUGO_VERSION = "0.78.2"
 
+# hugo extended required by new hugo-coder theme
 [context.deploy-preview]
   command = "hugo --buildDrafts --buildFuture"
 

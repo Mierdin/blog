@@ -112,7 +112,7 @@ series = "series"  # From old blog stuff, when I did series on things. Keeping t
     name = "RSS"
     icon = "fa fa-rss"
     weight = 6
-    url = "/feed/"
+    url = "/feed.xml"
     rel = "alternate"
     type = "application/rss+xml"
 
@@ -168,4 +168,16 @@ series = "series"  # From old blog stuff, when I did series on things. Keeping t
         name = "Bookshelf"
         weight = 7
         url = "/bookshelf/"
+
+[outputs]
+home = ["HTML", "AMP", "RSS"]
+page = ["HTML"]
+
+[outputFormats]
+[outputFormats.HTML]
+mediaType = "text/html"
+
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"   # results in /feed.xml
 

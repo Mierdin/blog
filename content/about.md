@@ -21,6 +21,12 @@ I work on all kinds of things these days, but here's a brief summary:
 - Infrastructure Automation (especially Cloud and Networking))
 - Graphics Programming (e.g. Vulkan)
 
+## Publications
+
+My longest running publication is of course this personal technical blog, which I started at the very beginning of my career in 2010.
+
+I also co-authored the book ["Network Programmability and Automation"](https://www.oreilly.com/library/view/network-programmability-and/9781491931240/), published in 2018 by O'Reilly.
+
 ## Open Source
 
 I still regularly contribute to Open Source projects, so [my GitHub profile](https://github.com/mierdin/) will offer some good insight into many of the things I've worked on. Some highlights:

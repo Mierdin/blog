@@ -40,6 +40,8 @@ What's more interesting to me personally is that Rust is the first language I've
 
 It is this choice that I want to drill into more deeply.
 
+> EDIT: [A very helpful redditor](https://www.reddit.com/r/rust/comments/o5qm8l/polymorphism_in_rust_static_vs_dynamic_dispatch/h2o4qky/) pointed out a few things to keep in mind when reading this blog post. The examples to follow were made by disabling inlining and building in "debug" mode, to make the learning experience a bit easier, but I didn't do a good job of highlighting this choice. Building in release mode and allowing Rust to inline where needed will likely change the resulting program significantly.
+
 ## The "Growler" Trait and Its Implementations
 
 For this post, I've created a trait called `Growler` which enforces a single method implementation `growl()` which has no parameters or return types. I've also created three types `Lion`, `Tiger`, and `Bear` which have their own implementations of this trait. We will be using these three types to demonstrate the difference between static and dynamic dispatch:

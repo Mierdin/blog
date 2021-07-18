@@ -29,6 +29,10 @@ unsafe= true
     keywords = "programming,networks,automation,infrastructure,rust,golang"
     info = "Perpetual Learner, Software Developer, Writer, and Public Speaker."
 
+    favicon_16 = "/favicon-16x16.png"
+    favicon_32 = "/favicon.ico"
+    touchicon = "/apple-touch-icon.png"
+
     avatarurl = "avatar.jpg"
     footercontent = ""
     dateformat = "January 2, 2006"

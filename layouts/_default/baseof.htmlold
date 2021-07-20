@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
+    <meta name="color-scheme" content="light dark">
+
+    {{ if .Site.Params.csp }}
+      {{ partial "csp.html" . }}
+    {{ end }}
 
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
@@ -19,18 +24,29 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     <!-- Changed these styles to load async, to improve LCP -->
     <!-- https://web.dev/render-blocking-resources/ -->
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!--
+        
+        UPDATE: I commented these out on 7/20 because I updated the theme and wanted to see if this was still a problem.
+        I also renamed the file so that hugo didn't even try to build it.
+        Should probably keep a close eye on things and see if this negatively impacts SEO.
+
+        Other than this big commented-out block, the rest of this file should be identical to the original baseof.html file from the theme
+        as of commit 37d519d6a964cf15ff5c97553a1b460da8049316, so there are probably resources being loaded in this page that would be obsoleted by
+        my changes below. If you plan to re-enable the below, you might want to take a look at the difference between this file in your own blog's commit ID
+        5f8c6695e493018d92630a7fff173e199d5fbc28 and hugo-coder's copy of this file as of dbe21a7fdf0d5556de5b2f2f8bdf4f64228ca241 - those were
+        the two commits before you made the update.
+    -->
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"></noscript>
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
       integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous"></noscript>
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous"></noscript> -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
       {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
@@ -92,8 +108,8 @@
     {{ end -}}
 
     {{ if .Site.Params.enableTwemoji }}
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
-        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
     {{ end }}
 
     {{ hugo.Generator }}
@@ -105,7 +121,7 @@
   {{ else if eq .Site.Params.colorScheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
+  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
         onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
   >
     {{ partial "float" . }}
@@ -116,23 +132,15 @@
         {{ block "content" . }}{{ end }}
       </div>
 
-      <!-- Had to put utterances in here manually, because I think this overrides partials/posts/single.html, which is where this is normally brought in.
-      Should consider removing this file and doing the fix from further up in a more specific place that doesn't cause problems like this. -->
-      <!-- {{- if isset .Site.Params "utterances" -}}
-        {{- partial "posts/utterances.html" . -}}
-      {{ end }} -->
-
       {{ partial "footer.html" . }}
     </main>
 
-    {{ if not .Site.Params.hideColorSchemeToggle }}
-      {{ if .Site.IsServer }}
-        {{ $script := resources.Get "js/dark-mode.js" }}
-        <script src="{{ $script.RelPermalink }}"></script>
-      {{ else }}
-        {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
-        <script src="{{ $script.RelPermalink }}"></script>
-      {{ end }}
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/coder.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
     {{ end }}
 
     {{ range .Site.Params.customJS }}
@@ -155,6 +163,14 @@
 
     {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
       {{- partial "analytics/cloudflare" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
+      {{- partial "analytics/matomo" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
+      {{- partial "analytics/googletagmanager" . -}}
     {{ end }}
   </body>
 

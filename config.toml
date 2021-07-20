@@ -16,7 +16,7 @@ pygmentscodefencesguesssyntax = true
 disqusShortname = ""
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  posts = "/:year/:month/:title/"
 
 # Because I use HTML all over my blog posts
 [markup.goldmark.renderer]
@@ -185,4 +185,3 @@ mediaType = "text/html"
 [outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "feed"   # results in /feed.xml
-

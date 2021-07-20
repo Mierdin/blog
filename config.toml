@@ -79,8 +79,8 @@ unsafe= true
     customJS = []
 
 # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
-[params.cloudflare]
-    token = "token"
+# [params.cloudflare]
+#     token = "token"
 
 [taxonomies]
 # Plural seems to be required by anatole at least by default

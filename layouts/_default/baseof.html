@@ -116,6 +116,12 @@
         {{ block "content" . }}{{ end }}
       </div>
 
+      <!-- Had to put utterances in here manually, because I think this overrides partials/posts/single.html, which is where this is normally brought in.
+      Should consider removing this file and doing the fix from further up in a more specific place that doesn't cause problems like this. -->
+      <!-- {{- if isset .Site.Params "utterances" -}}
+        {{- partial "posts/utterances.html" . -}}
+      {{ end }} -->
+
       {{ partial "footer.html" . }}
     </main>
 
